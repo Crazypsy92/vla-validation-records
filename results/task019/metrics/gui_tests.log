@@ -1,0 +1,14 @@
+test_action_panel_display (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_action_panel_display) ... ok
+test_curve_canvas (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_curve_canvas) ... ok
+test_image_canvas (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_image_canvas) ... ok
+test_input_panel_and_payload (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_input_panel_and_payload) ... ok
+test_review_fixes_timing_and_assertions (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_review_fixes_timing_and_assertions)
+P0-A, P0-B, P1-C verification: verify command vs physical release, frame sync, and grasp contact classification. ... ok
+test_robot_monitor_replay_functionality (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_robot_monitor_replay_functionality) ... ok
+test_task019_video_playback_and_frame_sync (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_task019_video_playback_and_frame_sync)
+Task 019: Continuous video playback, dual-view frame extraction, and P0/P1 fixes. ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.733s
+
+OK

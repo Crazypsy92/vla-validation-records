@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-23",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 105,
-  "total_size_kb": 4334.32,
+  "total_files": 114,
+  "total_size_kb": 6383.36,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 13446,
-      "sha256": "47ed2871f21291e00d94a9244ac7cf7401e3b541a743cdd1cfdc5b13c7abe95c",
+      "size": 13333,
+      "sha256": "616eba6e85f405a24cacb5cb41c378154e0ede2ac250b28091b118c64f69d5f3",
       "category": "Config",
       "task": "General"
     },
     {
       "path": "TASKS.md",
-      "size": 4250,
-      "sha256": "ac2336de5a1265b8eb33567fc94160bb175f452b23cee6026a5732db41d6cd6e",
+      "size": 4193,
+      "sha256": "71ca896e2f565aa6d037bd4c25380ebbaef0f78b3a99796cc88521f09cbf4264",
       "category": "Config",
       "task": "General"
     },
@@ -146,8 +146,8 @@
     },
     {
       "path": "docs/task019_replay_video.md",
-      "size": 13932,
-      "sha256": "89699e26c1b1e33a560137e45c17ccda9222d9b2b4b19a287e4d8b448989590d",
+      "size": 3303,
+      "sha256": "0d8add22694bcb5d8f0e6860c7a89dcab7c6f6c20a05cd65542d1ec1da0c14e6",
       "category": "Report",
       "task": "Task 019"
     },
@@ -159,409 +159,10 @@
       "task": "Docs"
     },
     {
-      "path": "results/task014/acceptance.json",
-      "size": 8407,
-      "sha256": "354360eee77fb643ac21a148e937b7330c03e901385359685f67595b92414c35",
-      "category": "Metrics",
-      "task": "task014"
-    },
-    {
-      "path": "results/task014/predictions/sample_01_calibrated_prediction.json",
-      "size": 18111,
-      "sha256": "50388affabca9bce7a9283b6767938a00d5945c0c6e962b3e8a22e0ad0f4871c",
-      "category": "Metrics",
-      "task": "task014"
-    },
-    {
-      "path": "results/task014/predictions/sample_02_calibrated_prediction.json",
-      "size": 18033,
-      "sha256": "64cc772051ccf47ac252f0cbd6c1f8850a6f58369d729173b4b99516f38d05e8",
-      "category": "Metrics",
-      "task": "task014"
-    },
-    {
-      "path": "results/task014/metrics/calibrated_metrics.json",
-      "size": 5531,
-      "sha256": "b17cc82306e192e591ca3932491e37e674d727a609feab0b06d2de88e6df1934",
-      "category": "Metrics",
-      "task": "task014"
-    },
-    {
-      "path": "results/task016/acceptance.json",
-      "size": 3375,
-      "sha256": "0ecdeda8a92f85c4c0a975cd074848be19d59a7f49b785343e598abc5b88ea51",
-      "category": "Metrics",
-      "task": "task016"
-    },
-    {
-      "path": "results/task016/metrics/action_statistics.json",
-      "size": 8527,
-      "sha256": "a3193d91b35d43c2aeef5fbded96a13066dbd0ecd0f589c391a465b003761edc",
-      "category": "Metrics",
-      "task": "task016"
-    },
-    {
-      "path": "results/task016/metrics/system_performance.json",
-      "size": 805,
-      "sha256": "1e02ff549256aac71c28f0bf09607ac517c42c079f3fc1efaa3673330e642d28",
-      "category": "Metrics",
-      "task": "task016"
-    },
-    {
-      "path": "results/task016/records/sample_01_record.json",
-      "size": 35293,
-      "sha256": "b331e0405f886383d16c27e9276d07e16cea5ccc2f1dd188c7436ff1ffc59a4a",
-      "category": "Metrics",
-      "task": "task016"
-    },
-    {
-      "path": "results/task016/records/sample_02_record.json",
-      "size": 35102,
-      "sha256": "fcf319f5992d07046cb3d36d20009c561fddd4600a5aa9195635582d023da321",
-      "category": "Metrics",
-      "task": "task016"
-    },
-    {
-      "path": "results/task016/records/sample_03_record.json",
-      "size": 35273,
-      "sha256": "807f1e54034ca74a602ccdbcceb11f95595b856116f355db3cc429623d64da00",
-      "category": "Metrics",
-      "task": "task016"
-    },
-    {
-      "path": "results/task016/records/sample_04_record.json",
-      "size": 35280,
-      "sha256": "2053add8c8631783e55bffb0f53644d4f73f0833bbdae9e1d3c7432386e3db64",
-      "category": "Metrics",
-      "task": "task016"
-    },
-    {
-      "path": "results/task013/acceptance.json",
-      "size": 5831,
-      "sha256": "f7be3a1e3ddf51a6f539b3e9b8e9afae7f16d56a24ac3535f90a91abdfc2b27d",
-      "category": "Metrics",
-      "task": "task013"
-    },
-    {
-      "path": "results/task013/predictions/sample_01_prediction.json",
-      "size": 31949,
-      "sha256": "18415db2e67a3e105650eb790c62813cbc56286af420bf60bca745325ae962ca",
-      "category": "Metrics",
-      "task": "task013"
-    },
-    {
-      "path": "results/task013/predictions/sample_02_prediction.json",
-      "size": 31754,
-      "sha256": "4ce7b5387555d392294da5171213450af19625ebad1130a66c0b607c856b3914",
-      "category": "Metrics",
-      "task": "task013"
-    },
-    {
-      "path": "results/task013/predictions/sample_03_prediction.json",
-      "size": 31808,
-      "sha256": "899e596759d82b0285afd47ee4f55d744e7c9c1d81d9157a504aab6b29be0986",
-      "category": "Metrics",
-      "task": "task013"
-    },
-    {
-      "path": "results/task013/predictions/sample_04_prediction.json",
-      "size": 31867,
-      "sha256": "62fa73aca6ae6eb0b68e1fbc4327c3dd820ddc649969c34785c61ae387604424",
-      "category": "Metrics",
-      "task": "task013"
-    },
-    {
-      "path": "results/task013/metrics/inference_metrics.json",
-      "size": 3517,
-      "sha256": "b8d8ef94ab407d97c93bad65820b4442829163a0b74378191ac10ccf4593b84d",
-      "category": "Metrics",
-      "task": "task013"
-    },
-    {
-      "path": "results/task012/acceptance.json",
-      "size": 1511,
-      "sha256": "82506657f96cfe87290ff63aa1f7d631fbfae8630de66403a91121c30082685c",
-      "category": "Metrics",
-      "task": "task012"
-    },
-    {
-      "path": "results/task012/predictions/case_001_domain0_libero.json",
-      "size": 26308,
-      "sha256": "7b09bd74626e2c9d54926c3f197f829cd2258e5e4f323f3d3072b65e57c3c418",
-      "category": "Metrics",
-      "task": "task012"
-    },
-    {
-      "path": "results/task012/predictions/case_002_domain1_aloha.json",
-      "size": 26031,
-      "sha256": "1fd8460c4abed584ccc78acceb43b389ce7fed04df756b6ef8c781bb82909006",
-      "category": "Metrics",
-      "task": "task012"
-    },
-    {
-      "path": "results/task012/predictions/case_003_domain2_bridge.json",
-      "size": 26177,
-      "sha256": "af51a877fe923c162828be2bac09441d8332a8042d1ffa66189b688878497ee8",
-      "category": "Metrics",
-      "task": "task012"
-    },
-    {
-      "path": "results/task012/metrics/inference_metrics.json",
-      "size": 5939,
-      "sha256": "a5d52c810281f98de5cef1adf8caf46dfea6fd06d6f323a4812f398548a725d8",
-      "category": "Metrics",
-      "task": "task012"
-    },
-    {
-      "path": "results/task017/acceptance.json",
-      "size": 3910,
-      "sha256": "447da818e2a9a1ab6eb9137a8fc89ce71dc1ec0837cf868f7191de7b43206200",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/metrics/closed_loop_metrics.json",
-      "size": 2290,
-      "sha256": "49b0b3e27ad51b6c4645b9848c1c69fb24906580917ff6bedfadf3de6cdade89",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/metrics/episodes.json",
-      "size": 5289,
-      "sha256": "55ada229eabce7ebb0a6419b843ff0fdc343158fe7c76e6de6f29ab228b6ff7b",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/metrics/manipulation.json",
-      "size": 5691,
-      "sha256": "97455d972faf3eb700ea24070f1d5c7ed4e8e62200a6dc962f19f14e2b74f366",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/metrics/model.json",
-      "size": 298,
-      "sha256": "0df8e39ecd2c2a52d4b3c18be773b226d1ee45d7e659d2ee600add3b08f6cc32",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/records/run_seed_100.json",
-      "size": 83399,
-      "sha256": "b7b70e019fa3611aca4cd2da993132ccd39254c0a24ea8d767118380d4b5c60f",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/records/run_seed_2026.json",
-      "size": 83450,
-      "sha256": "c0fd9f5b7886031f604f04aa217709c61e6b24e1ce3513aabf06654254bde71b",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/records/run_seed_42.json",
-      "size": 83406,
-      "sha256": "be7ae946fe723f3885f323a4e2c4f9a081c7e09828a82830e4691329ef8633f8",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/records/episode_01_seed_143/summary.json",
-      "size": 1477,
-      "sha256": "54b09d277d26b6f33fb3efba51a35ff1f970160c53e607b2002e59fc2ed60954",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/records/episode_02_seed_144/summary.json",
-      "size": 1478,
-      "sha256": "37709d9e77207d96bf56c40de19890fa49f105191694e6787db9864b2eb9ab5a",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task017/records/episode_00_seed_142/summary.json",
-      "size": 1478,
-      "sha256": "21fefdb4ef62e13791f6e8394110504615a211afc57bb0dd22e3f60fc24c3097",
-      "category": "Metrics",
-      "task": "task017"
-    },
-    {
-      "path": "results/task011/acceptance.json",
-      "size": 3976,
-      "sha256": "c5462071f0e4de82d84dcdf282bbb79fceb72bd2f83f2cbd24a51694f6ab6342",
-      "category": "Metrics",
-      "task": "task011"
-    },
-    {
-      "path": "results/task011/metrics/experiments.json",
-      "size": 275458,
-      "sha256": "21eaba78e62630f9750a83bb8563d229fd99cc4fa9f4ed4b5c24ffd5c5a0e033",
-      "category": "Metrics",
-      "task": "task011"
-    },
-    {
-      "path": "results/task011/metrics/processor_audit.json",
-      "size": 6459,
-      "sha256": "7a02ed8a67a4990386c46c8d76a46da5b30eff49370c6dff20f085a9564b2597",
-      "category": "Metrics",
-      "task": "task011"
-    },
-    {
-      "path": "results/task011/metrics/runtime_config.json",
-      "size": 2457,
-      "sha256": "53290eb1faa3213124ef4842e4d8955d755cda1f3f09b4c731a41e21721cd3b5",
-      "category": "Metrics",
-      "task": "task011"
-    },
-    {
-      "path": "results/task011/metrics/task010_output_audit.json",
-      "size": 671,
-      "sha256": "1845fb473a348d765d929cc3cef7532451439d265d38f33502bc8804d48a9656",
-      "category": "Metrics",
-      "task": "task011"
-    },
-    {
-      "path": "results/task010/acceptance.json",
-      "size": 1508,
-      "sha256": "a3c0db1f59d66546ea00d401bcd6e30f5f9f95214a3bb5781899ae3861963a0c",
-      "category": "Metrics",
-      "task": "task010"
-    },
-    {
-      "path": "results/task010/predictions/case_001_pick_blue_block.json",
-      "size": 12227,
-      "sha256": "94cd7518b39ef49f498f4a9fd022c6c99a0fd456e3c5aa7c7bdbf1c72089aeb9",
-      "category": "Metrics",
-      "task": "task010"
-    },
-    {
-      "path": "results/task010/predictions/case_002_approach_red_cylinder.json",
-      "size": 12247,
-      "sha256": "36ecac8f5367ca66278f86d65f9a51cb3c42ca1d864ed3d39957d4eb077a0704",
-      "category": "Metrics",
-      "task": "task010"
-    },
-    {
-      "path": "results/task010/predictions/case_003_open_gripper_release.json",
-      "size": 12234,
-      "sha256": "f16bb98bce31225a70192c0b05a79f7bdca9806688d1213f8820c42a2c438e5a",
-      "category": "Metrics",
-      "task": "task010"
-    },
-    {
-      "path": "results/task010/metrics/inference_metrics.json",
-      "size": 3860,
-      "sha256": "bb2170359d5c6a7789c9dc508656003e6a02c2a329a6d383e6aa245c12b5447c",
-      "category": "Metrics",
-      "task": "task010"
-    },
-    {
-      "path": "results/task018/acceptance.json",
-      "size": 6692,
-      "sha256": "d30baff7a70773b1254269221bc6e01fc641562c6d1c61fa441e7924248b9c26",
-      "category": "Metrics",
-      "task": "task018"
-    },
-    {
-      "path": "results/task018/metrics/grasp_release_audit.json",
-      "size": 7455,
-      "sha256": "97f649cc936b0d252f0edec773c8949c005c4afcd636aa26502c20f898257fcf",
-      "category": "Metrics",
-      "task": "task018"
-    },
-    {
-      "path": "results/task019/acceptance.json",
-      "size": 12288,
-      "sha256": "2fe4d5593bf795cb8ed158be4bd295fdec1a83b8627416ac11eb7598d61414ac",
-      "category": "Metrics",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/metrics/video_metadata.json",
-      "size": 12288,
-      "sha256": "073021400b4b2a5087ea15008140e9124d7eda79da7ca37b83a312a4bf1909f5",
-      "category": "Metrics",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/evidence/step106_dual_view_video_frame.png",
-      "size": 102400,
-      "sha256": "bcf961a579eda446bba5451062c999e48ae2992c970af6a5fe1f20ac9d567ed7",
+      "path": "evidence/task015/action_curves_sample01.png",
+      "size": 14586,
+      "sha256": "66c31e36f0ef6ef22e5fe610e94cd63a7cbec2f828941906f0909fd039b74960",
       "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/evidence/step223_terminal_video_frame.png",
-      "size": 90112,
-      "sha256": "d03d0ecd335122a4a754ba178670792c5345a3f20d551d3932d75667a1b82ac0",
-      "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/screenshots/01_offline_mode_single_source.png",
-      "size": 143360,
-      "sha256": "21140df05fa408588ebb436ac8831b8a7e7736442342954d7849758fcc77b1fc",
-      "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/screenshots/02_replay_step49_mug1_grasp.png",
-      "size": 167936,
-      "sha256": "23f7b9812a79571498e695975675a65689c9360b8cd71d9f0175290ed7a2933e",
-      "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/screenshots/03_replay_step97_open_cmd.png",
-      "size": 167936,
-      "sha256": "03c3d68fe8e5d0fc302eb423dbb33e44dbf38dc2ed6af9fde90b81d9c1d2478a",
-      "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/screenshots/04_replay_step106_release_verified.png",
-      "size": 167936,
-      "sha256": "62c276751ec4e37c0334899d81817efd11896c50c76f8e5c411a1272f18cb4cc",
-      "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/screenshots/05_replay_step176_mug2_grasp.png",
-      "size": 167936,
-      "sha256": "5f62062c0a51f13893ae910f9920c770eef0baec5ae6f926797fc27317a1a8fd",
-      "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task019/screenshots/06_replay_step223_terminal_success.png",
-      "size": 167936,
-      "sha256": "02e312b4fbd617357aac5f0703339b161f7f48a75107f3a6c53f7b4e95ac5e61",
-      "category": "Evidence",
-      "task": "Task 019"
-    },
-    {
-      "path": "results/task015/acceptance.json",
-      "size": 4871,
-      "sha256": "ddae64a566bcd1ad2adafb34403328f0693359429f1c844122d3020d66351e36",
-      "category": "Metrics",
-      "task": "task015"
-    },
-    {
-      "path": "results/task015/metrics/inference_metrics.json",
-      "size": 814,
-      "sha256": "7713e9de8393bb62d67dc4eb8878ed407412b82a17b6ea8b5b4ec66747fd890e",
-      "category": "Metrics",
-      "task": "task015"
-    },
-    {
-      "path": "results/task015/records/test_acceptance_rec.json",
-      "size": 6011,
-      "sha256": "dcf661aa1a0d98107bf2116cf9b4ec0c08f7e462ba73869a2c55736d49006176",
-      "category": "Metrics",
       "task": "task015"
     },
     {
@@ -726,11 +327,473 @@
       "task": "task018"
     },
     {
-      "path": "evidence/task015/action_curves_sample01.png",
-      "size": 14586,
-      "sha256": "66c31e36f0ef6ef22e5fe610e94cd63a7cbec2f828941906f0909fd039b74960",
       "category": "Evidence",
+      "task": "Task 019",
+      "path": "evidence/task019/review_offline.png",
+      "size": 319875,
+      "sha256": "56ba1205ce0110068a20cc00bb16edc2f040c8288deb44e1caf8c25e606ad27f"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "evidence/task019/review_seed142_step049.png",
+      "size": 337976,
+      "sha256": "9a0272ac9d50fa6a4e9beade917db3ad3d245e4c503aa8acdfd2f81d38d02c30"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "evidence/task019/review_seed142_step097.png",
+      "size": 365337,
+      "sha256": "44869856df6e753404beef06426f7891e6f9e961f462eac7821f2662b60279ae"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "evidence/task019/review_seed142_step106.png",
+      "size": 367899,
+      "sha256": "49ba0579d1ab992ced81596a48c5edaa5c2a228bcac08ce939b9f29e14ebd7a9"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "evidence/task019/review_seed142_step176.png",
+      "size": 368155,
+      "sha256": "cf8aaac8e71ad4d51568948d267338f137664738e2eec5fc414c939ca2058cad"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "evidence/task019/review_seed142_step223.png",
+      "size": 364358,
+      "sha256": "ce94a9333ae5d737d6d403f37b6b57e8dc9ef0130cf96099a292dc9e9b02e122"
+    },
+    {
+      "path": "results/task010/acceptance.json",
+      "size": 1508,
+      "sha256": "a3c0db1f59d66546ea00d401bcd6e30f5f9f95214a3bb5781899ae3861963a0c",
+      "category": "Metrics",
+      "task": "task010"
+    },
+    {
+      "path": "results/task010/metrics/inference_metrics.json",
+      "size": 3860,
+      "sha256": "bb2170359d5c6a7789c9dc508656003e6a02c2a329a6d383e6aa245c12b5447c",
+      "category": "Metrics",
+      "task": "task010"
+    },
+    {
+      "path": "results/task010/predictions/case_001_pick_blue_block.json",
+      "size": 12227,
+      "sha256": "94cd7518b39ef49f498f4a9fd022c6c99a0fd456e3c5aa7c7bdbf1c72089aeb9",
+      "category": "Metrics",
+      "task": "task010"
+    },
+    {
+      "path": "results/task010/predictions/case_002_approach_red_cylinder.json",
+      "size": 12247,
+      "sha256": "36ecac8f5367ca66278f86d65f9a51cb3c42ca1d864ed3d39957d4eb077a0704",
+      "category": "Metrics",
+      "task": "task010"
+    },
+    {
+      "path": "results/task010/predictions/case_003_open_gripper_release.json",
+      "size": 12234,
+      "sha256": "f16bb98bce31225a70192c0b05a79f7bdca9806688d1213f8820c42a2c438e5a",
+      "category": "Metrics",
+      "task": "task010"
+    },
+    {
+      "path": "results/task011/acceptance.json",
+      "size": 3976,
+      "sha256": "c5462071f0e4de82d84dcdf282bbb79fceb72bd2f83f2cbd24a51694f6ab6342",
+      "category": "Metrics",
+      "task": "task011"
+    },
+    {
+      "path": "results/task011/metrics/experiments.json",
+      "size": 275458,
+      "sha256": "21eaba78e62630f9750a83bb8563d229fd99cc4fa9f4ed4b5c24ffd5c5a0e033",
+      "category": "Metrics",
+      "task": "task011"
+    },
+    {
+      "path": "results/task011/metrics/processor_audit.json",
+      "size": 6459,
+      "sha256": "7a02ed8a67a4990386c46c8d76a46da5b30eff49370c6dff20f085a9564b2597",
+      "category": "Metrics",
+      "task": "task011"
+    },
+    {
+      "path": "results/task011/metrics/runtime_config.json",
+      "size": 2457,
+      "sha256": "53290eb1faa3213124ef4842e4d8955d755cda1f3f09b4c731a41e21721cd3b5",
+      "category": "Metrics",
+      "task": "task011"
+    },
+    {
+      "path": "results/task011/metrics/task010_output_audit.json",
+      "size": 671,
+      "sha256": "1845fb473a348d765d929cc3cef7532451439d265d38f33502bc8804d48a9656",
+      "category": "Metrics",
+      "task": "task011"
+    },
+    {
+      "path": "results/task012/acceptance.json",
+      "size": 1511,
+      "sha256": "82506657f96cfe87290ff63aa1f7d631fbfae8630de66403a91121c30082685c",
+      "category": "Metrics",
+      "task": "task012"
+    },
+    {
+      "path": "results/task012/metrics/inference_metrics.json",
+      "size": 5939,
+      "sha256": "a5d52c810281f98de5cef1adf8caf46dfea6fd06d6f323a4812f398548a725d8",
+      "category": "Metrics",
+      "task": "task012"
+    },
+    {
+      "path": "results/task012/predictions/case_001_domain0_libero.json",
+      "size": 26308,
+      "sha256": "7b09bd74626e2c9d54926c3f197f829cd2258e5e4f323f3d3072b65e57c3c418",
+      "category": "Metrics",
+      "task": "task012"
+    },
+    {
+      "path": "results/task012/predictions/case_002_domain1_aloha.json",
+      "size": 26031,
+      "sha256": "1fd8460c4abed584ccc78acceb43b389ce7fed04df756b6ef8c781bb82909006",
+      "category": "Metrics",
+      "task": "task012"
+    },
+    {
+      "path": "results/task012/predictions/case_003_domain2_bridge.json",
+      "size": 26177,
+      "sha256": "af51a877fe923c162828be2bac09441d8332a8042d1ffa66189b688878497ee8",
+      "category": "Metrics",
+      "task": "task012"
+    },
+    {
+      "path": "results/task013/acceptance.json",
+      "size": 5831,
+      "sha256": "f7be3a1e3ddf51a6f539b3e9b8e9afae7f16d56a24ac3535f90a91abdfc2b27d",
+      "category": "Metrics",
+      "task": "task013"
+    },
+    {
+      "path": "results/task013/metrics/inference_metrics.json",
+      "size": 3517,
+      "sha256": "b8d8ef94ab407d97c93bad65820b4442829163a0b74378191ac10ccf4593b84d",
+      "category": "Metrics",
+      "task": "task013"
+    },
+    {
+      "path": "results/task013/predictions/sample_01_prediction.json",
+      "size": 31949,
+      "sha256": "18415db2e67a3e105650eb790c62813cbc56286af420bf60bca745325ae962ca",
+      "category": "Metrics",
+      "task": "task013"
+    },
+    {
+      "path": "results/task013/predictions/sample_02_prediction.json",
+      "size": 31754,
+      "sha256": "4ce7b5387555d392294da5171213450af19625ebad1130a66c0b607c856b3914",
+      "category": "Metrics",
+      "task": "task013"
+    },
+    {
+      "path": "results/task013/predictions/sample_03_prediction.json",
+      "size": 31808,
+      "sha256": "899e596759d82b0285afd47ee4f55d744e7c9c1d81d9157a504aab6b29be0986",
+      "category": "Metrics",
+      "task": "task013"
+    },
+    {
+      "path": "results/task013/predictions/sample_04_prediction.json",
+      "size": 31867,
+      "sha256": "62fa73aca6ae6eb0b68e1fbc4327c3dd820ddc649969c34785c61ae387604424",
+      "category": "Metrics",
+      "task": "task013"
+    },
+    {
+      "path": "results/task014/acceptance.json",
+      "size": 8407,
+      "sha256": "354360eee77fb643ac21a148e937b7330c03e901385359685f67595b92414c35",
+      "category": "Metrics",
+      "task": "task014"
+    },
+    {
+      "path": "results/task014/metrics/calibrated_metrics.json",
+      "size": 5531,
+      "sha256": "b17cc82306e192e591ca3932491e37e674d727a609feab0b06d2de88e6df1934",
+      "category": "Metrics",
+      "task": "task014"
+    },
+    {
+      "path": "results/task014/predictions/sample_01_calibrated_prediction.json",
+      "size": 18111,
+      "sha256": "50388affabca9bce7a9283b6767938a00d5945c0c6e962b3e8a22e0ad0f4871c",
+      "category": "Metrics",
+      "task": "task014"
+    },
+    {
+      "path": "results/task014/predictions/sample_02_calibrated_prediction.json",
+      "size": 18033,
+      "sha256": "64cc772051ccf47ac252f0cbd6c1f8850a6f58369d729173b4b99516f38d05e8",
+      "category": "Metrics",
+      "task": "task014"
+    },
+    {
+      "path": "results/task015/acceptance.json",
+      "size": 4871,
+      "sha256": "ddae64a566bcd1ad2adafb34403328f0693359429f1c844122d3020d66351e36",
+      "category": "Metrics",
       "task": "task015"
+    },
+    {
+      "path": "results/task015/metrics/inference_metrics.json",
+      "size": 814,
+      "sha256": "7713e9de8393bb62d67dc4eb8878ed407412b82a17b6ea8b5b4ec66747fd890e",
+      "category": "Metrics",
+      "task": "task015"
+    },
+    {
+      "path": "results/task015/records/test_acceptance_rec.json",
+      "size": 6011,
+      "sha256": "dcf661aa1a0d98107bf2116cf9b4ec0c08f7e462ba73869a2c55736d49006176",
+      "category": "Metrics",
+      "task": "task015"
+    },
+    {
+      "path": "results/task016/acceptance.json",
+      "size": 3375,
+      "sha256": "0ecdeda8a92f85c4c0a975cd074848be19d59a7f49b785343e598abc5b88ea51",
+      "category": "Metrics",
+      "task": "task016"
+    },
+    {
+      "path": "results/task016/metrics/action_statistics.json",
+      "size": 8527,
+      "sha256": "a3193d91b35d43c2aeef5fbded96a13066dbd0ecd0f589c391a465b003761edc",
+      "category": "Metrics",
+      "task": "task016"
+    },
+    {
+      "path": "results/task016/metrics/system_performance.json",
+      "size": 805,
+      "sha256": "1e02ff549256aac71c28f0bf09607ac517c42c079f3fc1efaa3673330e642d28",
+      "category": "Metrics",
+      "task": "task016"
+    },
+    {
+      "path": "results/task016/records/sample_01_record.json",
+      "size": 35293,
+      "sha256": "b331e0405f886383d16c27e9276d07e16cea5ccc2f1dd188c7436ff1ffc59a4a",
+      "category": "Metrics",
+      "task": "task016"
+    },
+    {
+      "path": "results/task016/records/sample_02_record.json",
+      "size": 35102,
+      "sha256": "fcf319f5992d07046cb3d36d20009c561fddd4600a5aa9195635582d023da321",
+      "category": "Metrics",
+      "task": "task016"
+    },
+    {
+      "path": "results/task016/records/sample_03_record.json",
+      "size": 35273,
+      "sha256": "807f1e54034ca74a602ccdbcceb11f95595b856116f355db3cc429623d64da00",
+      "category": "Metrics",
+      "task": "task016"
+    },
+    {
+      "path": "results/task016/records/sample_04_record.json",
+      "size": 35280,
+      "sha256": "2053add8c8631783e55bffb0f53644d4f73f0833bbdae9e1d3c7432386e3db64",
+      "category": "Metrics",
+      "task": "task016"
+    },
+    {
+      "path": "results/task017/acceptance.json",
+      "size": 3910,
+      "sha256": "447da818e2a9a1ab6eb9137a8fc89ce71dc1ec0837cf868f7191de7b43206200",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/metrics/closed_loop_metrics.json",
+      "size": 2290,
+      "sha256": "49b0b3e27ad51b6c4645b9848c1c69fb24906580917ff6bedfadf3de6cdade89",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/metrics/episodes.json",
+      "size": 5289,
+      "sha256": "55ada229eabce7ebb0a6419b843ff0fdc343158fe7c76e6de6f29ab228b6ff7b",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/metrics/manipulation.json",
+      "size": 5691,
+      "sha256": "97455d972faf3eb700ea24070f1d5c7ed4e8e62200a6dc962f19f14e2b74f366",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/metrics/model.json",
+      "size": 298,
+      "sha256": "0df8e39ecd2c2a52d4b3c18be773b226d1ee45d7e659d2ee600add3b08f6cc32",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/records/episode_00_seed_142/summary.json",
+      "size": 1478,
+      "sha256": "21fefdb4ef62e13791f6e8394110504615a211afc57bb0dd22e3f60fc24c3097",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/records/episode_01_seed_143/summary.json",
+      "size": 1477,
+      "sha256": "54b09d277d26b6f33fb3efba51a35ff1f970160c53e607b2002e59fc2ed60954",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/records/episode_02_seed_144/summary.json",
+      "size": 1478,
+      "sha256": "37709d9e77207d96bf56c40de19890fa49f105191694e6787db9864b2eb9ab5a",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/records/run_seed_100.json",
+      "size": 83399,
+      "sha256": "b7b70e019fa3611aca4cd2da993132ccd39254c0a24ea8d767118380d4b5c60f",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/records/run_seed_2026.json",
+      "size": 83450,
+      "sha256": "c0fd9f5b7886031f604f04aa217709c61e6b24e1ce3513aabf06654254bde71b",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task017/records/run_seed_42.json",
+      "size": 83406,
+      "sha256": "be7ae946fe723f3885f323a4e2c4f9a081c7e09828a82830e4691329ef8633f8",
+      "category": "Metrics",
+      "task": "task017"
+    },
+    {
+      "path": "results/task018/acceptance.json",
+      "size": 6692,
+      "sha256": "d30baff7a70773b1254269221bc6e01fc641562c6d1c61fa441e7924248b9c26",
+      "category": "Metrics",
+      "task": "task018"
+    },
+    {
+      "path": "results/task018/metrics/grasp_release_audit.json",
+      "size": 7455,
+      "sha256": "97f649cc936b0d252f0edec773c8949c005c4afcd636aa26502c20f898257fcf",
+      "category": "Metrics",
+      "task": "task018"
+    },
+    {
+      "path": "results/task019/acceptance.json",
+      "size": 1592,
+      "sha256": "12c4eeb7918eb01bc6021191aee9c621706d48110486e200980228403fa98b37",
+      "category": "Metrics",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/evidence/step106_dual_view_video_frame.png",
+      "size": 102400,
+      "sha256": "bcf961a579eda446bba5451062c999e48ae2992c970af6a5fe1f20ac9d567ed7",
+      "category": "Evidence",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/evidence/step223_terminal_video_frame.png",
+      "size": 90112,
+      "sha256": "d03d0ecd335122a4a754ba178670792c5345a3f20d551d3932d75667a1b82ac0",
+      "category": "Evidence",
+      "task": "Task 019"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "results/task019/metrics/gui_review.json",
+      "size": 1578,
+      "sha256": "93a15a567dabc9b8f9803f561c5e8b13ebe0f553b746e1280a354cc72189a664"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "results/task019/metrics/gui_tests.log",
+      "size": 1190,
+      "sha256": "eed11dc2d2464c570dab0df363086afdbae5d8536d10c6532cd5e05fe9034a03"
+    },
+    {
+      "category": "Evidence",
+      "task": "Task 019",
+      "path": "results/task019/metrics/source_files.json",
+      "size": 1290,
+      "sha256": "c47c37411836f5e170d0d56c21da29fb14c4233f696ae69dad8105f8deff462d"
+    },
+    {
+      "path": "results/task019/metrics/video_metadata.json",
+      "size": 4342,
+      "sha256": "423d40e112c3e8574b136d5fc9ee3d6cd4c2c97257e7ce7daea909020809c29d",
+      "category": "Metrics",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/screenshots/01_offline_mode_single_source.png",
+      "size": 143360,
+      "sha256": "21140df05fa408588ebb436ac8831b8a7e7736442342954d7849758fcc77b1fc",
+      "category": "Evidence",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/screenshots/02_replay_step49_mug1_grasp.png",
+      "size": 167936,
+      "sha256": "23f7b9812a79571498e695975675a65689c9360b8cd71d9f0175290ed7a2933e",
+      "category": "Evidence",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/screenshots/03_replay_step97_open_cmd.png",
+      "size": 167936,
+      "sha256": "03c3d68fe8e5d0fc302eb423dbb33e44dbf38dc2ed6af9fde90b81d9c1d2478a",
+      "category": "Evidence",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/screenshots/04_replay_step106_release_verified.png",
+      "size": 167936,
+      "sha256": "62c276751ec4e37c0334899d81817efd11896c50c76f8e5c411a1272f18cb4cc",
+      "category": "Evidence",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/screenshots/05_replay_step176_mug2_grasp.png",
+      "size": 167936,
+      "sha256": "5f62062c0a51f13893ae910f9920c770eef0baec5ae6f926797fc27317a1a8fd",
+      "category": "Evidence",
+      "task": "Task 019"
+    },
+    {
+      "path": "results/task019/screenshots/06_replay_step223_terminal_success.png",
+      "size": 167936,
+      "sha256": "02e312b4fbd617357aac5f0703339b161f7f48a75107f3a6c53f7b4e95ac5e61",
+      "category": "Evidence",
+      "task": "Task 019"
     },
     {
       "path": "tasks/templates/task_template.md",
@@ -740,4 +803,4 @@
       "task": "General"
     }
   ]
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}

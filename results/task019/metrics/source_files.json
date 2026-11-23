@@ -1,0 +1,41 @@
+{
+  "source_commit": null,
+  "reason": "Local Workbench source directory has no Git metadata",
+  "files": [
+    {
+      "path": "workbench/ui/monitor_panel.py",
+      "size": 42830,
+      "sha256": "0a5f6dd90879388386c235b3ced97940219e91cea07492235a748e7fd3f35c07"
+    },
+    {
+      "path": "workbench/ui/main_window.py",
+      "size": 18425,
+      "sha256": "d0284fa9fa7707ad299c57f818ba8c21e98bfa80e3bdf89c28054586bc2209d4"
+    },
+    {
+      "path": "workbench/ui/input_panel.py",
+      "size": 9041,
+      "sha256": "1bb57bb7099ace8c3c686a60ab79fc06e2ede8662aa136995ea1c3045841a182"
+    },
+    {
+      "path": "workbench/tests/test_ui_headless.py",
+      "size": 12015,
+      "sha256": "becf4b897a37425c88af927f0476ae3380ab3f2d8f6a6a07a801b2a41244268d"
+    },
+    {
+      "path": "workbench/tests/capture_task019_review.py",
+      "size": 2832,
+      "sha256": "48bcf88f53c8d2207bf0393b8fb77b3ccd9d628b6572ea198253b9bb51f5faf6"
+    },
+    {
+      "path": "workbench/tests/generate_task019_artifacts.py",
+      "size": 25779,
+      "sha256": "080de6bb3b6af1f4253799e6c826f5fa1c44cf7637837020ae87c1fb673d43e4"
+    },
+    {
+      "path": "scripts/audit_videos_task019.py",
+      "size": 3944,
+      "sha256": "d4e99d647249087bf2dadb4e2d1d6af60f37887147a84afd78b7a30dd74f89b7"
+    }
+  ]
+}

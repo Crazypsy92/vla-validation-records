@@ -1,0 +1,83 @@
+{
+  "desktop": "WSLg on Windows",
+  "capture_method": "mapped Tk window pixels",
+  "play_pause_passed": true,
+  "steps": [
+    {
+      "step": 49,
+      "state_table": [
+        "-0.0993",
+        "-0.1316",
+        "0.5117",
+        "3.0331",
+        "0.5253",
+        "-0.0498",
+        "0.0044",
+        "-0.0039"
+      ],
+      "official_success": false,
+      "image": "review_seed142_step049.png"
+    },
+    {
+      "step": 97,
+      "state_table": [
+        "-0.0074",
+        "-0.2847",
+        "0.5247",
+        "3.1912",
+        "0.3494",
+        "0.0362",
+        "0.0017",
+        "-0.0072"
+      ],
+      "official_success": false,
+      "image": "review_seed142_step097.png"
+    },
+    {
+      "step": 106,
+      "state_table": [
+        "-0.0051",
+        "-0.2859",
+        "0.5402",
+        "3.1724",
+        "0.3280",
+        "0.0201",
+        "0.0359",
+        "-0.0358"
+      ],
+      "official_success": false,
+      "image": "review_seed142_step106.png"
+    },
+    {
+      "step": 176,
+      "state_table": [
+        "-0.0506",
+        "0.1321",
+        "0.5096",
+        "3.0747",
+        "0.0456",
+        "0.1273",
+        "0.0115",
+        "-0.0097"
+      ],
+      "official_success": false,
+      "image": "review_seed142_step176.png"
+    },
+    {
+      "step": 223,
+      "state_table": [
+        "-0.0089",
+        "0.3566",
+        "0.5227",
+        "3.0667",
+        "-0.0846",
+        "0.1604",
+        "0.0062",
+        "-0.0049"
+      ],
+      "official_success": true,
+      "image": "review_seed142_step223.png"
+    }
+  ],
+  "exit_code": 0
+}
