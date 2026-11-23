@@ -1,0 +1,155 @@
+[
+  {
+    "episode_id": "episode_00_seed_142",
+    "seed": 142,
+    "task_success": true,
+    "inference_count": 8,
+    "environment_steps": 223,
+    "verified_controller_goals": 8,
+    "first_success_step": 223,
+    "terminal_gripper_command": 1.0,
+    "out_of_nominal_box_steps": 223,
+    "two_views_changed_between_chunks": true,
+    "gripper_gap_m": {
+      "initial": 0.07744557019816324,
+      "min": 0.006229347164885598,
+      "final": 0.011056820706892616
+    },
+    "objects": {
+      "porcelain_mug_1": {
+        "target": "plate_1",
+        "initial_gripper_to_mug_center_m": 0.29306808961126757,
+        "min_gripper_to_mug_center_m": 0.08117587335997241,
+        "first_grasp_step": 49,
+        "grasped_steps": 44,
+        "peak_lift_m": 0.09474341247492635,
+        "max_horizontal_displacement_m": 0.16989107353240315,
+        "max_lift_while_grasped_m": 0.09474341247492635,
+        "horizontal_displacement_while_grasped_m": 0.16954062062284578,
+        "first_open_without_grasp_after_grasp_step": 97,
+        "first_on_target_step": 94,
+        "on_target_at_end": true,
+        "grasped_at_end": false,
+        "final_mug_to_target_xy_m": 0.022887182079026087
+      },
+      "white_yellow_mug_1": {
+        "target": "plate_2",
+        "initial_gripper_to_mug_center_m": 0.26659309418001415,
+        "min_gripper_to_mug_center_m": 0.09249033842244234,
+        "first_grasp_step": 176,
+        "grasped_steps": 48,
+        "peak_lift_m": 0.09665567339515879,
+        "max_horizontal_displacement_m": 0.22290083241543024,
+        "max_lift_while_grasped_m": 0.09665567339515879,
+        "horizontal_displacement_while_grasped_m": 0.22281397115470652,
+        "first_open_without_grasp_after_grasp_step": null,
+        "first_on_target_step": 223,
+        "on_target_at_end": true,
+        "grasped_at_end": true,
+        "final_mug_to_target_xy_m": 0.02797087993780055
+      }
+    }
+  },
+  {
+    "episode_id": "episode_01_seed_143",
+    "seed": 143,
+    "task_success": true,
+    "inference_count": 8,
+    "environment_steps": 222,
+    "verified_controller_goals": 8,
+    "first_success_step": 222,
+    "terminal_gripper_command": 1.0,
+    "out_of_nominal_box_steps": 222,
+    "two_views_changed_between_chunks": true,
+    "gripper_gap_m": {
+      "initial": 0.07744554797900025,
+      "min": 0.010738747666312026,
+      "final": 0.01136652009992169
+    },
+    "objects": {
+      "porcelain_mug_1": {
+        "target": "plate_1",
+        "initial_gripper_to_mug_center_m": 0.29965454639412953,
+        "min_gripper_to_mug_center_m": 0.08906668601731617,
+        "first_grasp_step": 51,
+        "grasped_steps": 6,
+        "peak_lift_m": 0.09604238876852778,
+        "max_horizontal_displacement_m": 0.16068924706923432,
+        "max_lift_while_grasped_m": 0.03377299339799866,
+        "horizontal_displacement_while_grasped_m": 0.13869367232600835,
+        "first_open_without_grasp_after_grasp_step": 102,
+        "first_on_target_step": 94,
+        "on_target_at_end": true,
+        "grasped_at_end": false,
+        "final_mug_to_target_xy_m": 0.001198858901819497
+      },
+      "white_yellow_mug_1": {
+        "target": "plate_2",
+        "initial_gripper_to_mug_center_m": 0.2583647982095409,
+        "min_gripper_to_mug_center_m": 0.09123303246072391,
+        "first_grasp_step": 182,
+        "grasped_steps": 40,
+        "peak_lift_m": 0.0906427279855977,
+        "max_horizontal_displacement_m": 0.1888738669621877,
+        "max_lift_while_grasped_m": 0.0906427279855977,
+        "horizontal_displacement_while_grasped_m": 0.19010933217813875,
+        "first_open_without_grasp_after_grasp_step": null,
+        "first_on_target_step": 222,
+        "on_target_at_end": true,
+        "grasped_at_end": false,
+        "final_mug_to_target_xy_m": 0.02451428356210741
+      }
+    }
+  },
+  {
+    "episode_id": "episode_02_seed_144",
+    "seed": 144,
+    "task_success": true,
+    "inference_count": 8,
+    "environment_steps": 219,
+    "verified_controller_goals": 8,
+    "first_success_step": 219,
+    "terminal_gripper_command": 1.0,
+    "out_of_nominal_box_steps": 219,
+    "two_views_changed_between_chunks": true,
+    "gripper_gap_m": {
+      "initial": 0.07744558229664494,
+      "min": 0.010967830891810823,
+      "final": 0.011253953544654697
+    },
+    "objects": {
+      "porcelain_mug_1": {
+        "target": "plate_1",
+        "initial_gripper_to_mug_center_m": 0.28975014880385086,
+        "min_gripper_to_mug_center_m": 0.09802422430777631,
+        "first_grasp_step": null,
+        "grasped_steps": 0,
+        "peak_lift_m": 0.09989828204222506,
+        "max_horizontal_displacement_m": 0.19060798751637809,
+        "max_lift_while_grasped_m": null,
+        "horizontal_displacement_while_grasped_m": null,
+        "first_open_without_grasp_after_grasp_step": null,
+        "first_on_target_step": 97,
+        "on_target_at_end": true,
+        "grasped_at_end": false,
+        "final_mug_to_target_xy_m": 0.0022919437055290534
+      },
+      "white_yellow_mug_1": {
+        "target": "plate_2",
+        "initial_gripper_to_mug_center_m": 0.25196663609130915,
+        "min_gripper_to_mug_center_m": 0.0891044068458423,
+        "first_grasp_step": 183,
+        "grasped_steps": 37,
+        "peak_lift_m": 0.08211541010483125,
+        "max_horizontal_displacement_m": 0.16732280879943187,
+        "max_lift_while_grasped_m": 0.08211541010483125,
+        "horizontal_displacement_while_grasped_m": 0.16658943307158322,
+        "first_open_without_grasp_after_grasp_step": null,
+        "first_on_target_step": 219,
+        "on_target_at_end": true,
+        "grasped_at_end": true,
+        "final_mug_to_target_xy_m": 0.017959281424701653
+      }
+    }
+  }
+]

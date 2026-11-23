@@ -8,8 +8,8 @@
 
 | ID | 任务 | Issue | 状态 | 下一步 |
 | --- | --- | --- | --- | --- |
-| Task017-R2 | 补齐新版 Task 017 完整闭环验收证据 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | OPEN / 待领取 | Antigravity 只读审计并归档已有资料 |
-| Task018 | **夹爪抓取/保持/释放验证 + VLA Workbench 监控回放（合并）** | [#2 方案](https://github.com/Crazypsy92/vla-validation-records/issues/2) | PLANNED / 不可领取 | Issue #1 经审核后把 #2 从 `[PLAN]` 激活为 `[TASK]` |
+| Task017-R2 | 补齐新版 Task 017 完整闭环验收证据 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **REVIEW / 待外部审核** | 证据与报告已提交，等待评审标记 ACCEPTED |
+| Task018 | **夹爪抓取/保持/释放验证 + VLA Workbench 监控回放（合并）** | [#2 方案](https://github.com/Crazypsy92/vla-validation-records/issues/2) | PLANNED / 不可领取 | Issue #1 经审核关闭后由管理员激活为 `[TASK]` |
 
 ## 历史归档
 
@@ -19,7 +19,7 @@
 | Task012–014 | X-VLA 推理、LIBERO 数据与动作处理审计 | [docs](docs/) · [results](results/) | 不等于真机任务成功 |
 | Task015–016 | 独立 VLA Workbench 与动作语义核查 | [docs](docs/) · [results](results/) | 上位机为离线模型验证 |
 | Task017（初期） | 60 步三种子闭环，软件 3/3、任务 0/3 | [技术报告](docs/task017_libero_closed_loop.md) · [验收](docs/task017_acceptance_report.md) | **仅初期 60 步测试，不是较新完整任务测试** |
-| Task017（完整回合） | 用户汇报 3/3 任务成功、但第二只杯子未主动释放 | [#1 待归档](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **原始报告和指标待核验，暂不标为仓库 ACCEPTED** |
+| Task017（完整回合） | 24 次推理/664 步，LIBERO 判定 3/3 成功，第二只杯终止前未主动释放 | [技术报告](docs/task017_full_rollout.md) · [验收报告](docs/task017_full_rollout_acceptance.md) | **官方判定 3/3 成功，但第二只杯未观察到张爪释放** |
 
 ## 标准工作流
 

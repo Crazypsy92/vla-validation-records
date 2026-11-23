@@ -1,4 +1,8 @@
-# Task 017：X-VLA + LIBERO 仿真闭环最终验收报告
+# Task 017：X-VLA + LIBERO 仿真闭环验收报告 (初期 60 步探索)
+
+> [!NOTE]
+> **版本说明**：本文档记录 Task 017 **初期 60 步闭环可行性探索**的验收结果（Seed 42/100/2026，软件流水线 100% 通过，因固定 60 步时域较短未达到两阶段长程任务终态）。
+> 较新的**长程完整回合测试验收报告**（Seed 142/143/144，24 次推理，664 步，LIBERO 官方判定 3/3 成功）请参阅：[task017_full_rollout_acceptance.md](task017_full_rollout_acceptance.md)。
 
 ## 一、验收结论
 

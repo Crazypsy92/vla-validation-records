@@ -1,0 +1,189 @@
+{
+  "requested_seeds": [
+    142,
+    143,
+    144
+  ],
+  "episodes": [
+    {
+      "episode_id": "episode_00_seed_142",
+      "seed": 142,
+      "initial_state_index": 0,
+      "suite": "libero_10",
+      "task_id": 4,
+      "source_sample": "sample_01",
+      "manifest_task_index": 0,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "inference_count": 8,
+      "environment_steps": 223,
+      "gripper_transitions": [
+        {
+          "step": 1,
+          "command": -1
+        },
+        {
+          "step": 39,
+          "command": 1
+        },
+        {
+          "step": 97,
+          "command": -1
+        },
+        {
+          "step": 168,
+          "command": 1
+        }
+      ],
+      "task_success": true,
+      "verified_controller_goals": 8,
+      "replanned_from_changed_observation": true,
+      "max_steps": 520,
+      "settling_steps": 10,
+      "control_freq": 20,
+      "initial_state_sha256": "4365b3c5a82da7f8818c11ef5fd494c4890c17c4c3e27948dc290a9ac2f08131",
+      "bddl": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+      "initial_observation": {
+        "workspace": "0000_workspace.png",
+        "wrist": "0000_wrist.png"
+      },
+      "initial_state_8d": [
+        -0.05271029844880104,
+        -0.011231588199734688,
+        0.6868599653244019,
+        3.140974998474121,
+        -0.0012349366443231702,
+        -0.09007953107357025,
+        0.038724273443222046,
+        -0.038721296936273575
+      ],
+      "video": "rollout.mp4",
+      "status": "complete",
+      "final_observation": {
+        "workspace": "0223_workspace.png",
+        "wrist": "0223_wrist.png"
+      },
+      "failure_reason": null
+    },
+    {
+      "episode_id": "episode_01_seed_143",
+      "seed": 143,
+      "initial_state_index": 1,
+      "suite": "libero_10",
+      "task_id": 4,
+      "source_sample": "sample_01",
+      "manifest_task_index": 0,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "inference_count": 8,
+      "environment_steps": 222,
+      "gripper_transitions": [
+        {
+          "step": 1,
+          "command": -1
+        },
+        {
+          "step": 42,
+          "command": 1
+        },
+        {
+          "step": 102,
+          "command": -1
+        },
+        {
+          "step": 173,
+          "command": 1
+        }
+      ],
+      "task_success": true,
+      "verified_controller_goals": 8,
+      "replanned_from_changed_observation": true,
+      "max_steps": 520,
+      "settling_steps": 10,
+      "control_freq": 20,
+      "initial_state_sha256": "b55dd89278457f3c00d7b4d871dc8d64e84534e5a119dd35a53e5a152c831d6a",
+      "bddl": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+      "initial_observation": {
+        "workspace": "0000_workspace.png",
+        "wrist": "0000_wrist.png"
+      },
+      "initial_state_8d": [
+        -0.06055605411529541,
+        -0.009462887421250343,
+        0.6800997257232666,
+        3.139768362045288,
+        -0.0004107971617486328,
+        -0.08803761750459671,
+        0.03872102499008179,
+        -0.03872452303767204
+      ],
+      "video": "rollout.mp4",
+      "status": "complete",
+      "final_observation": {
+        "workspace": "0222_workspace.png",
+        "wrist": "0222_wrist.png"
+      },
+      "failure_reason": null
+    },
+    {
+      "episode_id": "episode_02_seed_144",
+      "seed": 144,
+      "initial_state_index": 2,
+      "suite": "libero_10",
+      "task_id": 4,
+      "source_sample": "sample_01",
+      "manifest_task_index": 0,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "inference_count": 8,
+      "environment_steps": 219,
+      "gripper_transitions": [
+        {
+          "step": 1,
+          "command": -1
+        },
+        {
+          "step": 38,
+          "command": 1
+        },
+        {
+          "step": 101,
+          "command": -1
+        },
+        {
+          "step": 173,
+          "command": 1
+        }
+      ],
+      "task_success": true,
+      "verified_controller_goals": 8,
+      "replanned_from_changed_observation": true,
+      "max_steps": 520,
+      "settling_steps": 10,
+      "control_freq": 20,
+      "initial_state_sha256": "1d2fdd615bb32a097ad2781dd5e9203104555e54521dd9bce6eacbb5bf718e33",
+      "bddl": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+      "initial_observation": {
+        "workspace": "0000_workspace.png",
+        "wrist": "0000_wrist.png"
+      },
+      "initial_state_8d": [
+        -0.05867784842848778,
+        0.003530625021085143,
+        0.6689779758453369,
+        3.1406874656677246,
+        0.00018536373681854457,
+        -0.09095355868339539,
+        0.03872375562787056,
+        -0.038721825927495956
+      ],
+      "video": "rollout.mp4",
+      "status": "complete",
+      "final_observation": {
+        "workspace": "0219_workspace.png",
+        "wrist": "0219_wrist.png"
+      },
+      "failure_reason": null
+    }
+  ],
+  "completed_episodes": 3,
+  "successes": 3,
+  "success_rate": 1.0
+}
