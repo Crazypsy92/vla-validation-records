@@ -1,0 +1,198 @@
+{
+  "task": "Task020-R1 Phase 4",
+  "status": "BLOCKED",
+  "attempt_id": "phase4_seed_203_1795437286005880657",
+  "seed": 203,
+  "checks": [
+    {
+      "id": "P4-01",
+      "status": "PASS",
+      "evidence": "历史 OOM、Windows/WSL/Swap、运行前预算和门禁边界测试已记录。",
+      "paths": [
+        "metrics/budget.json",
+        "metrics/wsl_baseline.json",
+        "metrics/windows_baseline.json",
+        "logs/gate_tests.log"
+      ]
+    },
+    {
+      "id": "P4-02",
+      "status": "PASS",
+      "evidence": "Workbench 正式配置和官方 Reset 从独立 Attempt 查询。",
+      "paths": [
+        "runs/phase4_seed_203_1795437286005880657/launch_configuration.json",
+        "runs/phase4_seed_203_1795437286005880657/events.jsonl",
+        "screenshots/formal_confirmation.png"
+      ]
+    },
+    {
+      "id": "P4-03",
+      "status": "BLOCKED_RESOURCE",
+      "evidence": "RESOURCE_PRESSURE，191 步，终止原因为 resource_pressure。",
+      "paths": [
+        "runs/phase4_seed_203_1795437286005880657/summary.json"
+      ]
+    },
+    {
+      "id": "P4-04",
+      "status": "PASS",
+      "evidence": "前向 7 次，每块按时间、当前观测、Plan、Command 和反馈核对。",
+      "paths": [
+        "runs/phase4_seed_203_1795437286005880657/events.jsonl",
+        "metrics/summary.json",
+        "logs/verification.log"
+      ]
+    },
+    {
+      "id": "P4-05",
+      "status": "PASS",
+      "evidence": "动作、实际夹爪开度、左右接触、书本状态、物理释放和官方结果分开记录。",
+      "paths": [
+        "metrics/summary.json"
+      ]
+    },
+    {
+      "id": "P4-06",
+      "status": "PASS",
+      "evidence": "Workbench 按唯一 Attempt ID 回放；视频和解码验证可查。",
+      "paths": [
+        "metrics/summary.json",
+        "screenshots/replay_final.png"
+      ]
+    },
+    {
+      "id": "P4-07",
+      "status": "PASS",
+      "evidence": "采样覆盖加载、各块、退出和静置；保护日志及 Worker 生命周期已保存。",
+      "paths": [
+        "metrics/lifecycle.jsonl",
+        "runs/phase4_seed_203_1795437286005880657/formal_gate_worker.jsonl"
+      ]
+    },
+    {
+      "id": "P4-08",
+      "status": "PASS",
+      "evidence": "290 份已保存文件的 SHA256 前后一致。",
+      "paths": [
+        "metrics/history_before.json",
+        "metrics/history_after.json"
+      ]
+    },
+    {
+      "id": "P4-09",
+      "status": "PASS",
+      "evidence": "分别给出 R1 和原始 Task020 的逐项总结。",
+      "paths": [
+        "acceptance.json"
+      ]
+    }
+  ],
+  "task020_r1": [
+    {
+      "id": "R1-01",
+      "status": "PASS",
+      "evidence": "Windows 与 WSL 基线、完整模型峰值和历史 OOM 已记录。"
+    },
+    {
+      "id": "R1-02",
+      "status": "PASS",
+      "evidence": "单一模型 Worker、退出进程清点和静置复测。"
+    },
+    {
+      "id": "R1-03",
+      "status": "PASS",
+      "evidence": "现有联合硬保护和正式 Swap 门禁经过测试，记录每次低余量评估。"
+    },
+    {
+      "id": "R1-04",
+      "status": "PASS",
+      "evidence": "Phase 3 复验真实画面和 Step，Phase 4 正式沿用同一界面。"
+    },
+    {
+      "id": "R1-05",
+      "status": "PASS",
+      "evidence": "沿用 Phase 1 已验 Seed 201/202 回放及 Next Run Seed。"
+    },
+    {
+      "id": "R1-06",
+      "status": "BLOCKED_RESOURCE",
+      "evidence": "只尝试一次新的官方 Seed 203，从 Reset 到记录终点。"
+    },
+    {
+      "id": "R1-07",
+      "status": "PASS",
+      "evidence": "检查点、Processor、控制配置及历史文件的哈希核验。"
+    },
+    {
+      "id": "R1-08",
+      "status": "PASS",
+      "evidence": "历史列表区分正式成功、未成功及中断，保留真实录像。"
+    },
+    {
+      "id": "R1-09",
+      "status": "PASS",
+      "evidence": "阶段报告、真实截图、JSON、GitHub 清单、测试命令与日志归档。"
+    }
+  ],
+  "original_task020": [
+    {
+      "id": "T01",
+      "status": "PASS",
+      "evidence": "预检确认官方 BDDL、20 Hz、双 RGB、8D 状态和 7D OSC；正式前向、控制通过。"
+    },
+    {
+      "id": "T02",
+      "status": "PASS",
+      "evidence": "书本试点标签提供官方 Task 5、黑色书本、收纳盒后部与种子选择。"
+    },
+    {
+      "id": "T03",
+      "status": "PASS",
+      "evidence": "种子 201 真实前向 1 次，执行 3 步，GUI 停止并保存。"
+    },
+    {
+      "id": "T04",
+      "status": "BLOCKED_RESOURCE",
+      "evidence": "201/202 已完成，本轮 Seed 203 RESOURCE_PRESSURE。"
+    },
+    {
+      "id": "T05",
+      "status": "PASS",
+      "evidence": "原始动作和后处理形状与有限值通过校验，逐步下发值和动作块一致。"
+    },
+    {
+      "id": "T06",
+      "status": "PASS",
+      "evidence": "逐步记录双侧指垫、其他夹爪接触、开度、书本位置与姿态。"
+    },
+    {
+      "id": "T07",
+      "status": "PASS",
+      "evidence": "释放规划、实际张开指令和物理释放分别记录。"
+    },
+    {
+      "id": "T08",
+      "status": "PASS",
+      "evidence": "从实际 WSLg 窗口捕获仿真双视角和同一步反馈。"
+    },
+    {
+      "id": "T09",
+      "status": "PARTIAL",
+      "evidence": "正式回合与旧中断数据均保留，已验证可播放的回放。"
+    },
+    {
+      "id": "T10",
+      "status": "PARTIAL",
+      "evidence": "新旧记录独立，归档视频哈希、资源和执行证据。"
+    }
+  ],
+  "overall": "INCOMPLETE_RESOURCE",
+  "source_diff_sha256": "b6b3a213aadd1f81f240a7831c6cf58948e9af2e6709c0ac783ed5e7caa1ee2a",
+  "executed_source_diff_sha256": "4227cad8f86985881e7e9cc9cd22326ff01b6fb11bf2f3577612c6bb7f0685e6",
+  "regression": {
+    "existing_tests": 11,
+    "formal_gate_tests": 6,
+    "evidence_exit_code": 0,
+    "gui_replay_exit_code": 0
+  }
+}

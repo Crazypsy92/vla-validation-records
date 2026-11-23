@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修），以及 Task020-R1 Phase 2、Phase 3
-- **白名单发布文件总数**：162 个
-- **总归档体积**：9172.96 KB
+- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修），以及 Task020-R1 Phase 2、Phase 3、Phase 4
+- **白名单发布文件总数**：208 个
+- **总归档体积**：13221.03 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 162 项）
+## 二、白名单发布文件清单（共 208 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **General** | `README.md` | 13762 | `f6547947a5c9296b...` | Config | Task020-R1 Phase 3 |
-| **General** | `TASKS.md` | 4552 | `6e622f48845327dd...` | Config | Task020-R1 Phase 3 |
+| **General** | `README.md` | 13779 | `cdf0920a5e4c1206...` | Config | Task020-R1 Phase 4 |
+| **General** | `TASKS.md` | 4554 | `3951352021698489...` | Config | Task020-R1 Phase 4 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -185,6 +185,54 @@
 | **Task 020** | `results/task020/r1/phase3/screenshots/replay_step_000.png` | 266097 | `4bb8fe7812148b47...` | Evidence | Task020-R1 Phase 3 |
 | **Task 020** | `results/task020/r1/phase3/screenshots/replay_step_090.png` | 284579 | `6f8f78d08375bcc1...` | Evidence | Task020-R1 Phase 3 |
 | **Task 020** | `results/task020/r1/phase3/screenshots/worker_exited.png` | 299760 | `f6f0ed4ecd52a879...` | Evidence | Task020-R1 Phase 3 |
+
+| **Task 020** | `docs/task020_r1_phase4_seed203_results.md` | 7048 | `9b29851bdeaf07c2...` | Report | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/acceptance.json` | 5912 | `a93dc2f77d48373e...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/logs/gate_tests.log` | 568 | `5f5ced35c21f8f02...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/logs/monitor.log` | 358 | `67db556cc9c56e0d...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/logs/monitor_rejoined.log` | 137 | `f08dfb6aafcfbbcc...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/logs/regression.log` | 3695 | `099f1d93f78a5d40...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/logs/replay_check.log` | 359 | `9d39b19259d1e36a...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/logs/runs_phase4_seed_203_1795437286005880657.log` | 748 | `6b79c1e9d2ce909b...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/logs/verification.log` | 654 | `3a9921ebd8f29b94...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/budget.json` | 405 | `6a286c65e52e32a1...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/history_after.json` | 37388 | `271756220eaa5c2c...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/history_before.json` | 37388 | `271756220eaa5c2c...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/lifecycle.jsonl` | 150308 | `72b9b4599fc81aa5...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/summary.json` | 22377 | `80391fea641c5374...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/windows_baseline.json` | 121 | `787be0167215df98...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/wsl_baseline.json` | 430 | `7f7ff1d2b8d0eb79...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/metrics/wsl_early_worker.json` | 714 | `0860abe57f207616...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_000.json` | 29877 | `8c09027ddbb87fa9...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_001.json` | 29791 | `b1867f538f3f0223...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_002.json` | 29705 | `36cc76880d105736...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_003.json` | 29593 | `95a41dae297c4912...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_004.json` | 29634 | `72a9492480c52e60...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_005.json` | 29652 | `510e78e6798d8899...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_006.json` | 29673 | `64aa8f8b12bcac3c...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/configuration.json` | 976 | `9f63d96cd65cfc2d...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/events.jsonl` | 425299 | `a8dd604512d489de...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/formal_gate_gui.jsonl` | 248 | `27d46834ae28344f...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/formal_gate_worker.jsonl` | 5801 | `5df2854cc1a09513...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/launch_configuration.json` | 190 | `fee0a1d81a2c4289...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/resources_gui.jsonl` | 72561 | `3442a193d73064cd...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/resources_gui_observed_worker.jsonl` | 73702 | `dd087bea927620e2...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/resources_worker.jsonl` | 11290 | `6eb168430b79663b...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/summary.json` | 1275 | `6721a8284c2e8334...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/worker_exit_code.txt` | 2 | `9a271f2a916b0b6e...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/before_run.png` | 158132 | `5e170700efd72a53...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/finished.png` | 289826 | `4c07143ec7b31907...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/formal_confirmation.png` | 17317 | `34bc7e3eba64389f...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/live_input_step_000.png` | 285533 | `60da8b1cc08e1595...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/live_input_step_030.png` | 298016 | `bf4e608b5490fa6c...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/live_input_step_060.png` | 303143 | `822e755262ff8487...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/live_input_step_090.png` | 299589 | `1343a0f7104887a7...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/live_input_step_120.png` | 300411 | `021c7a99d4406e3e...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/live_input_step_150.png` | 296702 | `f179fb56f7e63408...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/live_input_step_180.png` | 292803 | `fadf1cd7323262be...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/replay_final.png` | 274505 | `49e3a417f7b40832...` | Evidence | Task020-R1 Phase 4 |
+| **Task 020** | `results/task020/r1/phase4/screenshots/replay_reset.png` | 261339 | `f9cda34ac20c32ff...` | Evidence | Task020-R1 Phase 4 |
+
 
 ---
 

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "./results/task020/r1/phase4/logs/monitor.py", line 9, in <module>
+    check()
+  File "./results/task020/r1/phase4/logs/preflight.py", line 27, in check
+    assert not any(p['role']=='worker' for p in current['processes'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+exit=1

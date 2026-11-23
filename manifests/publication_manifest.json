@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-23",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 162,
-  "total_size_kb": 9172.96,
+  "total_files": 208,
+  "total_size_kb": 13221.03,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 13762,
-      "sha256": "f6547947a5c9296b784fd38787dc3b68347e8912d8833c2b0bcb88a4b3c58d69",
+      "size": 13779,
+      "sha256": "cdf0920a5e4c1206c974760f3bceae70cbc7903e1e776daba41315fdc46896b3",
       "category": "Config",
       "task": "General"
     },
     {
       "path": "TASKS.md",
-      "size": 4552,
-      "sha256": "6e622f48845327ddb55915149e8b33026f9ec657ec43eb737c5df2dd688810c4",
+      "size": 4554,
+      "sha256": "3951352021698489615904b2e2f61c6aa0acb7c042fa6244b910192b9d6b97e7",
       "category": "Config",
       "task": "General"
     },
@@ -1133,6 +1133,328 @@
     },
     {
       "path": "results/task020/r1/phase3/runs/phase3_seed_201/worker_exit_code.txt",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "docs/task020_r1_phase4_seed203_results.md",
+      "category": "Report",
+      "task": "Task 020",
+      "size": 7048,
+      "sha256": "9b29851bdeaf07c23ac552ad5871edddbcdbd6ab330863d29193c9667eb1ec00"
+    },
+    {
+      "path": "results/task020/r1/phase4/acceptance.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 5912,
+      "sha256": "a93dc2f77d48373ea6432e1df4cb4436afaeb6df1c336fc19271becd7d132beb"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/budget.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 405,
+      "sha256": "6a286c65e52e32a189259f512116ef6e6cd7cd802438bec26747d654697ba49b"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/history_after.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 37388,
+      "sha256": "271756220eaa5c2c871ec7f94fc9c9fd7ee1db4a2ba90cfafc6d10c47f00545d"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/history_before.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 37388,
+      "sha256": "271756220eaa5c2c871ec7f94fc9c9fd7ee1db4a2ba90cfafc6d10c47f00545d"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/summary.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 22377,
+      "sha256": "80391fea641c53743c529ec9ca2fd04e83a63eb9181fb8456fef2d2ef9239b23"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/windows_baseline.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 121,
+      "sha256": "787be0167215df988b0e0c8bafee5835618e8f33cf80d6c62d440eb3acebc8b5"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/wsl_baseline.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 430,
+      "sha256": "7f7ff1d2b8d0eb794b8e26922351b525d3b7e1e1190e7d58863ee55e91df3170"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/wsl_early_worker.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 714,
+      "sha256": "0860abe57f207616981f5b843c884882c8ba50282c329cdb863bd5d048dd5f6c"
+    },
+    {
+      "path": "results/task020/r1/phase4/metrics/lifecycle.jsonl",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 150308,
+      "sha256": "72b9b4599fc81aa5c8df552c65e14dce5ae1940769a57ff16f7e400127871319"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/before_run.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 158132,
+      "sha256": "5e170700efd72a535db907501f298cc1e8ad9bbc68f17051df621769375cccb2"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/finished.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 289826,
+      "sha256": "4c07143ec7b3190778e6ebd59e238eb53f523eccfe89558c9a452d490eef9630"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/formal_confirmation.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 17317,
+      "sha256": "34bc7e3eba64389f63acd243dd7469a8df3fd596c8f3a6f6477e8cbdc9743a44"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/live_input_step_000.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 285533,
+      "sha256": "60da8b1cc08e1595d7e18f101a0683d7e32d95e9b6d4bb899e9451ce1a400d40"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/live_input_step_030.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 298016,
+      "sha256": "bf4e608b5490fa6c8ab8de9df16633a233e9aa8d0bc170af0068628f316d978f"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/live_input_step_060.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 303143,
+      "sha256": "822e755262ff8487c83e0018a0037fc666f606e8fc21eb1102eca16b67b8ba28"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/live_input_step_090.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 299589,
+      "sha256": "1343a0f7104887a7295a19070e9ca29f9003623c91d529a23cef210cd0be061e"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/live_input_step_120.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 300411,
+      "sha256": "021c7a99d4406e3e7fcfd09a5e2fc457df256356344bd616195e4a808a2b52f1"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/live_input_step_150.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 296702,
+      "sha256": "f179fb56f7e63408980634f858fe43ee9cabce2ab40e032f5b1f135eb156f822"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/live_input_step_180.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 292803,
+      "sha256": "fadf1cd7323262be32488228c2f7a7735b064eebd1b36688f26ae34132c6d2bd"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/replay_final.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 274505,
+      "sha256": "49e3a417f7b408322b1226614413e2027a3b495b0b2493270cdda5ccf9e20914"
+    },
+    {
+      "path": "results/task020/r1/phase4/screenshots/replay_reset.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 261339,
+      "sha256": "f9cda34ac20c32ffcae2d2c368507c4c4292d22b2a0c3d880726a1133d17ee2f"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_000.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 29877,
+      "sha256": "8c09027ddbb87fa9c1fc572116e06740396313d2e188bf9e6bc026687a5f1e9f"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_001.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 29791,
+      "sha256": "b1867f538f3f0223000b6545f447b1c38847ab766f25f7e549d5f0cd4c600a48"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_002.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 29705,
+      "sha256": "36cc76880d10573642ff30f0908b4b963297db497dfdcde0b25f8eb058bfdac1"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_003.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 29593,
+      "sha256": "95a41dae297c4912709b27844661039bfbea49150d2b88e056684e0a7ff5ed11"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_004.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 29634,
+      "sha256": "72a9492480c52e60502fcd7f5b0ec8d092f8b441738379a3a2a5707612af90c3"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_005.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 29652,
+      "sha256": "510e78e6798d88999d85b94dc4a1c2c70757fb4b7f718b07f6a289b59f38dc52"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/chunk_006.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 29673,
+      "sha256": "64aa8f8b12bcac3cdf305f18ecf133b3434c5301492592e5fd53f10ba4cd8047"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/configuration.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 976,
+      "sha256": "9f63d96cd65cfc2d297efbe0d6fd6897bcc9a00dc3b0cf0658d8c895224980e7"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/events.jsonl",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 425299,
+      "sha256": "a8dd604512d489de33c3c529367a44b4bd9f584ef9010092230c22a1115021a6"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/formal_gate_gui.jsonl",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 248,
+      "sha256": "27d46834ae28344fdef74558cfdb4b98fcd41a1a73eaed232616e296b703ea26"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/formal_gate_worker.jsonl",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 5801,
+      "sha256": "5df2854cc1a09513dda790f0e6078dc7789fbae0b64bbbdc3346984ca3b811ea"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/launch_configuration.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 190,
+      "sha256": "fee0a1d81a2c42892605464ca977f7082c1d553bebc8339fcfcb4b1d083cbd30"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/resources_gui.jsonl",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 72561,
+      "sha256": "3442a193d73064cdc5ca450f45dbe9cd87ef935995623d940b7da388452c82c3"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/resources_gui_observed_worker.jsonl",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 73702,
+      "sha256": "dd087bea927620e21d1ee68b67016736fd7e2c43553bfbc63200aba886c769ae"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/resources_worker.jsonl",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 11290,
+      "sha256": "6eb168430b79663be1d052ebf94b6a97e6ab32967cbf09d125e0777f00b19b8a"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/summary.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 1275,
+      "sha256": "6721a8284c2e8334a3580b946677eb152e5bc1ed41e98811693b32fdfe460853"
+    },
+    {
+      "path": "results/task020/r1/phase4/logs/gate_tests.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 568,
+      "sha256": "5f5ced35c21f8f02d612a7fcd288470d3ef58755a1aa7a5255c8fdc3fc49c682"
+    },
+    {
+      "path": "results/task020/r1/phase4/logs/monitor.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 358,
+      "sha256": "67db556cc9c56e0d01a44290ac0a6e333ae22a1f9c079a9b7053e3fa093ac7ff"
+    },
+    {
+      "path": "results/task020/r1/phase4/logs/monitor_rejoined.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 137,
+      "sha256": "f08dfb6aafcfbbcce1bfba8ccc311e71f208f7cedbce9c97c50bd0d786d9b3e9"
+    },
+    {
+      "path": "results/task020/r1/phase4/logs/regression.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 3695,
+      "sha256": "099f1d93f78a5d40fe027e39ed5bae19c6be37c9e1b5d2d051ce0bd5f8da44e6"
+    },
+    {
+      "path": "results/task020/r1/phase4/logs/replay_check.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 359,
+      "sha256": "9d39b19259d1e36aab46c773d410a25035aaab6a4480b65b186566bac134cfc8"
+    },
+    {
+      "path": "results/task020/r1/phase4/logs/runs_phase4_seed_203_1795437286005880657.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 748,
+      "sha256": "6b79c1e9d2ce909b4cd7a5673b6dfc99b59cea7bad0b012cbdb0716ed253f13f"
+    },
+    {
+      "path": "results/task020/r1/phase4/logs/verification.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 654,
+      "sha256": "3a9921ebd8f29b94c8a2ba5901b2d6314a713fa359a0064d7123d73bbeda913e"
+    },
+    {
+      "path": "results/task020/r1/phase4/runs/phase4_seed_203_1795437286005880657/worker_exit_code.txt",
       "category": "Evidence",
       "task": "Task 020",
       "size": 2,

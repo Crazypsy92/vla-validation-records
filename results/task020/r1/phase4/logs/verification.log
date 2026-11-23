@@ -1,0 +1,5 @@
+[(0, 0, 30, 33.6448), (1, 30, 30, 34.4934), (2, 60, 30, 35.4735), (3, 90, 30, 32.7093), (4, 120, 30, 32.0475), (5, 150, 30, 31.7374), (6, 180, 11, 53.3357)]
+{'first_close_step': 74, 'first_left_contact_step': 81, 'first_right_contact_step': 79, 'first_bilateral_step': 81, 'first_lift_over_2cm_step': 88, 'first_target_step': None, 'first_release_after_close_step': None, 'minimum_opening_m_when_commanded_closed': 0.029520315000032736}
+Status RESOURCE_PRESSURE Steps 191 Peak RSS/PSS 6610 6605 Min WSL/Swap 571 104 Video {'frames': 192, 'fps': 20.0, 'sha256': '53df7c8bc291a0b82783aecfc76da78859afef654a98681f0f7d177b41d6ec92', 'bytes': 778617}
+
+exit=0

@@ -1,0 +1,22 @@
+{
+  "time": 1795437286.0089006,
+  "gate_sample": {
+    "pid": 90321,
+    "rss_mib": 105,
+    "pss_mib": 100,
+    "total_mib": 7798,
+    "available_mib": 6585,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 718
+  },
+  "oom_kill": 1,
+  "cgroup": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 1,
+    "oom_group_kill": 0
+  },
+  "kernel_counter_source": "pre-run /proc/vmstat and early process sample"
+}

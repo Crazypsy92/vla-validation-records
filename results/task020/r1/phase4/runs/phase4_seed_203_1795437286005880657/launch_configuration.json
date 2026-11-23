@@ -1,0 +1,9 @@
+{
+  "task_id": 5,
+  "suite": "libero_10",
+  "seed": 203,
+  "mode": "formal",
+  "initial_state_index": 2,
+  "official_max_steps": 520,
+  "attempt_id": "phase4_seed_203_1795437286005880657"
+}

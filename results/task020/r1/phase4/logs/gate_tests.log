@@ -1,0 +1,13 @@
+test_falling_low_warning (__main__.FormalGateTest.test_falling_low_warning) ... ok
+test_hard_ram_floor (__main__.FormalGateTest.test_hard_ram_floor) ... ok
+test_independent_swap_floor (__main__.FormalGateTest.test_independent_swap_floor) ... ok
+test_ordinary_capacity (__main__.FormalGateTest.test_ordinary_capacity) ... ok
+test_stable_warning (__main__.FormalGateTest.test_stable_warning) ... ok
+test_unreadable (__main__.FormalGateTest.test_unreadable) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.011s
+
+OK
+
+exit=0

@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "available_mib": 6570,
+  "swap_free_mib": 718,
+  "phase3_avail_mib": 6703,
+  "phase3_swap_mib": 753,
+  "projected_active_available_mib": 1313,
+  "projected_boundary_swap_mib": 183,
+  "projected_run_available_mib": 1296,
+  "phase3_transient_min_swap_mib": 55,
+  "method": "Measured Phase 3 minima shifted by current baseline deltas; cooperative gates remain required throughout."
+}
