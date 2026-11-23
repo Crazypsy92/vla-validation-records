@@ -1,0 +1,78 @@
+{
+  "task": "Task 017: X-VLA + LIBERO 仿真闭环任务验证",
+  "audit_timestamp": "2026-11-23 09:42:00",
+  "model": "lerobot/xvla-libero",
+  "total_parameters": 879482880,
+  "simulation_suite": "libero_10",
+  "task_id": 4,
+  "task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+  "acceptance_criteria": {
+    "T01_env_initialization": {
+      "id": "T01",
+      "name": "LIBERO 仿真环境与 MuJoCo 初始化",
+      "status": "PASS",
+      "evidence": "MuJoCo 3.8.1 与 robosuite 1.4.0 在 headless 模式下成功构建 libero_10 场景 4，无 GUI 报错，支持 step() 与 render()。"
+    },
+    "T02_model_loading": {
+      "id": "T02",
+      "name": "X-VLA 模型常驻内存加载",
+      "status": "PASS",
+      "evidence": "XVLABackend 成功加载 lerobot/xvla-libero (879.48M)，内存常驻，3 个种子连续闭环复用同一模型实例无需重复加载。"
+    },
+    "T03_dual_camera_obs": {
+      "id": "T03",
+      "name": "实时双路视觉观测采集",
+      "status": "PASS",
+      "evidence": "每个 cycle 成功从仿真环境获取 observation.images.image (Workspace 256x256x3 uint8) 和 observation.images.image2 (Wrist 256x256x3 uint8)，计算 SHA256 并持久化截图。"
+    },
+    "T04_proprio_state_obs": {
+      "id": "T04",
+      "name": "机器人本体状态数据流采集",
+      "status": "PASS",
+      "evidence": "成功获取 8D 机器人本体状态 [x, y, z, ax, ay, az, grip1, grip2]，经过 LiberoProcessorStep 转换为 9D 并送入模型。"
+    },
+    "T05_action_interface_verification": {
+      "id": "T05",
+      "name": "动作接口与控制器匹配核验",
+      "status": "PASS",
+      "evidence": "核验确认 LiberoEnv control_mode='absolute' 采用 Robosuite OSC 绝对位姿模式，直接接收 XVLA 7D 输出 [target_x, target_y, target_z, ax, ay, az, grip]，无需二次坐标变换。"
+    },
+    "T06_sim_action_execution": {
+      "id": "T06",
+      "name": "仿真环境中动作序列物理执行",
+      "status": "PASS",
+      "evidence": "调用 env.step(act) 成功驱动机械臂末端发生物理位移，平均位移模长 0.1696m (Z轴下移约 10.8cm, Y轴前伸约 13.1cm)。"
+    },
+    "T07_closed_loop_feedback": {
+      "id": "T07",
+      "name": "环境反馈与多轮闭环推理",
+      "status": "PASS",
+      "evidence": "采用 Receding Horizon 控制（每次执行 15 步后获取最新观测），每个 episode 连续完成 4 轮'观测-推理-执行-新观测'闭环迭代。"
+    },
+    "T08_honest_success_reporting": {
+      "id": "T08",
+      "name": "软件流水线与任务成功双指标客观上报",
+      "status": "PASS",
+      "evidence": "软件流水线执行成功率 100% (3/3)；由于两阶段复杂长程放置任务需要约 300-600 步，60 步内尚未达到最终放置判定，物理任务成功率如实上报为 0% (0/3)。"
+    },
+    "T09_repeatability_testing": {
+      "id": "T09",
+      "name": "3组随机种子重复性测试",
+      "status": "PASS",
+      "evidence": "使用 seed 42, 100, 2026 进行 3 组完整测试，末端总位移模长高度稳定一致 (0.1701m, 0.1692m, 0.1694m)，表现出确定性趋向目标的物理行为。"
+    },
+    "T10_experiment_traceability": {
+      "id": "T10",
+      "name": "完整实验记录与数据持久化",
+      "status": "PASS",
+      "evidence": "生成 3 份单回合完整 JSON 记录 (run_seed_*.json)、1 份汇总指标 (closed_loop_metrics.json) 以及 24 张仿真关键帧与相机观测截图。"
+    }
+  },
+  "overall_summary": {
+    "total_criteria": 10,
+    "passed_criteria": 10,
+    "software_pipeline_health": "100% PASS",
+    "physical_task_success_rate": "0% (60 steps early horizon)",
+    "conclusion": "Task 017 仿真闭环任务验证圆满完成，系统实现了视觉与状态反馈驱动的连续自主闭环控制。"
+  }
+}

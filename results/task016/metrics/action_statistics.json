@@ -1,0 +1,397 @@
+{
+  "dimension_semantics": {
+    "target_x": {
+      "desc": "Target EEF Position X in Base Frame",
+      "unit": "meters",
+      "type": "absolute_target_pose"
+    },
+    "target_y": {
+      "desc": "Target EEF Position Y in Base Frame",
+      "unit": "meters",
+      "type": "absolute_target_pose"
+    },
+    "target_z": {
+      "desc": "Target EEF Position Z in Base Frame",
+      "unit": "meters",
+      "type": "absolute_target_pose"
+    },
+    "rot_axis_x": {
+      "desc": "3D Axis-Angle Vector X Component",
+      "unit": "radians",
+      "type": "axis_angle_vector"
+    },
+    "rot_axis_y": {
+      "desc": "3D Axis-Angle Vector Y Component",
+      "unit": "radians",
+      "type": "axis_angle_vector"
+    },
+    "rot_axis_z": {
+      "desc": "3D Axis-Angle Vector Z Component",
+      "unit": "radians",
+      "type": "axis_angle_vector"
+    },
+    "gripper": {
+      "desc": "Binary Gripper Actuation",
+      "unit": "[-1.0: Open, +1.0: Close]",
+      "type": "binary_actuation"
+    }
+  },
+  "per_dimension_aggregates": {
+    "target_x": {
+      "global_min": -0.1506,
+      "global_max": 0.0613,
+      "mean_across_samples": -0.0628,
+      "max_step_delta_observed": 0.0103
+    },
+    "target_y": {
+      "global_min": -0.2559,
+      "global_max": -0.0045,
+      "mean_across_samples": -0.0869,
+      "max_step_delta_observed": 0.0092
+    },
+    "target_z": {
+      "global_min": 0.5016,
+      "global_max": 1.1528,
+      "mean_across_samples": 0.7409,
+      "max_step_delta_observed": 0.0097
+    },
+    "rot_axis_x": {
+      "global_min": -2.5968,
+      "global_max": 2.1809,
+      "mean_across_samples": -1.3636,
+      "max_step_delta_observed": 4.3622
+    },
+    "rot_axis_y": {
+      "global_min": -2.4791,
+      "global_max": 2.4796,
+      "mean_across_samples": -0.7666,
+      "max_step_delta_observed": 4.9587
+    },
+    "rot_axis_z": {
+      "global_min": -0.201,
+      "global_max": 0.2171,
+      "mean_across_samples": 0.0052,
+      "max_step_delta_observed": 0.2906
+    },
+    "gripper": {
+      "global_min": -1.0,
+      "global_max": 1.0,
+      "mean_across_samples": -0.2944,
+      "max_step_delta_observed": 2.0
+    }
+  },
+  "plausibility_audit": [
+    {
+      "sample_id": "sample_01",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.106,
+          -0.052
+        ],
+        "y": [
+          -0.137,
+          -0.093
+        ],
+        "z": [
+          0.533,
+          0.641
+        ]
+      },
+      "rot_norm_max": 3.09,
+      "rot_in_bounds": true,
+      "gripper_flips": 1,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0074,
+      "mean_pos_step_delta_m": 0.0048,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_02",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.096,
+          -0.009
+        ],
+        "y": [
+          -0.256,
+          -0.137
+        ],
+        "z": [
+          0.536,
+          0.63
+        ]
+      },
+      "rot_norm_max": 3.141,
+      "rot_in_bounds": true,
+      "gripper_flips": 0,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0108,
+      "mean_pos_step_delta_m": 0.0077,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_03",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.129,
+          -0.062
+        ],
+        "y": [
+          -0.113,
+          -0.077
+        ],
+        "z": [
+          0.517,
+          0.612
+        ]
+      },
+      "rot_norm_max": 3.141,
+      "rot_in_bounds": true,
+      "gripper_flips": 1,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0115,
+      "mean_pos_step_delta_m": 0.0053,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_04",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.092,
+          0.061
+        ],
+        "y": [
+          -0.202,
+          -0.11
+        ],
+        "z": [
+          0.532,
+          0.677
+        ]
+      },
+      "rot_norm_max": 3.142,
+      "rot_in_bounds": true,
+      "gripper_flips": 0,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.012,
+      "mean_pos_step_delta_m": 0.0095,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_05",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.109,
+          -0.04
+        ],
+        "y": [
+          -0.089,
+          -0.065
+        ],
+        "z": [
+          0.533,
+          0.658
+        ]
+      },
+      "rot_norm_max": 3.091,
+      "rot_in_bounds": true,
+      "gripper_flips": 1,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.009,
+      "mean_pos_step_delta_m": 0.0063,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_06",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.151,
+          -0.079
+        ],
+        "y": [
+          -0.108,
+          -0.096
+        ],
+        "z": [
+          0.514,
+          0.572
+        ]
+      },
+      "rot_norm_max": 3.094,
+      "rot_in_bounds": true,
+      "gripper_flips": 2,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0078,
+      "mean_pos_step_delta_m": 0.0044,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_07",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.126,
+          -0.044
+        ],
+        "y": [
+          -0.103,
+          -0.046
+        ],
+        "z": [
+          0.504,
+          0.662
+        ]
+      },
+      "rot_norm_max": 3.141,
+      "rot_in_bounds": true,
+      "gripper_flips": 1,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0086,
+      "mean_pos_step_delta_m": 0.007,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_08",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.121,
+          0.022
+        ],
+        "y": [
+          -0.103,
+          -0.028
+        ],
+        "z": [
+          0.502,
+          0.602
+        ]
+      },
+      "rot_norm_max": 3.134,
+      "rot_in_bounds": true,
+      "gripper_flips": 0,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0114,
+      "mean_pos_step_delta_m": 0.0071,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_09",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.093,
+          -0.005
+        ],
+        "y": [
+          -0.03,
+          -0.015
+        ],
+        "z": [
+          1.097,
+          1.153
+        ]
+      },
+      "rot_norm_max": 2.975,
+      "rot_in_bounds": true,
+      "gripper_flips": 0,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0063,
+      "mean_pos_step_delta_m": 0.0037,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_10",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.013,
+          0.041
+        ],
+        "y": [
+          -0.048,
+          -0.032
+        ],
+        "z": [
+          0.993,
+          1.091
+        ]
+      },
+      "rot_norm_max": 2.332,
+      "rot_in_bounds": true,
+      "gripper_flips": 0,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0065,
+      "mean_pos_step_delta_m": 0.0046,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_11",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.096,
+          -0.063
+        ],
+        "y": [
+          -0.029,
+          -0.005
+        ],
+        "z": [
+          1.081,
+          1.111
+        ]
+      },
+      "rot_norm_max": 2.982,
+      "rot_in_bounds": true,
+      "gripper_flips": 0,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0047,
+      "mean_pos_step_delta_m": 0.0019,
+      "smooth_valid": true,
+      "is_plausible": true
+    },
+    {
+      "sample_id": "sample_12",
+      "pos_in_bounds": true,
+      "pos_range": {
+        "x": [
+          -0.079,
+          -0.013
+        ],
+        "y": [
+          -0.07,
+          -0.025
+        ],
+        "z": [
+          0.998,
+          1.082
+        ]
+      },
+      "rot_norm_max": 2.585,
+      "rot_in_bounds": true,
+      "gripper_flips": 0,
+      "gripper_stable": true,
+      "max_pos_step_delta_m": 0.0072,
+      "mean_pos_step_delta_m": 0.0047,
+      "smooth_valid": true,
+      "is_plausible": true
+    }
+  ]
+}

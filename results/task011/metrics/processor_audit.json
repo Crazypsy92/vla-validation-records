@@ -1,0 +1,267 @@
+{
+  "preprocessor_config": {
+    "name": "policy_preprocessor",
+    "steps": [
+      {
+        "registry_name": "rename_observations_processor",
+        "config": {
+          "rename_map": {}
+        }
+      },
+      {
+        "registry_name": "to_batch_processor",
+        "config": {}
+      },
+      {
+        "registry_name": "smolvla_new_line_processor",
+        "config": {}
+      },
+      {
+        "registry_name": "tokenizer_processor",
+        "config": {
+          "max_length": 48,
+          "task_key": "task",
+          "padding_side": "right",
+          "padding": "max_length",
+          "truncation": true,
+          "tokenizer_name": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct"
+        }
+      },
+      {
+        "registry_name": "device_processor",
+        "config": {
+          "device": "cuda",
+          "float_dtype": null
+        }
+      },
+      {
+        "registry_name": "normalizer_processor",
+        "config": {
+          "eps": 1e-08,
+          "features": {
+            "observation.state": {
+              "type": "STATE",
+              "shape": [
+                6
+              ]
+            },
+            "observation.image2": {
+              "type": "VISUAL",
+              "shape": [
+                3,
+                256,
+                256
+              ]
+            },
+            "observation.image": {
+              "type": "VISUAL",
+              "shape": [
+                3,
+                256,
+                256
+              ]
+            },
+            "observation.image3": {
+              "type": "VISUAL",
+              "shape": [
+                3,
+                256,
+                256
+              ]
+            },
+            "action": {
+              "type": "ACTION",
+              "shape": [
+                6
+              ]
+            }
+          },
+          "norm_map": {
+            "VISUAL": "IDENTITY",
+            "STATE": "MEAN_STD",
+            "ACTION": "MEAN_STD"
+          }
+        },
+        "state_file": "policy_preprocessor_step_5_normalizer_processor.safetensors"
+      }
+    ]
+  },
+  "postprocessor_config": {
+    "name": "policy_postprocessor",
+    "steps": [
+      {
+        "registry_name": "unnormalizer_processor",
+        "config": {
+          "eps": 1e-08,
+          "features": {
+            "action": {
+              "type": "ACTION",
+              "shape": [
+                6
+              ]
+            }
+          },
+          "norm_map": {
+            "VISUAL": "IDENTITY",
+            "STATE": "MEAN_STD",
+            "ACTION": "MEAN_STD"
+          }
+        },
+        "state_file": "policy_postprocessor_step_0_unnormalizer_processor.safetensors"
+      },
+      {
+        "registry_name": "device_processor",
+        "config": {
+          "device": "cpu",
+          "float_dtype": null
+        }
+      }
+    ]
+  },
+  "cached_stats": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "so100-blue.buffer.action.mean": [
+        1.4211928844451904,
+        125.72054290771484,
+        125.41930389404297,
+        63.783164978027344,
+        -106.54012298583984,
+        3.3484723567962646
+      ],
+      "so100-blue.buffer.action.std": [
+        14.081991195678711,
+        39.43141555786133,
+        18.23808479309082,
+        23.48975372314453,
+        38.111175537109375,
+        5.0482869148254395
+      ],
+      "so100-red.buffer.action.mean": [
+        2.4387083053588867,
+        124.93787384033203,
+        123.55780029296875,
+        66.99261474609375,
+        -103.8768310546875,
+        2.8912413120269775
+      ],
+      "so100-red.buffer.action.std": [
+        14.299178123474121,
+        42.77220916748047,
+        18.876314163208008,
+        21.651918411254883,
+        33.53406524658203,
+        4.47797155380249
+      ],
+      "so100.buffer.action.mean": [
+        1.5959141254425049,
+        119.9442367553711,
+        109.769775390625,
+        56.70551300048828,
+        -27.422693252563477,
+        12.002785682678223
+      ],
+      "so100.buffer.action.std": [
+        26.39177894592285,
+        52.41140365600586,
+        49.85380554199219,
+        36.9983024597168,
+        59.35995101928711,
+        19.039955139160156
+      ]
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "so100-blue.buffer.action.mean": [
+        1.4211928844451904,
+        125.72054290771484,
+        125.41930389404297,
+        63.783164978027344,
+        -106.54012298583984,
+        3.3484723567962646
+      ],
+      "so100-blue.buffer.action.std": [
+        14.081991195678711,
+        39.43141555786133,
+        18.23808479309082,
+        23.48975372314453,
+        38.111175537109375,
+        5.0482869148254395
+      ],
+      "so100-red.buffer.action.mean": [
+        2.4387083053588867,
+        124.93787384033203,
+        123.55780029296875,
+        66.99261474609375,
+        -103.8768310546875,
+        2.8912413120269775
+      ],
+      "so100-red.buffer.action.std": [
+        14.299178123474121,
+        42.77220916748047,
+        18.876314163208008,
+        21.651918411254883,
+        33.53406524658203,
+        4.47797155380249
+      ],
+      "so100.buffer.action.mean": [
+        1.5959141254425049,
+        119.9442367553711,
+        109.769775390625,
+        56.70551300048828,
+        -27.422693252563477,
+        12.002785682678223
+      ],
+      "so100.buffer.action.std": [
+        26.39177894592285,
+        52.41140365600586,
+        49.85380554199219,
+        36.9983024597168,
+        59.35995101928711,
+        19.039955139160156
+      ]
+    }
+  },
+  "loaded_preprocessor_steps": [
+    {
+      "type": "RenameObservationsProcessorStep",
+      "stats_keys": []
+    },
+    {
+      "type": "AddBatchDimensionProcessorStep",
+      "stats_keys": []
+    },
+    {
+      "type": "NewLineTaskProcessorStep",
+      "stats_keys": []
+    },
+    {
+      "type": "TokenizerProcessorStep",
+      "stats_keys": []
+    },
+    {
+      "type": "DeviceProcessorStep",
+      "stats_keys": []
+    },
+    {
+      "type": "NormalizerProcessorStep",
+      "stats_keys": [
+        "so100-blue.buffer.action",
+        "so100-red.buffer.action",
+        "so100.buffer.action"
+      ]
+    }
+  ],
+  "loaded_postprocessor_steps": [
+    {
+      "type": "UnnormalizerProcessorStep",
+      "stats_keys": [
+        "so100-blue.buffer.action",
+        "so100-red.buffer.action",
+        "so100.buffer.action"
+      ]
+    },
+    {
+      "type": "DeviceProcessorStep",
+      "stats_keys": []
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "system_info": {
+    "os": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-1255U",
+    "cpu_count_logical": 12,
+    "cpu_count_physical": 6,
+    "total_ram_gb": 7.62,
+    "available_ram_gb": 5.74,
+    "total_swap_gb": 2.0,
+    "disk_free_gb": 926.21,
+    "python_version": "3.12.3",
+    "torch_version": "2.15.0+cpu",
+    "cuda_available": false
+  },
+  "package_versions": {
+    "lerobot": "0.7.0",
+    "transformers": "5.22.2",
+    "accelerate": "1.16.0",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.2.6"
+  },
+  "policy_spec": {
+    "model_id": "lerobot/smolvla_base",
+    "type": "smolvla",
+    "chunk_size": 50,
+    "n_action_steps": 50,
+    "action_dim": 6,
+    "max_action_dim": 32,
+    "flow_matching_num_steps": 10,
+    "vlm_model_name": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "num_vlm_layers": 16,
+    "input_features": {
+      "observation.state": {
+        "type": "FeatureType.STATE",
+        "shape": [
+          6
+        ]
+      },
+      "observation.images.camera1": {
+        "type": "FeatureType.VISUAL",
+        "shape": [
+          3,
+          256,
+          256
+        ]
+      },
+      "observation.images.camera2": {
+        "type": "FeatureType.VISUAL",
+        "shape": [
+          3,
+          256,
+          256
+        ]
+      },
+      "observation.images.camera3": {
+        "type": "FeatureType.VISUAL",
+        "shape": [
+          3,
+          256,
+          256
+        ]
+      }
+    },
+    "output_features": {
+      "action": {
+        "type": "FeatureType.ACTION",
+        "shape": [
+          6
+        ]
+      }
+    },
+    "normalization_mapping": {
+      "VISUAL": "IDENTITY",
+      "STATE": "MEAN_STD",
+      "ACTION": "MEAN_STD"
+    }
+  },
+  "model_loading": {
+    "load_time_seconds": 6.41,
+    "processors_time_seconds": 0.22,
+    "initial_memory_rss_mb": 246.7,
+    "model_memory_rss_mb": 1475.8,
+    "memory_delta_mb": 1229.09
+  },
+  "inference_benchmark": {
+    "num_test_cases": 3,
+    "avg_infer_time_s": 41.603,
+    "min_infer_time_s": 40.946,
+    "max_infer_time_s": 42.655,
+    "chunk_size": 50,
+    "action_dim": 6,
+    "flow_matching_steps": 10,
+    "equivalent_hz_per_action_step": 1.2
+  },
+  "case_metrics": [
+    {
+      "case_id": "case_001_pick_blue_block",
+      "task": "pick the blue block and place it on the plate",
+      "infer_time_s": 42.655,
+      "prep_time_ms": 3.03,
+      "post_time_ms": 0.08,
+      "chunk_shape": [
+        1,
+        50,
+        6
+      ],
+      "step_0_action": [
+        -0.3161,
+        0.2143,
+        -0.5972,
+        0.1247,
+        2.1021,
+        -0.6904
+      ],
+      "step_49_action": [
+        0.0371,
+        1.1775,
+        2.636,
+        -0.2266,
+        2.3064,
+        -0.3021
+      ]
+    },
+    {
+      "case_id": "case_002_approach_red_cylinder",
+      "task": "move the gripper forward towards the red cylinder",
+      "infer_time_s": 40.946,
+      "prep_time_ms": 0.76,
+      "post_time_ms": 0.06,
+      "chunk_shape": [
+        1,
+        50,
+        6
+      ],
+      "step_0_action": [
+        -0.456,
+        0.742,
+        1.9432,
+        -0.1653,
+        2.0161,
+        -0.6214
+      ],
+      "step_49_action": [
+        -1.0634,
+        1.3309,
+        3.1405,
+        -0.0593,
+        3.0226,
+        0.9746
+      ]
+    },
+    {
+      "case_id": "case_003_open_gripper_release",
+      "task": "open the gripper and release the target object",
+      "infer_time_s": 41.207,
+      "prep_time_ms": 0.73,
+      "post_time_ms": 0.06,
+      "chunk_shape": [
+        1,
+        50,
+        6
+      ],
+      "step_0_action": [
+        0.5941,
+        0.3904,
+        1.2978,
+        -0.3536,
+        0.9584,
+        0.983
+      ],
+      "step_49_action": [
+        -0.2763,
+        1.42,
+        3.0391,
+        -0.113,
+        2.3024,
+        0.0234
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "task_id": "Task 016",
+  "task_name": "X-VLA 动作语义核验与离线基准测试",
+  "status": "PASS",
+  "timestamp": "2026-11-21 17:38:58",
+  "total_criteria": 12,
+  "passed_criteria": 12,
+  "failed_criteria": 0,
+  "acceptance_criteria": [
+    {
+      "id": "T01",
+      "name": "动作映射审计",
+      "requirement": "20D 到 7D 映射有源码依据",
+      "result": "PASS",
+      "details": "Audited against LeRobot XVLARotation6DToAxisAngleProcessorStep: Dims 0..2 target_eef, 3..8 rot6d_to_axis_angle, 9 gripper binarized (>0.5 -> 1.0, else -1.0)."
+    },
+    {
+      "id": "T02",
+      "name": "位置语义",
+      "requirement": "绝对位置与增量明确区分",
+      "result": "PASS",
+      "details": "Model outputs Absolute Target EEF Position (m) in Base Frame (Z~0.65m), distinguished from dataset Normalized Delta Actions."
+    },
+    {
+      "id": "T03",
+      "name": "旋转语义",
+      "requirement": "轴角与欧拉角明确区分",
+      "result": "PASS",
+      "details": "Audited as 3D Axis-Angle Vector (radians, direction=axis, norm=angle in [0, pi]), not Euler Roll/Pitch/Yaw."
+    },
+    {
+      "id": "T04",
+      "name": "夹爪映射",
+      "requirement": "正负值含义有依据",
+      "result": "PASS",
+      "details": "Binarized: -1.0 represents Gripper Open (张开), +1.0 represents Gripper Close (闭合抓取), verified against LIBERO dataset."
+    },
+    {
+      "id": "T05",
+      "name": "曲线标注",
+      "requirement": "横纵坐标及单位清楚",
+      "result": "PASS",
+      "details": "ActionCurveCanvas displays Action Step Index (T0-T29, NOT seconds), physical units (m, rad, [-1,1]), and coordinate frame."
+    },
+    {
+      "id": "T06",
+      "name": "中文说明",
+      "requirement": "关键指标有中文解释",
+      "result": "PASS",
+      "details": "All panels (Model, Input, Action, Inference) and cards updated with Chinese bilingual subtitles and tooltips."
+    },
+    {
+      "id": "T07",
+      "name": "12 组推理",
+      "requirement": "全部完成或记录明确失败原因",
+      "result": "PASS",
+      "details": "Successfully inferred 12/12 benchmark samples."
+    },
+    {
+      "id": "T08",
+      "name": "数据完整性",
+      "requirement": "原始输出和后处理输出均保存",
+      "result": "PASS",
+      "details": "Both raw_actions_20d (30, 20) and predicted_actions_7d (30, 7) saved for all 12 samples."
+    },
+    {
+      "id": "T09",
+      "name": "数值检查",
+      "requirement": "无未记录的 NaN/Inf",
+      "result": "PASS",
+      "details": "Total NaN: 0, Total Inf: 0 (100% clean)."
+    },
+    {
+      "id": "T10",
+      "name": "重复性",
+      "requirement": "至少一组样本进行重复测试",
+      "result": "PASS",
+      "details": "Sample 01 3-run repeat max discrepancy = 0.00000000 (seed=42 deterministic)."
+    },
+    {
+      "id": "T11",
+      "name": "统计报告",
+      "requirement": "形成性能与动作统计",
+      "result": "PASS",
+      "details": "Generated metrics/system_performance.json and metrics/action_statistics.json."
+    },
+    {
+      "id": "T12",
+      "name": "历史兼容",
+      "requirement": "不破坏 Task 015 历史记录",
+      "result": "PASS",
+      "details": "Task 015 records intact; HistoryDialog supports multi-directory loading from both task015 and task016."
+    }
+  ]
+}

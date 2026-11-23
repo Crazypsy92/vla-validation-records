@@ -1,0 +1,41 @@
+{
+  "benchmark_date": "2026-11-21 17:38:57",
+  "hardware": "Intel Core i7-11800H @ 2.30GHz (WSL2 Ubuntu 24.04)",
+  "device": "CPU",
+  "model_id": "lerobot/xvla-libero",
+  "total_parameters_million": 879.48,
+  "sample_count": 12,
+  "model_load_latency_seconds": 83.19,
+  "inference_latency_seconds": {
+    "mean": 56.52,
+    "min": 35.41,
+    "max": 94.42,
+    "std": 18.18,
+    "all_runs": [
+      75.81,
+      63.77,
+      94.42,
+      73.89,
+      69.52,
+      56.45,
+      45.32,
+      38.83,
+      40.22,
+      36.02,
+      35.41,
+      48.61
+    ]
+  },
+  "worker_peak_rss_mb": 3915.6,
+  "integrity": {
+    "total_nan": 0,
+    "total_inf": 0,
+    "clean_ratio": 1.0
+  },
+  "repeatability": {
+    "fixed_seed": 42,
+    "runs_evaluated": 3,
+    "max_discrepancy": 0.0,
+    "is_deterministic": true
+  }
+}

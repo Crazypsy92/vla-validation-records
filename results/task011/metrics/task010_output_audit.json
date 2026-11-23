@@ -1,0 +1,41 @@
+{
+  "case_001_pick_blue_block": {
+    "saved_shape": [
+      1,
+      50,
+      6
+    ],
+    "saved_full_rows": 50,
+    "raw_post_equality": {
+      "step_0": true,
+      "step_24": true,
+      "step_49": true
+    }
+  },
+  "case_002_approach_red_cylinder": {
+    "saved_shape": [
+      1,
+      50,
+      6
+    ],
+    "saved_full_rows": 50,
+    "raw_post_equality": {
+      "step_0": true,
+      "step_24": true,
+      "step_49": true
+    }
+  },
+  "case_003_open_gripper_release": {
+    "saved_shape": [
+      1,
+      50,
+      6
+    ],
+    "saved_full_rows": 50,
+    "raw_post_equality": {
+      "step_0": true,
+      "step_24": true,
+      "step_49": true
+    }
+  }
+}

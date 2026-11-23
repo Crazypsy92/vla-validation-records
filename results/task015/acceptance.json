@@ -1,0 +1,130 @@
+{
+  "task_id": "Task 015",
+  "task_name": "VLA Workbench 独立上位机开发与 X-VLA 集成",
+  "status": "PASS",
+  "timestamp": "2026-11-21 16:17:28",
+  "total_criteria": 17,
+  "passed_criteria": 17,
+  "failed_criteria": 0,
+  "results": [
+    {
+      "id": "T01",
+      "name": "GUI 启动",
+      "requirement": "独立窗口正常启动，start.sh 与 app.py 完整并具执行权限",
+      "result": "PASS",
+      "details": "start.sh: exists=True, executable=True; app.py: exists=True"
+    },
+    {
+      "id": "T02",
+      "name": "快捷方式",
+      "requirement": "Windows 桌面快捷方式可用，且已归档到 workbench 根目录",
+      "result": "PASS",
+      "details": "Desktop shortcut found: True, archived in workbench: True"
+    },
+    {
+      "id": "T03",
+      "name": "原工程隔离",
+      "requirement": "LLM Workbench 文件结构及运行环境保持完全独立与未修改",
+      "result": "PASS",
+      "details": "LLM Workbench app.py intact: True, start.sh intact: True"
+    },
+    {
+      "id": "T04",
+      "name": "模型加载",
+      "requirement": "X-VLA 检查点正常加载至 Worker 进程内存，持续驻留",
+      "result": "PASS",
+      "details": "Loaded in 27.37s, params=879.48M, chunk_size=30"
+    },
+    {
+      "id": "T05",
+      "name": "样本选择",
+      "requirement": "成功读取 Task 013/014 验证过的 12 组 LIBERO 测试样本画像",
+      "result": "PASS",
+      "details": "Loaded 12 valid benchmark samples from manifest"
+    },
+    {
+      "id": "T06",
+      "name": "图像显示",
+      "requirement": "Workspace 与 Wrist 双路相机图片存在、完整且能被 PIL 正确解码",
+      "result": "PASS",
+      "details": "Workspace: sample_01_workspace.png (48256B); Wrist: sample_01_wrist.png (45969B)"
+    },
+    {
+      "id": "T07",
+      "name": "指令显示",
+      "requirement": "自然语言任务指令格式合法、可读且内容正确",
+      "result": "PASS",
+      "details": "Task description: 'put the white mug on the left plate and put the yellow and white mug on the right plate'"
+    },
+    {
+      "id": "T08",
+      "name": "状态显示",
+      "requirement": "机器人初始 8D 本体位姿状态向量数值完整有效",
+      "result": "PASS",
+      "details": "8D state vector: [-0.0574, -0.0877, 0.6555, 3.1881, 0.01, -0.0948, 0.0395, -0.0396]"
+    },
+    {
+      "id": "T09",
+      "name": "模型推理",
+      "requirement": "通过 Worker 完成真实模型前向预测，无报错，耗时合理",
+      "result": "PASS",
+      "details": "Inference completed in 34.07s (Forward: 33.9236s)"
+    },
+    {
+      "id": "T10",
+      "name": "动作输出",
+      "requirement": "原始 20D 动作块 (30, 20) 与官方后处理 7D 动作块 (30, 7) 结构完整",
+      "result": "PASS",
+      "details": "Raw chunk shape: [30, 20], Calibrated 7D chunk shape: [30, 7]"
+    },
+    {
+      "id": "T11",
+      "name": "动作表格",
+      "requirement": "30 步动作轨迹各自由度可正常拆解，表格维度完全对齐",
+      "result": "PASS",
+      "details": "7 dimensions audited: ['dx', 'dy', 'dz', 'droll', 'dpitch', 'dyaw', 'gripper'], total steps: 30"
+    },
+    {
+      "id": "T12",
+      "name": "动作曲线",
+      "requirement": "Canvas 曲线数据源平滑连续，支持平移/旋转/夹爪三模式绘制",
+      "result": "PASS",
+      "details": "ActionCurveCanvas data verified: 30 time points across 7 continuous channels"
+    },
+    {
+      "id": "T13",
+      "name": "连续推理",
+      "requirement": "至少连续执行 3 次不同样本前向预测，模型常驻内存不重复加载",
+      "result": "PASS",
+      "details": "3 runs completed successfully: times=[34.41, 82.95, 45.76]s"
+    },
+    {
+      "id": "T14",
+      "name": "记录保存",
+      "requirement": "实验记录 JSON 完整落盘至 results/task015/records/，可正常反序列化",
+      "result": "PASS",
+      "details": "Record written to results/task015/records/test_acceptance_rec.json (6011 bytes)"
+    },
+    {
+      "id": "T15",
+      "name": "历史读取",
+      "requirement": "历史记录管理器可正确检索并解析落盘的实验数据",
+      "result": "PASS",
+      "details": "Successfully parsed history record for sample_01"
+    },
+    {
+      "id": "T16",
+      "name": "异常处理",
+      "requirement": "非法命令、空样本或推理异常返回结构化错误信息，不导致主进程崩溃",
+      "result": "PASS",
+      "details": "Graceful error handled: 'Unknown command: 'invalid_command_name''"
+    },
+    {
+      "id": "T17",
+      "name": "资源释放",
+      "requirement": "退出指令正常执行，Worker 进程安全退出，模型显存/内存释放",
+      "result": "PASS",
+      "details": "Shutdown response: {'status': 'shutdown_complete'}, process exit code: 0"
+    }
+  ]
+}

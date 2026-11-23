@@ -1,0 +1,174 @@
+{
+  "task_id": "Task 013",
+  "task_name": "X-VLA 公开机器人数据集与视觉动作预测验证",
+  "status": "PASS",
+  "timestamp": "2026-11-21 13:03:36",
+  "acceptance_criteria": [
+    {
+      "id": "AC-1",
+      "item": "工程环境与配置检查",
+      "description": "复用 .venv_xvla，成功加载官方 lerobot/xvla-libero，确认 879.48M 参数量与 CPU 推理可行性",
+      "result": "PASS",
+      "details": "Total params: 879,482,456, Device: CPU, Normalization: IDENTITY"
+    },
+    {
+      "id": "AC-2",
+      "item": "LIBERO 真实数据集抽取",
+      "description": "成功接入官方 lerobot/libero 数据集，覆盖 3 项不同任务、6 个 Episode、12 个时间帧，生成样本清单及输入画像",
+      "result": "PASS",
+      "details": "Manifest: datasets/task013/sample_manifest.json, Samples: 12"
+    },
+    {
+      "id": "AC-3",
+      "item": "离线真实推理与动作预测",
+      "description": "执行 12 组样本顺序 CPU 推理（Batch Size=1），生成 (30, 20) 动作块并完成官方后处理",
+      "result": "PASS",
+      "details": "Completed 12/12 samples, Mean latency: 31.32s, Peak RSS: 3602.00 MB"
+    },
+    {
+      "id": "AC-4",
+      "item": "数值健全性审计",
+      "description": "检查预测动作块无 NaN、无 Inf，数据格式严格符合官方规范",
+      "result": "PASS",
+      "details": "NaN count: 0, Inf count: 0"
+    },
+    {
+      "id": "AC-5",
+      "item": "专家动作对比与误差评估",
+      "description": "严格对齐 LIBERO 7 维专家动作序列（30步时域），输出全量 MAE、RMSE 及分维度分析",
+      "result": "PASS",
+      "details": "Overall MAE: 0.4965, Overall RMSE: 0.6455"
+    },
+    {
+      "id": "AC-6",
+      "item": "归一化与坐标系统计审计",
+      "description": "如实记录 LIBERO Domain ID (3)、20 维动作空间与 7 维评估切片映射关系，杜绝参数盲目推测",
+      "result": "PASS",
+      "details": "Audited in policy_preprocessor (domain_id=3) and stats.json"
+    }
+  ],
+  "summary": {
+    "evaluation_name": "Task 013: X-VLA LIBERO Offline Action Prediction Validation",
+    "timestamp": "2026-11-21 13:03:36",
+    "model_id": "lerobot/xvla-libero",
+    "dataset": "lerobot/libero",
+    "hardware_device": "cpu",
+    "batch_size": 1,
+    "action_horizon_steps": 30,
+    "model_output_dim": 20,
+    "evaluated_action_dim": 7,
+    "total_evaluated_samples": 12,
+    "total_tasks": 3,
+    "performance": {
+      "mean_latency_seconds": 31.32,
+      "std_latency_seconds": 1.77,
+      "min_latency_seconds": 28.88,
+      "max_latency_seconds": 34.07,
+      "total_inference_time_seconds": 375.85,
+      "throughput_samples_per_minute": 1.92,
+      "peak_memory_rss_mb": 3602.0
+    },
+    "accuracy_and_errors": {
+      "overall_mean_mae": 0.4965,
+      "overall_mean_rmse": 0.6455,
+      "translation_mean_mae": 0.4179,
+      "translation_mean_rmse": 0.5923,
+      "rotation_mean_mae": 0.4509,
+      "rotation_mean_rmse": 0.5829,
+      "gripper_mean_mae": 0.8689,
+      "gripper_mean_rmse": 0.8761,
+      "per_dimension_breakdown": {
+        "dx": {
+          "mean_mae": 0.2403,
+          "mean_rmse": 0.2823,
+          "min_mae": 0.0983,
+          "max_mae": 0.5143
+        },
+        "dy": {
+          "mean_mae": 0.1109,
+          "mean_rmse": 0.1509,
+          "min_mae": 0.0154,
+          "max_mae": 0.249
+        },
+        "dz": {
+          "mean_mae": 0.9025,
+          "mean_rmse": 0.9339,
+          "min_mae": 0.287,
+          "max_mae": 1.2983
+        },
+        "droll": {
+          "mean_mae": 0.9497,
+          "mean_rmse": 0.9512,
+          "min_mae": 0.8105,
+          "max_mae": 1.0095
+        },
+        "dpitch": {
+          "mean_mae": 0.2394,
+          "mean_rmse": 0.2463,
+          "min_mae": 0.145,
+          "max_mae": 0.5463
+        },
+        "dyaw": {
+          "mean_mae": 0.1638,
+          "mean_rmse": 0.1671,
+          "min_mae": 0.0567,
+          "max_mae": 0.4336
+        },
+        "gripper": {
+          "mean_mae": 0.8689,
+          "mean_rmse": 0.8761,
+          "min_mae": 0.4187,
+          "max_mae": 1.1557
+        }
+      }
+    },
+    "per_task_breakdown": [
+      {
+        "task_index": 0,
+        "task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+        "sample_count": 4,
+        "mean_latency_s": 32.72,
+        "mean_mae": 0.4664,
+        "mean_rmse": 0.6189,
+        "mean_trans_mae": 0.3658,
+        "mean_rot_mae": 0.4224,
+        "mean_grip_mae": 0.9003
+      },
+      {
+        "task_index": 1,
+        "task_description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+        "sample_count": 4,
+        "mean_latency_s": 30.73,
+        "mean_mae": 0.4929,
+        "mean_rmse": 0.6485,
+        "mean_trans_mae": 0.3689,
+        "mean_rot_mae": 0.4373,
+        "mean_grip_mae": 1.0313
+      },
+      {
+        "task_index": 2,
+        "task_description": "put the yellow and white mug in the microwave and close it",
+        "sample_count": 4,
+        "mean_latency_s": 30.51,
+        "mean_mae": 0.5302,
+        "mean_rmse": 0.6692,
+        "mean_trans_mae": 0.519,
+        "mean_rot_mae": 0.4931,
+        "mean_grip_mae": 0.6749
+      }
+    ],
+    "integrity_audit": {
+      "total_nan_count": 0,
+      "total_inf_count": 0,
+      "all_samples_valid": true
+    },
+    "normalization_audit": {
+      "policy_input_normalization": "IDENTITY",
+      "policy_output_unnormalization": "IDENTITY",
+      "domain_id": 3,
+      "libero_dataset_action_dim": 7,
+      "model_action_chunk_dim": 20,
+      "note": "X-VLA outputs 20-dim action chunk. Dims 0..6 represent 7-DoF robot action (dx, dy, dz, droll, dpitch, dyaw, gripper). Dims 7..19 are reserved/padding for bimanual embodiments."
+    }
+  }
+}

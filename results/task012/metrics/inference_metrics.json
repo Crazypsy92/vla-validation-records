@@ -1,0 +1,231 @@
+{
+  "task": "Task 012 · X-VLA 预训练模型独立推理验证",
+  "system_info": {
+    "os": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-1255U",
+    "cpu_count_logical": 12,
+    "cpu_count_physical": 6,
+    "total_ram_gb": 7.62,
+    "available_ram_gb": 6.68,
+    "total_swap_gb": 2.0,
+    "disk_free_gb": 921.69,
+    "python_version": "3.12.3",
+    "torch_version": "2.15.0+cpu",
+    "cuda_available": false,
+    "gpu_name": "NVIDIA GeForce MX550",
+    "gpu_total_vram_mb": 2048.0
+  },
+  "gpu_budget_audit": {
+    "gpu_detected": true,
+    "gpu_name": "NVIDIA GeForce MX550",
+    "gpu_total_vram_mb": 2048.0,
+    "model_file_size_mb": 3356.05,
+    "gpu_feasibility": "INSUFFICIENT_VRAM (2048 MB VRAM < 3356 MB model weights; CUDA OOM would occur without aggressive offloading/quantization)",
+    "chosen_device": "cpu",
+    "cpu_ram_budget": "6.68 GB available out of 7.62 GB RAM (Ample headroom)"
+  },
+  "package_versions": {
+    "environment": "independent (.venv_xvla)",
+    "lerobot": "0.7.0",
+    "transformers": "5.22.2",
+    "accelerate": "1.16.0",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.2.6"
+  },
+  "policy_spec": {
+    "model_id": "lerobot/xvla-base",
+    "type": "xvla",
+    "chunk_size": 30,
+    "n_action_steps": 30,
+    "action_dim": 20,
+    "state_dim": 8,
+    "max_state_dim": 20,
+    "num_image_views": 3,
+    "num_domains": 30,
+    "len_soft_prompts": 32,
+    "num_denoising_steps": 10,
+    "tokenizer_name": "facebook/bart-large",
+    "tokenizer_max_length": 1024,
+    "normalization_mapping": {
+      "STATE": "IDENTITY",
+      "ACTION": "MEAN_STD",
+      "VISUAL": "IDENTITY"
+    },
+    "input_features": {
+      "observation.images.image": {
+        "type": "FeatureType.VISUAL",
+        "shape": [
+          3,
+          256,
+          256
+        ]
+      },
+      "observation.images.image2": {
+        "type": "FeatureType.VISUAL",
+        "shape": [
+          3,
+          256,
+          256
+        ]
+      },
+      "observation.state": {
+        "type": "FeatureType.STATE",
+        "shape": [
+          8
+        ]
+      },
+      "observation.images.image3": {
+        "type": "FeatureType.VISUAL",
+        "shape": [
+          3,
+          224,
+          224
+        ]
+      }
+    },
+    "output_features": {
+      "action": {
+        "type": "FeatureType.ACTION",
+        "shape": [
+          20
+        ]
+      }
+    },
+    "parameter_audit": {
+      "total_parameters": 879482456,
+      "total_parameters_million": 879.48,
+      "trainable_parameters": 879482456,
+      "vlm_florence2_parameters": 570706944,
+      "vlm_florence2_parameters_million": 570.71,
+      "action_expert_soft_transformer_parameters": 308775512,
+      "action_expert_soft_transformer_parameters_million": 308.78,
+      "action_space_parameters": 0
+    }
+  },
+  "model_loading": {
+    "load_time_seconds": 25.57,
+    "processors_time_seconds": 1.26,
+    "initial_memory_rss_mb": 246.77,
+    "model_memory_rss_mb": 3457.8,
+    "memory_delta_mb": 3211.03
+  },
+  "preprocessing_audit": {
+    "image_to_float_verified": true,
+    "imagenet_normalization_verified": true,
+    "domain_id_injection_verified": true,
+    "state_identity_normalization_verified": true
+  },
+  "unnormalization_audit": {
+    "status": "BLOCKED (Missing dataset-specific statistics in base checkpoint; output remains in normalized action space)",
+    "reason": "Base foundation checkpoint lerobot/xvla-base has unnormalizer stats={} by design; output is normalized action chunk, not calibrated physical actuator units.",
+    "unnormalization_diff": 0.0
+  },
+  "inference_benchmark": {
+    "num_test_cases": 3,
+    "avg_infer_time_s": 35.079,
+    "min_infer_time_s": 27.022,
+    "max_infer_time_s": 45.334,
+    "chunk_size": 30,
+    "action_dim": 20,
+    "denoising_steps": 10,
+    "equivalent_hz_per_action_step": 0.86
+  },
+  "case_metrics": [
+    {
+      "case_id": "case_001_domain0_libero",
+      "domain_id": 0,
+      "domain_name": "Libero Tabletop Manipulation",
+      "task": "pick up the red mug and place it on the white plate",
+      "infer_time_s": 45.334,
+      "prep_time_ms": 131.03,
+      "post_time_ms": 0.98,
+      "chunk_shape": [
+        1,
+        30,
+        20
+      ],
+      "val_min": -0.4443,
+      "val_max": 0.5753,
+      "step_0_sample_6d": [
+        -0.0456,
+        -0.1158,
+        0.2563,
+        0.1386,
+        -0.1949,
+        0.1499
+      ],
+      "step_29_sample_6d": [
+        -0.0524,
+        -0.121,
+        0.251,
+        0.1272,
+        -0.2206,
+        0.1283
+      ]
+    },
+    {
+      "case_id": "case_002_domain1_aloha",
+      "domain_id": 1,
+      "domain_name": "Aloha Dual-Arm Kitchen Environment",
+      "task": "move the right gripper towards the bowl and grasp the handle",
+      "infer_time_s": 32.88,
+      "prep_time_ms": 13.21,
+      "post_time_ms": 0.09,
+      "chunk_shape": [
+        1,
+        30,
+        20
+      ],
+      "val_min": -0.3951,
+      "val_max": 0.5269,
+      "step_0_sample_6d": [
+        -0.1111,
+        0.0204,
+        0.0784,
+        0.1241,
+        0.0745,
+        -0.0679
+      ],
+      "step_29_sample_6d": [
+        -0.1148,
+        0.0329,
+        0.09,
+        0.1056,
+        0.0556,
+        -0.0436
+      ]
+    },
+    {
+      "case_id": "case_003_domain2_bridge",
+      "domain_id": 2,
+      "domain_name": "Bridge / Franka Real-World Domain",
+      "task": "push the green block forward into the target square",
+      "infer_time_s": 27.022,
+      "prep_time_ms": 4.05,
+      "post_time_ms": 0.08,
+      "chunk_shape": [
+        1,
+        30,
+        20
+      ],
+      "val_min": -0.4313,
+      "val_max": 0.5904,
+      "step_0_sample_6d": [
+        -0.1488,
+        -0.099,
+        0.1163,
+        -0.0304,
+        -0.1091,
+        0.4142
+      ],
+      "step_29_sample_6d": [
+        -0.1424,
+        -0.1218,
+        0.0867,
+        -0.0378,
+        -0.0924,
+        0.3952
+      ]
+    }
+  ]
+}

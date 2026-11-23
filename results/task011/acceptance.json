@@ -1,0 +1,136 @@
+{
+  "task": "Task011",
+  "status": "COMPLETED_WITH_NORMALIZATION_LIMITATION",
+  "actual_policy_chunk_inferences": 8,
+  "inference_conclusion": "INFERENCE VALID",
+  "input_sensitivity_conclusion": "INPUT SENSITIVITY OBSERVED",
+  "semantics_conclusion": "SEMANTIC CORRECTNESS NOT VERIFIED",
+  "baseline_reproducibility": {
+    "MAD": 0.0,
+    "RMSE": 0.0,
+    "max_absolute_difference": 0.0,
+    "exactly_equal": true
+  },
+  "sensitivity": {
+    "E03": {
+      "intervention": "language",
+      "observed": true,
+      "MAD": 0.1014212158570687,
+      "RMSE": 0.14114320676100497,
+      "max_absolute_difference": 0.33963608741760254,
+      "exactly_equal": false
+    },
+    "E04": {
+      "intervention": "language",
+      "observed": true,
+      "MAD": 0.34331017976316314,
+      "RMSE": 0.41195158807125226,
+      "max_absolute_difference": 0.8533740043640137,
+      "exactly_equal": false
+    },
+    "E05": {
+      "intervention": "camera1",
+      "observed": true,
+      "MAD": 0.05622354211596151,
+      "RMSE": 0.07043690806563947,
+      "max_absolute_difference": 0.3550611138343811,
+      "exactly_equal": false
+    },
+    "E06": {
+      "intervention": "camera2",
+      "observed": true,
+      "MAD": 0.03442047644716998,
+      "RMSE": 0.04401192280864766,
+      "max_absolute_difference": 0.07818746566772461,
+      "exactly_equal": false
+    },
+    "E07": {
+      "intervention": "state0",
+      "observed": true,
+      "MAD": 0.001311645954847336,
+      "RMSE": 0.0017130394892597265,
+      "max_absolute_difference": 0.008813142776489258,
+      "exactly_equal": false
+    },
+    "E08": {
+      "intervention": "state1",
+      "observed": true,
+      "MAD": 0.0014912389653424422,
+      "RMSE": 0.0018876688147078378,
+      "max_absolute_difference": 0.007076844573020935,
+      "exactly_equal": false
+    }
+  },
+  "sensitivity_threshold_max_abs": 1e-06,
+  "data_source": "SYNTHETIC",
+  "all_single_factor_tensor_checks_passed": true,
+  "all_output_shapes_and_finite_checks_passed": true,
+  "raw_and_post_exactly_equal_all": true,
+  "matching_physical_unnormalization": {
+    "status": "BLOCKED",
+    "reason": "Checkpoint statistics keys do not match observation.state/action; official components execute identity; no justified remapping is available"
+  },
+  "history_files_unchanged": 863,
+  "checkpoint_files_hashes_unchanged": true,
+  "model_resources_released": true,
+  "final_rss_bytes": 1051500544,
+  "completed_at": "2026-11-21T09:13:19.012+08:00",
+  "post_run_artifact_validation": {
+    "status": "PASS",
+    "checks": {
+      "E01": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [],
+        "state_and_post_are_identity": true
+      },
+      "E02": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [],
+        "state_and_post_are_identity": true
+      },
+      "E03": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [
+          "language_tokens"
+        ],
+        "state_and_post_are_identity": true
+      },
+      "E04": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [
+          "language_tokens",
+          "language_attention_mask"
+        ],
+        "state_and_post_are_identity": true
+      },
+      "E05": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [
+          "image_0"
+        ],
+        "state_and_post_are_identity": true
+      },
+      "E06": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [
+          "image_1"
+        ],
+        "state_and_post_are_identity": true
+      },
+      "E07": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [
+          "state"
+        ],
+        "state_and_post_are_identity": true
+      },
+      "E08": {
+        "input_and_output_hashes_verified": true,
+        "changed_boundary": [
+          "state"
+        ],
+        "state_and_post_are_identity": true
+      }
+    }
+  }
+}

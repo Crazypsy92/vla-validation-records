@@ -1,0 +1,37 @@
+{
+  "task_id": "Task 010",
+  "task_name": "SmolVLA Pretrained Model & Continuous Action Chunk Verification",
+  "timestamp": "2026-11-20 19:28:58",
+  "status": "PASSED",
+  "criteria": {
+    "independent_venv": {
+      "passed": true,
+      "detail": "Virtualenv created at ~/projects/ai-learning/vla-learning/.venv, zero collision with llama.cpp"
+    },
+    "hardware_safety": {
+      "passed": true,
+      "detail": "Model RSS is 1475.8 MB, well within 7.6 GB RAM. Zero OOM or swap thrashing."
+    },
+    "official_model_loaded": {
+      "passed": true,
+      "detail": "Successfully loaded 'lerobot/smolvla_base' (SmolVLAPolicy + SmolVLM2-500M-Video-Instruct backbone)"
+    },
+    "real_inference_executed": {
+      "passed": true,
+      "detail": "Authentic policy._get_action_chunk and select_action flow matching execution (10 diffusion steps), zero mocked numbers"
+    },
+    "continuous_action_chunk_verified": {
+      "passed": true,
+      "detail": "Output tensor shape [1, 50, 6], continuous trajectory across 50 time steps and 6 DOF"
+    },
+    "pre_post_processing_verified": {
+      "passed": true,
+      "detail": "make_pre_post_processors properly configured, unnormalizer restores valid physical actuator bounds"
+    },
+    "no_interference_with_prior_tasks": {
+      "passed": true,
+      "detail": "Task 001-009 directories, llama.cpp binary, and workbench codebase strictly untouched"
+    }
+  },
+  "summary": "SmolVLA verified on CPU with real action chunk generation across 3 scenarios."
+}

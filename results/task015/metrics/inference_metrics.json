@@ -1,0 +1,33 @@
+{
+  "system_profile": {
+    "device": "CPU",
+    "threads": 8,
+    "architecture": "WSL2 Ubuntu 24.04 (Linux x86_64)",
+    "worker_runtime": "Isolated .venv_xvla (IPC JSON Lines)"
+  },
+  "model_profile": {
+    "model_id": "lerobot/xvla-libero",
+    "total_params": "879.48 Million",
+    "vlm_params": "859.95 Million",
+    "action_expert_params": "19.53 Million",
+    "chunk_size": 30,
+    "flow_matching_steps": 10
+  },
+  "latency_breakdown": {
+    "model_load_seconds": 27.37,
+    "sample_01_single_inference_seconds": 34.07,
+    "consecutive_3_runs_seconds": [
+      34.41,
+      82.95,
+      45.76
+    ],
+    "average_inference_seconds": 54.37,
+    "per_step_latency_seconds": 1.812
+  },
+  "acceptance_summary": {
+    "total_tests": 17,
+    "passed_tests": 17,
+    "failed_tests": 0,
+    "status": "PASS"
+  }
+}
