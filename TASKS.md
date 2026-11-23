@@ -10,8 +10,7 @@
 | --- | --- | --- | --- | --- |
 | Task017-R2 | 完整回合证据归档，明确抓持判据例外 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 官方任务 3/3 验收；抓持与释放例外转 Task018 |
 | Task018 | **夹爪抓放审计与 VLA Workbench 三层监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **ACCEPTED_WITH_FOLLOWUP / 已关闭** | 20项报告归档；截图暴露的画面因果性与模式语义转 Task019 |
-
-| Task019 | **真实 LIBERO 视频连续回放 + 当前/最终状态与帧时序纠偏** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **OPEN / 可领取** | 先审计本地 rollout.mp4 帧数/FPS/步号，再修复 GUI 并集成视频播放 | 
+| Task019 | **真实 LIBERO 视频连续回放 + 当前/最终状态与帧时序纠偏** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **REVIEW / 待外部审核** | 视频审计、20FPS双视角流切分、P0/P1定向修复及验收报告已就绪，等待评审标记 ACCEPTED |
 
 ## 历史归档
 
@@ -23,6 +22,7 @@
 | Task017（初期） | 60 步三种子闭环，软件 3/3、任务 0/3 | [技术报告](docs/task017_libero_closed_loop.md) · [验收](docs/task017_acceptance_report.md) | **仅初期 60 步测试，不是较新完整任务测试** |
 | Task017（完整回合） | 24 次推理/664 步，LIBERO 判定 3/3 成功，第二只杯终止前未主动释放 | [技术报告](docs/task017_full_rollout.md) · [验收报告](docs/task017_full_rollout_acceptance.md) | **官方判定 3/3 成功，但第二只杯未观察到张爪释放** |
 | Task018（抓放监控） | 历史数据冲突查清，证实白杯真实抬升9.99cm；确证LeRobot成功强行terminated=True；确证终态动作块已规划释放(-1.0)；完成P0/P1审查定向修复；Workbench上线三层隔离监控与历史回放 | [技术报告](docs/task018_grasp_monitor_and_release.md) · [验收报告](docs/task018_grasp_monitor_and_release_acceptance.md) · [审查修复报告](docs/task018_review_fixes.md) | **官方 3/3 成功，杯1释放通过，杯2因环境终止未下发张开** |
+| Task019（连续视频回放） | 视频流审计(512x256@20FPS)，双视角流切分(主视角/副视角)，帧步1:1零插值对齐；P0.1模式单一数据源；P0.2杜绝未来帧泄漏；P0.3瞬时步与全局总结解耦；P1.1语义纠偏；上线连续播放控件(Play/Pause/Scrub/0.5x~2.0x/系统播放器) | [技术与验收报告](docs/task019_replay_video.md) · [验收矩阵](results/task019/acceptance.json) | **基于Task017原始录像，不重跑推理，不修改权重** |
 
 ## 标准工作流
 
