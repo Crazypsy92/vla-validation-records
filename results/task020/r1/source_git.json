@@ -1,0 +1,16 @@
+{
+  "active_source_has_git": false,
+  "branch": "task020-r1",
+  "snapshot_baseline": "545411cb0271f41a1de474233bcd808319dff6d9",
+  "commit": "ad43ca9b652f06136507f9d7f755d2690cf21779",
+  "diffstat": " workbench/tests/stub_task020_worker.py    |  50 ++++++++\n workbench/tests/test_task020_r1.py        | 116 +++++++++++++++++++\n workbench/tests/test_task020_r1_worker.py |  51 +++++++++\n workbench/ui/book_pilot_panel.py          | 184 ++++++++++++++++++++++++------\n workbench/ui/main_window.py               |  84 +++++++++++++-\n workbench/workers/book_pilot.py           |  29 ++++-\n workbench/workers/book_resources.py       |  57 +++++++++\n 7 files changed, 524 insertions(+), 47 deletions(-)\n",
+  "files": [
+    "workbench/ui/main_window.py",
+    "workbench/ui/book_pilot_panel.py",
+    "workbench/workers/book_pilot.py",
+    "workbench/workers/book_resources.py",
+    "workbench/tests/test_task020_r1.py",
+    "workbench/tests/test_task020_r1_worker.py",
+    "workbench/tests/stub_task020_worker.py"
+  ]
+}

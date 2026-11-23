@@ -1,0 +1,69 @@
+{
+  "phase": "R1 Phase 1",
+  "task_id": "Task020",
+  "status": "PHASE_1_REVIEW",
+  "source_commit": "ad43ca9b652f06136507f9d7f755d2690cf21779",
+  "seed203_started": false,
+  "full_checkpoint_loaded": false,
+  "tests": [
+    {
+      "name": "回放、资源保护、IPC、真实 Task 5 边界",
+      "command": "DISPLAY=:0 MUJOCO_GL=egl HF_HUB_OFFLINE=1 .venv_xvla/bin/python -m unittest -v workbench.tests.test_task020_r1 workbench.tests.test_ui_headless workbench.tests.test_ipc workbench.tests.test_task020_r1_worker",
+      "log": "logs/r1_regression.log",
+      "exit_code": 0
+    },
+    {
+      "name": "旧版绝对动作集成",
+      "command": "MUJOCO_GL=egl HF_HUB_OFFLINE=1 PYTHONPATH=. .venv_xvla/bin/python workbench/tests/test_action_step.py",
+      "log": "logs/legacy_action_step.log",
+      "exit_code": 0
+    }
+  ],
+  "checks": [
+    {
+      "id": "R1-01",
+      "status": "PARTIAL",
+      "evidence": "有 Windows / WSL、RSS/PSS、旧 OOM 内核证据和低负载样本。完整模型的分阶段峰值待第二阶段测量。"
+    },
+    {
+      "id": "R1-02",
+      "status": "PARTIAL",
+      "evidence": "离线 Worker 改为按需启动。模拟压力测试中仅一个书本子进程，且退出后 PID 已消失。完整模型回合的资源回收待量测。"
+    },
+    {
+      "id": "R1-03",
+      "status": "PASS",
+      "evidence": "GUI 显示 WSL、Swap 与进程内存。压力注入后测试 Worker 协作退出并生成 JSON、图片和可解码 MP4。真实 Worker 启动检查可在下载和加载前停止。"
+    },
+    {
+      "id": "R1-04",
+      "status": "PASS",
+      "evidence": "实际 Workbench 两路图像和本体状态来自同一回放步。书本指令完整显示，回到离线后恢复杯子样本。"
+    },
+    {
+      "id": "R1-05",
+      "status": "PASS",
+      "evidence": "Seed 201、202 从起始帧播到终帧，当前 Seed 独立于 Next Run Seed。"
+    },
+    {
+      "id": "R1-06",
+      "status": "NOT_RUN",
+      "evidence": "本轮仅执行第一阶段。Seed203 没有启动，完整检查点没有加载。"
+    },
+    {
+      "id": "R1-07",
+      "status": "PASS",
+      "evidence": "原有权重和控制参数沿用。测试只向 R1 目录写证据，既有正式回合保留。"
+    },
+    {
+      "id": "R1-08",
+      "status": "PASS",
+      "evidence": "历史状态按正式成功、正式未成功及中断区分。Seed203 的既有中断记录可按步骤浏览，缺帧显示 N/A。"
+    },
+    {
+      "id": "R1-09",
+      "status": "PASS",
+      "evidence": "有真实源码快照提交、diff、测试退出码、资源证据与实际窗口截图。"
+    }
+  ]
+}

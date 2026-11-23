@@ -1,0 +1,2 @@
+[33455.548184] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=distro-1971,mems_allowed=0,global_oom,task_memcg=/wsl-user/distro-1971/non-systemd,task=python,pid=4697,uid=1000
+[33455.550487] Out of memory: Killed process 4697 (python) total-vm:15391708kB, anon-rss:5399220kB, file-rss:92kB, shmem-rss:0kB, UID:1000 pgtables:14060kB oom_score_adj:0

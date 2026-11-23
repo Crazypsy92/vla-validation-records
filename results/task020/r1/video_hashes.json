@@ -1,0 +1,17 @@
+[
+  {
+    "path": "results/task020/records/seed_201/rollout.mp4",
+    "size": 679694,
+    "sha256": "5c9d781e83b2cc13a1c0481699db6e816874fbdb8a513e584037e7416ac175cc"
+  },
+  {
+    "path": "results/task020/records/seed_202/rollout.mp4",
+    "size": 734140,
+    "sha256": "2928b604cec17ac0d6d75f7439b11ad20455f829c5431c728deadeecf48b9ae2"
+  },
+  {
+    "path": "results/task020/r1/fake_worker/smoke/seed_201_1795431133974346853/rollout.mp4",
+    "size": 2282,
+    "sha256": "a8a321af47d0490aa0481b253cadf8cb30a33eb3e99a26e87398e115eb6981c2"
+  }
+]

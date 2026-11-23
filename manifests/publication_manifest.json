@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-23",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 128,
-  "total_size_kb": 5457.02,
+  "total_files": 140,
+  "total_size_kb": 6176.11,
   "files": [
     {
       "path": ".gitignore",
@@ -20,8 +20,8 @@
     },
     {
       "path": "TASKS.md",
-      "size": 4716,
-      "sha256": "3a18b35af09931f32efbfda2ee03c4714e16999e1d564fc8ba7438605fb0fd22",
+      "size": 4969,
+      "sha256": "a49d508a45b5dcb6db3ad1af97a6a1089c7676bfdaf767fc1ee5863de4db2a32",
       "category": "Config",
       "task": "General"
     },
@@ -899,6 +899,90 @@
       "sha256": "9be0d877ae235fa00b85c1cef7f97d69beea1c6d04dadf82e6969b3a13a9ef64",
       "category": "Config",
       "task": "General"
+    },
+    {
+      "path": "docs/task020_r1_phase1_results.md",
+      "category": "Report",
+      "task": "Task 020",
+      "size": 4739,
+      "sha256": "ad97d36a50b359c2be5b541acc0a90cddb5a3bc266b677845ffba5495a4a7c8e"
+    },
+    {
+      "path": "docs/task020_r1_stability_and_gui.md",
+      "category": "Report",
+      "task": "Task 020",
+      "size": 8306,
+      "sha256": "d3d9a90df05eab4746413faab861701298b83d3857d1d731cb68e3f7c1b354ba"
+    },
+    {
+      "path": "results/task020/r1/acceptance.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 2652,
+      "sha256": "b16c6d90820522a82ee4fff3681c2ae56c4552e78efa534ba58d9872e69cc0dc"
+    },
+    {
+      "path": "results/task020/r1/source_git.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 1020,
+      "sha256": "bfd4359063796fdd64130a7e6c518b897c90d269ec93f2de68c664e1756761fd"
+    },
+    {
+      "path": "results/task020/r1/memory_test.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 630,
+      "sha256": "7449322bd5820dd3d5ad3909c4aea53ad925bd903c3b947113c1004e04a902c7"
+    },
+    {
+      "path": "results/task020/r1/logs/r1_regression.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 3998,
+      "sha256": "fd0fa045cf6ed2944e7cbc1dd168aa94aa52e599a65dd5ef021c55d1e1ba8351"
+    },
+    {
+      "path": "results/task020/r1/logs/legacy_action_step.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 1035,
+      "sha256": "c1f67a0c8baa0582bf43d4a2cbfdfb85dff2bb4340e34aae5a2d524369f6bb49"
+    },
+    {
+      "path": "results/task020/r1/logs/prior_oom_excerpt.log",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 359,
+      "sha256": "bb10d91a72b0ada586078dd548931aa8433c1250f810141d83c0e9b93f5328d9"
+    },
+    {
+      "path": "results/task020/r1/screenshots/seed_201_historical.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 265112,
+      "sha256": "4ec67dbc23396efead4d2f9e9980654702c3a662cf00fb5635c1dd7118ed634b"
+    },
+    {
+      "path": "results/task020/r1/screenshots/seed_202_historical.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 266174,
+      "sha256": "527c7747a17f4353ec0574329813fab8b7bf650246de9e77f2bf99e4ae97e7a9"
+    },
+    {
+      "path": "results/task020/r1/screenshots/simulated_resource_pressure.png",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 181529,
+      "sha256": "15f30d854b0aca02f01c47f9a6e4c9e05a442a7d629f2afc2f7570df032ba8bd"
+    },
+    {
+      "path": "results/task020/r1/video_hashes.json",
+      "category": "Evidence",
+      "task": "Task 020",
+      "size": 544,
+      "sha256": "10a1740a9aa8f40d9be25a285d6296c311c928a1c079d334543ce174ade3532a"
     }
   ]
 }

@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修）
-- **白名单发布文件总数**：128 个
-- **总归档体积**：5457.02 KB
+- **归档范围**：Task 010 ～ Task 019 完整技术链条，以及 Task020 书本试点和 R1 第一阶段
+- **白名单发布文件总数**：140 个
+- **总归档体积**：6176.11 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 128 项）
+## 二、白名单发布文件清单（共 140 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
 | **General** | `README.md` | 14651 | `689111aaa5ca45cf...` | Config | 书本试点 |
-| **General** | `TASKS.md` | 4716 | `3a18b35af09931f3...` | Config | 书本试点 |
+| **General** | `TASKS.md` | 4969 | `a49d508a45b5dcb6...` | Config | R1 第一阶段 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -149,6 +149,19 @@
 | **Task 020** | `results/task020/metrics/registry_audit_summary.json` | 566 | `f35340b34d7ca3b6...` | Evidence | 书本试点 |
 | **Task 020** | `results/task020/registry_audit_acceptance.json` | 1427 | `3e4f2adae4103e42...` | Evidence | 书本试点 |
 | **Task 020** | `results/task020/logs/windows_shortcut.log` | 184 | `8820b736c85f64b6...` | Evidence | 书本试点 |
+
+| **Task 020** | `docs/task020_r1_phase1_results.md` | 4739 | `ad97d36a50b359c2...` | Report | R1 第一阶段 |
+| **Task 020** | `docs/task020_r1_stability_and_gui.md` | 8306 | `d3d9a90df05eab47...` | Report | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/acceptance.json` | 2652 | `b16c6d90820522a8...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/source_git.json` | 1020 | `bfd4359063796fdd...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/memory_test.json` | 630 | `7449322bd5820dd3...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/logs/r1_regression.log` | 3998 | `fd0fa045cf6ed294...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/logs/legacy_action_step.log` | 1035 | `c1f67a0c8baa0582...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/logs/prior_oom_excerpt.log` | 359 | `bb10d91a72b0ada5...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/screenshots/seed_201_historical.png` | 265112 | `4ec67dbc23396efe...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/screenshots/seed_202_historical.png` | 266174 | `527c7747a17f4353...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/screenshots/simulated_resource_pressure.png` | 181529 | `15f30d854b0aca02...` | Evidence | R1 第一阶段 |
+| **Task 020** | `results/task020/r1/video_hashes.json` | 544 | `10a1740a9aa8f40d...` | Evidence | R1 第一阶段 |
 
 ---
 

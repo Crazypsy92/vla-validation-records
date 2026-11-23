@@ -69,3 +69,7 @@
 在本地 `vla-learning/docs/task020_r1_stability_and_gui.md`、`results/task020/r1/` 归档本轮结果；GitHub 分支 `task020-workbench-book-pilot` 同步 `docs/task020_r1_stability_and_gui.md`、精简验收 JSON、资源指标、精选截图和报告；原始模型权重及 MP4 大文件留本地。
 
 完成后在 Issue #4 评论 `STATUS: REVIEW`，标明每个验收项状态、源码和归档 Commit、测试命令与退出码、Seed203 结果和本地录像哈希。若资源阻断，评论 `STATUS: BLOCKED` 并给出下一步可操作的资源预算。**不要自动开始 Task021**。
+
+## 第一阶段实施结果
+
+源码修复、真实窗口回放与模拟压力测试已完成，等待第一阶段验收。Seed 203 正式补测留在第二阶段。 [第一阶段报告](task020_r1_phase1_results.md)

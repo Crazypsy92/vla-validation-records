@@ -11,7 +11,7 @@
 | Task017-R2 | 完整回合证据归档，明确抓持判据例外 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 官方任务 3/3 验收；抓持与释放例外转 Task018 |
 | Task018 | **夹爪抓放审计与 VLA Workbench 三层监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **ACCEPTED_WITH_FOLLOWUP / 已关闭** | 20项报告归档；截图暴露的画面因果性与模式语义转 Task019 |
 | Task019-R1（Task019返修） | **回放数据可信度与桌面显示修复** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | R1-01～R1-08 通过；内部回放通过。外部播放器未验证，模型前向按范围未重跑；进入 Task020 |
-| Task020-R1 | **Workbench 书本抓放内存稳定性 / GUI 数据源修复 / Seed203 补测** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **CHANGES_REQUESTED / 返修中** | Seed201/202 官方成功但未释放；Seed203 因中断/WSL OOM 无终态。先资源诊断与 GUI 一致性修复，再决定补测。 [R1 执行说明](docs/task020_r1_stability_and_gui.md) · [已有实验报告](docs/task020_workbench_book_pilot.md) |
+| Task020-R1 | **Workbench 书本抓放内存稳定性 / GUI 数据源修复 / Seed203 补测** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **CHANGES_REQUESTED / 返修中** | Seed201/202 官方成功但未释放；Seed203 因中断/WSL OOM 无终态。先资源诊断与 GUI 一致性修复，再决定补测。 [R1 执行说明](docs/task020_r1_stability_and_gui.md) · [已有实验报告](docs/task020_workbench_book_pilot.md) · [第一阶段结果](docs/task020_r1_phase1_results.md) |
 
 ## 历史归档
 

@@ -1,0 +1,32 @@
+{
+  "before": {
+    "pid": 73449,
+    "rss_mib": 682,
+    "pss_mib": 676,
+    "total_mib": 7798,
+    "available_mib": 6308,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 936
+  },
+  "after": {
+    "pid": 73449,
+    "rss_mib": 971,
+    "pss_mib": 965,
+    "total_mib": 7798,
+    "available_mib": 5990,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 937
+  },
+  "test_worker_pid": 73581,
+  "reaped": true,
+  "injected_sample": {
+    "pid": 73449,
+    "rss_mib": 973,
+    "pss_mib": 948,
+    "total_mib": 7798,
+    "available_mib": 350,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 64
+  },
+  "full_checkpoint_loaded": false
+}

@@ -1,0 +1,17 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python ./.venv_xvla/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python ./.venv_xvla/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Action space: Box(-inf, inf, (1, 7), float32)
+Initial EEF position: [-0.0527103  -0.01123159  0.68685997]
+Step 1 success!
+Reward: [0.]
+Terminated: [False]
+Info: {'is_success': array([False]), 'task': ('put the white mug on the left plate and put the yellow and white mug on the right plate',), 'elapsed_steps': array([1]), 'metrics': {}}
+New EEF position after step: [-0.05292044 -0.02140789  0.6867994 ]
+Render success! Frame shape: (256, 256, 3)
+
+exit=0
