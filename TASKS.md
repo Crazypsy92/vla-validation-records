@@ -11,7 +11,7 @@
 | Task017-R2 | 完整回合证据归档，明确抓持判据例外 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 官方任务 3/3 验收；抓持与释放例外转 Task018 |
 | Task018 | **夹爪抓放审计与 VLA Workbench 三层监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **ACCEPTED_WITH_FOLLOWUP / 已关闭** | 20项报告归档；截图暴露的画面因果性与模式语义转 Task019 |
 | Task019-R1（Task019返修） | **回放数据可信度与桌面显示修复** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | R1-01～R1-08 通过；内部回放通过。外部播放器未验证，模型前向按范围未重跑；进入 Task020 |
-| Task020 | **X-VLA 跨物体类别与抓放任务迁移验证** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **BLOCKED / 选题不足** | 官方 LIBERO-10 只有 Task 5 满足条件，等选题范围确定。 [审计报告](docs/task020_object_generalization.md) |
+| Task020 | **VLA Workbench 驱动 X-VLA 书本抓放闭环试点（LIBERO-10 Task 5）** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **OPEN / READY** | 先完成 GUI 环境兼容与冒烟测试，再从 Workbench 执行 Seed 201/202/203。 [执行说明](docs/task020_workbench_book_pilot.md) · [原始选题审计](docs/task020_object_generalization.md) |
 
 ## 历史归档
 
@@ -33,6 +33,6 @@
 4. 上传 commit/PR 及原始证据，评论 STATUS: REVIEW；无法完成时评论 STATUS: BLOCKED。
 5. 由 ChatGPT 与用户审核后标记 STATUS: ACCEPTED，再关闭 Issue、发布下一个任务。
 
-**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；Issue #2 已 ACCEPTED_WITH_FOLLOWUP 并关闭；Issue #3（Task019-R1）已按 ACCEPTED_WITH_LIMITATIONS 关闭；**当前唯一可领取任务是 Issue #4（Task020）**。不自动开展 Task021。
+**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；Issue #2 已 ACCEPTED_WITH_FOLLOWUP 并关闭；Issue #3（Task019-R1）已按 ACCEPTED_WITH_LIMITATIONS 关闭；**当前唯一可领取任务是 Issue #4（Task020）**。Task020 原两任务选题方案已因候选不足而 BLOCKED；经用户确认，现改为 Workbench-first 的 LIBERO-10 Task 5 书本抓放单任务试点。不自动开展 Task021。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**
