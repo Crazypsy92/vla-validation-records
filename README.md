@@ -8,13 +8,13 @@
 
 本仓库**仅用于归档保存**阶段验收报告、物理语义规范、结构化实验指标与精选仿真证据，不包含未经裁剪的模型权重、庞大数据集或本地开发环境。
 
-> **任务接力入口**：[TASKS.md](TASKS.md) · [当前任务 Task019 / Issue #3](https://github.com/Crazypsy92/vla-validation-records/issues/3) · [Antigravity 接力规范](docs/remote_task_relay.md)。默认不启用定时任务。
+> **任务接力入口**：[TASKS.md](TASKS.md) · [当前任务 Task020 / Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4) · [Antigravity 接力规范](docs/remote_task_relay.md)。默认不启用定时任务。
 >
 > **版本提示（2026-11-23）**：仓库现有 Task017 正式报告记录的是**初期 60 步闭环（软件 3/3 PASS、任务 0/3）**；用户另汇报了**后续完整回合（664 步、24 次推理、LIBERO 3/3 成功，但第二杯未观察到主动松爪）**。后者的原始摘要、验收报告和精选证据**已归档并经有限边界审核**，参见 [Issue #1](https://github.com/Crazypsy92/vla-validation-records/issues/1)。两版证据不可混用，完整主动释放亦不可由 LIBERO 成功判定替代。
 
 ---
 
-> **Task018 后续验收结论（2026-11-23）**：原抓持/释放审计、三层回放与 20 项验收报告已以 `ACCEPTED_WITH_FOLLOWUP` 归档；用户截图发现历史回放模式标识、未来关键帧（Step49 显示 #060，Step106 显示 #120）、整回合 PASS/当前步、左侧样本来源易混淆。现由 [Task019 / Issue #3](https://github.com/Crazypsy92/vla-validation-records/issues/3) 专项修复并接入本地真实视频回放，不修改历史验收数据。
+> **Task019-R1 验收结论（2026-11-23）**：回放数据源、状态字段、JSON/manifest、WSLg 桌面显示、指标定义及视频哈希已完成复核，按 `ACCEPTED_WITH_LIMITATIONS` 关闭；内部 Workbench 回放通过，外部播放器未验证，且本轮按范围未重跑模型/仿真。返修报告见 [task019-review 分支](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md)。下一步转入 [Task020 / Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4)，开展非杯类物体的 X-VLA 闭环迁移验证。
 
 ## ⚠️ 重要声明与验证边界 (Important Disclaimers)
 
@@ -75,7 +75,8 @@ flowchart LR
 | **Task 017（初期 60 步）** | X-VLA + LIBERO 仿真闭环与多种子重复性测试 | `xvla-libero` | **PASS** | [闭环总结](docs/task017_libero_closed_loop.md) / [验收报告](docs/task017_acceptance_report.md) | [closed_loop.json](results/task017/metrics/closed_loop_metrics.json) | [init.png](evidence/task017/episode_seed_42_step_000_init.png) / [final.png](evidence/task017/episode_seed_42_final.png) |
 | **Task 017（完整长程）** | 24 次推理/664 步双杯拾放，LIBERO 判定 3/3 成功（第二只杯未观察到张爪） | `xvla-libero` | **ACCEPTED (有边界)** | [完整报告](docs/task017_full_rollout.md) / [验收报告](docs/task017_full_rollout_acceptance.md) | [episodes.json](results/task017/metrics/episodes.json) / [manipulation.json](results/task017/metrics/manipulation.json) | [mug1_placed.png](evidence/task017/full_rollout_ep00_0090_mug1_placed.png) / [final_success.png](evidence/task017/full_rollout_ep00_0223_final_success.png) |
 | **Task 018** | 夹爪抓放专项审计与 Workbench 机械臂运行监控回放 (含审查定向修复) | `xvla-libero` | **ACCEPTED / 已闭环** | [专项报告](docs/task018_grasp_monitor_and_release.md) / [验收报告](docs/task018_grasp_monitor_and_release_acceptance.md) / [审查修复报告](docs/task018_review_fixes.md) | [audit.json](results/task018/metrics/grasp_release_audit.json) / [acceptance.json](results/task018/acceptance.json) | [offline.png](evidence/task018/offline_monitor_isolation.png) / [mug1_release.png](evidence/task018/replay_mug1_place_and_release.png) / [mug2_success.png](evidence/task018/replay_mug2_success_touchdown.png) / [desktop.png](evidence/task018/windows_desktop_real_verification.png) |
-| **Task 019 / R1** | VLA Workbench 连续视频回放返修：状态数据可信度、JSON 完整性、Windows 显示与指标追溯 | `xvla-libero` | **CHANGES_REQUESTED / 返修中** | [Task019 技术报告](docs/task019_replay_video.md) / [R1 任务](https://github.com/Crazypsy92/vla-validation-records/issues/3) | [video_metadata.json](results/task019/metrics/video_metadata.json) / [acceptance.json](results/task019/acceptance.json) | 原始截图见 [Task019 截图目录](results/task019/screenshots/) |
+| **Task 019 / R1** | Workbench 连续视频回放、状态数据可信度与归档修复 | `xvla-libero` | **ACCEPTED_WITH_LIMITATIONS** | [Task019 技术报告](docs/task019_replay_video.md) / [R1 返修报告](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md) | [video_metadata.json](results/task019/metrics/video_metadata.json) / [acceptance.json](results/task019/acceptance.json) | [复审截图](https://github.com/Crazypsy92/vla-validation-records/tree/task019-review/evidence/task019) |
+| **Task 020** | X-VLA 跨物体类别与抓放任务迁移验证：两个非杯类任务、六个完整 Episode | `xvla-libero` | **OPEN / 当前任务** | [Task020 Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | 待执行 | 待执行 |
 
 ---
 
@@ -101,9 +102,10 @@ flowchart LR
 
 ## 五、后续发展规划 (Roadmap)
 
-1. **Task018：夹爪与机械臂实际工作状态可视化**：复核抓持判据冲突，将预测命令、仿真控制、末端与物体实际反馈、任务进度接入现有 Workbench 的历史 Episode 回放；
-2. **Task018 完成后**：根据真实接触、抓持与释放验收，再考虑多任务 LIBERO 扩展；
-3. **机器人适配及性能优化（后续）**：待真实相机、机器人动作接口和计算硬件确定后，再评估 ROS 2 对接、微调、GPU/NPU 优化；不提前承诺速度或实机效果。
+1. **Task019 / R1（已完成，有限边界）**：完成真实视频连续回放、当前步状态可信度与归档数据修复；外部播放器验证保留为非阻断项；
+2. **Task020（当前）**：使用同一 X-VLA 检查点，在 LIBERO 中验证两个非杯类物体的抓取与放置闭环，形成跨物体类别的初步证据；
+3. **Task021（后续候选）**：根据 Task020 失败类型，再决定是否开展随机位置、视角变化、遮挡或任务组合的鲁棒性测试；
+4. **真实机器人与边缘部署（后续）**：待机器人、相机和控制机型号明确后，再评估 ROS 2 对接、必要的数据适配、微调及 CPU/GPU/NPU 优化；当前不提前承诺实机效果。
 
 ---
 
