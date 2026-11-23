@@ -11,7 +11,7 @@
 | Task017-R2 | 完整回合证据归档，明确抓持判据例外 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 官方任务 3/3 验收；抓持与释放例外转 Task018 |
 | Task018 | **夹爪抓放审计与 VLA Workbench 三层监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **ACCEPTED_WITH_FOLLOWUP / 已关闭** | 20项报告归档；截图暴露的画面因果性与模式语义转 Task019 |
 | Task019-R1（Task019返修） | **回放数据可信度与桌面显示修复** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | R1-01～R1-08 通过；内部回放通过。外部播放器未验证，模型前向按范围未重跑；进入 Task020 |
-| Task020-R1 | **Workbench 书本抓放资源验证** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **PHASE 2 REVIEW** | 真实 X-VLA 前向 1 次、仿真 30 步并由 GUI 停止。Seed 203 尚未补测。 [验证报告](docs/task020_r1_phase2_results.md) |
+| Task020-R1 | **Workbench 三动作块闭环与状态复验** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **PHASE 3 REVIEW** | [本轮验证报告](docs/task020_r1_phase3_results.md) · [Phase 2](docs/task020_r1_phase2_results.md) |
 
 ## 历史归档
 

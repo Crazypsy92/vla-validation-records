@@ -1,0 +1,89 @@
+{
+  "task": "Task020-R1 Phase 3",
+  "status": "REVIEW",
+  "run_id": "phase3_seed_201",
+  "seed": 201,
+  "seed203_started": false,
+  "checks": [
+    {
+      "id": "P3-01",
+      "status": "PASS",
+      "evidence": "从桌面快捷方式打开 Workbench，并在点击运行前核对 Seed 201、Task 5 和三块短测。记录 Windows、WSL 和进程基线。",
+      "paths": [
+        "screenshots/before_run.png",
+        "metrics/wsl_baseline.json"
+      ]
+    },
+    {
+      "id": "P3-02",
+      "status": "PASS",
+      "evidence": "同一 CPU 模型实例完成三次真实前向，输入 Step 为 0、30、60。",
+      "paths": [
+        "metrics/summary.json",
+        "logs/gui_driver.log"
+      ]
+    },
+    {
+      "id": "P3-03",
+      "status": "PASS",
+      "evidence": "逐块核验前块末步、chunk_finished、输入采样、前向开始和输出的单调时序。六张输入图像 SHA256 与记录一致，8D 输入和逐步反馈一致。",
+      "paths": [
+        "runs/phase3_seed_201/events.jsonl",
+        "logs/verification.log"
+      ]
+    },
+    {
+      "id": "P3-04",
+      "status": "PASS",
+      "evidence": "三块各执行 30 步。每条下发动作与对应 Plan 和 OSC 位置目标对齐，每步 Feedback 独立保留。",
+      "paths": [
+        "runs/phase3_seed_201/events.jsonl",
+        "logs/verification.log"
+      ]
+    },
+    {
+      "id": "P3-05",
+      "status": "PASS",
+      "evidence": "真实运行中 Step 30、60、90 的上方状态与下方当前步一致，阶段、回合、图像及状态均来自本轮。",
+      "paths": [
+        "screenshots/forward_gate_step_030.png",
+        "screenshots/forward_gate_step_060.png",
+        "screenshots/live_step_090.png"
+      ]
+    },
+    {
+      "id": "P3-06",
+      "status": "PASS",
+      "evidence": "从 GUI 停止，退出码 0。91 帧可解码，Phase 3 独立历史条目从 Step 0 播到 Step 90。",
+      "paths": [
+        "screenshots/replay_step_000.png",
+        "screenshots/replay_step_090.png",
+        "metrics/summary.json"
+      ]
+    },
+    {
+      "id": "P3-07",
+      "status": "PASS",
+      "evidence": "本轮保留内存压力阈值，未触发。保留每阶段用量及采样，模型卸载后 Worker 退出，GUI 保留。",
+      "paths": [
+        "runs/phase3_seed_201/resources_worker.jsonl",
+        "metrics/lifecycle.jsonl"
+      ]
+    },
+    {
+      "id": "P3-08",
+      "status": "PASS",
+      "evidence": "14 个历史文件 SHA256 前后相同。短测输出、截图、源差异、日志和可核查视频哈希已归档。",
+      "paths": [
+        "metrics/history_before.json",
+        "metrics/history_after.json"
+      ]
+    }
+  ],
+  "regression": {
+    "existing_tests": 11,
+    "exit_code": 0,
+    "verification_exit_code": 0
+  },
+  "source_diff_sha256": "73d4fbbfdfd7f2b96c07ceb91c90e8f702ba1e11844a9a505ac12dcf5356f12c"
+}

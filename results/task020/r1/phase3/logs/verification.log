@@ -1,0 +1,4 @@
+[(0, 0, 30, 41.4525), (1, 30, 30, 38.2428), (2, 60, 30, 44.2686)]
+Status STOPPED Steps 90 Peak RSS/PSS 6603 6594 Min WSL/Swap 1429 55 Video {'frames': 91, 'fps': 20.0, 'sha256': '8f9bf5c86b8a5b495a6db6760a133c601334263eb90072dc5abb8857e0512604', 'bytes': 398947}
+
+exit=0

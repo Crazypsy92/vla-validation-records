@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修），以及 Task020-R1 Phase 2
-- **白名单发布文件总数**：129 个
-- **总归档体积**：5832.89 KB
+- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修），以及 Task020-R1 Phase 2、Phase 3
+- **白名单发布文件总数**：162 个
+- **总归档体积**：9172.96 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 129 项）
+## 二、白名单发布文件清单（共 162 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **General** | `README.md` | 13730 | `5618f84d162abc0e...` | Config | Task020-R1 Phase 2 |
-| **General** | `TASKS.md` | 4575 | `960b66cb21e77f70...` | Config | Task020-R1 Phase 2 |
+| **General** | `README.md` | 13762 | `f6547947a5c9296b...` | Config | Task020-R1 Phase 3 |
+| **General** | `TASKS.md` | 4552 | `6e622f48845327dd...` | Config | Task020-R1 Phase 3 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -151,6 +151,40 @@
 | **Task 020** | `results/task020/r1/phase2/screenshots/live_step_30.png` | 300123 | `f739f81c4b5755a6...` | Evidence | Task020-R1 Phase 2 |
 | **Task 020** | `results/task020/r1/phase2/screenshots/model_ready.png` | 169237 | `3ad15640c2240740...` | Evidence | Task020-R1 Phase 2 |
 | **Task 020** | `results/task020/r1/phase2/screenshots/stopped.png` | 301965 | `21c19f33a3f1edd7...` | Evidence | Task020-R1 Phase 2 |
+
+| **Task 020** | `docs/task020_r1_phase3_results.md` | 4631 | `7f922f2fa41747b6...` | Report | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/acceptance.json` | 2880 | `902c8e0b7c54c71e...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/logs/gui_driver.log` | 306 | `d0b219aedf108203...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/logs/regression.log` | 3695 | `21f62bcb570170a2...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/logs/runs_phase3_seed_201.log` | 748 | `6b79c1e9d2ce909b...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/logs/verification.log` | 271 | `e1b0e943651a9a31...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/metrics/history_after.json` | 1775 | `b0edfbd0216e1ad7...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/metrics/history_before.json` | 1775 | `b0edfbd0216e1ad7...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/metrics/lifecycle.jsonl` | 74541 | `d2a2bb48c854e189...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/metrics/summary.json` | 4864 | `86618b986d77f200...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/metrics/windows_baseline.json` | 121 | `45bb83e7f777df21...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/metrics/wsl_baseline.json` | 318 | `029ff07ea655b47e...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/chunk_000.json` | 29816 | `28a1b86b5a1d0f4d...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/chunk_001.json` | 29775 | `6d2954b964d58ded...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/chunk_002.json` | 29628 | `f528ffa3f6ad2ac7...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/configuration.json` | 976 | `9f63d96cd65cfc2d...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/events.jsonl` | 179395 | `7610b0f066a006af...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/resources_gui.jsonl` | 43004 | `055011df7f2a6473...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/resources_gui_observed_worker.jsonl` | 43443 | `b7771b70ee518b3c...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/resources_worker.jsonl` | 9306 | `7911f4e48f1ab7d3...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/summary.json` | 1269 | `7dff523b844e0918...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/runs/phase3_seed_201/worker_exit_code.txt` | 2 | `9a271f2a916b0b6e...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/before_run.png` | 158991 | `ff601cfcf5b6e3e7...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/chunk_0_step_000.png` | 289650 | `8ff06f37e59eb9f1...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/chunk_1_step_030.png` | 298169 | `6779dab54dc07083...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/chunk_2_step_060.png` | 299102 | `2a6f4de04ffc0ed3...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/forward_gate_step_000.png` | 166505 | `496a21a9f6d59745...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/forward_gate_step_030.png` | 299303 | `5198f1fbd6d8924c...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/forward_gate_step_060.png` | 298072 | `bc25d15845c9b786...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/live_step_090.png` | 297456 | `57ff1dbc58ae87c1...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/replay_step_000.png` | 266097 | `4bb8fe7812148b47...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/replay_step_090.png` | 284579 | `6f8f78d08375bcc1...` | Evidence | Task020-R1 Phase 3 |
+| **Task 020** | `results/task020/r1/phase3/screenshots/worker_exited.png` | 299760 | `f6f0ed4ecd52a879...` | Evidence | Task020-R1 Phase 3 |
 
 ---
 

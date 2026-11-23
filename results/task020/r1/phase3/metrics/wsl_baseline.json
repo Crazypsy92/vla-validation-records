@@ -1,0 +1,19 @@
+{
+  "time": 1795435803.016585,
+  "wsl": {
+    "MemTotal": 7985964,
+    "MemAvailable": 6863908,
+    "SwapTotal": 2097152,
+    "SwapFree": 771928,
+    "Cached": 619860
+  },
+  "processes": [
+    {
+      "pid": 85440,
+      "ppid": 85439,
+      "rss_kib": 108368,
+      "pss_kib": 100311,
+      "role": "gui"
+    }
+  ]
+}

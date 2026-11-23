@@ -1,0 +1,195 @@
+{
+  "run_id": "phase3_seed_201",
+  "seed": 201,
+  "status": "STOPPED",
+  "worker_exit_code": 0,
+  "device": "cpu",
+  "model": {
+    "model_id": "lerobot/xvla-libero",
+    "device": "cpu",
+    "total_params": 879482456,
+    "total_params_million": 879.48,
+    "vlm_params_million": 570.71,
+    "action_expert_params_million": 308.78,
+    "action_chunk_size": 30,
+    "n_action_steps": 30,
+    "load_time_seconds": 41.27,
+    "status": "ready"
+  },
+  "inferences": [
+    {
+      "chunk": 0,
+      "step": 0,
+      "executed": 30,
+      "observation_monotonic_ns": 41400388193419,
+      "forward_start_monotonic_ns": 41400388254092,
+      "forward_result_monotonic_ns": 41442200295137,
+      "step_observation_monotonic_ns": 41400365301546,
+      "timings": {
+        "preprocess": 0.1132,
+        "inference": 41.4525,
+        "postprocess": 0.0541,
+        "total": 41.7335
+      },
+      "shapes": {
+        "raw_chunk_20d": [
+          30,
+          20
+        ],
+        "calibrated_chunk_7d": [
+          30,
+          7
+        ],
+        "action_steps": 30
+      },
+      "integrity": {
+        "nan_count": 0,
+        "inf_count": 0,
+        "is_valid": true
+      },
+      "image_file_sha256": {
+        "workspace": "3da431b8294a9f208d19b79df008bcf9c3757153317c720821b044728cf98785",
+        "wrist": "d2d1c4ff9bc924a1114dde994b721f2b2b89ce8df1af4f93f3f6d72df0f673a8"
+      }
+    },
+    {
+      "chunk": 1,
+      "step": 30,
+      "executed": 30,
+      "observation_monotonic_ns": 41448722848588,
+      "forward_start_monotonic_ns": 41448722928558,
+      "forward_result_monotonic_ns": 41487047896110,
+      "step_observation_monotonic_ns": 41447522657605,
+      "timings": {
+        "preprocess": 0.0019,
+        "inference": 38.2428,
+        "postprocess": 0.007,
+        "total": 38.2584
+      },
+      "shapes": {
+        "raw_chunk_20d": [
+          30,
+          20
+        ],
+        "calibrated_chunk_7d": [
+          30,
+          7
+        ],
+        "action_steps": 30
+      },
+      "integrity": {
+        "nan_count": 0,
+        "inf_count": 0,
+        "is_valid": true
+      },
+      "image_file_sha256": {
+        "workspace": "3eb4a12ea6439513c3bd7548ba0ce260fee624c95f68877cf7e0ffbf28c07757",
+        "wrist": "5b0c7629c899f6ecb6e6bfdebcafd0cd56ed9ed02ccef9fb897c47b00c0a9f86"
+      }
+    },
+    {
+      "chunk": 2,
+      "step": 60,
+      "executed": 30,
+      "observation_monotonic_ns": 41494748266847,
+      "forward_start_monotonic_ns": 41494748346629,
+      "forward_result_monotonic_ns": 41539086416793,
+      "step_observation_monotonic_ns": 41493513569124,
+      "timings": {
+        "preprocess": 0.0017,
+        "inference": 44.2686,
+        "postprocess": 0.003,
+        "total": 44.2804
+      },
+      "shapes": {
+        "raw_chunk_20d": [
+          30,
+          20
+        ],
+        "calibrated_chunk_7d": [
+          30,
+          7
+        ],
+        "action_steps": 30
+      },
+      "integrity": {
+        "nan_count": 0,
+        "inf_count": 0,
+        "is_valid": true
+      },
+      "image_file_sha256": {
+        "workspace": "9322efda62aaf07853723ceecc9f622d81f69428db51998052da1a77b3eec8ff",
+        "wrist": "6f4a9677f1eca0f02be1962d249a2e1c4835c74ef1987444064dcfdc3af7e485"
+      }
+    }
+  ],
+  "steps": 90,
+  "video": {
+    "frames": 91,
+    "fps": 20.0,
+    "sha256": "8f9bf5c86b8a5b495a6db6760a133c601334263eb90072dc5abb8857e0512604",
+    "bytes": 398947
+  },
+  "peak_rss_mib": 6603,
+  "peak_pss_mib": 6594,
+  "min_available_mib": 1429,
+  "min_swap_free_mib": 55,
+  "exit_samples": [
+    {
+      "phase": "worker_exit",
+      "time": 1795436029.543018,
+      "wsl": {
+        "MemTotal": 7985964,
+        "MemAvailable": 7132500,
+        "SwapTotal": 2097152,
+        "SwapFree": 406948,
+        "Cached": 1680700
+      },
+      "processes": [
+        {
+          "pid": 85440,
+          "ppid": 85439,
+          "rss_kib": 30316,
+          "pss_kib": 26172,
+          "role": "gui"
+        }
+      ]
+    },
+    {
+      "phase": "idle_12_seconds",
+      "time": 1795436041.5531487,
+      "wsl": {
+        "MemTotal": 7985964,
+        "MemAvailable": 7168656,
+        "SwapTotal": 2097152,
+        "SwapFree": 407060,
+        "Cached": 1673980
+      },
+      "processes": [
+        {
+          "pid": 85440,
+          "ppid": 85439,
+          "rss_kib": 30316,
+          "pss_kib": 26172,
+          "role": "gui"
+        }
+      ]
+    }
+  ],
+  "history_files": 14,
+  "pressure_requested": false,
+  "behavior": {
+    "PREDICTED_CLOSE": true,
+    "GRIPPER_ACTUATED": false,
+    "TARGET_CONTACT": true,
+    "left_seen": true,
+    "right_seen": true,
+    "OBJECT_LIFTED_AND_HELD": true,
+    "TRANSPORTED_TO_TARGET": false,
+    "RELEASE_COMMAND_SENT": false,
+    "RELEASE_PHYSICALLY_VERIFIED": false,
+    "OFFICIAL_TASK_SUCCESS": false
+  },
+  "official_success": null,
+  "peak_book_lift_m": 0.15680477272752957
+}
