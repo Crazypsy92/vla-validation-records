@@ -111,3 +111,5 @@ flowchart LR
 
 - **发布白名单清单与校验结果**：[publication_manifest.md](manifests/publication_manifest.md)
 - **机器可读元数据清单**：[publication_manifest.json](manifests/publication_manifest.json)
+
+[Task 019-R1 返修报告](docs/task019_r1_repair.md)

@@ -9,6 +9,6 @@ test_task019_video_playback_and_frame_sync (workbench.tests.test_ui_headless.Tes
 Task 019: Continuous video playback, dual-view frame extraction, and P0/P1 fixes. ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 2.733s
+Ran 7 tests in 1.816s
 
 OK

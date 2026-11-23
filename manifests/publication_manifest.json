@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-23",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 114,
-  "total_size_kb": 6383.36,
+  "total_files": 115,
+  "total_size_kb": 6407.27,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 13333,
-      "sha256": "616eba6e85f405a24cacb5cb41c378154e0ede2ac250b28091b118c64f69d5f3",
+      "size": 13388,
+      "sha256": "765b0da89778001fbe3a462cda5c119b0bb4e9207581076d2469b14c68bc7a43",
       "category": "Config",
       "task": "General"
     },
     {
       "path": "TASKS.md",
-      "size": 4193,
-      "sha256": "71ca896e2f565aa6d037bd4c25380ebbaef0f78b3a99796cc88521f09cbf4264",
+      "size": 4235,
+      "sha256": "fda000723748f471612d5e6e1173e6c0b60d1f7d9171d429b319caf1e834afd0",
       "category": "Config",
       "task": "General"
     },
@@ -145,9 +145,16 @@
       "task": "Docs"
     },
     {
+      "category": "Report",
+      "task": "Task 019",
+      "path": "docs/task019_r1_repair.md",
+      "size": 3895,
+      "sha256": "34d4121c5763f5589dfec4aec307a4b191630ab157a8b333289ba2c72f1fe956"
+    },
+    {
       "path": "docs/task019_replay_video.md",
-      "size": 3303,
-      "sha256": "0d8add22694bcb5d8f0e6860c7a89dcab7c6f6c20a05cd65542d1ec1da0c14e6",
+      "size": 3353,
+      "sha256": "643f4df0f170da293b3e0889e305a7e2a000a3c52798ad1c64d3b7f822617a11",
       "category": "Report",
       "task": "Task 019"
     },
@@ -337,36 +344,36 @@
       "category": "Evidence",
       "task": "Task 019",
       "path": "evidence/task019/review_seed142_step049.png",
-      "size": 337976,
-      "sha256": "9a0272ac9d50fa6a4e9beade917db3ad3d245e4c503aa8acdfd2f81d38d02c30"
+      "size": 361251,
+      "sha256": "1ee32452007beeb581df6caab16602e8ab2674e78c7344820df4673f7ecaf6e4"
     },
     {
       "category": "Evidence",
       "task": "Task 019",
       "path": "evidence/task019/review_seed142_step097.png",
-      "size": 365337,
-      "sha256": "44869856df6e753404beef06426f7891e6f9e961f462eac7821f2662b60279ae"
+      "size": 365162,
+      "sha256": "4cd0067d88cb5f57790869fe8fb94d446cf9689d6767f212d7d8d39063e96ca4"
     },
     {
       "category": "Evidence",
       "task": "Task 019",
       "path": "evidence/task019/review_seed142_step106.png",
-      "size": 367899,
-      "sha256": "49ba0579d1ab992ced81596a48c5edaa5c2a228bcac08ce939b9f29e14ebd7a9"
+      "size": 367695,
+      "sha256": "aacac8f5cfa46e605b99e45c0de5b2a8509d6d3f8668341f0ad7c1f93740ad54"
     },
     {
       "category": "Evidence",
       "task": "Task 019",
       "path": "evidence/task019/review_seed142_step176.png",
-      "size": 368155,
-      "sha256": "cf8aaac8e71ad4d51568948d267338f137664738e2eec5fc414c939ca2058cad"
+      "size": 366590,
+      "sha256": "6f8f2c448b6128ee77c6eb9b90a4b4642d90ca8334d519372cb3dd24ddc8aa7d"
     },
     {
       "category": "Evidence",
       "task": "Task 019",
       "path": "evidence/task019/review_seed142_step223.png",
-      "size": 364358,
-      "sha256": "ce94a9333ae5d737d6d403f37b6b57e8dc9ef0130cf96099a292dc9e9b02e122"
+      "size": 362677,
+      "sha256": "b824bad76ab1c6b8ef038171f7492beed5b5ccd7b70d27aaba0a23eda0335414"
     },
     {
       "path": "results/task010/acceptance.json",
@@ -729,22 +736,22 @@
       "category": "Evidence",
       "task": "Task 019",
       "path": "results/task019/metrics/gui_review.json",
-      "size": 1578,
-      "sha256": "93a15a567dabc9b8f9803f561c5e8b13ebe0f553b746e1280a354cc72189a664"
+      "size": 1955,
+      "sha256": "bfc5d6bd79af4316b88c72f6e6a87b4e10f61efdd39fbaa98dba8f81bb08e3f2"
     },
     {
       "category": "Evidence",
       "task": "Task 019",
       "path": "results/task019/metrics/gui_tests.log",
       "size": 1190,
-      "sha256": "eed11dc2d2464c570dab0df363086afdbae5d8536d10c6532cd5e05fe9034a03"
+      "sha256": "3cbe75a9580f322f8be2b1ee35b29b58e840be049aceced8d572f02c293d8a99"
     },
     {
       "category": "Evidence",
       "task": "Task 019",
       "path": "results/task019/metrics/source_files.json",
-      "size": 1290,
-      "sha256": "c47c37411836f5e170d0d56c21da29fb14c4233f696ae69dad8105f8deff462d"
+      "size": 1703,
+      "sha256": "63e978eab5d4e260982053853737c100c20d1d451ac91f746954e2fae6d0cc4c"
     },
     {
       "path": "results/task019/metrics/video_metadata.json",

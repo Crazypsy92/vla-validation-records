@@ -34,3 +34,5 @@
 DISPLAY=:0 .venv_xvla/bin/python -m unittest workbench.tests.test_ui_headless -v
 DISPLAY=:0 .venv_xvla/bin/python workbench/tests/capture_task019_review.py
 ```
+
+[Task 019-R1 返修报告](task019_r1_repair.md)
