@@ -1,0 +1,12 @@
+{
+  "results/task020/records/seed_202/summary.json": "56600877698b3074fb76f48023c85b76cd455cec332404f5b6dd1bd0191348b8",
+  "results/task020/records/seed_202/rollout.mp4": "2928b604cec17ac0d6d75f7439b11ad20455f829c5431c728deadeecf48b9ae2",
+  "results/task020/records/seed_202/events.jsonl": "4f4b3f54661fc45c8421f9242b597ae87c9c7b548d7b3446d2858e9d8ea0b526",
+  "results/task020/records/seed_203_1795427009498632144/rollout.mp4": "9d6c84b2e8216bc225946ffdd06c30bbaa78a7fbf034e5778730a2bc96a2d329",
+  "results/task020/records/seed_203_1795427009498632144/events.jsonl": "aaf623e7819bb9ecff6933dee209da7bd9d53a1e9e812227b3bd789bf063e4b1",
+  "results/task020/records/seed_201/summary.json": "de95c06a49afc20122e6638adc4090f181b4bd33e92648e6f01b02dbe351d44a",
+  "results/task020/records/seed_201/rollout.mp4": "5c9d781e83b2cc13a1c0481699db6e816874fbdb8a513e584037e7416ac175cc",
+  "results/task020/records/seed_201/events.jsonl": "bdd00727f5dd4fdf2db931e9c1e63623fa5b1b2bad04a061d7367edd8860638c",
+  "results/task020/records/seed_203/rollout.mp4": "9d6c84b2e8216bc225946ffdd06c30bbaa78a7fbf034e5778730a2bc96a2d329",
+  "results/task020/records/seed_203/events.jsonl": "c34c65562569ec026bdf3cfd56e9beb9df84c501cb24c8c4472381be8270e326"
+}

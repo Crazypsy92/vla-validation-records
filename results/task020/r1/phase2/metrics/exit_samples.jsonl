@@ -1,0 +1,2 @@
+{"phase": "worker_reaped", "time": 1795433685.901821, "wsl": {"MemTotal": 7985964, "MemAvailable": 7064748, "SwapTotal": 2097152, "SwapFree": 434332, "Cached": 1836908}, "processes": [{"pid": 78720, "ppid": 78719, "rss_kib": 26924, "pss_kib": 23631}]}
+{"phase": "idle_12_seconds_after_exit", "time": 1795433697.986218, "wsl": {"MemTotal": 7985964, "MemAvailable": 7188788, "SwapTotal": 2097152, "SwapFree": 434340, "Cached": 1830588}, "processes": [{"pid": 78720, "ppid": 78719, "rss_kib": 26928, "pss_kib": 23615}]}

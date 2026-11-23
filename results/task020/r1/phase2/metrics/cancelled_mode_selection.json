@@ -1,0 +1,22 @@
+{
+  "reason": "GUI mode selection did not apply before first click; stopped from GUI before model load",
+  "summary": {
+    "seed": 201,
+    "mode": "formal",
+    "inferences": 0,
+    "steps": 0,
+    "official_success": null,
+    "status": "STOPPED",
+    "task_id": 5,
+    "suite": "libero_10",
+    "object": "black_book_1",
+    "target": "desk_caddy_1_back_contain_region",
+    "terminal_reason": "stopped"
+  },
+  "worker_exit_code": 0,
+  "observed_phases": [
+    "startup",
+    "before_model_load",
+    "after_video_and_environment_close"
+  ]
+}

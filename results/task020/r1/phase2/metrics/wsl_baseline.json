@@ -1,0 +1,20 @@
+{
+  "time": 1795433376.1737738,
+  "wsl": {
+    "MemTotal": 7985964,
+    "MemAvailable": 6592416,
+    "SwapTotal": 2097152,
+    "SwapFree": 975708,
+    "Cached": 522148
+  },
+  "processes": [
+    {
+      "pid": 78720,
+      "role": "gui",
+      "ppid": 78719,
+      "rss_kib": 237760,
+      "pss_kib": 229028,
+      "thread_count": 24
+    }
+  ]
+}

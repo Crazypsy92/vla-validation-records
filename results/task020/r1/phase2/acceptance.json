@@ -1,0 +1,93 @@
+{
+  "task": "Task020-R1 Phase 2",
+  "status": "REVIEW",
+  "seed": 201,
+  "seed203_started": false,
+  "checks": [
+    {
+      "id": "P2-01",
+      "status": "PASS",
+      "evidence": "Windows/WSL 内存和页面文件、进程 PID/父 PID 与 RSS/PSS 已采样。Task 5 历史双视角回放已从桌面快捷方式核对。",
+      "paths": [
+        "metrics/windows_baseline.json",
+        "metrics/wsl_baseline.json",
+        "screenshots/history_check.png"
+      ]
+    },
+    {
+      "id": "P2-02",
+      "status": "PASS",
+      "evidence": "GUI 加载完整 CPU 检查点，用时 108.41 秒。配置和文件 SHA256 已保存。",
+      "paths": [
+        "runs/seed_201/configuration.json",
+        "runs/seed_201/events.jsonl",
+        "screenshots/model_ready.png"
+      ]
+    },
+    {
+      "id": "P2-03",
+      "status": "PASS",
+      "evidence": "一次真实前向用时 39.8515 秒。双视角、8D 状态、原始与后处理张量形状和有限值已核验。",
+      "paths": [
+        "metrics/run_summary.json",
+        "runs/seed_201/chunk_000.json"
+      ]
+    },
+    {
+      "id": "P2-04",
+      "status": "PASS",
+      "evidence": "30 条实际下发动作逐条匹配动作块。逐步核对 OSC 绝对位置，首步核对旋转。",
+      "paths": [
+        "runs/seed_201/events.jsonl",
+        "logs/verification.log"
+      ]
+    },
+    {
+      "id": "P2-05",
+      "status": "PARTIAL",
+      "evidence": "真实 GUI 执行 1 个动作块和 30 步。最后图像、8D 状态和底部 Step 30 同步，顶部等待状态曾误显示 Step 0。已修复并通过无模型定向回归。",
+      "paths": [
+        "screenshots/live_step_30.png",
+        "logs/verification.log"
+      ]
+    },
+    {
+      "id": "P2-06",
+      "status": "PASS",
+      "evidence": "GUI 停止，Worker 退出码 0，封装的 MP4 逐帧读出 31 帧。",
+      "paths": [
+        "runs/seed_201/summary.json",
+        "runs/seed_201/worker_exit_code.txt",
+        "metrics/run_summary.json",
+        "screenshots/stopped.png"
+      ]
+    },
+    {
+      "id": "P2-07",
+      "status": "PASS",
+      "evidence": "完成卸载采样，Worker PID 已回收，GUI 保留在退出后两次测量中。",
+      "paths": [
+        "runs/seed_201/resources_worker.jsonl",
+        "metrics/exit_samples.jsonl"
+      ]
+    },
+    {
+      "id": "P2-08",
+      "status": "PASS",
+      "evidence": "原有 201/202/203 的 10 个记录文件前后 SHA256 一致。新增记录与视频哈希已归档。",
+      "paths": [
+        "metrics/history_hashes_before.json",
+        "metrics/run_summary.json"
+      ]
+    }
+  ],
+  "regression_tests": {
+    "existing_tests": 11,
+    "exit_code": 0,
+    "targeted_evidence_validation_exit_code": 0
+  },
+  "source": {
+    "executed_diff_sha256": "74d5bc6a2bbfe536f8aad0ee8f5a1599e76e1a43912d89dd64339560e8fae142",
+    "current_diff_sha256": "a43e36b39611404a6cfb8e4fa834fd9ea5c9961597cf4880bea5100a7aacf41e"
+  }
+}
