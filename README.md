@@ -8,11 +8,13 @@
 
 本仓库**仅用于归档保存**阶段验收报告、物理语义规范、结构化实验指标与精选仿真证据，不包含未经裁剪的模型权重、庞大数据集或本地开发环境。
 
-> **任务接力入口**：[TASKS.md](TASKS.md) · [当前任务 Task018 / Issue #2](https://github.com/Crazypsy92/vla-validation-records/issues/2) · [Antigravity 接力规范](docs/remote_task_relay.md)。默认不启用定时任务。
+> **任务接力入口**：[TASKS.md](TASKS.md) · [当前任务 Task019 / Issue #3](https://github.com/Crazypsy92/vla-validation-records/issues/3) · [Antigravity 接力规范](docs/remote_task_relay.md)。默认不启用定时任务。
 >
 > **版本提示（2026-11-23）**：仓库现有 Task017 正式报告记录的是**初期 60 步闭环（软件 3/3 PASS、任务 0/3）**；用户另汇报了**后续完整回合（664 步、24 次推理、LIBERO 3/3 成功，但第二杯未观察到主动松爪）**。后者的原始摘要、验收报告和精选证据**已归档并经有限边界审核**，参见 [Issue #1](https://github.com/Crazypsy92/vla-validation-records/issues/1)。两版证据不可混用，完整主动释放亦不可由 LIBERO 成功判定替代。
 
 ---
+
+> **Task018 后续验收结论（2026-11-23）**：原抓持/释放审计、三层回放与 20 项验收报告已以 `ACCEPTED_WITH_FOLLOWUP` 归档；用户截图发现历史回放模式标识、未来关键帧（Step49 显示 #060，Step106 显示 #120）、整回合 PASS/当前步、左侧样本来源易混淆。现由 [Task019 / Issue #3](https://github.com/Crazypsy92/vla-validation-records/issues/3) 专项修复并接入本地真实视频回放，不修改历史验收数据。
 
 ## ⚠️ 重要声明与验证边界 (Important Disclaimers)
 
