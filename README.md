@@ -76,7 +76,7 @@ flowchart LR
 | **Task 017（完整长程）** | 24 次推理/664 步双杯拾放，LIBERO 判定 3/3 成功（第二只杯未观察到张爪） | `xvla-libero` | **ACCEPTED (有边界)** | [完整报告](docs/task017_full_rollout.md) / [验收报告](docs/task017_full_rollout_acceptance.md) | [episodes.json](results/task017/metrics/episodes.json) / [manipulation.json](results/task017/metrics/manipulation.json) | [mug1_placed.png](evidence/task017/full_rollout_ep00_0090_mug1_placed.png) / [final_success.png](evidence/task017/full_rollout_ep00_0223_final_success.png) |
 | **Task 018** | 夹爪抓放专项审计与 Workbench 机械臂运行监控回放 (含审查定向修复) | `xvla-libero` | **ACCEPTED / 已闭环** | [专项报告](docs/task018_grasp_monitor_and_release.md) / [验收报告](docs/task018_grasp_monitor_and_release_acceptance.md) / [审查修复报告](docs/task018_review_fixes.md) | [audit.json](results/task018/metrics/grasp_release_audit.json) / [acceptance.json](results/task018/acceptance.json) | [offline.png](evidence/task018/offline_monitor_isolation.png) / [mug1_release.png](evidence/task018/replay_mug1_place_and_release.png) / [mug2_success.png](evidence/task018/replay_mug2_success_touchdown.png) / [desktop.png](evidence/task018/windows_desktop_real_verification.png) |
 | **Task 019 / R1** | Workbench 连续视频回放、状态数据可信度与归档修复 | `xvla-libero` | **ACCEPTED_WITH_LIMITATIONS** | [Task019 技术报告](docs/task019_replay_video.md) / [R1 返修报告](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md) | [video_metadata.json](results/task019/metrics/video_metadata.json) / [acceptance.json](results/task019/acceptance.json) | [复审截图](https://github.com/Crazypsy92/vla-validation-records/tree/task019-review/evidence/task019) |
-| **Task 020** | Workbench 驱动 X-VLA 书本抓放闭环试点：LIBERO-10 Task 5，GUI 冒烟 + 3 个正式 Episode | `xvla-libero` | **OPEN / READY** | [Task020 执行说明](docs/task020_workbench_book_pilot.md) / [Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | 待执行 | 待执行 |
+| **Task 020 / R1** | Workbench Task5 书本抓放：Seed201/202 官方成功；Seed203 OOM 阻断，现修复内存、GUI 当前数据源并补测 | `xvla-libero` | **CHANGES_REQUESTED / PARTIAL** | [原报告](docs/task020_workbench_book_pilot.md) / [R1 执行说明](docs/task020_r1_stability_and_gui.md) / [Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | [Task020 验收](results/task020/acceptance.json) | [真实 GUI 截图](evidence/task020/) |
 
 ---
 
@@ -103,7 +103,7 @@ flowchart LR
 ## 五、后续发展规划 (Roadmap)
 
 1. **Task019 / R1（已完成，有限边界）**：完成真实视频连续回放、当前步状态可信度与归档数据修复；外部播放器验证保留为非阻断项；
-2. **Task020（当前）**：优先打通现有 VLA Workbench 对 LIBERO-10 Task 5 书本抓放任务的 GUI 启动、实时监控和历史回放；兼容性通过后执行 Seed 201/202/203 三个完整 Episode；
+2. **Task020 / R1（当前）**：书本任务已从 Workbench GUI 启动，Seed 201/202 官方成功、Seed 203 中断（重试发生 WSL OOM）；先诊断内存、修复 GUI 任务/回放信息残留，资源受控后补测 Seed203；
 3. **Task021（后续候选）**：根据 Task020 失败类型，再决定是否开展随机位置、视角变化、遮挡或任务组合的鲁棒性测试；
 4. **真实机器人与边缘部署（后续）**：待机器人、相机和控制机型号明确后，再评估 ROS 2 对接、必要的数据适配、微调及 CPU/GPU/NPU 优化；当前不提前承诺实机效果。
 
