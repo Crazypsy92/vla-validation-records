@@ -1,0 +1,29 @@
+[
+  {
+    "seed": 201,
+    "smoke": false,
+    "full_playback": true,
+    "frames": 170,
+    "seek_reset": true,
+    "official_success": true,
+    "screenshot": "history_201_terminal.png"
+  },
+  {
+    "seed": 202,
+    "smoke": false,
+    "full_playback": true,
+    "frames": 184,
+    "seek_reset": true,
+    "official_success": true,
+    "screenshot": "history_202_terminal.png"
+  },
+  {
+    "seed": 201,
+    "smoke": true,
+    "full_playback": true,
+    "frames": 4,
+    "seek_reset": true,
+    "official_success": false,
+    "screenshot": "history_smoke_stopped.png"
+  }
+]

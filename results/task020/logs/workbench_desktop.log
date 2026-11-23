@@ -1,0 +1,7 @@
+GUI started smoke seed 201: seed_201
+GUI ended seed 201: STOPPED step 3 inferences 1 success False
+GUI started formal seed 201: seed_201
+GUI ended seed 201: COMPLETE step 169 inferences 6 success True
+GUI started formal seed 202: seed_202
+GUI ended seed 202: COMPLETE step 183 inferences 7 success True
+GUI started formal seed 203: seed_203

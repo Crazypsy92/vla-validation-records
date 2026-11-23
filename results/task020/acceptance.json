@@ -1,57 +1,69 @@
 {
   "task_id": "Task020",
+  "pilot": "workbench_book",
   "status": "BLOCKED",
-  "reason": "官方 libero_10 只有 Task 5 符合非杯类单物体纯抓放目标，低于两个任务的启动门槛。",
+  "formal_completed": 2,
+  "planned": 3,
+  "formal_official_successes": 2,
+  "test_exit_codes": {
+    "preflight": 0,
+    "initial_gui_driver": 1,
+    "gui_retry_203": 1,
+    "headless_regression": 0,
+    "history_gui": 0,
+    "artifact_validation": 0
+  },
+  "verification_scope": "Mapped Workbench via WSLg; clicked same GUI buttons programmatically. Desktop shortcut target checked separately.",
   "checks": [
     {
       "id": "T01",
-      "status": "BLOCKED",
-      "evidence": "已枚举官方 10 条定义，只有一个任务符合选题条件。"
+      "status": "PASS",
+      "evidence": "预检确认官方 BDDL、20 Hz、双 RGB、8D 状态和 7D OSC；正式前向、控制通过。"
     },
     {
       "id": "T02",
-      "status": "NOT_RUN",
-      "evidence": "候选门槛未通过，模型与控制兼容性测试未启动。"
+      "status": "PASS",
+      "evidence": "书本试点标签提供官方 Task 5、黑色书本、收纳盒后部与种子选择。"
     },
     {
       "id": "T03",
-      "status": "BLOCKED",
-      "evidence": "候选不足两个。六组计划回合均未运行。"
+      "status": "PASS",
+      "evidence": "种子 201 真实前向 1 次，执行 3 步，GUI 停止并保存。"
     },
     {
       "id": "T04",
-      "status": "NOT_RUN",
-      "evidence": "未启动仿真采集。"
+      "status": "BLOCKED",
+      "evidence": "种子 201、202 完成。种子 203 两次由 GUI 启动，重试遇到 WSL OOM，均无官方终态。"
     },
     {
       "id": "T05",
-      "status": "NOT_RUN",
-      "evidence": "未执行模型前向或控制。"
+      "status": "PASS",
+      "evidence": "原始动作和后处理形状与有限值通过校验，逐步下发值和动作块一致。"
     },
     {
       "id": "T06",
-      "status": "NOT_RUN",
-      "evidence": "无新增接触或抬升记录。"
+      "status": "PASS",
+      "evidence": "逐步记录双侧指垫、其他夹爪接触、开度、书本位置与姿态。"
     },
     {
       "id": "T07",
-      "status": "NOT_RUN",
-      "evidence": "无新增放置或释放记录。"
+      "status": "PASS",
+      "evidence": "释放规划、实际张开指令和物理释放分别记录。"
     },
     {
       "id": "T08",
-      "status": "NOT_RUN",
-      "evidence": "无新增官方成功判定。"
+      "status": "PASS",
+      "evidence": "从实际 WSLg 窗口捕获仿真双视角和同一步反馈。"
     },
     {
       "id": "T09",
-      "status": "NOT_RUN",
-      "evidence": "无新 Episode 可接入 Workbench。"
+      "status": "PARTIAL",
+      "evidence": "两个正式回合及冒烟回合在 Workbench 均从复位帧播放到终帧。种子 203 的 MP4 未封装完成。"
     },
     {
       "id": "T10",
       "status": "PARTIAL",
-      "evidence": "已归档任务清单、阻塞报告和复现入口。"
+      "evidence": "已完成回合的原始记录、配置、日志、图、视频元数据已归档，两个中断回合保留部分证据。"
     }
   ]
 }

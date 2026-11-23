@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-23",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 111,
-  "total_size_kb": 4354.58,
+  "total_files": 127,
+  "total_size_kb": 5456.72,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 13948,
-      "sha256": "43bce21ccce8708df4607ea9f05b7a237fb502f8c7884ee9d343f2699a71b987",
+      "size": 14651,
+      "sha256": "689111aaa5ca45cf99bda1203f483f4ad928326920e282067cce75954b4c1285",
       "category": "Config",
       "task": "General"
     },
     {
       "path": "TASKS.md",
-      "size": 4583,
-      "sha256": "504f00b8c3e16429f295f3c33d40553e714a416bd073e877127980005e8295fc",
+      "size": 4716,
+      "sha256": "3a18b35af09931f32efbfda2ee03c4714e16999e1d564fc8ba7438605fb0fd22",
       "category": "Config",
       "task": "General"
     },
@@ -157,6 +157,13 @@
       "path": "docs/task020_object_generalization.md",
       "size": 3639,
       "sha256": "c293be0773a810ae812c77a90e66251632e1b15a566b61e912c45789f2c6cf8c"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "docs/task020_workbench_book_pilot.md",
+      "size": 7096,
+      "sha256": "5e6cc632abbe684e4218d130f8475b5fabc6dfed06d0d0bf4567291758cacfe1"
     },
     {
       "path": "docs/vla_input_output_analysis.md",
@@ -332,6 +339,34 @@
       "sha256": "476b93daf56fa9d0848b52b301afc2e4c74e58140fcc0ed364ff22665613bfe7",
       "category": "Evidence",
       "task": "task018"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "evidence/task020/history_201_terminal.png",
+      "size": 270905,
+      "sha256": "d9e75afb7d8edd34d3bd3cf26e6f1be7286dc5e559b7c31b92c878f6d37af123"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "evidence/task020/history_202_terminal.png",
+      "size": 271102,
+      "sha256": "7066d7b11ee786fda31e1144b65f155db6d82d0b4585db1d5a788b19f04a82f6"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "evidence/task020/history_smoke_stopped.png",
+      "size": 275334,
+      "sha256": "af3c1ad1c4b866a3415551701841226cef91e71e9a673f2dd435ef6dbd6da85b"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "evidence/task020/smoke_201_feedback.png",
+      "size": 285034,
+      "sha256": "566796d61f82636c393c484966fec946010347f162adbf43c110a58eb7de0f4c"
     },
     {
       "path": "results/task010/acceptance.json",
@@ -743,8 +778,29 @@
       "category": "Audit",
       "task": "Task 020",
       "path": "results/task020/acceptance.json",
-      "size": 1427,
-      "sha256": "3e4f2adae4103e420ba22b33fa8b36c820bcdb2fc0dbba8f8ee4fcacb8dabee0"
+      "size": 2171,
+      "sha256": "4cdddd8866c51bdb6e66825b0ccfa7707955a043ef643fd6b2effff4e8016586"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/logs/book_pilot_oom.log",
+      "size": 359,
+      "sha256": "bb10d91a72b0ada586078dd548931aa8433c1250f810141d83c0e9b93f5328d9"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/logs/book_preflight.log",
+      "size": 1006,
+      "sha256": "d76d6dea72dcf0636e20621879f4e18149ef52517068df32e5ca753dbf8f3a13"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/logs/history_gui.log",
+      "size": 38,
+      "sha256": "4eab3a03c9345b1481c7e7fca28aebde71d74ac80b086aca90a583ff607d8e4e"
     },
     {
       "category": "Audit",
@@ -754,6 +810,48 @@
       "sha256": "f3b38078a7d9f18ad37b07f59c97007d5aa1ac906c3521087f1dc1db79e013c4"
     },
     {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/logs/workbench_desktop.log",
+      "size": 341,
+      "sha256": "86bf384488e0d635bb858b815509ea5c752b612bff70f1a66bfed6dda5aba5d0"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/logs/workbench_regression.log",
+      "size": 1190,
+      "sha256": "a953bb1072c564a3d2048b66efea0ed65205a69569a0a615bf4dde39e43a856a"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/logs/workbench_retry_203.log",
+      "size": 122,
+      "sha256": "970c9025c2f993d71ec9ab65b56154ffd347d74b7054ab2f5fb9c2305b33cfe8"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/metrics/book_pilot_configuration.json",
+      "size": 2038,
+      "sha256": "ff269ed66ae23d315a8a87385fb7863f9a027f26f8aa424f30a39084731f641b"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/metrics/book_pilot_history.json",
+      "size": 575,
+      "sha256": "91f239b2b8401d79f7f98327c0ac34b37084d5b3ada8b1e859d63caf7e871e6d"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/metrics/book_pilot_interruptions.json",
+      "size": 876,
+      "sha256": "2133aa81526b21ea2cf671a0660fea09b3a71e92f2d17c9012e3f5f7bdae2268"
+    },
+    {
       "category": "Audit",
       "task": "Task 020",
       "path": "results/task020/metrics/official_task_inventory.json",
@@ -761,11 +859,25 @@
       "sha256": "bf0e9e26c99f9c099e759564f3abc444c50dc7f92e36e146f3dc6a98a89f95ab"
     },
     {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/metrics/registry_audit_summary.json",
+      "size": 566,
+      "sha256": "f35340b34d7ca3b6f74dc00a8f236867f91aa8f2652429afdd6c4f6471401abc"
+    },
+    {
       "category": "Audit",
       "task": "Task 020",
       "path": "results/task020/metrics/summary.json",
-      "size": 566,
-      "sha256": "f35340b34d7ca3b6f74dc00a8f236867f91aa8f2652429afdd6c4f6471401abc"
+      "size": 9568,
+      "sha256": "452b50296f0970f20de6c45bcbc5d248e9e6177304362aa988ab5fa7ddae5577"
+    },
+    {
+      "task": "Task 020",
+      "category": "Evidence",
+      "path": "results/task020/registry_audit_acceptance.json",
+      "size": 1427,
+      "sha256": "3e4f2adae4103e420ba22b33fa8b36c820bcdb2fc0dbba8f8ee4fcacb8dabee0"
     },
     {
       "category": "Audit",

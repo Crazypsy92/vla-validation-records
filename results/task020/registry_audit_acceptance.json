@@ -1,0 +1,57 @@
+{
+  "task_id": "Task020",
+  "status": "BLOCKED",
+  "reason": "官方 libero_10 只有 Task 5 符合非杯类单物体纯抓放目标，低于两个任务的启动门槛。",
+  "checks": [
+    {
+      "id": "T01",
+      "status": "BLOCKED",
+      "evidence": "已枚举官方 10 条定义，只有一个任务符合选题条件。"
+    },
+    {
+      "id": "T02",
+      "status": "NOT_RUN",
+      "evidence": "候选门槛未通过，模型与控制兼容性测试未启动。"
+    },
+    {
+      "id": "T03",
+      "status": "BLOCKED",
+      "evidence": "候选不足两个。六组计划回合均未运行。"
+    },
+    {
+      "id": "T04",
+      "status": "NOT_RUN",
+      "evidence": "未启动仿真采集。"
+    },
+    {
+      "id": "T05",
+      "status": "NOT_RUN",
+      "evidence": "未执行模型前向或控制。"
+    },
+    {
+      "id": "T06",
+      "status": "NOT_RUN",
+      "evidence": "无新增接触或抬升记录。"
+    },
+    {
+      "id": "T07",
+      "status": "NOT_RUN",
+      "evidence": "无新增放置或释放记录。"
+    },
+    {
+      "id": "T08",
+      "status": "NOT_RUN",
+      "evidence": "无新增官方成功判定。"
+    },
+    {
+      "id": "T09",
+      "status": "NOT_RUN",
+      "evidence": "无新 Episode 可接入 Workbench。"
+    },
+    {
+      "id": "T10",
+      "status": "PARTIAL",
+      "evidence": "已归档任务清单、阻塞报告和复现入口。"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "common": {
+    "checkpoint_revision": "8e6aeef01f634f5d3b5be4340328f19cc2c25a65",
+    "device": "cpu",
+    "versions": {
+      "lerobot": "0.7.0",
+      "hf-libero": "0.1.5",
+      "robosuite": "1.4.0",
+      "mujoco": "3.8.1",
+      "torch": "2.15.0+cpu"
+    },
+    "checkpoint_files": {
+      "model.safetensors": {
+        "sha256": "2a0e29448111df56b9485cb1f964db799205794c49baeda48ef960589ce649ab",
+        "bytes": 3519073692
+      },
+      "config.json": {
+        "sha256": "2fb7f30bf3892e882997e77af2defdbc29d3c29981c3c4a563820a0178fe0816",
+        "bytes": 9307
+      },
+      "policy_preprocessor.json": {
+        "sha256": "442ac4352dce2547f7fec60a89034f14bff5240bd8d52395e14eaef5a3d6c2a6",
+        "bytes": 1635
+      },
+      "policy_postprocessor.json": {
+        "sha256": "d1d73a18f14aca0e9db7cdbb3eb536adadf4960947347cb1645c9a246ea0acb4",
+        "bytes": 575
+      }
+    },
+    "control_mode": "absolute",
+    "controller": "OSC_POSE",
+    "control_hz": 20,
+    "chunk_size": 30,
+    "execute_steps": 30,
+    "settling_steps": 10
+  },
+  "observations": [
+    "observation.images.image",
+    "observation.images.image2",
+    "observation.state"
+  ],
+  "baseline_scope": "Task 017 complete rollouts",
+  "robosuite_osc_pose_defaults": {
+    "sha256": "07f3a8b41d3eecc8a36700a85bd8207ee3fbc36eb73f6a2248340c96770d1e45",
+    "config": {
+      "type": "OSC_POSE",
+      "input_max": 1,
+      "input_min": -1,
+      "output_max": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "output_min": [
+        -0.05,
+        -0.05,
+        -0.05,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "kp": 150,
+      "damping_ratio": 1,
+      "impedance_mode": "fixed",
+      "kp_limits": [
+        0,
+        300
+      ],
+      "damping_ratio_limits": [
+        0,
+        10
+      ],
+      "position_limits": null,
+      "orientation_limits": null,
+      "uncouple_pos_ori": true,
+      "control_delta": true,
+      "interpolation": null,
+      "ramp_ratio": 0.2
+    }
+  }
+}

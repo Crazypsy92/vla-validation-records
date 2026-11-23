@@ -1,23 +1,311 @@
 {
-  "task_id": "Task020",
-  "status": "BLOCKED",
+  "model": "lerobot/xvla-libero",
   "suite": "libero_10",
-  "required_eligible_tasks": 2,
-  "eligible_task_ids": [
-    5
+  "task_id": 5,
+  "formal_planned": 3,
+  "formal_attempted": 4,
+  "formal_completed": 2,
+  "interrupted_attempts": [
+    {
+      "seed": 203,
+      "directory": "records/seed_203",
+      "status": "INTERRUPTED",
+      "last_completed_step": 150,
+      "completed_inferences": 5,
+      "official_result": null,
+      "gui_driver_exit_code": 1,
+      "worker_exit_status": null,
+      "reason": "GUI and child process ended during inference without terminal or exception records; cause unconfirmed",
+      "memory_evidence": "Kernel logged memory pressure, but no OOM kill was found in the checked kernel/cgroup/Windows event sources"
+    },
+    {
+      "seed": 203,
+      "directory": "records/seed_203_1795427009498632144",
+      "status": "BLOCKED_OOM",
+      "last_completed_step": 120,
+      "completed_inferences": 4,
+      "official_result": null,
+      "gui_driver_exit_code": 1,
+      "reason": "WSL kernel recorded a global OOM kill during the second Seed 203 attempt",
+      "memory_evidence": "logs/book_pilot_oom.log"
+    }
   ],
-  "seeds_per_task": [
-    201,
-    202,
-    203
-  ],
-  "planned_episodes": 6,
-  "attempted_episodes": 0,
-  "completed_episodes": 0,
-  "model_forward_calls": 0,
-  "environment_steps": 0,
-  "official_success_rate": null,
-  "reason": "官方 libero_10 只有 Task 5 符合非杯类单物体纯抓放目标，低于两个任务的启动门槛。",
-  "inventory": "official_task_inventory.json",
-  "registry_audit_exit_code": 0
+  "official_successes": 2,
+  "formal_inferences": 13,
+  "formal_steps": 352,
+  "formal_mean_inference_count": 6.5,
+  "formal_mean_environment_steps": 176,
+  "formal_official_success_rate": 1.0,
+  "formal_stage_counts": {
+    "PREDICTED_CLOSE": 2,
+    "GRIPPER_ACTUATED": 2,
+    "TARGET_CONTACT": 2,
+    "left_seen": 2,
+    "right_seen": 2,
+    "OBJECT_LIFTED_AND_HELD": 2,
+    "TRANSPORTED_TO_TARGET": 2,
+    "RELEASE_COMMAND_SENT": 0,
+    "RELEASE_PHYSICALLY_VERIFIED": 0,
+    "OFFICIAL_TASK_SUCCESS": 2,
+    "NEAR_CLOSED_25_MM": 0
+  },
+  "runs": [
+    {
+      "seed": 201,
+      "mode": "smoke",
+      "inferences": 1,
+      "steps": 3,
+      "official_success": false,
+      "status": "STOPPED",
+      "task_id": 5,
+      "suite": "libero_10",
+      "object": "black_book_1",
+      "target": "desk_caddy_1_back_contain_region",
+      "instruction": "pick up the book and place it in the back compartment of the caddy",
+      "max_steps": 520,
+      "initial_state_index": 0,
+      "initial_state_sha256": "407c3d5eb11fd5b33bd2a6dea73a37415a99d7e72f0cc291074de29b1c63c37c",
+      "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+      "source": "Workbench GUI",
+      "unexecuted_terminal_open": false,
+      "terminal_reason": "gui_stop",
+      "peak_book_lift_m": 0.0,
+      "final_images": {
+        "workspace": "0003_workspace.png",
+        "wrist": "0003_wrist.png"
+      },
+      "peak_rss_kib": 6735060,
+      "stages": {
+        "PREDICTED_CLOSE": false,
+        "GRIPPER_ACTUATED": false,
+        "TARGET_CONTACT": false,
+        "left_seen": false,
+        "right_seen": false,
+        "OBJECT_LIFTED_AND_HELD": false,
+        "TRANSPORTED_TO_TARGET": false,
+        "RELEASE_COMMAND_SENT": false,
+        "RELEASE_PHYSICALLY_VERIFIED": false,
+        "OFFICIAL_TASK_SUCCESS": false,
+        "NEAR_CLOSED_25_MM": false
+      },
+      "release_started_in_target": false,
+      "video": {
+        "path": "videos/smoke_seed_201.mp4",
+        "sha256": "b0350e1fae65de076ff487f3ba76f333a3c6519ba8b68cff05be44af106b1580",
+        "file_size_bytes": 21319,
+        "width": 512,
+        "height": 256,
+        "frames": 4,
+        "fps": 20,
+        "frame_step_mapping": "frame index = sim step"
+      },
+      "directory": "smoke/seed_201",
+      "replanned_from_live_feedback": false,
+      "max_control_steps": 520,
+      "mean_inference_seconds": 50.4182,
+      "executed_steps_per_chunk": [
+        3
+      ],
+      "fingerpad_contact_steps": {
+        "left": 0,
+        "right": 0,
+        "both": 0
+      },
+      "minimum_eef_to_book_center_m": 0.33540783318347567,
+      "gripper_actuation": [],
+      "held_steps_above_2cm": 0,
+      "terminal_contact": {
+        "left": false,
+        "right": false,
+        "opening_m": 0.07792259926250387,
+        "command": -1
+      },
+      "first_events": {
+        "close": null,
+        "left_contact": null,
+        "right_contact": null,
+        "lift_above_2cm": null,
+        "on_target": null
+      }
+    },
+    {
+      "seed": 201,
+      "mode": "formal",
+      "inferences": 6,
+      "steps": 169,
+      "official_success": true,
+      "status": "COMPLETE",
+      "task_id": 5,
+      "suite": "libero_10",
+      "object": "black_book_1",
+      "target": "desk_caddy_1_back_contain_region",
+      "instruction": "pick up the book and place it in the back compartment of the caddy",
+      "max_steps": 520,
+      "initial_state_index": 0,
+      "initial_state_sha256": "407c3d5eb11fd5b33bd2a6dea73a37415a99d7e72f0cc291074de29b1c63c37c",
+      "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+      "source": "Workbench GUI",
+      "unexecuted_terminal_open": false,
+      "terminal_reason": "official_success",
+      "peak_book_lift_m": 0.28559949523116435,
+      "final_images": {
+        "workspace": "0169_workspace.png",
+        "wrist": "0169_wrist.png"
+      },
+      "peak_rss_kib": 7108892,
+      "stages": {
+        "PREDICTED_CLOSE": true,
+        "GRIPPER_ACTUATED": true,
+        "TARGET_CONTACT": true,
+        "left_seen": true,
+        "right_seen": true,
+        "OBJECT_LIFTED_AND_HELD": true,
+        "TRANSPORTED_TO_TARGET": true,
+        "RELEASE_COMMAND_SENT": false,
+        "RELEASE_PHYSICALLY_VERIFIED": false,
+        "OFFICIAL_TASK_SUCCESS": true,
+        "NEAR_CLOSED_25_MM": false
+      },
+      "release_started_in_target": false,
+      "video": {
+        "path": "videos/formal_seed_201.mp4",
+        "sha256": "5c9d781e83b2cc13a1c0481699db6e816874fbdb8a513e584037e7416ac175cc",
+        "file_size_bytes": 679694,
+        "width": 512,
+        "height": 256,
+        "frames": 170,
+        "fps": 20,
+        "frame_step_mapping": "frame index = sim step"
+      },
+      "directory": "records/seed_201",
+      "replanned_from_live_feedback": true,
+      "max_control_steps": 520,
+      "mean_inference_seconds": 36.02915,
+      "executed_steps_per_chunk": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        19
+      ],
+      "fingerpad_contact_steps": {
+        "left": 97,
+        "right": 102,
+        "both": 97
+      },
+      "minimum_eef_to_book_center_m": 0.10338068988370094,
+      "gripper_actuation": [
+        {
+          "step": 64,
+          "prior_gap_m": 0.0798505880546414,
+          "minimum_gap_after_close_m": 0.02952031554215037
+        }
+      ],
+      "held_steps_above_2cm": 92,
+      "terminal_contact": {
+        "left": true,
+        "right": true,
+        "opening_m": 0.029520316499168187,
+        "command": 1
+      },
+      "first_events": {
+        "close": 64,
+        "left_contact": 73,
+        "right_contact": 68,
+        "lift_above_2cm": 78,
+        "on_target": 169
+      }
+    },
+    {
+      "seed": 202,
+      "mode": "formal",
+      "inferences": 7,
+      "steps": 183,
+      "official_success": true,
+      "status": "COMPLETE",
+      "task_id": 5,
+      "suite": "libero_10",
+      "object": "black_book_1",
+      "target": "desk_caddy_1_back_contain_region",
+      "instruction": "pick up the book and place it in the back compartment of the caddy",
+      "max_steps": 520,
+      "initial_state_index": 1,
+      "initial_state_sha256": "fbf82707bd0a7721f0e118ac32aad30182e487e7a940bec7128ad6f18457e139",
+      "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+      "source": "Workbench GUI",
+      "unexecuted_terminal_open": false,
+      "terminal_reason": "official_success",
+      "peak_book_lift_m": 0.27761340176752103,
+      "final_images": {
+        "workspace": "0183_workspace.png",
+        "wrist": "0183_wrist.png"
+      },
+      "peak_rss_kib": 7071712,
+      "stages": {
+        "PREDICTED_CLOSE": true,
+        "GRIPPER_ACTUATED": true,
+        "TARGET_CONTACT": true,
+        "left_seen": true,
+        "right_seen": true,
+        "OBJECT_LIFTED_AND_HELD": true,
+        "TRANSPORTED_TO_TARGET": true,
+        "RELEASE_COMMAND_SENT": false,
+        "RELEASE_PHYSICALLY_VERIFIED": false,
+        "OFFICIAL_TASK_SUCCESS": true,
+        "NEAR_CLOSED_25_MM": false
+      },
+      "release_started_in_target": false,
+      "video": {
+        "path": "videos/formal_seed_202.mp4",
+        "sha256": "2928b604cec17ac0d6d75f7439b11ad20455f829c5431c728deadeecf48b9ae2",
+        "file_size_bytes": 734140,
+        "width": 512,
+        "height": 256,
+        "frames": 184,
+        "fps": 20,
+        "frame_step_mapping": "frame index = sim step"
+      },
+      "directory": "records/seed_202",
+      "replanned_from_live_feedback": true,
+      "max_control_steps": 520,
+      "mean_inference_seconds": 47.10042857142857,
+      "executed_steps_per_chunk": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        3
+      ],
+      "fingerpad_contact_steps": {
+        "left": 108,
+        "right": 109,
+        "both": 108
+      },
+      "minimum_eef_to_book_center_m": 0.10641215335843054,
+      "gripper_actuation": [
+        {
+          "step": 70,
+          "prior_gap_m": 0.07988497728450154,
+          "minimum_gap_after_close_m": 0.029520314545004603
+        }
+      ],
+      "held_steps_above_2cm": 102,
+      "terminal_contact": {
+        "left": true,
+        "right": true,
+        "opening_m": 0.029557237722051273,
+        "command": 1
+      },
+      "first_events": {
+        "close": 70,
+        "left_contact": 76,
+        "right_contact": 75,
+        "lift_above_2cm": 82,
+        "on_target": 183
+      }
+    }
+  ]
 }

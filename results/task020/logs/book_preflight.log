@@ -1,0 +1,10 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/bridge/projects/ai-learning/vla-learning/.venv_xvla/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/bridge/projects/ai-learning/vla-learning/.venv_xvla/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+pick up the book and place it in the back compartment of the caddy 520 20 [['in', 'black_book_1', 'desk_caddy_1_back_contain_region']]
+{'observation.images.image': ((256, 256, 3), 'uint8'), 'observation.images.image2': ((256, 256, 3), 'uint8'), 'observation.state': ((8,), 'float32')}
+Preflight only: current pose hold False False False

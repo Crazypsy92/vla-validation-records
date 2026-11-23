@@ -117,3 +117,7 @@ flowchart LR
 ## Task 020 选题审计与范围调整
 
 原始选题审计按“两种不同非杯类物体、单物体纯抓放”门槛，在官方 LIBERO-10 中只找到 Task 5 一个候选，因此原两任务方案为 BLOCKED。经用户确认，本轮调整为 **Task 5 单任务试点**，优先从现有 VLA Workbench 启动、监控和回放，再执行三个正式种子。原始审计证据保持不变，执行范围见 [Task020 Workbench 书本抓放试点说明](docs/task020_workbench_book_pilot.md) 与 [Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4)。
+
+## Task 020 · Workbench 书本试点
+
+两个正式回合官方成功。Seed 203 因 WSL OOM 阻塞。 [试点报告](docs/task020_workbench_book_pilot.md)

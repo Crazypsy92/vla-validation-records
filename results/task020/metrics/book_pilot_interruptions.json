@@ -1,0 +1,25 @@
+[
+  {
+    "seed": 203,
+    "directory": "records/seed_203",
+    "status": "INTERRUPTED",
+    "last_completed_step": 150,
+    "completed_inferences": 5,
+    "official_result": null,
+    "gui_driver_exit_code": 1,
+    "worker_exit_status": null,
+    "reason": "GUI and child process ended during inference without terminal or exception records; cause unconfirmed",
+    "memory_evidence": "Kernel logged memory pressure, but no OOM kill was found in the checked kernel/cgroup/Windows event sources"
+  },
+  {
+    "seed": 203,
+    "directory": "records/seed_203_1795427009498632144",
+    "status": "BLOCKED_OOM",
+    "last_completed_step": 120,
+    "completed_inferences": 4,
+    "official_result": null,
+    "gui_driver_exit_code": 1,
+    "reason": "WSL kernel recorded a global OOM kill during the second Seed 203 attempt",
+    "memory_evidence": "logs/book_pilot_oom.log"
+  }
+]
