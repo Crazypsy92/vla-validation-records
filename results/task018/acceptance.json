@@ -1,0 +1,132 @@
+{
+  "task": "Task 018",
+  "status": "ALL_PASS",
+  "criteria": [
+    {
+      "id": "T01",
+      "name": "数据冲突审计-Seed144白杯",
+      "requirement": "查明Seed 144白杯grasped_steps=0但到靶原因",
+      "status": "PASS",
+      "evidence": "三维轨迹分析证实白杯垂直抬升9.99cm并在空中水平搬运19.06cm，系双侧指垫几何接触判定阈值未触发，物理抓取与释放完全成立"
+    },
+    {
+      "id": "T02",
+      "name": "数据冲突审计-Seed143黄白杯",
+      "requirement": "查明Seed 143黄白杯末态grasped=false原因",
+      "status": "PASS",
+      "evidence": "黄白杯保持抓持40步并在第222步成功着盘触地，触地瞬间反作用力致指垫接触短暂微离，非空中滑脱"
+    },
+    {
+      "id": "T03",
+      "name": "终止机制溯源",
+      "requirement": "查明官方成功时提前终止原因",
+      "status": "PASS",
+      "evidence": "LeRobot LiberoEnv.step源码确认terminated = done or is_success，官方评测在到靶瞬间强行终止"
+    },
+    {
+      "id": "T04",
+      "name": "模型释放指令规划验证",
+      "requirement": "审计模型是否在动作块中规划释放指令",
+      "status": "PASS",
+      "evidence": "chunk_007时序审计证实Seed 142/143/144均在第23/21/18偏置规划了gripper=-1.0张开动作，但因环境终止未及执行"
+    },
+    {
+      "id": "T05",
+      "name": "抓放判定七层体系建立",
+      "requirement": "建立从预测到物理验证的七层判定分级",
+      "status": "PASS",
+      "evidence": "涵盖PREDICTED_CLOSE到OFFICIAL_TASK_SUCCESS全链路定义"
+    },
+    {
+      "id": "T06",
+      "name": "Monitor三层架构隔离",
+      "requirement": "Plan / Command / Feedback三层物理严格隔离",
+      "status": "PASS",
+      "evidence": "RobotMonitorPanel实现三层独立展示卡片，杜绝混淆"
+    },
+    {
+      "id": "T07",
+      "name": "离线模式零伪造",
+      "requirement": "离线模式真实反馈区严格显示N/A并标灰",
+      "status": "PASS",
+      "evidence": "offline_monitor_isolation.png证实所有仿真字段均严格为N/A，状态标识为OFFLINE / NO SIM"
+    },
+    {
+      "id": "T08",
+      "name": "双层判定卡片展示",
+      "requirement": "并列展示LIBERO官方判定与全流程抓放物理判定",
+      "status": "PASS",
+      "evidence": "官方PASS与物理抓放审计划分明确，客观呈现杯2终止抓持状态"
+    },
+    {
+      "id": "T09",
+      "name": "历史Episode轻量加载",
+      "requirement": "无需加载879M模型秒级加载历史Episode",
+      "status": "PASS",
+      "evidence": "直接解析events.jsonl，加载时间<50ms"
+    },
+    {
+      "id": "T10",
+      "name": "多Episode支持",
+      "requirement": "支持Seed 142/143/144全量回放选择",
+      "status": "PASS",
+      "evidence": "下拉框完整索引3组种子回放数据"
+    },
+    {
+      "id": "T11",
+      "name": "步进拖拽与滑块控制",
+      "requirement": "支持Step 0到终态拖拽与步进按钮控制",
+      "status": "PASS",
+      "evidence": "Slider与Stepper按钮支持±1与±10跳转，支持连续自动播放"
+    },
+    {
+      "id": "T12",
+      "name": "真实双相机画面同步",
+      "requirement": "回放时同步切换Workspace与Wrist真实视角",
+      "status": "PASS",
+      "evidence": "根据Step自动匹配并展示最近真实渲染帧"
+    },
+    {
+      "id": "T13",
+      "name": "关键事件快速跳转",
+      "requirement": "提供白杯抓取、白杯释放、黄白杯抓取、任务成功跳转",
+      "status": "PASS",
+      "evidence": "4个快捷按钮秒级定位到关键物理事件步"
+    },
+    {
+      "id": "T14",
+      "name": "机械臂位姿与误差监控",
+      "requirement": "显示真实EEF坐标、位移与跟踪误差",
+      "status": "PASS",
+      "evidence": "动态计算并展示EEF [X, Y, Z]及跟踪欧氏误差"
+    },
+    {
+      "id": "T15",
+      "name": "夹爪开度与接触监控",
+      "requirement": "显示夹爪开口间距、qpos与目标接触状态",
+      "status": "PASS",
+      "evidence": "准确呈现开度(m)与双指垫碰撞状态"
+    },
+    {
+      "id": "T16",
+      "name": "物体状态与到靶监控",
+      "requirement": "显示双杯高度、抬升ΔZ与入盘判定",
+      "status": "PASS",
+      "evidence": "实时计算高度抬升并判断是否在餐盘目标范围内"
+    },
+    {
+      "id": "T17",
+      "name": "零回归与单元测试",
+      "requirement": "原有离线单样本预测与测试套件完全兼容",
+      "status": "PASS",
+      "evidence": "test_ui_headless.py 5项测试全部通过(0.603s)"
+    },
+    {
+      "id": "T18",
+      "name": "文档与归档发布",
+      "requirement": "完成报告编写与GitHub同步准备",
+      "status": "PASS",
+      "evidence": "task018_grasp_monitor_and_release.md及全量指标归档"
+    }
+  ]
+}

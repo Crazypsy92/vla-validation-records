@@ -72,6 +72,7 @@ flowchart LR
 | **Task 016** | 7D 动作物理语义核验与 12 组离线基准测试 | `xvla-libero` | **PASS** | [Task 016 规范](docs/task016_action_semantics.md) / [验收](docs/task016_acceptance_report.md) | [action_stats.json](results/task016/metrics/action_statistics.json) | [record01.json](results/task016/records/sample_01_record.json) |
 | **Task 017（初期 60 步）** | X-VLA + LIBERO 仿真闭环与多种子重复性测试 | `xvla-libero` | **PASS** | [闭环总结](docs/task017_libero_closed_loop.md) / [验收报告](docs/task017_acceptance_report.md) | [closed_loop.json](results/task017/metrics/closed_loop_metrics.json) | [init.png](evidence/task017/episode_seed_42_step_000_init.png) / [final.png](evidence/task017/episode_seed_42_final.png) |
 | **Task 017（完整长程）** | 24 次推理/664 步双杯拾放，LIBERO 判定 3/3 成功（第二只杯未观察到张爪） | `xvla-libero` | **ACCEPTED (有边界)** | [完整报告](docs/task017_full_rollout.md) / [验收报告](docs/task017_full_rollout_acceptance.md) | [episodes.json](results/task017/metrics/episodes.json) / [manipulation.json](results/task017/metrics/manipulation.json) | [mug1_placed.png](evidence/task017/full_rollout_ep00_0090_mug1_placed.png) / [final_success.png](evidence/task017/full_rollout_ep00_0223_final_success.png) |
+| **Task 018** | 夹爪抓放专项审计与 Workbench 机械臂运行监控回放 | `xvla-libero` | **REVIEW / 待外部审核** | [专项报告](docs/task018_grasp_monitor_and_release.md) / [验收报告](docs/task018_grasp_monitor_and_release_acceptance.md) | [audit.json](results/task018/metrics/grasp_release_audit.json) / [acceptance.json](results/task018/acceptance.json) | [offline.png](evidence/task018/offline_monitor_isolation.png) / [mug1_release.png](evidence/task018/replay_mug1_place_and_release.png) / [mug2_success.png](evidence/task018/replay_mug2_success_touchdown.png) |
 
 ---
 
@@ -84,6 +85,8 @@ flowchart LR
 - [x] **独立桌面上位机与常驻进程通信**：GUI 界面与深度学习推理环境解耦，实现 JSON Lines 高可靠 IPC 协议与模型常驻显存/内存；
 - [x] **仿真环境动态闭环与滚动时域控制**：完成 MuJoCo 底层控制器对接，实现了执行前 15 步即触发动态重规划的 RHC 连续闭环控制；
 - [x] **跨随机种子高度可重复性**：3 组独立随机种子下，末端执行器平均位移模长为 $0.1696\text{ m}$，且空间坐标离散误差 $<1.5\text{ mm}$。
+- [x] **机械臂运行监控与历史回放系统**：VLA Workbench 落地 Plan / Command / Feedback 三层严格隔离，离线反馈严格标灰显示 N/A，支持轻量秒级回放、步进拖拽与双视角相机画面同步；
+- [x] **长程抓放全流程物理审计**：查清 Seed 144 空中抬升 9.99cm 事实，查明 LeRobot `terminated=done or is_success` 终止机制，证实模型在终态动作块中已预测张爪释放指令。
 
 ### 4.2 未完成能力与现存瓶颈（Known Limitations）
 - [ ] **物理机械臂实体适配**：尚未适配真实物理硬件（如 ROS 2 驱动层、实物 Realsense 深度相机校准、机械臂硬件急停保护）；

@@ -1,780 +1,455 @@
 {
-  "generated_at": "2026-11-23 11:30:00",
-  "published_files_count": 81,
-  "total_size_bytes": 2346320,
   "files": [
     {
-      "task": "Config",
-      "published_path": ".gitignore",
-      "file_size": 394,
-      "sha256": "27d659e2e2f5906a84f075da6d9b302b0e0ae2031f924d511b877b191e629d43",
-      "category": "Config",
-      "publish": "YES",
-      "reason": "Git 提交忽略规则"
-    },
-    {
-      "task": "General",
-      "published_path": "README.md",
-      "file_size": 10877,
-      "sha256": "535faea3c0879703eba11e9d52d5651347d85e72e22e4faf3ded20ded40c665c",
-      "category": "Docs",
-      "publish": "YES",
-      "reason": "项目主页与导航总览"
-    },
-    {
-      "task": "Relay",
-      "published_path": "TASKS.md",
-      "file_size": 2796,
-      "sha256": "1ea8554ae3c6ba4fb1c0888c5ce0cf88f96e75e4f77350156cd85255c6e738c9",
-      "category": "Docs",
-      "publish": "YES",
-      "reason": "任务接力状态与验收索引"
-    },
-    {
-      "task": "Specs",
-      "published_path": "docs/VLA_Project_Work_Roadmap.md",
-      "file_size": 66491,
-      "sha256": "89f5e4820bfc2f38fbc733fdbbf8c66fb2bc5ba5359b81237650dc46963aab0e",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "技术规范与顶层路线图"
-    },
-    {
-      "task": "Relay",
-      "published_path": "docs/remote_task_relay.md",
-      "file_size": 4515,
-      "sha256": "36ca245be0f78903ab585db3091f10c7b19e9bf18871e6e575c3924e64b8ffbc",
-      "category": "Docs",
-      "publish": "YES",
-      "reason": "远程任务接力协议与模板"
-    },
-    {
-      "task": "Task 010",
-      "published_path": "docs/task010_smolvla_baseline.md",
-      "file_size": 14431,
-      "sha256": "f3c810fe6908ec68aabc904b45bdc579cd2f457fdc9e3f561a204a199be0ac52",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 010 SmolVLA 基线相关归档"
-    },
-    {
-      "task": "Task 011",
-      "published_path": "docs/task011_input_sensitivity.md",
-      "file_size": 11105,
-      "sha256": "9e5411d42db15e5e137eba69dfc6e03e8d0d14350dab12f6c38b592dbe2919c1",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 011 敏感度与鲁棒性相关归档"
-    },
-    {
-      "task": "Task 012",
-      "published_path": "docs/task012_xvla_inference.md",
-      "file_size": 14179,
-      "sha256": "03f61abcf2baa6cd6030748e9fdcb7df683899b22f4205c6edd1694ad3736a4c",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 012 X-VLA 跨领域推理归档"
-    },
-    {
-      "task": "Task 013",
-      "published_path": "docs/task013_libero_offline_action_validation.md",
-      "file_size": 14882,
-      "sha256": "cd202026a71d1f5059d52f34878440d78c722c9f9fa2bc4cdd9221a7669b7f2d",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 013 LIBERO 离线基准归档"
-    },
-    {
-      "task": "Task 014",
-      "published_path": "docs/task014_xvla_pipeline_audit.md",
-      "file_size": 12329,
-      "sha256": "0733bfd3aa00fe10229005abf7349867e7a56f983cc9d9e5087929f68295e6c5",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 014 动作空间与预处理审计归档"
-    },
-    {
-      "task": "Task 015",
-      "published_path": "docs/task015_workbench.md",
-      "file_size": 14663,
-      "sha256": "5fb5f7963d161cd9497f0d44979eaa43bad2bc98365b69bf50d8e8fb8a362072",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 015 VLA Workbench 验收归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "docs/task016_acceptance_report.md",
-      "file_size": 13008,
-      "sha256": "f880ef96c5d9b2f1130b2f1d10f2a4267bc04ab351fb072e64697d702a3d79ef",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "docs/task016_action_semantics.md",
-      "file_size": 6263,
-      "sha256": "26846093626eb4897b633086abd7f0f12be359ca8ad1c9cb6677cbb43693ed39",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "docs/task017_acceptance_report.md",
-      "file_size": 5110,
-      "sha256": "fbf821f2e5c9da979194332dc97762ecbb15675c0fd52be51b3545966b861ddb",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "docs/task017_full_rollout.md",
-      "file_size": 8156,
-      "sha256": "4ce145b26aa99b2982118e809e9f08ff2577ddee6bb3673ce2fe32d998d8e747",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "docs/task017_full_rollout_acceptance.md",
-      "file_size": 4418,
-      "sha256": "38e0035be4181f6beb41d175598045c938a450e49dbf681532c28eb799eacea0",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "docs/task017_libero_closed_loop.md",
-      "file_size": 11809,
-      "sha256": "fae551a5d9fd92cacb6ca63cd045d6b4549b40eefe0d8419cd0e42d97d4a85f1",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Specs",
-      "published_path": "docs/vla_input_output_analysis.md",
-      "file_size": 10447,
-      "sha256": "69653de0c14fd5b5fae5a25a212b92b251cad05e66ced04861064a83f6f37c78",
-      "category": "Report",
-      "publish": "YES",
-      "reason": "技术规范与顶层路线图"
-    },
-    {
-      "task": "Task 015",
-      "published_path": "evidence/task015/action_curves_sample01.png",
-      "file_size": 14586,
-      "sha256": "66c31e36f0ef6ef22e5fe610e94cd63a7cbec2f828941906f0909fd039b74960",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 015 VLA Workbench 验收归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_100_final.png",
-      "file_size": 71331,
-      "sha256": "8bfe4fc36e45e20caf95e4e1da33be192d486fa6b361020b6f9777a82b1b5fc2",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_2026_final.png",
-      "file_size": 71280,
-      "sha256": "8ab6c9960933e702ecdb6f95af4175b7b1dfa7a3cd9cdd27123253a4d7e93621",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_c0_obs_workspace.png",
-      "file_size": 70510,
-      "sha256": "11ac3a3968c719483e0b5c4f0cae0425f9609244d045ea45048d83d1cedd4ba9",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_c0_obs_wrist.png",
-      "file_size": 67655,
-      "sha256": "1c3bfda0d7b0a5067dbc0dd1ca4ae21297e47a470e7877530dc712f335cf7c6a",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_cycle_0_step_15.png",
-      "file_size": 70971,
-      "sha256": "fe000282729411771ace90b7cf5674e4eb2d3ec8d307d54c1f977cf39280adef",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_cycle_1_step_30.png",
-      "file_size": 71868,
-      "sha256": "112c75ff0fd98ec6481cb8e9eec3aba6188659fc5d4f7a44daf72cd4c1610e47",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_cycle_2_step_45.png",
-      "file_size": 72035,
-      "sha256": "fb9dca0b7cde382035b670f95e8c01300cc4b60b8aca355ff5515cd2b4cf6d54",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_cycle_3_step_60.png",
-      "file_size": 71400,
-      "sha256": "574f5fe439d923f49184d4350a01b3c0cabb81f84e26f0fef52b07d027b1871e",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_final.png",
-      "file_size": 71400,
-      "sha256": "574f5fe439d923f49184d4350a01b3c0cabb81f84e26f0fef52b07d027b1871e",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "evidence/task017/episode_seed_42_step_000_init.png",
-      "file_size": 70510,
-      "sha256": "11ac3a3968c719483e0b5c4f0cae0425f9609244d045ea45048d83d1cedd4ba9",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "evidence/task017/full_rollout_ep00_0000_init.png",
-      "file_size": 70510,
-      "sha256": "11ac3a3968c719483e0b5c4f0cae0425f9609244d045ea45048d83d1cedd4ba9",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "evidence/task017/full_rollout_ep00_0090_mug1_placed.png",
-      "file_size": 71370,
-      "sha256": "36b81b13d1274b5271fb231d03a0010b19d11514cb30284753e36b3424859406",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "evidence/task017/full_rollout_ep00_0223_final_success.png",
-      "file_size": 69454,
-      "sha256": "7827e7c797eaa381d331cb470c48c8d041825857fb4a48dc313d2f8ca5559419",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "evidence/task017/full_rollout_ep01_0222_final_success.png",
-      "file_size": 71527,
-      "sha256": "dff85885b7606277744e62f3eb681a2b6b3bf5c4a7ea168e328db14e80c52bc6",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "evidence/task017/full_rollout_ep02_0219_final_success.png",
-      "file_size": 71230,
-      "sha256": "e739a14516b46599d3e96aa45508ea16a5cb17caf1e9bd0216ba70e1827a464e",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 010",
-      "published_path": "results/task010/acceptance.json",
-      "file_size": 1508,
-      "sha256": "a3c0db1f59d66546ea00d401bcd6e30f5f9f95214a3bb5781899ae3861963a0c",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 010 SmolVLA 基线相关归档"
-    },
-    {
-      "task": "Task 010",
-      "published_path": "results/task010/metrics/inference_metrics.json",
-      "file_size": 3860,
-      "sha256": "bb2170359d5c6a7789c9dc508656003e6a02c2a329a6d383e6aa245c12b5447c",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 010 SmolVLA 基线相关归档"
-    },
-    {
-      "task": "Task 010",
-      "published_path": "results/task010/predictions/case_001_pick_blue_block.json",
-      "file_size": 12227,
-      "sha256": "94cd7518b39ef49f498f4a9fd022c6c99a0fd456e3c5aa7c7bdbf1c72089aeb9",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 010 SmolVLA 基线相关归档"
-    },
-    {
-      "task": "Task 010",
-      "published_path": "results/task010/predictions/case_002_approach_red_cylinder.json",
-      "file_size": 12247,
-      "sha256": "36ecac8f5367ca66278f86d65f9a51cb3c42ca1d864ed3d39957d4eb077a0704",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 010 SmolVLA 基线相关归档"
-    },
-    {
-      "task": "Task 010",
-      "published_path": "results/task010/predictions/case_003_open_gripper_release.json",
-      "file_size": 12234,
-      "sha256": "f16bb98bce31225a70192c0b05a79f7bdca9806688d1213f8820c42a2c438e5a",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 010 SmolVLA 基线相关归档"
-    },
-    {
-      "task": "Task 011",
-      "published_path": "results/task011/acceptance.json",
-      "file_size": 3976,
-      "sha256": "c5462071f0e4de82d84dcdf282bbb79fceb72bd2f83f2cbd24a51694f6ab6342",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 011 敏感度与鲁棒性相关归档"
-    },
-    {
-      "task": "Task 011",
-      "published_path": "results/task011/metrics/experiments.json",
-      "file_size": 275458,
-      "sha256": "21eaba78e62630f9750a83bb8563d229fd99cc4fa9f4ed4b5c24ffd5c5a0e033",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 011 敏感度与鲁棒性相关归档"
-    },
-    {
-      "task": "Task 011",
-      "published_path": "results/task011/metrics/processor_audit.json",
-      "file_size": 6459,
-      "sha256": "7a02ed8a67a4990386c46c8d76a46da5b30eff49370c6dff20f085a9564b2597",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 011 敏感度与鲁棒性相关归档"
-    },
-    {
-      "task": "Task 011",
-      "published_path": "results/task011/metrics/runtime_config.json",
-      "file_size": 2457,
-      "sha256": "53290eb1faa3213124ef4842e4d8955d755cda1f3f09b4c731a41e21721cd3b5",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 011 敏感度与鲁棒性相关归档"
-    },
-    {
-      "task": "Task 010",
-      "published_path": "results/task011/metrics/task010_output_audit.json",
-      "file_size": 671,
-      "sha256": "1845fb473a348d765d929cc3cef7532451439d265d38f33502bc8804d48a9656",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 010 SmolVLA 基线相关归档"
-    },
-    {
-      "task": "Task 012",
-      "published_path": "results/task012/acceptance.json",
-      "file_size": 1511,
-      "sha256": "82506657f96cfe87290ff63aa1f7d631fbfae8630de66403a91121c30082685c",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 012 X-VLA 跨领域推理归档"
-    },
-    {
-      "task": "Task 012",
-      "published_path": "results/task012/metrics/inference_metrics.json",
-      "file_size": 5939,
-      "sha256": "a5d52c810281f98de5cef1adf8caf46dfea6fd06d6f323a4812f398548a725d8",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 012 X-VLA 跨领域推理归档"
-    },
-    {
-      "task": "Task 012",
-      "published_path": "results/task012/predictions/case_001_domain0_libero.json",
-      "file_size": 26308,
-      "sha256": "7b09bd74626e2c9d54926c3f197f829cd2258e5e4f323f3d3072b65e57c3c418",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 012 X-VLA 跨领域推理归档"
-    },
-    {
-      "task": "Task 012",
-      "published_path": "results/task012/predictions/case_002_domain1_aloha.json",
-      "file_size": 26031,
-      "sha256": "1fd8460c4abed584ccc78acceb43b389ce7fed04df756b6ef8c781bb82909006",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 012 X-VLA 跨领域推理归档"
-    },
-    {
-      "task": "Task 012",
-      "published_path": "results/task012/predictions/case_003_domain2_bridge.json",
-      "file_size": 26177,
-      "sha256": "af51a877fe923c162828be2bac09441d8332a8042d1ffa66189b688878497ee8",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 012 X-VLA 跨领域推理归档"
-    },
-    {
-      "task": "Task 013",
-      "published_path": "results/task013/acceptance.json",
-      "file_size": 5831,
-      "sha256": "f7be3a1e3ddf51a6f539b3e9b8e9afae7f16d56a24ac3535f90a91abdfc2b27d",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 013 LIBERO 离线基准归档"
-    },
-    {
-      "task": "Task 013",
-      "published_path": "results/task013/metrics/inference_metrics.json",
-      "file_size": 3517,
-      "sha256": "b8d8ef94ab407d97c93bad65820b4442829163a0b74378191ac10ccf4593b84d",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 013 LIBERO 离线基准归档"
-    },
-    {
-      "task": "Task 013",
-      "published_path": "results/task013/predictions/sample_01_prediction.json",
-      "file_size": 31949,
-      "sha256": "18415db2e67a3e105650eb790c62813cbc56286af420bf60bca745325ae962ca",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 013 LIBERO 离线基准归档"
-    },
-    {
-      "task": "Task 013",
-      "published_path": "results/task013/predictions/sample_02_prediction.json",
-      "file_size": 31754,
-      "sha256": "4ce7b5387555d392294da5171213450af19625ebad1130a66c0b607c856b3914",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 013 LIBERO 离线基准归档"
-    },
-    {
-      "task": "Task 013",
-      "published_path": "results/task013/predictions/sample_03_prediction.json",
-      "file_size": 31808,
-      "sha256": "899e596759d82b0285afd47ee4f55d744e7c9c1d81d9157a504aab6b29be0986",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 013 LIBERO 离线基准归档"
-    },
-    {
-      "task": "Task 013",
-      "published_path": "results/task013/predictions/sample_04_prediction.json",
-      "file_size": 31867,
-      "sha256": "62fa73aca6ae6eb0b68e1fbc4327c3dd820ddc649969c34785c61ae387604424",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 013 LIBERO 离线基准归档"
-    },
-    {
-      "task": "Task 014",
-      "published_path": "results/task014/acceptance.json",
-      "file_size": 8407,
-      "sha256": "354360eee77fb643ac21a148e937b7330c03e901385359685f67595b92414c35",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 014 动作空间与预处理审计归档"
-    },
-    {
-      "task": "Task 014",
-      "published_path": "results/task014/metrics/calibrated_metrics.json",
-      "file_size": 5531,
-      "sha256": "b17cc82306e192e591ca3932491e37e674d727a609feab0b06d2de88e6df1934",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 014 动作空间与预处理审计归档"
-    },
-    {
-      "task": "Task 014",
-      "published_path": "results/task014/predictions/sample_01_calibrated_prediction.json",
-      "file_size": 18111,
-      "sha256": "50388affabca9bce7a9283b6767938a00d5945c0c6e962b3e8a22e0ad0f4871c",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 014 动作空间与预处理审计归档"
-    },
-    {
-      "task": "Task 014",
-      "published_path": "results/task014/predictions/sample_02_calibrated_prediction.json",
-      "file_size": 18033,
-      "sha256": "64cc772051ccf47ac252f0cbd6c1f8850a6f58369d729173b4b99516f38d05e8",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 014 动作空间与预处理审计归档"
-    },
-    {
-      "task": "Task 015",
-      "published_path": "results/task015/acceptance.json",
-      "file_size": 4871,
-      "sha256": "ddae64a566bcd1ad2adafb34403328f0693359429f1c844122d3020d66351e36",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 015 VLA Workbench 验收归档"
-    },
-    {
-      "task": "Task 015",
-      "published_path": "results/task015/metrics/inference_metrics.json",
-      "file_size": 814,
-      "sha256": "7713e9de8393bb62d67dc4eb8878ed407412b82a17b6ea8b5b4ec66747fd890e",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 015 VLA Workbench 验收归档"
-    },
-    {
-      "task": "Task 015",
-      "published_path": "results/task015/records/test_acceptance_rec.json",
-      "file_size": 6011,
-      "sha256": "dcf661aa1a0d98107bf2116cf9b4ec0c08f7e462ba73869a2c55736d49006176",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 015 VLA Workbench 验收归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "results/task016/acceptance.json",
-      "file_size": 3375,
-      "sha256": "0ecdeda8a92f85c4c0a975cd074848be19d59a7f49b785343e598abc5b88ea51",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "results/task016/metrics/action_statistics.json",
-      "file_size": 8527,
-      "sha256": "a3193d91b35d43c2aeef5fbded96a13066dbd0ecd0f589c391a465b003761edc",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "results/task016/metrics/system_performance.json",
-      "file_size": 805,
-      "sha256": "1e02ff549256aac71c28f0bf09607ac517c42c079f3fc1efaa3673330e642d28",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "results/task016/records/sample_01_record.json",
-      "file_size": 35293,
-      "sha256": "b331e0405f886383d16c27e9276d07e16cea5ccc2f1dd188c7436ff1ffc59a4a",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "results/task016/records/sample_02_record.json",
-      "file_size": 35102,
-      "sha256": "fcf319f5992d07046cb3d36d20009c561fddd4600a5aa9195635582d023da321",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "results/task016/records/sample_03_record.json",
-      "file_size": 35273,
-      "sha256": "807f1e54034ca74a602ccdbcceb11f95595b856116f355db3cc429623d64da00",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 016",
-      "published_path": "results/task016/records/sample_04_record.json",
-      "file_size": 35280,
-      "sha256": "2053add8c8631783e55bffb0f53644d4f73f0833bbdae9e1d3c7432386e3db64",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 016 物理语义与离线基准归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "results/task017/acceptance.json",
-      "file_size": 3910,
-      "sha256": "447da818e2a9a1ab6eb9137a8fc89ce71dc1ec0837cf868f7191de7b43206200",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "results/task017/metrics/closed_loop_metrics.json",
-      "file_size": 2290,
-      "sha256": "49b0b3e27ad51b6c4645b9848c1c69fb24906580917ff6bedfadf3de6cdade89",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "results/task017/metrics/episodes.json",
-      "file_size": 5289,
-      "sha256": "55ada229eabce7ebb0a6419b843ff0fdc343158fe7c76e6de6f29ab228b6ff7b",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "results/task017/metrics/manipulation.json",
-      "file_size": 5691,
-      "sha256": "97455d972faf3eb700ea24070f1d5c7ed4e8e62200a6dc962f19f14e2b74f366",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "results/task017/metrics/model.json",
-      "file_size": 298,
-      "sha256": "0df8e39ecd2c2a52d4b3c18be773b226d1ee45d7e659d2ee600add3b08f6cc32",
-      "category": "Metrics",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "results/task017/records/episode_00_seed_142/summary.json",
-      "file_size": 1478,
-      "sha256": "21fefdb4ef62e13791f6e8394110504615a211afc57bb0dd22e3f60fc24c3097",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "results/task017/records/episode_01_seed_143/summary.json",
-      "file_size": 1477,
-      "sha256": "54b09d277d26b6f33fb3efba51a35ff1f970160c53e607b2002e59fc2ed60954",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Full)",
-      "published_path": "results/task017/records/episode_02_seed_144/summary.json",
-      "file_size": 1478,
-      "sha256": "37709d9e77207d96bf56c40de19890fa49f105191694e6787db9864b2eb9ab5a",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 完整闭环长程测试归档 (Issue #1)"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "results/task017/records/run_seed_100.json",
-      "file_size": 83399,
-      "sha256": "b7b70e019fa3611aca4cd2da993132ccd39254c0a24ea8d767118380d4b5c60f",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "results/task017/records/run_seed_2026.json",
-      "file_size": 83450,
-      "sha256": "c0fd9f5b7886031f604f04aa217709c61e6b24e1ce3513aabf06654254bde71b",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Task 017 (Init)",
-      "published_path": "results/task017/records/run_seed_42.json",
-      "file_size": 83406,
-      "sha256": "be7ae946fe723f3885f323a4e2c4f9a081c7e09828a82830e4691329ef8633f8",
-      "category": "Evidence",
-      "publish": "YES",
-      "reason": "Task 017 初期 60 步闭环探索归档"
-    },
-    {
-      "task": "Relay",
-      "published_path": "tasks/templates/task_template.md",
-      "file_size": 1422,
-      "sha256": "f0a0ffa0edae4454daf6c2fa25cc2e3efff7345fd67485fdf0c020b341af6851",
-      "category": "Docs",
-      "publish": "YES",
-      "reason": "远程任务接力协议与模板"
+      "path": ".gitignore",
+      "size_bytes": 394,
+      "sha256": "27d659e2e2f5906a84f075da6d9b302b0e0ae2031f924d511b877b191e629d43"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 11811,
+      "sha256": "46f07c1efce60e687249abbe7894927d4dd143a38a35196070b621c70440d324"
+    },
+    {
+      "path": "TASKS.md",
+      "size_bytes": 3119,
+      "sha256": "e5a738d0a2f46635d7f64c0ec26ce95bea76849b11f306c91926e80b43269748"
+    },
+    {
+      "path": "docs/VLA_Project_Work_Roadmap.md",
+      "size_bytes": 66491,
+      "sha256": "89f5e4820bfc2f38fbc733fdbbf8c66fb2bc5ba5359b81237650dc46963aab0e"
+    },
+    {
+      "path": "docs/remote_task_relay.md",
+      "size_bytes": 4515,
+      "sha256": "36ca245be0f78903ab585db3091f10c7b19e9bf18871e6e575c3924e64b8ffbc"
+    },
+    {
+      "path": "docs/task010_smolvla_baseline.md",
+      "size_bytes": 14431,
+      "sha256": "f3c810fe6908ec68aabc904b45bdc579cd2f457fdc9e3f561a204a199be0ac52"
+    },
+    {
+      "path": "docs/task011_input_sensitivity.md",
+      "size_bytes": 11105,
+      "sha256": "9e5411d42db15e5e137eba69dfc6e03e8d0d14350dab12f6c38b592dbe2919c1"
+    },
+    {
+      "path": "docs/task012_xvla_inference.md",
+      "size_bytes": 14179,
+      "sha256": "03f61abcf2baa6cd6030748e9fdcb7df683899b22f4205c6edd1694ad3736a4c"
+    },
+    {
+      "path": "docs/task013_libero_offline_action_validation.md",
+      "size_bytes": 14882,
+      "sha256": "cd202026a71d1f5059d52f34878440d78c722c9f9fa2bc4cdd9221a7669b7f2d"
+    },
+    {
+      "path": "docs/task014_xvla_pipeline_audit.md",
+      "size_bytes": 12329,
+      "sha256": "0733bfd3aa00fe10229005abf7349867e7a56f983cc9d9e5087929f68295e6c5"
+    },
+    {
+      "path": "docs/task015_workbench.md",
+      "size_bytes": 14663,
+      "sha256": "5fb5f7963d161cd9497f0d44979eaa43bad2bc98365b69bf50d8e8fb8a362072"
+    },
+    {
+      "path": "docs/task016_acceptance_report.md",
+      "size_bytes": 13008,
+      "sha256": "f880ef96c5d9b2f1130b2f1d10f2a4267bc04ab351fb072e64697d702a3d79ef"
+    },
+    {
+      "path": "docs/task016_action_semantics.md",
+      "size_bytes": 6263,
+      "sha256": "26846093626eb4897b633086abd7f0f12be359ca8ad1c9cb6677cbb43693ed39"
+    },
+    {
+      "path": "docs/task017_acceptance_report.md",
+      "size_bytes": 5110,
+      "sha256": "fbf821f2e5c9da979194332dc97762ecbb15675c0fd52be51b3545966b861ddb"
+    },
+    {
+      "path": "docs/task017_full_rollout.md",
+      "size_bytes": 8156,
+      "sha256": "4ce145b26aa99b2982118e809e9f08ff2577ddee6bb3673ce2fe32d998d8e747"
+    },
+    {
+      "path": "docs/task017_full_rollout_acceptance.md",
+      "size_bytes": 4418,
+      "sha256": "38e0035be4181f6beb41d175598045c938a450e49dbf681532c28eb799eacea0"
+    },
+    {
+      "path": "docs/task017_libero_closed_loop.md",
+      "size_bytes": 11809,
+      "sha256": "fae551a5d9fd92cacb6ca63cd045d6b4549b40eefe0d8419cd0e42d97d4a85f1"
+    },
+    {
+      "path": "docs/task018_grasp_monitor_and_release.md",
+      "size_bytes": 13833,
+      "sha256": "b3199a00957bfd27d45b2c3889ea1d6b89178eed1e95363a025c8ccd8ab8a146"
+    },
+    {
+      "path": "docs/task018_grasp_monitor_and_release_acceptance.md",
+      "size_bytes": 6277,
+      "sha256": "950525fe490b899da6026e93c45ea53497b903f4fb18e4871295dade6cedbab4"
+    },
+    {
+      "path": "docs/vla_input_output_analysis.md",
+      "size_bytes": 10447,
+      "sha256": "69653de0c14fd5b5fae5a25a212b92b251cad05e66ced04861064a83f6f37c78"
+    },
+    {
+      "path": "manifests/publication_manifest.json",
+      "size_bytes": 29184,
+      "sha256": "45e52c2de2352a1e7aee82f4d8fda60fe706ec28de57d9956d2da0b4cd645974"
+    },
+    {
+      "path": "manifests/publication_manifest.md",
+      "size_bytes": 15662,
+      "sha256": "1590318b0392f6bfa15e068f7d9a9e8d5514ec69add855593551a8f40469beac"
+    },
+    {
+      "path": "results/task014/acceptance.json",
+      "size_bytes": 8407,
+      "sha256": "354360eee77fb643ac21a148e937b7330c03e901385359685f67595b92414c35"
+    },
+    {
+      "path": "results/task014/predictions/sample_01_calibrated_prediction.json",
+      "size_bytes": 18111,
+      "sha256": "50388affabca9bce7a9283b6767938a00d5945c0c6e962b3e8a22e0ad0f4871c"
+    },
+    {
+      "path": "results/task014/predictions/sample_02_calibrated_prediction.json",
+      "size_bytes": 18033,
+      "sha256": "64cc772051ccf47ac252f0cbd6c1f8850a6f58369d729173b4b99516f38d05e8"
+    },
+    {
+      "path": "results/task014/metrics/calibrated_metrics.json",
+      "size_bytes": 5531,
+      "sha256": "b17cc82306e192e591ca3932491e37e674d727a609feab0b06d2de88e6df1934"
+    },
+    {
+      "path": "results/task016/acceptance.json",
+      "size_bytes": 3375,
+      "sha256": "0ecdeda8a92f85c4c0a975cd074848be19d59a7f49b785343e598abc5b88ea51"
+    },
+    {
+      "path": "results/task016/metrics/action_statistics.json",
+      "size_bytes": 8527,
+      "sha256": "a3193d91b35d43c2aeef5fbded96a13066dbd0ecd0f589c391a465b003761edc"
+    },
+    {
+      "path": "results/task016/metrics/system_performance.json",
+      "size_bytes": 805,
+      "sha256": "1e02ff549256aac71c28f0bf09607ac517c42c079f3fc1efaa3673330e642d28"
+    },
+    {
+      "path": "results/task016/records/sample_01_record.json",
+      "size_bytes": 35293,
+      "sha256": "b331e0405f886383d16c27e9276d07e16cea5ccc2f1dd188c7436ff1ffc59a4a"
+    },
+    {
+      "path": "results/task016/records/sample_02_record.json",
+      "size_bytes": 35102,
+      "sha256": "fcf319f5992d07046cb3d36d20009c561fddd4600a5aa9195635582d023da321"
+    },
+    {
+      "path": "results/task016/records/sample_03_record.json",
+      "size_bytes": 35273,
+      "sha256": "807f1e54034ca74a602ccdbcceb11f95595b856116f355db3cc429623d64da00"
+    },
+    {
+      "path": "results/task016/records/sample_04_record.json",
+      "size_bytes": 35280,
+      "sha256": "2053add8c8631783e55bffb0f53644d4f73f0833bbdae9e1d3c7432386e3db64"
+    },
+    {
+      "path": "results/task013/acceptance.json",
+      "size_bytes": 5831,
+      "sha256": "f7be3a1e3ddf51a6f539b3e9b8e9afae7f16d56a24ac3535f90a91abdfc2b27d"
+    },
+    {
+      "path": "results/task013/predictions/sample_01_prediction.json",
+      "size_bytes": 31949,
+      "sha256": "18415db2e67a3e105650eb790c62813cbc56286af420bf60bca745325ae962ca"
+    },
+    {
+      "path": "results/task013/predictions/sample_02_prediction.json",
+      "size_bytes": 31754,
+      "sha256": "4ce7b5387555d392294da5171213450af19625ebad1130a66c0b607c856b3914"
+    },
+    {
+      "path": "results/task013/predictions/sample_03_prediction.json",
+      "size_bytes": 31808,
+      "sha256": "899e596759d82b0285afd47ee4f55d744e7c9c1d81d9157a504aab6b29be0986"
+    },
+    {
+      "path": "results/task013/predictions/sample_04_prediction.json",
+      "size_bytes": 31867,
+      "sha256": "62fa73aca6ae6eb0b68e1fbc4327c3dd820ddc649969c34785c61ae387604424"
+    },
+    {
+      "path": "results/task013/metrics/inference_metrics.json",
+      "size_bytes": 3517,
+      "sha256": "b8d8ef94ab407d97c93bad65820b4442829163a0b74378191ac10ccf4593b84d"
+    },
+    {
+      "path": "results/task012/acceptance.json",
+      "size_bytes": 1511,
+      "sha256": "82506657f96cfe87290ff63aa1f7d631fbfae8630de66403a91121c30082685c"
+    },
+    {
+      "path": "results/task012/predictions/case_001_domain0_libero.json",
+      "size_bytes": 26308,
+      "sha256": "7b09bd74626e2c9d54926c3f197f829cd2258e5e4f323f3d3072b65e57c3c418"
+    },
+    {
+      "path": "results/task012/predictions/case_002_domain1_aloha.json",
+      "size_bytes": 26031,
+      "sha256": "1fd8460c4abed584ccc78acceb43b389ce7fed04df756b6ef8c781bb82909006"
+    },
+    {
+      "path": "results/task012/predictions/case_003_domain2_bridge.json",
+      "size_bytes": 26177,
+      "sha256": "af51a877fe923c162828be2bac09441d8332a8042d1ffa66189b688878497ee8"
+    },
+    {
+      "path": "results/task012/metrics/inference_metrics.json",
+      "size_bytes": 5939,
+      "sha256": "a5d52c810281f98de5cef1adf8caf46dfea6fd06d6f323a4812f398548a725d8"
+    },
+    {
+      "path": "results/task017/acceptance.json",
+      "size_bytes": 3910,
+      "sha256": "447da818e2a9a1ab6eb9137a8fc89ce71dc1ec0837cf868f7191de7b43206200"
+    },
+    {
+      "path": "results/task017/metrics/closed_loop_metrics.json",
+      "size_bytes": 2290,
+      "sha256": "49b0b3e27ad51b6c4645b9848c1c69fb24906580917ff6bedfadf3de6cdade89"
+    },
+    {
+      "path": "results/task017/metrics/episodes.json",
+      "size_bytes": 5289,
+      "sha256": "55ada229eabce7ebb0a6419b843ff0fdc343158fe7c76e6de6f29ab228b6ff7b"
+    },
+    {
+      "path": "results/task017/metrics/manipulation.json",
+      "size_bytes": 5691,
+      "sha256": "97455d972faf3eb700ea24070f1d5c7ed4e8e62200a6dc962f19f14e2b74f366"
+    },
+    {
+      "path": "results/task017/metrics/model.json",
+      "size_bytes": 298,
+      "sha256": "0df8e39ecd2c2a52d4b3c18be773b226d1ee45d7e659d2ee600add3b08f6cc32"
+    },
+    {
+      "path": "results/task017/records/run_seed_100.json",
+      "size_bytes": 83399,
+      "sha256": "b7b70e019fa3611aca4cd2da993132ccd39254c0a24ea8d767118380d4b5c60f"
+    },
+    {
+      "path": "results/task017/records/run_seed_2026.json",
+      "size_bytes": 83450,
+      "sha256": "c0fd9f5b7886031f604f04aa217709c61e6b24e1ce3513aabf06654254bde71b"
+    },
+    {
+      "path": "results/task017/records/run_seed_42.json",
+      "size_bytes": 83406,
+      "sha256": "be7ae946fe723f3885f323a4e2c4f9a081c7e09828a82830e4691329ef8633f8"
+    },
+    {
+      "path": "results/task017/records/episode_01_seed_143/summary.json",
+      "size_bytes": 1477,
+      "sha256": "54b09d277d26b6f33fb3efba51a35ff1f970160c53e607b2002e59fc2ed60954"
+    },
+    {
+      "path": "results/task017/records/episode_02_seed_144/summary.json",
+      "size_bytes": 1478,
+      "sha256": "37709d9e77207d96bf56c40de19890fa49f105191694e6787db9864b2eb9ab5a"
+    },
+    {
+      "path": "results/task017/records/episode_00_seed_142/summary.json",
+      "size_bytes": 1478,
+      "sha256": "21fefdb4ef62e13791f6e8394110504615a211afc57bb0dd22e3f60fc24c3097"
+    },
+    {
+      "path": "results/task011/acceptance.json",
+      "size_bytes": 3976,
+      "sha256": "c5462071f0e4de82d84dcdf282bbb79fceb72bd2f83f2cbd24a51694f6ab6342"
+    },
+    {
+      "path": "results/task011/metrics/experiments.json",
+      "size_bytes": 275458,
+      "sha256": "21eaba78e62630f9750a83bb8563d229fd99cc4fa9f4ed4b5c24ffd5c5a0e033"
+    },
+    {
+      "path": "results/task011/metrics/processor_audit.json",
+      "size_bytes": 6459,
+      "sha256": "7a02ed8a67a4990386c46c8d76a46da5b30eff49370c6dff20f085a9564b2597"
+    },
+    {
+      "path": "results/task011/metrics/runtime_config.json",
+      "size_bytes": 2457,
+      "sha256": "53290eb1faa3213124ef4842e4d8955d755cda1f3f09b4c731a41e21721cd3b5"
+    },
+    {
+      "path": "results/task011/metrics/task010_output_audit.json",
+      "size_bytes": 671,
+      "sha256": "1845fb473a348d765d929cc3cef7532451439d265d38f33502bc8804d48a9656"
+    },
+    {
+      "path": "results/task010/acceptance.json",
+      "size_bytes": 1508,
+      "sha256": "a3c0db1f59d66546ea00d401bcd6e30f5f9f95214a3bb5781899ae3861963a0c"
+    },
+    {
+      "path": "results/task010/predictions/case_001_pick_blue_block.json",
+      "size_bytes": 12227,
+      "sha256": "94cd7518b39ef49f498f4a9fd022c6c99a0fd456e3c5aa7c7bdbf1c72089aeb9"
+    },
+    {
+      "path": "results/task010/predictions/case_002_approach_red_cylinder.json",
+      "size_bytes": 12247,
+      "sha256": "36ecac8f5367ca66278f86d65f9a51cb3c42ca1d864ed3d39957d4eb077a0704"
+    },
+    {
+      "path": "results/task010/predictions/case_003_open_gripper_release.json",
+      "size_bytes": 12234,
+      "sha256": "f16bb98bce31225a70192c0b05a79f7bdca9806688d1213f8820c42a2c438e5a"
+    },
+    {
+      "path": "results/task010/metrics/inference_metrics.json",
+      "size_bytes": 3860,
+      "sha256": "bb2170359d5c6a7789c9dc508656003e6a02c2a329a6d383e6aa245c12b5447c"
+    },
+    {
+      "path": "results/task018/acceptance.json",
+      "size_bytes": 4954,
+      "sha256": "f7f46a6f20c8471d76be9929b84d52e9c2dffd023aa50d1c0c194d1ae073503e"
+    },
+    {
+      "path": "results/task018/metrics/grasp_release_audit.json",
+      "size_bytes": 5338,
+      "sha256": "a8d2c6a22d6a776692fe08a89e5a96c0ede09516582238567eaefaf615c2a5dc"
+    },
+    {
+      "path": "results/task015/acceptance.json",
+      "size_bytes": 4871,
+      "sha256": "ddae64a566bcd1ad2adafb34403328f0693359429f1c844122d3020d66351e36"
+    },
+    {
+      "path": "results/task015/metrics/inference_metrics.json",
+      "size_bytes": 814,
+      "sha256": "7713e9de8393bb62d67dc4eb8878ed407412b82a17b6ea8b5b4ec66747fd890e"
+    },
+    {
+      "path": "results/task015/records/test_acceptance_rec.json",
+      "size_bytes": 6011,
+      "sha256": "dcf661aa1a0d98107bf2116cf9b4ec0c08f7e462ba73869a2c55736d49006176"
+    },
+    {
+      "path": "evidence/task017/episode_seed_100_final.png",
+      "size_bytes": 71331,
+      "sha256": "8bfe4fc36e45e20caf95e4e1da33be192d486fa6b361020b6f9777a82b1b5fc2"
+    },
+    {
+      "path": "evidence/task017/episode_seed_2026_final.png",
+      "size_bytes": 71280,
+      "sha256": "8ab6c9960933e702ecdb6f95af4175b7b1dfa7a3cd9cdd27123253a4d7e93621"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_c0_obs_workspace.png",
+      "size_bytes": 70510,
+      "sha256": "11ac3a3968c719483e0b5c4f0cae0425f9609244d045ea45048d83d1cedd4ba9"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_c0_obs_wrist.png",
+      "size_bytes": 67655,
+      "sha256": "1c3bfda0d7b0a5067dbc0dd1ca4ae21297e47a470e7877530dc712f335cf7c6a"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_cycle_0_step_15.png",
+      "size_bytes": 70971,
+      "sha256": "fe000282729411771ace90b7cf5674e4eb2d3ec8d307d54c1f977cf39280adef"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_cycle_1_step_30.png",
+      "size_bytes": 71868,
+      "sha256": "112c75ff0fd98ec6481cb8e9eec3aba6188659fc5d4f7a44daf72cd4c1610e47"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_cycle_2_step_45.png",
+      "size_bytes": 72035,
+      "sha256": "fb9dca0b7cde382035b670f95e8c01300cc4b60b8aca355ff5515cd2b4cf6d54"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_cycle_3_step_60.png",
+      "size_bytes": 71400,
+      "sha256": "574f5fe439d923f49184d4350a01b3c0cabb81f84e26f0fef52b07d027b1871e"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_final.png",
+      "size_bytes": 71400,
+      "sha256": "574f5fe439d923f49184d4350a01b3c0cabb81f84e26f0fef52b07d027b1871e"
+    },
+    {
+      "path": "evidence/task017/episode_seed_42_step_000_init.png",
+      "size_bytes": 70510,
+      "sha256": "11ac3a3968c719483e0b5c4f0cae0425f9609244d045ea45048d83d1cedd4ba9"
+    },
+    {
+      "path": "evidence/task017/full_rollout_ep00_0000_init.png",
+      "size_bytes": 70510,
+      "sha256": "11ac3a3968c719483e0b5c4f0cae0425f9609244d045ea45048d83d1cedd4ba9"
+    },
+    {
+      "path": "evidence/task017/full_rollout_ep00_0090_mug1_placed.png",
+      "size_bytes": 71370,
+      "sha256": "36b81b13d1274b5271fb231d03a0010b19d11514cb30284753e36b3424859406"
+    },
+    {
+      "path": "evidence/task017/full_rollout_ep00_0223_final_success.png",
+      "size_bytes": 69454,
+      "sha256": "7827e7c797eaa381d331cb470c48c8d041825857fb4a48dc313d2f8ca5559419"
+    },
+    {
+      "path": "evidence/task017/full_rollout_ep01_0222_final_success.png",
+      "size_bytes": 71527,
+      "sha256": "dff85885b7606277744e62f3eb681a2b6b3bf5c4a7ea168e328db14e80c52bc6"
+    },
+    {
+      "path": "evidence/task017/full_rollout_ep02_0219_final_success.png",
+      "size_bytes": 71230,
+      "sha256": "e739a14516b46599d3e96aa45508ea16a5cb17caf1e9bd0216ba70e1827a464e"
+    },
+    {
+      "path": "evidence/task018/offline_monitor_isolation.png",
+      "size_bytes": 129321,
+      "sha256": "0135f1c241293ff1b938bdeadccbc22dec9468fb7bc75a4346ef7c2e138eabf8"
+    },
+    {
+      "path": "evidence/task018/replay_mug1_place_and_release.png",
+      "size_bytes": 161622,
+      "sha256": "3e93661d89e3f4c9739779943ea6e1a67b5315f41d7a59a50bed171f537ce6af"
+    },
+    {
+      "path": "evidence/task018/replay_mug2_success_touchdown.png",
+      "size_bytes": 156501,
+      "sha256": "1d7ceb31b1dc10d1db726f8478382c24bd5210822a84a32540dbe62a8b09d467"
+    },
+    {
+      "path": "evidence/task015/action_curves_sample01.png",
+      "size_bytes": 14586,
+      "sha256": "66c31e36f0ef6ef22e5fe610e94cd63a7cbec2f828941906f0909fd039b74960"
+    },
+    {
+      "path": "tasks/templates/task_template.md",
+      "size_bytes": 1422,
+      "sha256": "f0a0ffa0edae4454daf6c2fa25cc2e3efff7345fd67485fdf0c020b341af6851"
     }
   ],
-  "exclusions": [
-    {
-      "category": "Virtual Environments & Python Binaries",
-      "pattern": ".venv/, .venv_xvla/",
-      "count": "2 virtualenvs (~8.5 GB)",
-      "reason": "第三方二进制库与构建缓存，严禁提交代码仓"
-    },
-    {
-      "category": "Pretrained Model Weights & Checkpoints",
-      "pattern": "~/.cache/huggingface, lerobot/xvla-*",
-      "count": "3 checkpoints (~4.2 GB)",
-      "reason": "预训练模型参数（SmolVLA 450M, X-VLA 879M），体积庞大且属开源公开资产，依规排除"
-    },
-    {
-      "category": "Raw Simulation Datasets & HDF5",
-      "pattern": "datasets/task013/*.png, datasets/task013/sample_manifest.json (4.1MB full dump)",
-      "count": "24 images + 1 manifest (4.5 MB)",
-      "reason": "原始训练/验证数据集切片，归档库仅保留精炼后的预测结果与指标"
-    },
-    {
-      "category": "Intermediate Raw NPZ Arrays",
-      "pattern": "results/task011/inputs/*.npz, results/task011/predictions/*_actions.npz",
-      "count": "32 NPZ files (420 KB)",
-      "reason": "二进制数值矩阵中间态，已由 experiments.json 完整结构化表达"
-    },
-    {
-      "category": "Simulation Rollout Videos (MP4)",
-      "pattern": "results/task017/records/*/*.mp4",
-      "count": "3 MP4 files (3.0 MB)",
-      "reason": "仿真视频文件，关键姿态已由 PNG 关键帧全量呈现，避免大二进制污染 Git 历史"
-    },
-    {
-      "category": "Raw Terminal & Rollout Logs",
-      "pattern": "results/*/logs/*.log, results/task017/records/*/*.log",
-      "count": "14 log files (120 KB)",
-      "reason": "本地调试与执行终端日志，已精炼为正式验收 Markdown 与 JSON 报告"
-    },
-    {
-      "category": "Workbench GUI & Backend Python Code",
-      "pattern": "workbench/ui/, workbench/backends/, workbench/workers/, scripts/",
-      "count": "28 Python files (260 KB)",
-      "reason": "遵循只归档‘验收报告与评测结果’原则，保留于原工程，不进行全仓搬迁"
-    }
-  ]
+  "total_files": 90
 }

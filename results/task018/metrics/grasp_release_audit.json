@@ -1,0 +1,138 @@
+{
+  "task_id": "Task 018",
+  "title": "夹爪抓放专项 + VLA Workbench 机械臂工作监控与回放",
+  "date": "2026-11-23",
+  "suite": "libero_10",
+  "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+  "benchmark_eval": {
+    "episodes_tested": 3,
+    "seeds": [
+      142,
+      143,
+      144
+    ],
+    "official_libero_success_rate": 1.0,
+    "official_libero_successes": 3,
+    "termination_mechanism": "LeRobot LiberoEnv.step sets terminated = done or is_success immediately upon goal satisfaction"
+  },
+  "grasp_and_release_audit": {
+    "criteria_hierarchy": [
+      "PREDICTED_CLOSE",
+      "GRIPPER_ACTUATED",
+      "BILATERAL_TARGET_CONTACT",
+      "OBJECT_LIFTED_AND_HELD",
+      "MODEL_RELEASE_COMMANDED",
+      "RELEASE_VERIFIED",
+      "OFFICIAL_TASK_SUCCESS"
+    ],
+    "episodes": [
+      {
+        "episode_id": "episode_00_seed_142",
+        "seed": 142,
+        "mug_1_white": {
+          "predicted_close": true,
+          "gripper_actuated": true,
+          "bilateral_contact": true,
+          "lift_peak_m": 0.0947,
+          "horizontal_displacement_m": 0.1695,
+          "model_release_commanded": true,
+          "release_step": 97,
+          "release_verified": true,
+          "final_distance_to_plate_center_m": 0.0229
+        },
+        "mug_2_yellow": {
+          "predicted_close": true,
+          "gripper_actuated": true,
+          "bilateral_contact": true,
+          "lift_peak_m": 0.0967,
+          "horizontal_displacement_m": 0.2228,
+          "model_release_commanded_in_chunk": true,
+          "planned_release_offset": 23,
+          "release_verified_in_env": false,
+          "unreleased_reason": "LIBERO benchmark environment terminated immediately on task success at step 223 prior to offset 23 execution",
+          "final_distance_to_plate_center_m": 0.028
+        }
+      },
+      {
+        "episode_id": "episode_01_seed_143",
+        "seed": 143,
+        "mug_1_white": {
+          "predicted_close": true,
+          "gripper_actuated": true,
+          "bilateral_contact": true,
+          "lift_peak_m": 0.096,
+          "horizontal_displacement_m": 0.1387,
+          "model_release_commanded": true,
+          "release_step": 102,
+          "release_verified": true,
+          "final_distance_to_plate_center_m": 0.0012
+        },
+        "mug_2_yellow": {
+          "predicted_close": true,
+          "gripper_actuated": true,
+          "bilateral_contact": true,
+          "lift_peak_m": 0.0906,
+          "horizontal_displacement_m": 0.1901,
+          "model_release_commanded_in_chunk": true,
+          "planned_release_offset": 21,
+          "release_verified_in_env": false,
+          "unreleased_reason": "LIBERO benchmark environment terminated immediately on task success at step 222 prior to offset 21 execution; touchdown contact reaction momentarily dipped bilateral contact",
+          "final_distance_to_plate_center_m": 0.0245
+        }
+      },
+      {
+        "episode_id": "episode_02_seed_144",
+        "seed": 144,
+        "mug_1_white": {
+          "predicted_close": true,
+          "gripper_actuated": true,
+          "bilateral_contact": false,
+          "contact_anomaly_diagnosis": "Mug wedged between left pad and gripper inner structure; bilateral pad collision predicate evaluated False despite continuous 3D lift-transport",
+          "lift_peak_m": 0.0999,
+          "horizontal_displacement_m": 0.1906,
+          "model_release_commanded": true,
+          "release_step": 101,
+          "release_verified": true,
+          "final_distance_to_plate_center_m": 0.0023
+        },
+        "mug_2_yellow": {
+          "predicted_close": true,
+          "gripper_actuated": true,
+          "bilateral_contact": true,
+          "lift_peak_m": 0.0821,
+          "horizontal_displacement_m": 0.1666,
+          "model_release_commanded_in_chunk": true,
+          "planned_release_offset": 18,
+          "release_verified_in_env": false,
+          "unreleased_reason": "LIBERO benchmark environment terminated immediately on task success at step 219 prior to offset 18 execution",
+          "final_distance_to_plate_center_m": 0.018
+        }
+      }
+    ]
+  },
+  "workbench_monitor_and_replay": {
+    "three_tier_isolation": {
+      "tier1_plan": "Model predicted 30-step action chunk",
+      "tier2_command": "OSC_POSE absolute controller action applied",
+      "tier3_feedback": "Actual EEF pose, displacement, tracking error, gripper gap/qpos, contact states, object states"
+    },
+    "offline_mode_isolation": "Verified: Simulation feedback strictly displays N/A (离线无仿真) with OFFLINE badge; zero fake green PASS",
+    "historical_replay_mode": {
+      "supported_episodes": [
+        "episode_00_seed_142",
+        "episode_01_seed_143",
+        "episode_02_seed_144"
+      ],
+      "step_scrubbing": "0 to ~223 steps supported with playback timer",
+      "camera_frame_sync": "Synchronized display of Workspace & Wrist cameras",
+      "quick_jumps": [
+        "m1_grasp",
+        "m1_release",
+        "m2_grasp",
+        "success"
+      ],
+      "dual_verdict_banner": "Explicit distinction between LIBERO official success (PASS) and full physical release (Mug 1: PASS, Mug 2: Touchdown / Held)"
+    },
+    "regression_testing": "test_ui_headless.py passed 5/5 tests in 0.603s"
+  }
+}
