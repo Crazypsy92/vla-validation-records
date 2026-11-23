@@ -7,8 +7,8 @@
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
 - **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修）
-- **白名单发布文件总数**：105 个
-- **总归档体积**：4335 KB
+- **白名单发布文件总数**：111 个
+- **总归档体积**：4354.58 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 105 项）
+## 二、白名单发布文件清单（共 111 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **General** | `README.md` | 13780 | `5ee2ceba38ce9ecf...` | Config | 发布归档文件 |
-| **General** | `TASKS.md` | 4616 | `426bbc5e358dcc26...` | Config | 发布归档文件 |
+| **General** | `README.md` | 13948 | `43bce21ccce8708d...` | Config | Task 020 选题审计 |
+| **General** | `TASKS.md` | 4583 | `504f00b8c3e16429...` | Config | Task 020 选题审计 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -126,6 +126,12 @@
 | **task018** | `evidence/task018/windows_desktop_real_verification.png` | 291287 | `476b93daf56fa9d0...` | Evidence | 发布归档文件 |
 | **task015** | `evidence/task015/action_curves_sample01.png` | 14586 | `66c31e36f0ef6ef2...` | Evidence | 发布归档文件 |
 | **General** | `tasks/templates/task_template.md` | 1373 | `9be0d877ae235fa0...` | Config | 发布归档文件 |
+| **Task 020** | `docs/task020_object_generalization.md` | 3639 | `c293be0773a810ae...` | Report | Task 020 选题审计 |
+| **Task 020** | `results/task020/acceptance.json` | 1427 | `3e4f2adae4103e42...` | Audit | Task 020 选题审计 |
+| **Task 020** | `results/task020/logs/registry_audit.log` | 436 | `f3b38078a7d9f18a...` | Audit | Task 020 选题审计 |
+| **Task 020** | `results/task020/metrics/official_task_inventory.json` | 10745 | `bf0e9e26c99f9c09...` | Audit | Task 020 选题审计 |
+| **Task 020** | `results/task020/metrics/summary.json` | 566 | `f35340b34d7ca3b6...` | Audit | Task 020 选题审计 |
+| **Task 020** | `scripts/task020_audit_libero10.py` | 3098 | `40c062518f0acabd...` | Audit | Task 020 选题审计 |
 
 ---
 

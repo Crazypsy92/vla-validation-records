@@ -113,3 +113,7 @@ flowchart LR
 
 - **发布白名单清单与校验结果**：[publication_manifest.md](manifests/publication_manifest.md)
 - **机器可读元数据清单**：[publication_manifest.json](manifests/publication_manifest.json)
+
+## Task 020 选题审计
+
+官方 LIBERO-10 只找到一项符合 Issue #4 条件的任务，状态为 BLOCKED。 [审计报告](docs/task020_object_generalization.md)

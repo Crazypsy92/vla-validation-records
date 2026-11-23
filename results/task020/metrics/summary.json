@@ -1,0 +1,23 @@
+{
+  "task_id": "Task020",
+  "status": "BLOCKED",
+  "suite": "libero_10",
+  "required_eligible_tasks": 2,
+  "eligible_task_ids": [
+    5
+  ],
+  "seeds_per_task": [
+    201,
+    202,
+    203
+  ],
+  "planned_episodes": 6,
+  "attempted_episodes": 0,
+  "completed_episodes": 0,
+  "model_forward_calls": 0,
+  "environment_steps": 0,
+  "official_success_rate": null,
+  "reason": "官方 libero_10 只有 Task 5 符合非杯类单物体纯抓放目标，低于两个任务的启动门槛。",
+  "inventory": "official_task_inventory.json",
+  "registry_audit_exit_code": 0
+}
