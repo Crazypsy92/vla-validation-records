@@ -8,8 +8,8 @@
 
 | ID | 任务 | Issue | 状态 | 下一步 |
 | --- | --- | --- | --- | --- |
-| Task017-R2 | 补齐新版 Task 017 完整闭环验收证据 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **REVIEW / 待外部审核** | 证据与报告已提交，等待评审标记 ACCEPTED |
-| Task018 | **夹爪抓取/保持/释放验证 + VLA Workbench 监控回放（合并）** | [#2 方案](https://github.com/Crazypsy92/vla-validation-records/issues/2) | PLANNED / 不可领取 | Issue #1 经审核关闭后由管理员激活为 `[TASK]` |
+| Task017-R2 | 完整回合证据归档，明确抓持判据例外 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 官方任务 3/3 验收；抓持与释放例外转 Task018 |
+| Task018 | **夹爪抓放专项 + VLA Workbench 机械臂运行/物体/接触监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **OPEN / 可领取** | 先复核 Seed144 白杯和 Seed143 黄白杯，再实现 GUI 历史 Episode 回放及工作状态总览 |
 
 ## 历史归档
 
@@ -29,6 +29,6 @@
 4. 上传 commit/PR 及原始证据，评论 `STATUS: REVIEW`；无法完成时评论 `STATUS: BLOCKED`。
 5. 由 ChatGPT 与用户审核后标记 `STATUS: ACCEPTED`，再关闭 Issue、发布下一个任务。
 
-**只领取标题含 `[TASK]` 且前置依赖已完成的 Issue。** Issue #2 目前为 `[PLAN]`，不得与 #1 并行开发或自动领取；待 #1 独立审查通过再激活。
+**只领取标题含 `[TASK]` 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；**当前唯一可领取的新任务是 Issue #2（Task018）**。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**
