@@ -9,7 +9,7 @@
 | ID | 任务 | Issue | 状态 | 下一步 |
 | --- | --- | --- | --- | --- |
 | Task017-R2 | 补齐新版 Task 017 完整闭环验收证据 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | OPEN / 待领取 | Antigravity 只读审计并归档已有资料 |
-| Task018 | 夹爪抓取、保持与主动释放专项 | 暂未发布 | PLANNED | 在 Task017-R2 证据审核后再正式发布 |
+| Task018 | **夹爪抓取/保持/释放验证 + VLA Workbench 监控回放（合并）** | [#2 方案](https://github.com/Crazypsy92/vla-validation-records/issues/2) | PLANNED / 不可领取 | Issue #1 经审核后把 #2 从 `[PLAN]` 激活为 `[TASK]` |
 
 ## 历史归档
 
@@ -28,5 +28,7 @@
 3. 在独立工作分支只执行该任务；更新 `docs/`、`results/`、`evidence/` 和发布清单。
 4. 上传 commit/PR 及原始证据，评论 `STATUS: REVIEW`；无法完成时评论 `STATUS: BLOCKED`。
 5. 由 ChatGPT 与用户审核后标记 `STATUS: ACCEPTED`，再关闭 Issue、发布下一个任务。
+
+**只领取标题含 `[TASK]` 且前置依赖已完成的 Issue。** Issue #2 目前为 `[PLAN]`，不得与 #1 并行开发或自动领取；待 #1 独立审查通过再激活。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**
