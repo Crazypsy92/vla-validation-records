@@ -14,7 +14,7 @@
 
 ---
 
-> **Task019-R1 验收结论（2026-11-23）**：回放数据源、状态字段、JSON/manifest、WSLg 桌面显示、指标定义及视频哈希已完成复核，按 `ACCEPTED_WITH_LIMITATIONS` 关闭；内部 Workbench 回放通过，外部播放器未验证，且本轮按范围未重跑模型/仿真。返修报告见 [task019-review 分支](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md)。下一步转入 [Task020 / Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4)，开展非杯类物体的 X-VLA 闭环迁移验证。
+> **Task019-R1 验收结论（2026-11-23）**：回放数据源、状态字段、JSON/manifest、WSLg 桌面显示、指标定义及视频哈希已完成复核，按 `ACCEPTED_WITH_LIMITATIONS` 关闭；内部 Workbench 回放通过，外部播放器未验证，且本轮按范围未重跑模型/仿真。返修报告见 [task019-review 分支](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md)。下一步转入 [Task020 / Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4)，先通过现有 VLA Workbench 启动并监控 LIBERO-10 Task 5 书本抓放试点。
 
 ## ⚠️ 重要声明与验证边界 (Important Disclaimers)
 
@@ -76,7 +76,7 @@ flowchart LR
 | **Task 017（完整长程）** | 24 次推理/664 步双杯拾放，LIBERO 判定 3/3 成功（第二只杯未观察到张爪） | `xvla-libero` | **ACCEPTED (有边界)** | [完整报告](docs/task017_full_rollout.md) / [验收报告](docs/task017_full_rollout_acceptance.md) | [episodes.json](results/task017/metrics/episodes.json) / [manipulation.json](results/task017/metrics/manipulation.json) | [mug1_placed.png](evidence/task017/full_rollout_ep00_0090_mug1_placed.png) / [final_success.png](evidence/task017/full_rollout_ep00_0223_final_success.png) |
 | **Task 018** | 夹爪抓放专项审计与 Workbench 机械臂运行监控回放 (含审查定向修复) | `xvla-libero` | **ACCEPTED / 已闭环** | [专项报告](docs/task018_grasp_monitor_and_release.md) / [验收报告](docs/task018_grasp_monitor_and_release_acceptance.md) / [审查修复报告](docs/task018_review_fixes.md) | [audit.json](results/task018/metrics/grasp_release_audit.json) / [acceptance.json](results/task018/acceptance.json) | [offline.png](evidence/task018/offline_monitor_isolation.png) / [mug1_release.png](evidence/task018/replay_mug1_place_and_release.png) / [mug2_success.png](evidence/task018/replay_mug2_success_touchdown.png) / [desktop.png](evidence/task018/windows_desktop_real_verification.png) |
 | **Task 019 / R1** | Workbench 连续视频回放、状态数据可信度与归档修复 | `xvla-libero` | **ACCEPTED_WITH_LIMITATIONS** | [Task019 技术报告](docs/task019_replay_video.md) / [R1 返修报告](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md) | [video_metadata.json](results/task019/metrics/video_metadata.json) / [acceptance.json](results/task019/acceptance.json) | [复审截图](https://github.com/Crazypsy92/vla-validation-records/tree/task019-review/evidence/task019) |
-| **Task 020** | X-VLA 跨物体类别与抓放任务迁移验证：两个非杯类任务、六个完整 Episode | `xvla-libero` | **OPEN / 当前任务** | [Task020 Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | 待执行 | 待执行 |
+| **Task 020** | Workbench 驱动 X-VLA 书本抓放闭环试点：LIBERO-10 Task 5，GUI 冒烟 + 3 个正式 Episode | `xvla-libero` | **OPEN / READY** | [Task020 执行说明](docs/task020_workbench_book_pilot.md) / [Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | 待执行 | 待执行 |
 
 ---
 
@@ -103,7 +103,7 @@ flowchart LR
 ## 五、后续发展规划 (Roadmap)
 
 1. **Task019 / R1（已完成，有限边界）**：完成真实视频连续回放、当前步状态可信度与归档数据修复；外部播放器验证保留为非阻断项；
-2. **Task020（当前）**：使用同一 X-VLA 检查点，在 LIBERO 中验证两个非杯类物体的抓取与放置闭环，形成跨物体类别的初步证据；
+2. **Task020（当前）**：优先打通现有 VLA Workbench 对 LIBERO-10 Task 5 书本抓放任务的 GUI 启动、实时监控和历史回放；兼容性通过后执行 Seed 201/202/203 三个完整 Episode；
 3. **Task021（后续候选）**：根据 Task020 失败类型，再决定是否开展随机位置、视角变化、遮挡或任务组合的鲁棒性测试；
 4. **真实机器人与边缘部署（后续）**：待机器人、相机和控制机型号明确后，再评估 ROS 2 对接、必要的数据适配、微调及 CPU/GPU/NPU 优化；当前不提前承诺实机效果。
 
@@ -114,6 +114,6 @@ flowchart LR
 - **发布白名单清单与校验结果**：[publication_manifest.md](manifests/publication_manifest.md)
 - **机器可读元数据清单**：[publication_manifest.json](manifests/publication_manifest.json)
 
-## Task 020 选题审计
+## Task 020 选题审计与范围调整
 
-官方 LIBERO-10 只找到一项符合 Issue #4 条件的任务，状态为 BLOCKED。 [审计报告](docs/task020_object_generalization.md)
+原始选题审计按“两种不同非杯类物体、单物体纯抓放”门槛，在官方 LIBERO-10 中只找到 Task 5 一个候选，因此原两任务方案为 BLOCKED。经用户确认，本轮调整为 **Task 5 单任务试点**，优先从现有 VLA Workbench 启动、监控和回放，再执行三个正式种子。原始审计证据保持不变，执行范围见 [Task020 Workbench 书本抓放试点说明](docs/task020_workbench_book_pilot.md) 与 [Issue #4](https://github.com/Crazypsy92/vla-validation-records/issues/4)。
