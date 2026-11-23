@@ -4,129 +4,143 @@
   "criteria": [
     {
       "id": "T01",
-      "name": "数据冲突审计-Seed144白杯",
-      "requirement": "查明Seed 144白杯grasped_steps=0但到靶原因",
+      "name": "新版 Task017 历史证据及三个 Seed 核对",
+      "requirement": "原始文件、哈希与样本表完整性校验",
       "status": "PASS",
-      "evidence": "三维轨迹分析证实白杯垂直抬升9.99cm并在空中水平搬运19.06cm，系双侧指垫几何接触判定阈值未触发，物理抓取与释放完全成立"
+      "evidence": "docs/task018_grasp_monitor_and_release.md 第一节三组 Seed 原始 events.jsonl / summary.json 核对"
     },
     {
       "id": "T02",
-      "name": "数据冲突审计-Seed143黄白杯",
-      "requirement": "查明Seed 143黄白杯末态grasped=false原因",
+      "name": "OPEN/CLOSE 模型输出与 env.step 控制值匹配",
+      "requirement": "实际控制日志中模型动作与控制器接收值严格映射",
       "status": "PASS",
-      "evidence": "黄白杯保持抓持40步并在第222步成功着盘触地，触地瞬间反作用力致指垫接触短暂微离，非空中滑脱"
+      "evidence": "Tier 1 与 Tier 2 映射日志，确定模型动作输出到 OSC_POSE 绝对控制器的一致性"
     },
     {
       "id": "T03",
-      "name": "终止机制溯源",
-      "requirement": "查明官方成功时提前终止原因",
+      "name": "夹爪真实关节反馈可审计",
+      "requirement": "qpos 与开度值可追溯，无凭空猜测",
       "status": "PASS",
-      "evidence": "LeRobot LiberoEnv.step源码确认terminated = done or is_success，官方评测在到靶瞬间强行终止"
+      "evidence": "Franka 夹爪真实关节 qpos [0, 1] 与开口间距精确记录，解析开度误差 < 0.1mm"
     },
     {
       "id": "T04",
-      "name": "模型释放指令规划验证",
-      "requirement": "审计模型是否在动作块中规划释放指令",
+      "name": "左右指与特定目标接触判据无误认",
+      "requirement": "MuJoCo geom/body 解析证据，区分特定杯体与夹爪指垫碰撞",
       "status": "PASS",
-      "evidence": "chunk_007时序审计证实Seed 142/143/144均在第23/21/18偏置规划了gripper=-1.0张开动作，但因环境终止未及执行"
+      "evidence": "MuJoCo contact pair geom1/geom2 严格过滤 left_fingerpad / right_fingerpad 与目标杯体"
     },
     {
       "id": "T05",
-      "name": "抓放判定七层体系建立",
-      "requirement": "建立从预测到物理验证的七层判定分级",
+      "name": "物体抬升、保持、掉落等事件可信",
+      "requirement": "杯体质心绝对轨迹与末端位姿跟随可信",
       "status": "PASS",
-      "evidence": "涵盖PREDICTED_CLOSE到OFFICIAL_TASK_SUCCESS全链路定义"
+      "evidence": "白杯最大抬升 +9.99cm、水平位移 19.06cm，黄白杯最大抬升 +9.67cm、水平位移 22.28cm"
     },
     {
       "id": "T06",
-      "name": "Monitor三层架构隔离",
-      "requirement": "Plan / Command / Feedback三层物理严格隔离",
+      "name": "两次放置与主动释放行为分别记录",
+      "requirement": "按步事件时间线记录杯1与杯2放置及释放情况",
       "status": "PASS",
-      "evidence": "RobotMonitorPanel实现三层独立展示卡片，杜绝混淆"
+      "evidence": "时间线明确记录杯1在 Step 101/110 完成释放验证，杯2在终止步 219/222/223 触盘着陆"
     },
     {
       "id": "T07",
-      "name": "离线模式零伪造",
-      "requirement": "离线模式真实反馈区严格显示N/A并标灰",
+      "name": "新 GUI 中预测与实际反馈严格分栏",
+      "requirement": "Plan / Command / Feedback 三层严格分栏展示",
       "status": "PASS",
-      "evidence": "offline_monitor_isolation.png证实所有仿真字段均严格为N/A，状态标识为OFFLINE / NO SIM"
+      "evidence": "RobotMonitorPanel 界面实现三层独立展示卡片，杜绝混淆"
     },
     {
       "id": "T08",
-      "name": "双层判定卡片展示",
-      "requirement": "并列展示LIBERO官方判定与全流程抓放物理判定",
+      "name": "离线模式实际反馈显示 N/A",
+      "requirement": "离线单样本预测无仿真反馈时严格标灰显示 N/A",
       "status": "PASS",
-      "evidence": "官方PASS与物理抓放审计划分明确，客观呈现杯2终止抓持状态"
+      "evidence": "offline_monitor_isolation.png 证实离线模式下无任何虚构绿色 PASS，全部显示 N/A"
     },
     {
       "id": "T09",
-      "name": "历史Episode轻量加载",
-      "requirement": "无需加载879M模型秒级加载历史Episode",
+      "name": "至少 1 个真实 Episode 的回放可用",
+      "requirement": "输入帧、步号、命令、反馈时间轴完全对齐可用",
       "status": "PASS",
-      "evidence": "直接解析events.jsonl，加载时间<50ms"
+      "evidence": "Seed 142/143/144 全量 664 步历史回放秒级加载并在 GUI 中稳定回放"
     },
     {
       "id": "T10",
-      "name": "多Episode支持",
-      "requirement": "支持Seed 142/143/144全量回放选择",
+      "name": "旧 GUI 功能、关闭和资源管理回归",
+      "requirement": "回归退出码与日志无异常，卸载与关闭无孤儿 Worker",
       "status": "PASS",
-      "evidence": "下拉框完整索引3组种子回放数据"
+      "evidence": "test_ui_headless.py 6项测试全部通过(0.547s)，主窗口 on_close 干净退出"
     },
     {
       "id": "T11",
-      "name": "步进拖拽与滑块控制",
-      "requirement": "支持Step 0到终态拖拽与步进按钮控制",
+      "name": "抓取/释放/官方任务成功三个结论独立统计",
+      "requirement": "结构化 acceptance.json 与 grasp_release_audit.json 解耦展示",
       "status": "PASS",
-      "evidence": "Slider与Stepper按钮支持±1与±10跳转，支持连续自动播放"
+      "evidence": "Dual Verdict 并行独立体系，将官方基准与物理抓放生命周期解耦"
     },
     {
       "id": "T12",
-      "name": "真实双相机画面同步",
-      "requirement": "回放时同步切换Workspace与Wrist真实视角",
+      "name": "旧证据保留、GitHub 精选归档",
+      "requirement": "文件哈希校验、无大文件越界，符合归档清单",
       "status": "PASS",
-      "evidence": "根据Step自动匹配并展示最近真实渲染帧"
+      "evidence": "发布清单 manifests/publication_manifest.json 记录全量文件哈希与脱敏白名单"
     },
     {
       "id": "T13",
-      "name": "关键事件快速跳转",
-      "requirement": "提供白杯抓取、白杯释放、黄白杯抓取、任务成功跳转",
+      "name": "仿真是否真的发生运动 (8.5 增补)",
+      "requirement": "GUI 根据真实反馈显示末端当前位置、初始位置和实际移动；无反馈时 N/A",
       "status": "PASS",
-      "evidence": "4个快捷按钮秒级定位到关键物理事件步"
+      "evidence": "Tier 3 反馈区实时计算 EEF Actual Pose、初始位姿与累计位移，离线时严格 N/A"
     },
     {
       "id": "T14",
-      "name": "机械臂位姿与误差监控",
-      "requirement": "显示真实EEF坐标、位移与跟踪误差",
+      "name": "预测、下发和反馈三层隔离 (8.5 增补 / P0-A)",
+      "requirement": "Plan/Command/Feedback 结构与测试一致，严禁从预测派生实际夹住或释放",
       "status": "PASS",
-      "evidence": "动态计算并展示EEF [X, Y, Z]及跟踪欧氏误差"
+      "evidence": "P0-A 修复：严格界定 Chunk 7 offset 23/21/18 为 RELEASE_PLANNED_ONLY，未下发执行标 NOT VERIFIED"
     },
     {
       "id": "T15",
-      "name": "夹爪开度与接触监控",
-      "requirement": "显示夹爪开口间距、qpos与目标接触状态",
+      "name": "机械臂/物体运动曲线 (8.5 增补 / P0-B)",
+      "requirement": "真实步号对齐，记录来源可追溯，时序对齐消除未来数据泄露",
       "status": "PASS",
-      "evidence": "准确呈现开度(m)与双指垫碰撞状态"
+      "evidence": "P0-B 修复：准确拆分 Step 101 指令下发与 Step 110 机械张开阈值，相机帧注明参考关键帧与Δ步数"
     },
     {
       "id": "T16",
-      "name": "物体状态与到靶监控",
-      "requirement": "显示双杯高度、抬升ΔZ与入盘判定",
+      "name": "回放时间轴与事件标记 (8.5 增补 / P0-B)",
+      "requirement": "实际 Step 跳转 + 不同事件的可验证信息，缺失帧不造假",
       "status": "PASS",
-      "evidence": "实时计算高度抬升并判断是否在餐盘目标范围内"
+      "evidence": "快捷跳转拆分为 M1 Open Cmd 与 M1 Open Done，准确指示 Keyframe #090 / #120"
     },
     {
       "id": "T17",
-      "name": "零回归与单元测试",
-      "requirement": "原有离线单样本预测与测试套件完全兼容",
+      "name": "官方任务成功与操作完整性 (8.5 增补 / P1-C)",
+      "requirement": "分别显示、分别验收，第一杯与第二杯独立，官方判定与物理生命周期解耦",
       "status": "PASS",
-      "evidence": "test_ui_headless.py 5项测试全部通过(0.603s)"
+      "evidence": "P1-C 修复：OFFICIAL_TASK_SUCCESS 作为独立并行指标解耦，杯1已释放，杯2触盘未张开"
     },
     {
       "id": "T18",
-      "name": "文档与归档发布",
-      "requirement": "完成报告编写与GitHub同步准备",
+      "name": "冲突样本专项 (8.5 增补 / P1-C)",
+      "requirement": "Seed 144 白杯、Seed 143 黄白杯给出诊断与证据；不能确认则 UNKNOWN",
       "status": "PASS",
-      "evidence": "task018_grasp_monitor_and_release.md及全量指标归档"
+      "evidence": "P1-C 修复：Seed 144 分类为 NONSTANDARD_GRASP_CONTACT，Seed 143 标注触盘同步跳变且机制未定"
+    },
+    {
+      "id": "T19",
+      "name": "用户可自行操作 (8.5 增补 / P1-D)",
+      "requirement": "Windows 桌面启动，选择 Episode、跳转关键帧、查看状态、切离线模式，无需终端",
+      "status": "PASS",
+      "evidence": "P1-D 修复：verify_windows_desktop.py 实测通过，产出 windows_desktop_real_verification.png"
+    },
+    {
+      "id": "T20",
+      "name": "旧 Workbench 与回归 (8.5 增补 / P1-D)",
+      "requirement": "离线单样本预测、曲线、数据表、Worker 卸载和退出无回归",
+      "status": "PASS",
+      "evidence": "P1-D 修复：test_ui_headless.py 6/6 通过，Windows Desktop 实机测试验证 0 孤儿进程"
     }
   ]
 }
