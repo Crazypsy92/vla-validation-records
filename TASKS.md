@@ -9,7 +9,9 @@
 | ID | 任务 | Issue | 状态 | 下一步 |
 | --- | --- | --- | --- | --- |
 | Task017-R2 | 完整回合证据归档，明确抓持判据例外 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 官方任务 3/3 验收；抓持与释放例外转 Task018 |
-| Task018 | **夹爪抓放专项 + VLA Workbench 机械臂运行/物体/接触监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **REVIEW / 待外部审核** | 全量审计、Workbench三层隔离回放及证据已就绪，等待评审标记 ACCEPTED |
+| Task018 | **夹爪抓放审计与 VLA Workbench 三层监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **ACCEPTED_WITH_FOLLOWUP / 已关闭** | 20项报告归档；截图暴露的画面因果性与模式语义转 Task019 |
+
+| Task019 | **真实 LIBERO 视频连续回放 + 当前/最终状态与帧时序纠偏** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **OPEN / 可领取** | 先审计本地 rollout.mp4 帧数/FPS/步号，再修复 GUI 并集成视频播放 | 
 
 ## 历史归档
 
@@ -26,11 +28,10 @@
 
 1. ChatGPT 发布 **一个** [TASK] Issue，写明目标、边界和验收。
 2. Antigravity 打开此仓库的 [接力规范](docs/remote_task_relay.md) 与唯一未完成 Issue；检查本地工程和上游证据，再回评论 STATUS: RUNNING。
-3. 在独立工作分支只执行该任务；更新 docs/、
-esults/、evidence/ 和发布清单。
+3. 在独立工作分支只执行该任务；更新 docs/、results/、evidence/ 和发布清单。
 4. 上传 commit/PR 及原始证据，评论 STATUS: REVIEW；无法完成时评论 STATUS: BLOCKED。
 5. 由 ChatGPT 与用户审核后标记 STATUS: ACCEPTED，再关闭 Issue、发布下一个任务。
 
-**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；当前 Issue #2（Task018）开发归档已完成，处于 STATUS: REVIEW 等待外部验收。
+**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；Issue #2 已 ACCEPTED_WITH_FOLLOWUP 并关闭；**当前唯一可领取任务是 Issue #3（Task019）**。不自动开展 Task020。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**
