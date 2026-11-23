@@ -10,7 +10,7 @@
 | --- | --- | --- | --- | --- |
 | Task017-R2 | 完整回合证据归档，明确抓持判据例外 | [#1](https://github.com/Crazypsy92/vla-validation-records/issues/1) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 官方任务 3/3 验收；抓持与释放例外转 Task018 |
 | Task018 | **夹爪抓放审计与 VLA Workbench 三层监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **ACCEPTED_WITH_FOLLOWUP / 已关闭** | 20项报告归档；截图暴露的画面因果性与模式语义转 Task019 |
-| Task019 | **真实 LIBERO 视频连续回放 + 当前/最终状态与帧时序纠偏** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **CHANGES_REQUESTED / 待修订** | 已完成报告与截图复核；需修复本体状态表、JSON 尾随 NUL、字体/布局、抬升定义、视频哈希与同步延迟证据 |
+| Task019-R1（Task019返修） | **回放数据可信度与桌面显示修复** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **CHANGES_REQUESTED / 返修中** | 修复状态数据源、JSON/清单完整性、Windows 字体布局、抬升定义、视频哈希、同步延迟证据与源码追溯；通过审核前不启动 Task020 |
 
 ## 历史归档
 
