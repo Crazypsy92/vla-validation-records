@@ -7,8 +7,8 @@
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
 - **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修）
-- **白名单发布文件总数**：127 个
-- **总归档体积**：5456.72 KB
+- **白名单发布文件总数**：128 个
+- **总归档体积**：5457.02 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,7 +17,7 @@
 
 ---
 
-## 二、白名单发布文件清单（共 127 项）
+## 二、白名单发布文件清单（共 128 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
@@ -127,12 +127,12 @@
 | **task015** | `evidence/task015/action_curves_sample01.png` | 14586 | `66c31e36f0ef6ef2...` | Evidence | 发布归档文件 |
 | **General** | `tasks/templates/task_template.md` | 1373 | `9be0d877ae235fa0...` | Config | 发布归档文件 |
 | **Task 020** | `docs/task020_object_generalization.md` | 3639 | `c293be0773a810ae...` | Report | Task 020 选题审计 |
-| **Task 020** | `results/task020/acceptance.json` | 2171 | `4cdddd8866c51bdb...` | Audit | 书本试点 |
+| **Task 020** | `results/task020/acceptance.json` | 2227 | `1a5d0fcd80144cb7...` | Audit | 书本试点 |
 | **Task 020** | `results/task020/logs/registry_audit.log` | 436 | `f3b38078a7d9f18a...` | Audit | Task 020 选题审计 |
 | **Task 020** | `results/task020/metrics/official_task_inventory.json` | 10745 | `bf0e9e26c99f9c09...` | Audit | Task 020 选题审计 |
 | **Task 020** | `results/task020/metrics/summary.json` | 9568 | `452b50296f0970f2...` | Audit | 书本试点 |
 | **Task 020** | `scripts/task020_audit_libero10.py` | 3098 | `40c062518f0acabd...` | Audit | Task 020 选题审计 |
-| **Task 020** | `docs/task020_workbench_book_pilot.md` | 7096 | `5e6cc632abbe684e...` | Evidence | 书本试点 |
+| **Task 020** | `docs/task020_workbench_book_pilot.md` | 7161 | `fba0663ee5fc28fd...` | Evidence | 书本试点 |
 | **Task 020** | `evidence/task020/history_201_terminal.png` | 270905 | `d9e75afb7d8edd34...` | Evidence | 书本试点 |
 | **Task 020** | `evidence/task020/history_202_terminal.png` | 271102 | `7066d7b11ee786fd...` | Evidence | 书本试点 |
 | **Task 020** | `evidence/task020/history_smoke_stopped.png` | 275334 | `af3c1ad1c4b866a3...` | Evidence | 书本试点 |
@@ -148,6 +148,7 @@
 | **Task 020** | `results/task020/metrics/book_pilot_interruptions.json` | 876 | `2133aa81526b21ea...` | Evidence | 书本试点 |
 | **Task 020** | `results/task020/metrics/registry_audit_summary.json` | 566 | `f35340b34d7ca3b6...` | Evidence | 书本试点 |
 | **Task 020** | `results/task020/registry_audit_acceptance.json` | 1427 | `3e4f2adae4103e42...` | Evidence | 书本试点 |
+| **Task 020** | `results/task020/logs/windows_shortcut.log` | 184 | `8820b736c85f64b6...` | Evidence | 书本试点 |
 
 ---
 

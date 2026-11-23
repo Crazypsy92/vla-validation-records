@@ -11,9 +11,10 @@
     "gui_retry_203": 1,
     "headless_regression": 0,
     "history_gui": 0,
-    "artifact_validation": 0
+    "artifact_validation": 0,
+    "desktop_shortcut": 0
   },
-  "verification_scope": "Mapped Workbench via WSLg; clicked same GUI buttons programmatically. Desktop shortcut target checked separately.",
+  "verification_scope": "Mapped Workbench via WSLg; clicked the GUI buttons programmatically. Existing Windows desktop shortcut separately opened the same application.",
   "checks": [
     {
       "id": "T01",
