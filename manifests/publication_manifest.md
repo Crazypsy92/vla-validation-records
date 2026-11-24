@@ -242,7 +242,7 @@
 | **Task 021** | `evidence/task021/index_02_reset.jpg` | 25006 | `4a47f799921d330a...` | Screenshot | Task021 阶段 A |
 | **Task 021** | `evidence/task021/index_15_reset.jpg` | 24477 | `d2c54df07d0f813f...` | Screenshot | Task021 阶段 A |
 | **Task 021** | `evidence/task021/index_34_reset.jpg` | 25109 | `65e81c29a4035076...` | Screenshot | Task021 阶段 A |
-| **Task 021** | `results/task021/acceptance.json` | 6464 | `ddde07274787f80e...` | Evidence | Task021 阶段 B2a |
+| **Task 021** | `results/task021/acceptance.json` | 6463 | `844d6bff2633daaa...` | Evidence | Task021 阶段 B2a |
 | **Task 021** | `results/task021/metrics/initial_states.json` | 179862 | `c5694a6f15ff94fe...` | Evidence | Task021 阶段 A |
 | **Task 021** | `results/task021/metrics/inventory_source.json` | 1758 | `768482864e98563b...` | Evidence | Task021 阶段 A |
 | **Task 021** | `results/task021/metrics/summary.json` | 6779 | `e57c09e51312c0b5...` | Evidence | Task021 阶段 B2a |
