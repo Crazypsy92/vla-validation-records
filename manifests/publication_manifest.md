@@ -8,7 +8,7 @@
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
 - **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL）
 - **白名单发布文件总数**：332 个
-- **总归档体积**：21022.65 KB
+- **总归档体积**：21023.20 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -22,8 +22,8 @@
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **Task021 navigation** | `README.md` | 14433 | `9e4f403a898d3a5b...` | Config | Task021 阶段 B2b |
-| **Task021 status index** | `TASKS.md` | 5167 | `1112bd84fe0c85d5...` | Config | Task021 阶段 B2b |
+| **Task021 navigation** | `README.md` | 14614 | `75bfd33f71b10d4b...` | Config | Task021 阶段 B2b |
+| **Task021 status index** | `TASKS.md` | 5551 | `450a58b680e09e22...` | Config | Task021 阶段 B2b |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
