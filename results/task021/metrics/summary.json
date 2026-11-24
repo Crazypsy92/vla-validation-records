@@ -1,5 +1,5 @@
 {
-  "status": "PHASE_A_REVIEW_PHASE_B_BLOCKED",
+  "status": "PHASE_B2A_REVIEW",
   "count": 50,
   "excluded_indices": [
     0,
@@ -217,5 +217,24 @@
     "robot_state_8d": 50,
     "target_site_pose": 3,
     "camera_pair": 50
+  },
+  "b2a": {
+    "formal_index_15_status": "OFFICIAL_SUCCESS",
+    "formal_index_34_status": "NOT_RUN",
+    "initial_state_index": 15,
+    "reset_rng_seed": 201,
+    "run_id": "b2a_index_15_rng_201_1795493022081788638",
+    "official_success": true,
+    "reset_verified": true,
+    "inferences": 7,
+    "steps": 201,
+    "worker_exit_code": 0,
+    "gui_closed": true,
+    "regression_tests": 19,
+    "regression_exit_code": 0,
+    "verification_exit_code": 0,
+    "historical_files_verified": 290,
+    "local_source_diff_sha256": "7ab4c45012a92eace8bc3cd26492ddc78b6e30d6354bf321b1e32ff3b20cf8bd",
+    "executed_source_diff_sha256": "6608c1cffa84491d2043765a4d73ef0dde3542fb3b873ee2b2d70d7b29d02ef4"
   }
 }

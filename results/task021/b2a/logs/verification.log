@@ -1,0 +1,5 @@
+[(0, 0, 30, 45.3155), (1, 30, 30, 32.3979), (2, 60, 30, 37.1533), (3, 90, 30, 35.1262), (4, 120, 30, 36.5686), (5, 150, 30, 31.6819), (6, 180, 21, 30.6051)]
+{'first_close_step': 46, 'first_left_contact_step': 54, 'first_right_contact_step': 50, 'first_bilateral_step': 54, 'first_lift_over_2cm_step': 58, 'first_target_step': 201, 'first_release_after_close_step': None, 'minimum_opening_m_when_commanded_closed': 0.029520421547518896}
+Status COMPLETE Steps 201 Peak RSS/PSS 6474 6468 Min WSL/Swap 1099 1341 Video {'frames': 202, 'fps': 20.0, 'sha256': '58437bc17908ae25067c74e256f084d733d44399c7273e899425f3b9574329e3', 'bytes': 747863}
+
+exit=0

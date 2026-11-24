@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "./results/task021/b2a/monitor.py", line 30, in <module>
+    assert sum(p['role']=='gui' for p in base['processes'])==1 and not any(p['role']=='worker' for p in base['processes'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+exit=1

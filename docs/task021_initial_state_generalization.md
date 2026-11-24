@@ -1,6 +1,37 @@
 # Task021 · LIBERO Task 5 初始状态泛化验证
 
-**阶段 A 已验收，阶段 B1 待审核。** 正式模型回合等待进一步授权。
+**阶段 B2a 待审核。** 本轮只尝试官方 index 15 / Reset RNG Seed 201，结果为 **OFFICIAL_SUCCESS**。index 34 未运行。
+
+## 阶段 B2a · index 15 正式回合
+
+从 Windows 桌面 Workbench 以显式参数发起唯一 Attempt b2a_index_15_rng_201_1795493022081788638，使用 LIBERO-10 Task 5。模型在 CPU 上运行，配置文件与 Task020 Phase 3 完全一致。模型权重、revision、Processor 文件、Prompt、原 8D 输入、7D 绝对 OSC_POSE、20 Hz、30 步动作块、BDDL 和 520 步上限均未变。
+
+首次前向前，Worker 核对实际官方 index 与 RNG Seed，校验官方行及资产 SHA256、书本和目标位姿、机器人状态和两路 RGB 像素哈希。数值容差沿用 1e-7。前向前的核验证据保存在 Reset 事件。每轮使用前一块执行后的新观测。实跑 Step 0 的预览等待首张实时 JPEG，先看到的是占位图。前向前的两张原始 PNG 已保存且校验通过。事后修复界面优先显示同一步的 PNG，并用本回合存档复核，不重新运行模型。
+
+| Chunk | 推理输入步 | 实际动作步 | 前向耗时（秒） |
+| --- | ---: | ---: | ---: |
+| 0 | 0 | 30 | 45.3155 |
+| 1 | 30 | 30 | 32.3979 |
+| 2 | 60 | 30 | 37.1533 |
+| 3 | 90 | 30 | 35.1262 |
+| 4 | 120 | 30 | 36.5686 |
+| 5 | 150 | 30 | 31.6819 |
+| 6 | 180 | 21 | 30.6051 |
+
+共 7 次推理，201 步。终止原因 official_success，官方成功记录为 True。首次闭爪 Step 46，双侧指垫首次接触 Step 54，最高抬升 0.2882842796551591 m，首次到目标区域 Step 201，物理释放验证为 False。官方终态和释放分别记录。录像 202 帧，20 fps，SHA256 58437bc17908ae25067c74e256f084d733d44399c7273e899425f3b9574329e3，原始视频保存在本机。
+
+| 内存采样 | WSL 可用 MiB | Swap 可用 MiB |
+| --- | ---: | ---: |
+| GUI 启动门禁 | 6479 | 2048 |
+| 实测最低值（各自独立） | 1099 | 1341 |
+| worker_exit | 6779 | 1639 |
+| idle_12_seconds | 6798 | 1640 |
+
+Worker RSS/PSS 采样峰值 6474/6468 MiB，Worker 退出码 0。保留 RAM/Swap 原门禁和每次新动作块的保护；新 OOM 计数变动标志为 False。外部采样器接入时模型 Worker 已由 Workbench 启动，启动前余量取自保存的 GUI 门禁样本。正式回合结束后，GUI 关闭核验为 True。
+
+19 项回归通过，逐步证据校验退出码 0。290 个 Task020 历史文件 SHA256 一致。本轮未重试，未启动 index 34。
+
+[正式回合验收](../results/task021/acceptance.json) · [逐块、资源与视频指标](../results/task021/b2a/metrics/summary.json) · [正式启动确认](../evidence/task021/b2a/confirmation.png) · [窗口结束状态](../evidence/task021/b2a/finished.png) · [Reset 画面显示复核](../evidence/task021/b2a/reset_display_check.png)
 
 ## 阶段 B1 · 显式 index 与无模型复位
 

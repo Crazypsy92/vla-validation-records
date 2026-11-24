@@ -1,0 +1,42 @@
+{
+  "time": 1795493032.22102,
+  "wsl": {
+    "MemTotal": 7985960,
+    "MemAvailable": 6221784,
+    "SwapTotal": 2097152,
+    "SwapFree": 2097152,
+    "Cached": 5429700
+  },
+  "oom_kill": 0,
+  "cgroup_oom_kill": 0,
+  "processes": [
+    {
+      "role": "other",
+      "pid": 3099,
+      "ppid": 3098,
+      "rss_kib": 287916,
+      "pss_kib": 174010
+    },
+    {
+      "role": "other",
+      "pid": 3259,
+      "ppid": 3099,
+      "rss_kib": 623260,
+      "pss_kib": 529298
+    },
+    {
+      "role": "gui",
+      "pid": 13914,
+      "ppid": 13913,
+      "rss_kib": 108872,
+      "pss_kib": 76087
+    },
+    {
+      "role": "worker",
+      "pid": 14029,
+      "ppid": 13914,
+      "rss_kib": 631796,
+      "pss_kib": 587021
+    }
+  ]
+}
