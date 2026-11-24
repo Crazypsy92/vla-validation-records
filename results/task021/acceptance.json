@@ -1,0 +1,82 @@
+{
+  "task": "Task021",
+  "phase": "A",
+  "status": "PHASE_A_REVIEW",
+  "phase_b_status": "BLOCKED",
+  "phase_b_blocker": "Current GUI and Worker accept only 201/202/203; candidate index selection is unavailable.",
+  "candidate_indices": [
+    15,
+    34
+  ],
+  "model_loaded": false,
+  "formal_runs": 0,
+  "historical_sha256_verified": 290,
+  "checks": [
+    {
+      "id": "G21-01",
+      "status": "PASS",
+      "evidence": "50 个官方状态逐一复位，已核对实际文件、哈希及现有 Seed 映射。",
+      "paths": [
+        "metrics/inventory_source.json",
+        "metrics/initial_states.json"
+      ]
+    },
+    {
+      "id": "G21-02",
+      "status": "PASS",
+      "evidence": "候选 15 和 34 均未用于 Task020，且相对成功基线的差异可量化。",
+      "paths": [
+        "metrics/summary.json"
+      ]
+    },
+    {
+      "id": "G21-03",
+      "status": "NOT_RUN",
+      "evidence": "仅核验模拟控制接口和环境配置，未执行正式模型。",
+      "paths": [
+        "metrics/inventory_source.json"
+      ]
+    },
+    {
+      "id": "G21-04",
+      "status": "NOT_RUN",
+      "evidence": "已在独立官方工厂诊断复位，未创建正式 GUI Attempt。",
+      "paths": [
+        "metrics/summary.json"
+      ]
+    },
+    {
+      "id": "G21-05",
+      "status": "NOT_RUN",
+      "evidence": "本轮无模型推理及任务终态。",
+      "paths": [
+        "metrics/summary.json"
+      ]
+    },
+    {
+      "id": "G21-06",
+      "status": "NOT_RUN",
+      "evidence": "未启动正式 Worker，现有资源保护源码哈希不变。",
+      "paths": [
+        "metrics/inventory_source.json"
+      ]
+    },
+    {
+      "id": "G21-07",
+      "status": "PARTIAL",
+      "evidence": "保存了初始位姿、观测、候选和复位交叉核对，正式逐步数据及视频待后续。",
+      "paths": [
+        "metrics/initial_states.json",
+        "metrics/summary.json"
+      ]
+    },
+    {
+      "id": "G21-08",
+      "status": "PASS",
+      "evidence": "290 个本机 Task020 历史文件与原 SHA256 一致。",
+      "paths": [
+        "acceptance.json"
+      ]
+    }
+  ]
+}

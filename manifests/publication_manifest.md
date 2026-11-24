@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 当前任务导航
-- **白名单发布文件总数**：209 个
-- **总归档体积**：13224.32 KB
+- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A 初始状态盘点
+- **白名单发布文件总数**：219 个
+- **总归档体积**：13538.68 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 209 项）
+## 二、白名单发布文件清单（共 219 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **General** | `README.md` | 14331 | `df6b723d1b869aa1...` | Config | Task021 任务导航 |
-| **General** | `TASKS.md` | 5029 | `adeca13c14a6eb35...` | Config | Task021 任务状态索引 |
+| **Task021 navigation** | `README.md` | 14390 | `c09de3b76af9c3e5...` | Config | Task021 阶段 A |
+| **Task021 status index** | `TASKS.md` | 5092 | `10750ab410500f7c...` | Config | Task021 阶段 A |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -235,6 +235,17 @@
 
 
 | **Task 020** | `docs/task020_goal_met_with_limitations.md` | 2532 | `0889b07986aeb4a7...` | Report | Task020 结题说明 |
+
+| **Task 021** | `docs/task021_initial_state_generalization.md` | 6875 | `ebb49a50a16f9673...` | Report | Task021 阶段 A |
+| **Task 021** | `evidence/task021/index_00_reset.jpg` | 25241 | `64f41f479edba7f0...` | Screenshot | Task021 阶段 A |
+| **Task 021** | `evidence/task021/index_01_reset.jpg` | 25225 | `8ad6a6e0d62f8d16...` | Screenshot | Task021 阶段 A |
+| **Task 021** | `evidence/task021/index_02_reset.jpg` | 25006 | `4a47f799921d330a...` | Screenshot | Task021 阶段 A |
+| **Task 021** | `evidence/task021/index_15_reset.jpg` | 24477 | `d2c54df07d0f813f...` | Screenshot | Task021 阶段 A |
+| **Task 021** | `evidence/task021/index_34_reset.jpg` | 25109 | `65e81c29a4035076...` | Screenshot | Task021 阶段 A |
+| **Task 021** | `results/task021/acceptance.json` | 2140 | `5313ee425c1c4796...` | Evidence | Task021 阶段 A |
+| **Task 021** | `results/task021/metrics/initial_states.json` | 179862 | `c5694a6f15ff94fe...` | Evidence | Task021 阶段 A |
+| **Task 021** | `results/task021/metrics/inventory_source.json` | 1758 | `768482864e98563b...` | Evidence | Task021 阶段 A |
+| **Task 021** | `results/task021/metrics/summary.json` | 6090 | `51b01de81f876a0b...` | Evidence | Task021 阶段 A |
 
 ---
 

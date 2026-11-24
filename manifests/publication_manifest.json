@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-24",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 209,
-  "total_size_kb": 13224.32,
+  "total_files": 219,
+  "total_size_kb": 13538.68,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 14331,
-      "sha256": "df6b723d1b869aa17f6582365d7294727e7f138736c15479e3dc78524f37b876",
+      "size": 14390,
+      "sha256": "c09de3b76af9c3e59acedf8d7e963cfd07e2a4328f32198cb1888eaf062aaa59",
       "category": "Config",
       "task": "Task021 navigation"
     },
     {
       "path": "TASKS.md",
-      "size": 5029,
-      "sha256": "adeca13c14a6eb35de70b800d90888562fdd3fc20a4b05031d078b532e9ab900",
+      "size": 5092,
+      "sha256": "10750ab410500f7cba4c977b42758b838d9f8e879212af9865c8df6c502ac3c5",
       "category": "Config",
       "task": "Task021 status index"
     },
@@ -1466,6 +1466,76 @@
       "task": "Task 020",
       "size": 2532,
       "sha256": "0889b07986aeb4a787353d8cc25cb2e771560c2f78a217c7700f495aa6299f6f"
+    },
+    {
+      "path": "docs/task021_initial_state_generalization.md",
+      "task": "Task 021",
+      "category": "Report",
+      "size": 6875,
+      "sha256": "ebb49a50a16f9673d4ef17142b2d0d21067c2db7771a05499308caedb065ac8c"
+    },
+    {
+      "path": "results/task021/acceptance.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 2140,
+      "sha256": "5313ee425c1c4796aaa1f13804ae4845d15a799d33fa409958746f3500984af5"
+    },
+    {
+      "path": "results/task021/metrics/initial_states.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 179862,
+      "sha256": "c5694a6f15ff94fe0d591e7c5e6c460786b06ed2a4e77cb7a8264d3a2041f75b"
+    },
+    {
+      "path": "results/task021/metrics/inventory_source.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 1758,
+      "sha256": "768482864e98563bc43628535d0ff78d491ea0b4aea8f886a08e4dfc4fa1f0c4"
+    },
+    {
+      "path": "results/task021/metrics/summary.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 6090,
+      "sha256": "51b01de81f876a0bdb11bc1d76928358e78d7cfbb3c27833055782be0fa08bdb"
+    },
+    {
+      "path": "evidence/task021/index_00_reset.jpg",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 25241,
+      "sha256": "64f41f479edba7f0ef2231435c5c2450074766360ebadf6482fd9ad0e5d2121c"
+    },
+    {
+      "path": "evidence/task021/index_01_reset.jpg",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 25225,
+      "sha256": "8ad6a6e0d62f8d162bd0d3e112237f71742976f22ef54086540ee6deb089479f"
+    },
+    {
+      "path": "evidence/task021/index_02_reset.jpg",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 25006,
+      "sha256": "4a47f799921d330af6b8417c4137f7e593d376e71d1b5725d1cc30fbc3cca4df"
+    },
+    {
+      "path": "evidence/task021/index_15_reset.jpg",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 24477,
+      "sha256": "d2c54df07d0f813f0a23529c8c6383275adbaadb07c4b3f21398608459edefcd"
+    },
+    {
+      "path": "evidence/task021/index_34_reset.jpg",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 25109,
+      "sha256": "65e81c29a40350761ff37cb03515c85e7d4deaa2f6d5da1d1b4a23a817c2f261"
     }
   ]
 }
