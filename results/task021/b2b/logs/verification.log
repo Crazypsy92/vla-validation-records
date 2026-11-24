@@ -1,0 +1,5 @@
+[(0, 0, 30, 50.858), (1, 30, 30, 36.0324), (2, 60, 30, 32.6243), (3, 90, 30, 32.7176), (4, 120, 30, 30.6016), (5, 150, 30, 30.8378), (6, 180, 30, 29.2757), (7, 210, 30, 27.3035), (8, 240, 30, 29.0113), (9, 270, 30, 26.7618), (10, 300, 30, 26.8641), (11, 330, 30, 26.4229), (12, 360, 30, 27.3945), (13, 390, 30, 28.0862), (14, 420, 30, 28.9907), (15, 450, 30, 28.6864), (16, 480, 30, 28.408), (17, 510, 10, 29.3289)]
+{'first_close_step': 50, 'first_left_contact_step': 56, 'first_right_contact_step': 56, 'first_bilateral_step': 56, 'first_lift_over_2cm_step': 69, 'first_target_step': None, 'first_release_after_close_step': None, 'minimum_opening_m_when_commanded_closed': 0.029520314934178643}
+Status COMPLETE Steps 520 Peak RSS/PSS 6608 6603 Min WSL/Swap 1170 1222 Video {'frames': 521, 'fps': 20.0, 'sha256': 'dd6056c531d9821b0d93c2cf32ef77bb97ce44f969a1f54bcba9d45257c2c621', 'bytes': 1542911}
+
+exit=0

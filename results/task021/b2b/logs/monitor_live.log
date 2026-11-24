@@ -1,0 +1,21 @@
+Launched b2b_index_34_rng_201_1795501086954054532 {'pid': 20468, 'rss_mib': 113, 'pss_mib': 105, 'total_mib': 7798, 'available_mib': 6527, 'swap_total_mib': 2048, 'swap_free_mib': 1710}
+Inference input step 0
+Inference input step 30
+Inference input step 60
+Inference input step 90
+Inference input step 120
+Inference input step 150
+Inference input step 180
+Inference input step 210
+Inference input step 240
+Inference input step 270
+Inference input step 300
+Inference input step 330
+Inference input step 360
+Inference input step 390
+Inference input step 420
+Inference input step 450
+Inference input step 480
+Inference input step 510
+
+exit=0

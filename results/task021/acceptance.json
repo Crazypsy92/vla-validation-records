@@ -1,14 +1,14 @@
 {
   "task": "Task021",
-  "phase": "B2a",
-  "status": "REVIEW",
-  "phase_b_status": "INDEX_15_OFFICIAL_SUCCESS",
+  "phase": "B2b",
+  "status": "ACCEPTED_PARTIAL",
+  "phase_b_status": "INDEX_34_MODEL_TASK_FAILED",
   "candidate_indices": [
     15,
     34
   ],
   "model_loaded": true,
-  "formal_runs": 1,
+  "formal_runs": 2,
   "historical_sha256_verified": 290,
   "checks": [
     {
@@ -30,42 +30,42 @@
     },
     {
       "id": "G21-03",
-      "status": "PARTIAL",
-      "evidence": "已验证 index 15 沿用 Task020 配置，index 34 未执行。",
+      "status": "PASS",
+      "evidence": "已验证 index 34 沿用 Task020 配置，index 15 已在 B2a 官方成功。",
       "paths": [
-        "b2a/metrics/summary.json"
+        "b2b/metrics/summary.json"
       ]
     },
     {
       "id": "G21-04",
-      "status": "PARTIAL",
-      "evidence": "已归档 index 15 正式 Reset 和首次前向前的校验。",
+      "status": "PASS",
+      "evidence": "已归档 index 34 正式 Reset 和首次前向前的校验。",
       "paths": [
-        "b2a/metrics/summary.json"
+        "b2b/metrics/summary.json"
       ]
     },
     {
       "id": "G21-05",
-      "status": "PARTIAL",
-      "evidence": "index 15 OFFICIAL_SUCCESS，index 34 未执行。",
+      "status": "MODEL_TASK_FAILED",
+      "evidence": "index 34 MODEL_TASK_FAILED，index 15 已在 B2a 官方成功。",
       "paths": [
-        "b2a/metrics/summary.json"
+        "b2b/metrics/summary.json"
       ]
     },
     {
       "id": "G21-06",
       "status": "PASS",
-      "evidence": "B2a 单次运行的资源门禁及进程退出复核。",
+      "evidence": "B2b 单次运行的资源门禁及进程退出复核。",
       "paths": [
-        "b2a/metrics/summary.json"
+        "b2b/metrics/summary.json"
       ]
     },
     {
       "id": "G21-07",
-      "status": "PARTIAL",
-      "evidence": "index 15 的逐步数据、官方终态/停止原因、录像哈希已归档，index 34 未执行。",
+      "status": "PASS",
+      "evidence": "index 34 的逐步数据、官方终态/停止原因、录像哈希已归档，index 15 已在 B2a 官方成功。",
       "paths": [
-        "b2a/metrics/summary.json"
+        "b2b/metrics/summary.json"
       ]
     },
     {
@@ -100,16 +100,16 @@
           "wrist": "b43af561e393673f601671b2b51057a4e9fb57e587949da0d89f5a537b01c735"
         },
         "absolute_max_differences": {
-          "book_position": 0.0,
-          "book_quaternion": 0.0,
-          "target_position": 0.0,
-          "target_quaternion": 0.0,
-          "target_half_size": 0.0,
-          "robot_eef_position": 0.0,
-          "robot_eef_quaternion": 0.0,
-          "robot_arm_qpos": 0.0,
-          "gripper_qpos": 0.0,
-          "state_8d": 0.0
+          "book_position": 0,
+          "book_quaternion": 0,
+          "target_position": 0,
+          "target_quaternion": 0,
+          "target_half_size": 0,
+          "robot_eef_position": 0,
+          "robot_eef_quaternion": 0,
+          "robot_arm_qpos": 0,
+          "gripper_qpos": 0,
+          "state_8d": 0
         },
         "pixel_exact": true,
         "worker_exit_code": 0,
@@ -134,16 +134,16 @@
           "wrist": "974ecf57dc8917b7f7d83c687a52f45409e6e1a2209f30b321a2bb2641ace57c"
         },
         "absolute_max_differences": {
-          "book_position": 0.0,
-          "book_quaternion": 0.0,
-          "target_position": 0.0,
-          "target_quaternion": 0.0,
-          "target_half_size": 0.0,
-          "robot_eef_position": 0.0,
-          "robot_eef_quaternion": 0.0,
-          "robot_arm_qpos": 0.0,
-          "gripper_qpos": 0.0,
-          "state_8d": 0.0
+          "book_position": 0,
+          "book_quaternion": 0,
+          "target_position": 0,
+          "target_quaternion": 0,
+          "target_half_size": 0,
+          "robot_eef_position": 0,
+          "robot_eef_quaternion": 0,
+          "robot_arm_qpos": 0,
+          "gripper_qpos": 0,
+          "state_8d": 0
         },
         "pixel_exact": true,
         "worker_exit_code": 0,
@@ -186,6 +186,29 @@
     "verification_exit_code": 0,
     "historical_files_verified": 290,
     "local_source_diff_sha256": "7ab4c45012a92eace8bc3cd26492ddc78b6e30d6354bf321b1e32ff3b20cf8bd",
-    "executed_source_diff_sha256": "6608c1cffa84491d2043765a4d73ef0dde3542fb3b873ee2b2d70d7b29d02ef4"
+    "executed_source_diff_sha256": "6608c1cffa84491d2043765a4d73ef0dde3542fb3b873ee2b2d70d7b29d02ef4",
+    "review": "ACCEPTED_WITH_LIMITATIONS"
+  },
+  "official_success_count": 1,
+  "overall_validation": "PARTIAL",
+  "b2b": {
+    "formal_index_34_status": "MODEL_TASK_FAILED",
+    "formal_index_15_status": "OFFICIAL_SUCCESS",
+    "initial_state_index": 34,
+    "reset_rng_seed": 201,
+    "run_id": "b2b_index_34_rng_201_1795501086954054532",
+    "official_success": false,
+    "reset_verified": true,
+    "inferences": 18,
+    "steps": 520,
+    "worker_exit_code": 0,
+    "gui_closed": true,
+    "regression_tests": 8,
+    "regression_exit_code": 0,
+    "verification_exit_code": 0,
+    "historical_files_verified": 290,
+    "local_source_diff_sha256": "eab400e1fc232337a07fc27d829069778cecd52d072ac0f940f0a5f2776b465d",
+    "executed_source_diff_sha256": "eab400e1fc232337a07fc27d829069778cecd52d072ac0f940f0a5f2776b465d",
+    "review": "ACCEPTED_PARTIAL"
   }
 }

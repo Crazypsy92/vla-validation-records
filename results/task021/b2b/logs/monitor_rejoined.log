@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "./results/task021/b2b/monitor.py", line 37, in <module>
+    print('Launched',p.name,base['wsl'],flush=True)
+                            ~~~~^^^^^^^
+KeyError: 'wsl'
+
+exit=1
