@@ -1478,8 +1478,8 @@
       "path": "results/task021/acceptance.json",
       "task": "Task 021",
       "category": "Evidence",
-      "size": 6464,
-      "sha256": "ddde07274787f80ed2b0e5981934a871b218deeb7a15e97ae2f06c573e7248fd"
+      "size": 6463,
+      "sha256": "844d6bff2633daaa8fde54a819831ad310ad5175bec13cc93e081837407c4b55"
     },
     {
       "path": "results/task021/metrics/initial_states.json",
