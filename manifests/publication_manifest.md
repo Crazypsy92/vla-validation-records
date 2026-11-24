@@ -2,13 +2,13 @@
 
 ## 一、归档发布总览
 
-- **归档时间**：2026-11-23
+- **归档时间**：2026-11-24
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修），以及 Task020-R1 Phase 2、Phase 3、Phase 4
-- **白名单发布文件总数**：208 个
-- **总归档体积**：13221.03 KB
+- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修），以及 Task020-R1 Phase 2、Phase 3、Phase 4 及 Task020 结题说明
+- **白名单发布文件总数**：209 个
+- **总归档体积**：13223.46 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 208 项）
+## 二、白名单发布文件清单（共 209 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **General** | `README.md` | 13779 | `cdf0920a5e4c1206...` | Config | Task020-R1 Phase 4 |
-| **General** | `TASKS.md` | 4554 | `3951352021698489...` | Config | Task020-R1 Phase 4 |
+| **General** | `README.md` | 13812 | `cbe5fd1736efef19...` | Config | Task020 结题索引 |
+| **General** | `TASKS.md` | 4669 | `4643781fefcf65de...` | Config | Task020 结题索引 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -41,7 +41,7 @@
 | **Docs** | `docs/task018_grasp_monitor_and_release.md` | 13998 | `5e2f7836596c751d...` | Report | 发布归档文件 |
 | **Docs** | `docs/task018_grasp_monitor_and_release_acceptance.md` | 6326 | `e6bd556827557469...` | Report | 发布归档文件 |
 | **Docs** | `docs/task018_review_fixes.md` | 14461 | `231e554ffdbbd17f...` | Report | 发布归档文件 |
-| **Task 019** | `docs/task019_replay_video.md` | 13932 | `89699e26c1b1e33a...` | Report | 发布归档文件 |
+| **Task 019** | `docs/task019_replay_video.md` | 13746 | `95a26ae7c8b8021b...` | Report | 发布归档文件 |
 | **Docs** | `docs/vla_input_output_analysis.md` | 10447 | `69653de0c14fd5b5...` | Report | 发布归档文件 |
 | **task014** | `results/task014/acceptance.json` | 8407 | `354360eee77fb643...` | Metrics | 发布归档文件 |
 | **task014** | `results/task014/predictions/sample_01_calibrated_prediction.json` | 18111 | `50388affabca9bce...` | Metrics | 发布归档文件 |
@@ -233,6 +233,8 @@
 | **Task 020** | `results/task020/r1/phase4/screenshots/replay_final.png` | 274505 | `49e3a417f7b40832...` | Evidence | Task020-R1 Phase 4 |
 | **Task 020** | `results/task020/r1/phase4/screenshots/replay_reset.png` | 261339 | `f9cda34ac20c32ff...` | Evidence | Task020-R1 Phase 4 |
 
+
+| **Task 020** | `docs/task020_goal_met_with_limitations.md` | 2532 | `0889b07986aeb4a7...` | Report | Task020 结题说明 |
 
 ---
 
