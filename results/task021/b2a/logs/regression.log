@@ -1,0 +1,53 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python ./.venv_xvla/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python ./.venv_xvla/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+test_gui_passes_authorized_formal_selection (workbench.tests.test_task021_reset.TestResetControls.test_gui_passes_authorized_formal_selection) ... ok
+test_gui_passes_exact_reset_arguments_and_isolates_output (workbench.tests.test_task021_reset.TestResetControls.test_gui_passes_exact_reset_arguments_and_isolates_output) ... ok
+test_b2a_rejects_unauthorized_selection_before_model (workbench.tests.test_task021_reset.TestResetSelection.test_b2a_rejects_unauthorized_selection_before_model) ... ok
+test_explicit_index_and_rng_are_independent (workbench.tests.test_task021_reset.TestResetSelection.test_explicit_index_and_rng_are_independent) ... ok
+test_explicit_rollout_is_guarded (workbench.tests.test_task021_reset.TestResetSelection.test_explicit_rollout_is_guarded) ... ok
+test_index_bounds (workbench.tests.test_task021_reset.TestResetSelection.test_index_bounds) ... ok
+test_legacy_mappings (workbench.tests.test_task021_reset.TestResetSelection.test_legacy_mappings) ... ok
+test_worker_reset_only_bypasses_model (workbench.tests.test_task021_reset.TestResetSelection.test_worker_reset_only_bypasses_model) ... ok
+test_official_book_observation_and_absolute_step (workbench.tests.test_task020_r1_worker.TestBookWorkerBoundary.test_official_book_observation_and_absolute_step) ... ok
+test_pressure_stops_production_worker_before_loading (workbench.tests.test_task020_r1_worker.TestBookWorkerBoundary.test_pressure_stops_production_worker_before_loading) ... ok
+test_action_panel_display (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_action_panel_display) ... ok
+test_curve_canvas (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_curve_canvas) ... ok
+test_image_canvas (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_image_canvas) ... ok
+test_input_panel_and_payload (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_input_panel_and_payload) ... ok
+test_review_fixes_timing_and_assertions (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_review_fixes_timing_and_assertions)
+P0-A, P0-B, P1-C verification: verify command vs physical release, frame sync, and grasp contact classification. ... ok
+test_robot_monitor_replay_functionality (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_robot_monitor_replay_functionality) ... ok
+test_task019_video_playback_and_frame_sync (workbench.tests.test_ui_headless.TestUIComponentsHeadless.test_task019_video_playback_and_frame_sync)
+Task 019: Continuous video playback, dual-view frame extraction, and P0/P1 fixes. ... ok
+test_get_status_unloaded (workbench.tests.test_ipc.TestWorkerIPC.test_get_status_unloaded) ... ok
+/usr/lib/python3.12/unittest/suite.py:107: ResourceWarning: unclosed file <_io.TextIOWrapper name=7 encoding='UTF-8'>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.12/unittest/suite.py:107: ResourceWarning: unclosed file <_io.TextIOWrapper name=8 encoding='UTF-8'>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.12/unittest/suite.py:107: ResourceWarning: unclosed file <_io.TextIOWrapper name=12 encoding='UTF-8'>
+  for index, test in enumerate(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_worker_ready_and_ping (workbench.tests.test_ipc.TestWorkerIPC.test_worker_ready_and_ping) ... ok
+/usr/lib/python3.12/unittest/suite.py:84: ResourceWarning: unclosed file <_io.TextIOWrapper name=7 encoding='UTF-8'>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.12/unittest/suite.py:84: ResourceWarning: unclosed file <_io.TextIOWrapper name=8 encoding='UTF-8'>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.12/unittest/suite.py:84: ResourceWarning: unclosed file <_io.TextIOWrapper name=12 encoding='UTF-8'>
+  return self.run(*args, **kwds)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+----------------------------------------------------------------------
+Ran 19 tests in 27.563s
+
+OK
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+exit=0

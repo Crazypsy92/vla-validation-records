@@ -1,0 +1,14 @@
+{
+  "gate_sample": {
+    "pid": 13914,
+    "rss_mib": 106,
+    "pss_mib": 87,
+    "total_mib": 7798,
+    "available_mib": 6479,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 2048
+  },
+  "oom_kill": 0,
+  "cgroup_oom_kill": 0,
+  "counter_source": "early worker observation"
+}

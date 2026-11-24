@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-24",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 241,
-  "total_size_kb": 14985.8,
+  "total_files": 281,
+  "total_size_kb": 17362.88,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 14375,
-      "sha256": "b62ab3820ba4abc1776ae1810fc22839cde03c7e5f66e6151664833a8e770ad3",
+      "size": 14365,
+      "sha256": "b276c219df859d8e7c74cad35e4dfb82e672c2583f03bbbb098149a9cabc532d",
       "category": "Config",
       "task": "Task021 navigation"
     },
     {
       "path": "TASKS.md",
-      "size": 5071,
-      "sha256": "577526a85d17119e2dde2ee7de68c001c2e563f6b212ea3673647e3a01cb3c0d",
+      "size": 5043,
+      "sha256": "2ab93ed9930ce81d1e6e53765a1fee2bdee7b1e81474b0521288fbbb01552414",
       "category": "Config",
       "task": "Task021 status index"
     },
@@ -1471,15 +1471,15 @@
       "path": "docs/task021_initial_state_generalization.md",
       "task": "Task 021",
       "category": "Report",
-      "size": 9040,
-      "sha256": "4ca3fc9901e5d8aee1b5cf576fbd886fde5f473510a6d904b42fb25b1c87b2b4"
+      "size": 11747,
+      "sha256": "5ea54d2fc8b12793104315ca377093e3c7d07f82cb0a871f997dd17dc62e1e9a"
     },
     {
       "path": "results/task021/acceptance.json",
       "task": "Task 021",
       "category": "Evidence",
-      "size": 5776,
-      "sha256": "ecaf5230201fec094550cd662a8ab7345fb4d7cb7cae17b58cc3c6dc510758d3"
+      "size": 6464,
+      "sha256": "ddde07274787f80ed2b0e5981934a871b218deeb7a15e97ae2f06c573e7248fd"
     },
     {
       "path": "results/task021/metrics/initial_states.json",
@@ -1499,8 +1499,8 @@
       "path": "results/task021/metrics/summary.json",
       "task": "Task 021",
       "category": "Evidence",
-      "size": 6090,
-      "sha256": "51b01de81f876a0bdb11bc1d76928358e78d7cfbb3c27833055782be0fa08bdb"
+      "size": 6779,
+      "sha256": "e57c09e51312c0b59331da79e2632295b3574076075f28cf8d2cc34160fe7441"
     },
     {
       "path": "evidence/task021/index_00_reset.jpg",
@@ -1690,6 +1690,286 @@
       "category": "Evidence",
       "size": 4496,
       "sha256": "0a0b2cbd656e18ce6b3c45c5e5837c63283c2af458755772b1956126455cd864"
+    },
+    {
+      "path": "results/task021/b2a/metrics/gui_close.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 143,
+      "sha256": "65b7e7f9adb1769df82d7d6d298742170709dace2d39fddac769b4bf7838485a"
+    },
+    {
+      "path": "results/task021/b2a/metrics/history_after.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 37388,
+      "sha256": "271756220eaa5c2c871ec7f94fc9c9fd7ee1db4a2ba90cfafc6d10c47f00545d"
+    },
+    {
+      "path": "results/task021/b2a/metrics/preflight_fingerprints.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 3134,
+      "sha256": "993a725992606a59ea3c8d4a4a85e42d7b8bf3492f6cdeccad08c690f826f23c"
+    },
+    {
+      "path": "results/task021/b2a/metrics/summary.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 19636,
+      "sha256": "d656c693cc729a93deca08e2d48c7c6247d0e119c507a0e0a8389a2826278f5e"
+    },
+    {
+      "path": "results/task021/b2a/metrics/wsl_baseline.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 277,
+      "sha256": "85293c053ad21700e7a92e2d59b520275fd26b837dd8cc3e3125b1ddb21612e9"
+    },
+    {
+      "path": "results/task021/b2a/metrics/wsl_early_worker.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 734,
+      "sha256": "92da8c41de5d059f3d49e2776a6fa7858a1a663c6f87ec64bd5f5dc5dec58f02"
+    },
+    {
+      "path": "results/task021/b2a/metrics/lifecycle.jsonl",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 182113,
+      "sha256": "c5e3b30094d1791c5b2a250b273e619760823427df7fec10d251f73e451347f4"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/0000_workspace.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 65480,
+      "sha256": "9955aaee80ab955478bb2bd7e2305ca1752b6f3001b2fcbca3866142e36fc253"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/0000_wrist.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 45513,
+      "sha256": "b43af561e393673f601671b2b51057a4e9fb57e587949da0d89f5a537b01c735"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/chunk_000.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 29831,
+      "sha256": "bdcebcbfc77f1f93aec6654c49b74ef3bfead63e7e9990746c9abdeff7461ccd"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/chunk_001.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 29744,
+      "sha256": "b627c3f9799256a44cd625b46bdacaebf337f5c398f84df0c6566bf2375a1982"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/chunk_002.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 29647,
+      "sha256": "9e56590b1d40d2e20d8165b02a7c7406bfeeaf0ea8e7de8de7ed378e3e33e987"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/chunk_003.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 29571,
+      "sha256": "e4bb9a78cc596148d751043cff11ba5c0a7ad330efd3cdc7a336cdf1e5c68f90"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/chunk_004.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 29627,
+      "sha256": "83b70ed2333e03fb23ee4b7e4545c1a8d2040cb133654fc45cad7add652f1936"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/chunk_005.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 29650,
+      "sha256": "d7b5e775de69995c731ec69e11d9b31a1f8eb2ad6106c5bac25b590b60ba2b41"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/chunk_006.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 29720,
+      "sha256": "a94ed15ab7b0523ee7e0457d34c8b9f749d0283f591eaa4035c23c142645b6e1"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/configuration.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 976,
+      "sha256": "9f63d96cd65cfc2d297efbe0d6fd6897bcc9a00dc3b0cf0658d8c895224980e7"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/events.jsonl",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 431522,
+      "sha256": "57455e5253e0bcdf045e9415403eee70be30c473e3bfc137b07148fb6e968804"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/formal_gate_gui.jsonl",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 248,
+      "sha256": "c505282a65f4ebed431567c1da4467794cf14409862cb3e790b418ca17631df3"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/formal_gate_worker.jsonl",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 3864,
+      "sha256": "aeab7cf1fe09fa1b73541a51c1e8233d0061b64c8ed888edaf24ccc5048cab1d"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/launch_configuration.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 200,
+      "sha256": "1dea0d9639710ecef7ec6d5542f020c8415ec5ba680f40221ffbfcc9d3dc4208"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/resources_gui.jsonl",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 84440,
+      "sha256": "d991bd3f24f9ad760650cbaeff14dae98d2ca7e5e7b42dc4872ca71fd9aca7d7"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/resources_gui_observed_worker.jsonl",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 85802,
+      "sha256": "e068188592519840b13b3d2fb8bf071f5a2d14c2abff5ca089cf64fbfb87eeaa"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/resources_worker.jsonl",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 11353,
+      "sha256": "8b412e93f366f460593e1cf8b11151452c4dd379deec4dfeb3bcdd63772ed86f"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/summary.json",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 1497,
+      "sha256": "7f3aa8023abb4f3f48e3d7af02db81864b345301c586a8b1ae0f18a36552dd5e"
+    },
+    {
+      "path": "results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/worker_exit_code.txt",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "evidence/task021/b2a/before_run.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 160541,
+      "sha256": "c9df9ca94708b7843b41078922f561d27e09eb800f3f6b85b978dae4c0cf8bf9"
+    },
+    {
+      "path": "evidence/task021/b2a/confirmation.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 17274,
+      "sha256": "d3ec448d66e9496948952a57998f839df86a8d4efabf63346734dc9c475650f7"
+    },
+    {
+      "path": "evidence/task021/b2a/input_000.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 169982,
+      "sha256": "b114ef1e169588b3602683ac6b81d741b0cd527370040fc3edbde5cf1b6b6f4b"
+    },
+    {
+      "path": "evidence/task021/b2a/input_030.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 300012,
+      "sha256": "dd024c307a954a307c2ee6e4d0654770907539f6690802696fe216008092bd26"
+    },
+    {
+      "path": "evidence/task021/b2a/reset_display_check.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 298150,
+      "sha256": "68d71cafd3df2f64a1406817c807dce187d5c8dd57d87e8dd393ccb057f18e76"
+    },
+    {
+      "path": "evidence/task021/b2a/finished.png",
+      "task": "Task 021",
+      "category": "Screenshot",
+      "size": 293615,
+      "sha256": "181d14b1359c9f9a45567a4641b9eab8b0c731f32525c77b76ad03539755dab3"
+    },
+    {
+      "path": "results/task021/b2a/logs/gui_close.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 49,
+      "sha256": "433848aa932d0b8277ac71b6008812880dd29eb3db04ddb4464b4f5b973897c4"
+    },
+    {
+      "path": "results/task021/b2a/logs/monitor.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 368,
+      "sha256": "b3d15c5dd405488a8fa06b2df63d310b6e0f483ecb34b9376136c83eac1bfdc9"
+    },
+    {
+      "path": "results/task021/b2a/logs/monitor_rejoined.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 252,
+      "sha256": "a790b1c57d68d7f4cff7812948074f10d1616c1122eddc9c88ce8bc4584aa33f"
+    },
+    {
+      "path": "results/task021/b2a/logs/regression.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 4815,
+      "sha256": "26302a10149593f92746e560d905b37e9e01d6667670ac763ebfbc13bfc95512"
+    },
+    {
+      "path": "results/task021/b2a/logs/reset_display.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 95,
+      "sha256": "7568236cb728f791a8fe1976cc409a5f58584bf5c2f066987e22f76482f0b86f"
+    },
+    {
+      "path": "results/task021/b2a/logs/runs_b2a_index_15_rng_201_1795493022081788638.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 748,
+      "sha256": "6b79c1e9d2ce909b4cd7a5673b6dfc99b59cea7bad0b012cbdb0716ed253f13f"
+    },
+    {
+      "path": "results/task021/b2a/logs/tests.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 1430,
+      "sha256": "897e642eabd96855cf2e8954955b978221c7d635de76c1aebdd9cf019c1b76d1"
+    },
+    {
+      "path": "results/task021/b2a/logs/verification.log",
+      "task": "Task 021",
+      "category": "Evidence",
+      "size": 646,
+      "sha256": "b6f209046c220e85229589ee944a9661f171c250c6cf7357ee3cf6f1fb41ebff"
     }
   ]
 }
