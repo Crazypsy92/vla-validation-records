@@ -2,7 +2,7 @@
   "archive_date": "2026-11-24",
   "repository": "Crazypsy92/vla-validation-records",
   "total_files": 332,
-  "total_size_kb": 21021.21,
+  "total_size_kb": 21022.65,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 14380,
-      "sha256": "8e7a8a124547780b9b8818183153d034e32894a8a4e5cf86d1aa9c4c4b2fe5ac",
+      "size": 14433,
+      "sha256": "9e4f403a898d3a5bad48e40b4c659f2ee48674cac6684dc80bb8d359408c3636",
       "category": "Config",
       "task": "Task021 navigation"
     },
     {
       "path": "TASKS.md",
-      "size": 5058,
-      "sha256": "03dfcfb3372e84cb565b27c4ce86cb12a85acb4e575e9f916750a44ad03d4d0a",
+      "size": 5167,
+      "sha256": "1112bd84fe0c85d5e40e196a8827e9b25f053fad6b3ec311ee44517ab96ed906",
       "category": "Config",
       "task": "Task021 status index"
     },
@@ -1471,15 +1471,15 @@
       "path": "docs/task021_initial_state_generalization.md",
       "task": "Task 021",
       "category": "Report",
-      "size": 14737,
-      "sha256": "cbed2f6f247733e9196de63ced357566de55d1ce1751692fc6f3d6c496cb7f4d"
+      "size": 15734,
+      "sha256": "888c772c80a0234392a220fc75de125cfd6be3286040d33d659f50717f895c89"
     },
     {
       "path": "results/task021/acceptance.json",
       "task": "Task 021",
       "category": "Evidence",
-      "size": 7331,
-      "sha256": "aba5084596159d83bfcee84d63bd8300378c730ad0cbaacf04dc6ff4805672cf"
+      "size": 7335,
+      "sha256": "9d7dfd35d23367d22f823c0b605f324cfd36093db7816ee77005ff4b4778e9b0"
     },
     {
       "path": "results/task021/metrics/initial_states.json",
@@ -1499,8 +1499,8 @@
       "path": "results/task021/metrics/summary.json",
       "task": "Task 021",
       "category": "Evidence",
-      "size": 7603,
-      "sha256": "c31a795ea45d64e6a6b759638fdd7f574ea100de9f395669f0e7fb8ce353872f"
+      "size": 7916,
+      "sha256": "1ba793df009f0dd0776a8b7509eb5af604a916792df06dfb7cb7e186c0a1fa70"
     },
     {
       "path": "evidence/task021/index_00_reset.jpg",
