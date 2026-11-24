@@ -7,8 +7,8 @@
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
 - **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1 与 B2a
-- **白名单发布文件总数**：281 个
-- **总归档体积**：17362.88 KB
+- **白名单发布文件总数**：332 个
+- **总归档体积**：21021.21 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 281 项）
+## 二、白名单发布文件清单（共 332 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **Task021 navigation** | `README.md` | 14365 | `b276c219df859d8e...` | Config | Task021 阶段 B2a |
-| **Task021 status index** | `TASKS.md` | 5043 | `2ab93ed9930ce81d...` | Config | Task021 阶段 B2a |
+| **Task021 navigation** | `README.md` | 14380 | `8e7a8a124547780b...` | Config | Task021 阶段 B2b |
+| **Task021 status index** | `TASKS.md` | 5058 | `03dfcfb3372e84cb...` | Config | Task021 阶段 B2b |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -236,16 +236,16 @@
 
 | **Task 020** | `docs/task020_goal_met_with_limitations.md` | 2532 | `0889b07986aeb4a7...` | Report | Task020 结题说明 |
 
-| **Task 021** | `docs/task021_initial_state_generalization.md` | 11747 | `5ea54d2fc8b12793...` | Report | Task021 阶段 B2a |
+| **Task 021** | `docs/task021_initial_state_generalization.md` | 14737 | `cbed2f6f247733e9...` | Report | Task021 阶段 B2b |
 | **Task 021** | `evidence/task021/index_00_reset.jpg` | 25241 | `64f41f479edba7f0...` | Screenshot | Task021 阶段 A |
 | **Task 021** | `evidence/task021/index_01_reset.jpg` | 25225 | `8ad6a6e0d62f8d16...` | Screenshot | Task021 阶段 A |
 | **Task 021** | `evidence/task021/index_02_reset.jpg` | 25006 | `4a47f799921d330a...` | Screenshot | Task021 阶段 A |
 | **Task 021** | `evidence/task021/index_15_reset.jpg` | 24477 | `d2c54df07d0f813f...` | Screenshot | Task021 阶段 A |
 | **Task 021** | `evidence/task021/index_34_reset.jpg` | 25109 | `65e81c29a4035076...` | Screenshot | Task021 阶段 A |
-| **Task 021** | `results/task021/acceptance.json` | 6463 | `844d6bff2633daaa...` | Evidence | Task021 阶段 B2a |
+| **Task 021** | `results/task021/acceptance.json` | 7331 | `aba5084596159d83...` | Evidence | Task021 阶段 B2b |
 | **Task 021** | `results/task021/metrics/initial_states.json` | 179862 | `c5694a6f15ff94fe...` | Evidence | Task021 阶段 A |
 | **Task 021** | `results/task021/metrics/inventory_source.json` | 1758 | `768482864e98563b...` | Evidence | Task021 阶段 A |
-| **Task 021** | `results/task021/metrics/summary.json` | 6779 | `e57c09e51312c0b5...` | Evidence | Task021 阶段 B2a |
+| **Task 021** | `results/task021/metrics/summary.json` | 7603 | `c31a795ea45d64e6...` | Evidence | Task021 阶段 B2b |
 
 | **Task 021** | `evidence/task021/b1/index_15_display_check.png` | 299272 | `dd635e4836b5cf28...` | Screenshot | Task021 阶段 B1 |
 | **Task 021** | `evidence/task021/b1/index_15_result.png` | 306773 | `de968442e46be790...` | Screenshot | Task021 阶段 B1 |
@@ -310,6 +310,58 @@
 | **Task 021** | `results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/resources_worker.jsonl` | 11353 | `8b412e93f366f460...` | Evidence | Task021 阶段 B2a |
 | **Task 021** | `results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/summary.json` | 1497 | `7f3aa8023abb4f3f...` | Evidence | Task021 阶段 B2a |
 | **Task 021** | `results/task021/b2a/runs/b2a_index_15_rng_201_1795493022081788638/worker_exit_code.txt` | 2 | `9a271f2a916b0b6e...` | Evidence | Task021 阶段 B2a |
+
+| **Task 021** | `evidence/task021/b2b/before_run.png` | 214166 | `312a004f5eaea88c...` | Screenshot | Task021 阶段 B2b |
+| **Task 021** | `evidence/task021/b2b/finished.png` | 306946 | `8c5976a2059409dc...` | Screenshot | Task021 阶段 B2b |
+| **Task 021** | `evidence/task021/b2b/input_000.png` | 303253 | `1744995acf15773a...` | Screenshot | Task021 阶段 B2b |
+| **Task 021** | `evidence/task021/b2b/input_030.png` | 313727 | `4125f9839cb56d2c...` | Screenshot | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/gui_close.log` | 49 | `433848aa932d0b82...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/gui_driver.log` | 105 | `2ab5041c32f5717c...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/monitor.log` | 735 | `23cb1b1128eefe8f...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/monitor_live.log` | 639 | `a48126902f607c0c...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/monitor_rejoined.log` | 215 | `ca52d7ce6749bb23...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/runs_b2b_index_34_rng_201_1795501086954054532.log` | 748 | `6b79c1e9d2ce909b...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/tests.log` | 1749 | `1fbab1a6494f58c1...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/logs/verification.log` | 907 | `dd139a78d8d7d450...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/b1_history_before.json` | 2895 | `650fbad51e121e3f...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/b2a_history_before.json` | 7652 | `ac23f4e3c162748d...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/gui_close.json` | 143 | `a6f69406def292c2...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/gui_confirmation.json` | 268 | `b452be7c7b86a573...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/history_after.json` | 37388 | `271756220eaa5c2c...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/lifecycle.jsonl` | 353340 | `f777850213448f66...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/preflight_fingerprints.json` | 3102 | `b5a1c5f6eaf4f2b9...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/summary.json` | 38568 | `32b5441c6c214d10...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/metrics/wsl_baseline.json` | 278 | `171e2163230b7266...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/0000_workspace.png` | 65633 | `8e430f56f86252f2...` | Screenshot | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/0000_wrist.png` | 47626 | `974ecf57dc8917b7...` | Screenshot | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_000.json` | 29893 | `2059a748acbccfb6...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_001.json` | 29816 | `fa4fcd391a61624d...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_002.json` | 29696 | `0f34a10d27d69d48...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_003.json` | 29595 | `62a578e5a118446e...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_004.json` | 29585 | `1144433da352eec2...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_005.json` | 29659 | `3fcf24a159a0cc00...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_006.json` | 29682 | `6b1ca73807a315f1...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_007.json` | 29637 | `4b52bfe08ad9de0c...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_008.json` | 29509 | `0db1c72cb11bd3be...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_009.json` | 29495 | `ef4254cc81ee3951...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_010.json` | 29467 | `77a4a246b0dddac0...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_011.json` | 29467 | `36f7e8ddd65ab002...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_012.json` | 29506 | `239e0ec072e4ea01...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_013.json` | 29472 | `a420ab15855c65d0...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_014.json` | 29509 | `e460e80c7047da24...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_015.json` | 29478 | `34c8dbe9cf1f095e...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_016.json` | 29473 | `91d97dda0fba1d29...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/chunk_017.json` | 29453 | `19e657b982c0deea...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/configuration.json` | 976 | `9f63d96cd65cfc2d...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/events.jsonl` | 1139596 | `584cbdd3d40fbdf6...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/formal_gate_gui.jsonl` | 249 | `7d240157d73c136f...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/formal_gate_worker.jsonl` | 9547 | `51e784b2a1d6f11f...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/launch_configuration.json` | 200 | `e01af5f7cdb5ef53...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/resources_gui.jsonl` | 163541 | `b3cc12e5944d1600...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/resources_gui_observed_worker.jsonl` | 166280 | `80fd998724f473ce...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/resources_worker.jsonl` | 26995 | `eddd91dde24576dd...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/summary.json` | 1504 | `4294a46a4822e3c1...` | Evidence | Task021 阶段 B2b |
+| **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/worker_exit_code.txt` | 2 | `9a271f2a916b0b6e...` | Evidence | Task021 阶段 B2b |
 
 ---
 

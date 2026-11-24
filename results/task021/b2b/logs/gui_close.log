@@ -1,0 +1,3 @@
+GUI closed via its window-close callback
+
+exit=0

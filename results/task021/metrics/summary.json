@@ -1,5 +1,5 @@
 {
-  "status": "PHASE_B2A_REVIEW",
+  "status": "PHASE_B2B_REVIEW",
   "count": 50,
   "excluded_indices": [
     0,
@@ -236,5 +236,28 @@
     "historical_files_verified": 290,
     "local_source_diff_sha256": "7ab4c45012a92eace8bc3cd26492ddc78b6e30d6354bf321b1e32ff3b20cf8bd",
     "executed_source_diff_sha256": "6608c1cffa84491d2043765a4d73ef0dde3542fb3b873ee2b2d70d7b29d02ef4"
-  }
+  },
+  "b2b": {
+    "formal_index_34_status": "MODEL_TASK_FAILED",
+    "formal_index_15_status": "OFFICIAL_SUCCESS",
+    "initial_state_index": 34,
+    "reset_rng_seed": 201,
+    "run_id": "b2b_index_34_rng_201_1795501086954054532",
+    "official_success": false,
+    "reset_verified": true,
+    "inferences": 18,
+    "steps": 520,
+    "worker_exit_code": 0,
+    "gui_closed": true,
+    "regression_tests": 8,
+    "regression_exit_code": 0,
+    "verification_exit_code": 0,
+    "historical_files_verified": 290,
+    "local_source_diff_sha256": "eab400e1fc232337a07fc27d829069778cecd52d072ac0f940f0a5f2776b465d",
+    "executed_source_diff_sha256": "eab400e1fc232337a07fc27d829069778cecd52d072ac0f940f0a5f2776b465d"
+  },
+  "formal_runs": 2,
+  "model_loaded": true,
+  "official_success_count": 1,
+  "overall_validation": "PARTIAL"
 }

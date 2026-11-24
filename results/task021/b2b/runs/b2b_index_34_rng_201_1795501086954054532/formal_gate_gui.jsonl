@@ -1,0 +1,1 @@
+{"time": 1795501086.9708102, "phase": "gui_launch", "level": "PASS", "reason": "boundary_checked", "samples": [{"pid": 20468, "rss_mib": 113, "pss_mib": 105, "total_mib": 7798, "available_mib": 6527, "swap_total_mib": 2048, "swap_free_mib": 1710}]}

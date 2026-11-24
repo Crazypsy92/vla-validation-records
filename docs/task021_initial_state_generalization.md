@@ -1,6 +1,48 @@
 # Task021 · LIBERO Task 5 初始状态泛化验证
 
-**阶段 B2a 待审核。** 本轮只尝试官方 index 15 / Reset RNG Seed 201，结果为 **OFFICIAL_SUCCESS**。index 34 未运行。
+**阶段 B2b 待审核。** 本轮只尝试官方 index 34 / Reset RNG Seed 201，结果为 **MODEL_TASK_FAILED**。对照 B2a 的 index 15 已在 Step 201 官方成功。
+
+## 阶段 B2b · index 34 正式回合
+
+从 Windows 桌面 Workbench 以显式参数发起唯一 Attempt b2b_index_34_rng_201_1795501086954054532，使用 LIBERO-10 Task 5。模型在 CPU 上运行，配置文件与 Task020 Phase 3 完全一致。模型权重、revision、Processor 文件、Prompt、原 8D 输入、7D 绝对 OSC_POSE、20 Hz、30 步动作块、BDDL 和 520 步上限均未变。
+
+首次前向前，Worker 核对实际官方 index 与 RNG Seed，校验官方行及资产 SHA256、书本和目标位姿、机器人状态和两路 RGB 像素哈希。数值容差沿用 1e-7。前向前的核验证据保存在 Reset 事件。每轮使用前一块执行后的新观测。
+
+| Chunk | 推理输入步 | 实际动作步 | 前向耗时（秒） |
+| --- | ---: | ---: | ---: |
+| 0 | 0 | 30 | 50.8580 |
+| 1 | 30 | 30 | 36.0324 |
+| 2 | 60 | 30 | 32.6243 |
+| 3 | 90 | 30 | 32.7176 |
+| 4 | 120 | 30 | 30.6016 |
+| 5 | 150 | 30 | 30.8378 |
+| 6 | 180 | 30 | 29.2757 |
+| 7 | 210 | 30 | 27.3035 |
+| 8 | 240 | 30 | 29.0113 |
+| 9 | 270 | 30 | 26.7618 |
+| 10 | 300 | 30 | 26.8641 |
+| 11 | 330 | 30 | 26.4229 |
+| 12 | 360 | 30 | 27.3945 |
+| 13 | 390 | 30 | 28.0862 |
+| 14 | 420 | 30 | 28.9907 |
+| 15 | 450 | 30 | 28.6864 |
+| 16 | 480 | 30 | 28.4080 |
+| 17 | 510 | 10 | 29.3289 |
+
+共 18 次推理，520 步。终止原因 official_step_limit，官方成功记录为 False。首次闭爪 Step 50，双侧指垫首次接触 Step 56，最高抬升 0.2506613017441722 m，首次到目标区域 Step None，物理释放验证为 False。官方终态和释放分别记录。录像 521 帧，20 fps，SHA256 dd6056c531d9821b0d93c2cf32ef77bb97ce44f969a1f54bcba9d45257c2c621，原始视频保存在本机。
+
+| 内存采样 | WSL 可用 MiB | Swap 可用 MiB |
+| --- | ---: | ---: |
+| GUI 启动门禁 | 6527 | 1710 |
+| 实测最低值（各自独立） | 1170 | 1222 |
+| worker_exit | 6712 | 1342 |
+| idle_12_seconds | 6803 | 1342 |
+
+Worker RSS/PSS 采样峰值 6608/6603 MiB，Worker 退出码 0。保留 RAM/Swap 原门禁和每次新动作块的保护；新 OOM 计数变动标志为 False。通过桌面快捷方式打开真实 Workbench，自动化调用其 Run 按钮，并校验确认提示及参数。外部采样器接入时 Worker 已由 Workbench 启动，启动前余量取自保存的 GUI 门禁样本。正式回合结束后，GUI 关闭核验为 True。
+
+8 项回归通过，逐步证据校验退出码 0。290 个 Task020 历史文件 SHA256 一致。本轮未重试，也未启动其他 index。B2a 的 index 15 在第 201 步官方成功，原证据保留。两个新初态中 1 个成功、1 个达到上限未成功，符合 Issue 定义的 PARTIAL 总体验收。
+
+[正式回合验收](../results/task021/acceptance.json) · [逐块、资源与视频指标](../results/task021/b2b/metrics/summary.json) · [正式启动确认](../results/task021/b2b/metrics/gui_confirmation.json) · [窗口结束状态](../evidence/task021/b2b/finished.png)
 
 ## 阶段 B2a · index 15 正式回合
 

@@ -1,0 +1,94 @@
+{
+  "configuration": {
+    "checkpoint_revision": "8e6aeef01f634f5d3b5be4340328f19cc2c25a65",
+    "device": "cpu",
+    "versions": {
+      "lerobot": "0.7.0",
+      "hf-libero": "0.1.5",
+      "robosuite": "1.4.0",
+      "mujoco": "3.8.1",
+      "torch": "2.15.0+cpu"
+    },
+    "checkpoint_files": {
+      "model.safetensors": {
+        "sha256": "2a0e29448111df56b9485cb1f964db799205794c49baeda48ef960589ce649ab",
+        "bytes": 3519073692
+      },
+      "config.json": {
+        "sha256": "2fb7f30bf3892e882997e77af2defdbc29d3c29981c3c4a563820a0178fe0816",
+        "bytes": 9307
+      },
+      "policy_preprocessor.json": {
+        "sha256": "442ac4352dce2547f7fec60a89034f14bff5240bd8d52395e14eaef5a3d6c2a6",
+        "bytes": 1635
+      },
+      "policy_postprocessor.json": {
+        "sha256": "d1d73a18f14aca0e9db7cdbb3eb536adadf4960947347cb1645c9a246ea0acb4",
+        "bytes": 575
+      }
+    },
+    "control_mode": "absolute",
+    "controller": "OSC_POSE",
+    "control_hz": 20,
+    "chunk_size": 30,
+    "execute_steps": 30,
+    "settling_steps": 10
+  },
+  "source": {
+    "suite": "libero_10",
+    "task_id": 5,
+    "task_description": "pick up the book and place it in the back compartment of the caddy",
+    "libraries": {
+      "lerobot": "0.7.0",
+      "hf-libero": "0.1.5",
+      "robosuite": "1.4.0",
+      "mujoco": "3.8.1",
+      "torch": "2.15.0+cpu"
+    },
+    "installed_asset": {
+      "file": "libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.pruned_init",
+      "bytes": 22831,
+      "sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+      "array_shape": [
+        50,
+        45
+      ],
+      "array_dtype": "float64",
+      "original_init_file_present": true,
+      "original_init_sha256": "98f00fb67ffc25888fc89349daec00dcf686209e09cf0a1b92f8b87f4617244b"
+    },
+    "bddl": {
+      "file": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+      "sha256": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f"
+    },
+    "target_site": "desk_caddy_1_back_contain_region",
+    "source_hashes": {
+      "wrapper": "419f788e9be11b8757f3ad0885b470c282942ec269eb1592cbae3cf9e2b29f0f",
+      "worker": "9100ba09ef456d0b6b216e6577db45a52c5b823189fb9f57f11493ec74a6defe",
+      "gui": "394f8a376941a93e0eebf5b7e8d117a02a33af29008e1bfdb5d11b0595647c4e",
+      "resource_guard": "d63d81da1c7f0004a6e13ee994ec93ba9aa90b43b1a50f3a38f71be1e7d10657"
+    },
+    "mapping": {
+      "workbench_seed_to_index": {
+        "201": 0,
+        "202": 1,
+        "203": 2
+      },
+      "204": null,
+      "205": null,
+      "diagnostic_seed_new_indices": 201
+    },
+    "runtime": {
+      "control_hz": 20,
+      "control_mode": "absolute",
+      "controller": "OSC_POSE",
+      "official_max_steps": 520,
+      "reset_settling_steps": 10,
+      "policy_actions_executed": 0,
+      "model_loaded": false
+    }
+  },
+  "expected_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+  "official_initial_state_index": 34,
+  "reset_rng_seed": 201
+}
