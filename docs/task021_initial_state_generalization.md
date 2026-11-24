@@ -1,6 +1,29 @@
-# Task021 阶段 A · LIBERO Task 5 初始状态盘点
+# Task021 · LIBERO Task 5 初始状态泛化验证
 
-**阶段 A 已完成，候选 index 15 和 34 待审核。阶段 B 为 BLOCKED。** 现有 Workbench 只能选择 index 0、1、2。本轮实际执行官方复位及其内置的 10 步稳定过程。X-VLA 加载、推理及正式回合均为 0。
+**阶段 A 已验收，阶段 B1 待审核。** 正式模型回合等待进一步授权。
+
+## 阶段 B1 · 显式 index 与无模型复位
+
+从 Windows 桌面快捷方式打开现有 Workbench。Task 5 界面分别选择官方 index 15 和 34，Reset RNG Seed 固定为 201，通过「仅复位」按钮串行启动两个 Worker。
+
+| 实际 index | RNG Seed | Run ID | 位姿和 8D 最大绝对差 | 双视角 RGB | 退出码 |
+| --- | --- | --- | --- | --- | --- |
+| 15 | 201 | reset_index_15_rng_201_1795491280237605745 | 0 | 双视角像素一致 | 0 |
+| 34 | 201 | reset_index_34_rng_201_1795491421389679840 | 0 | 双视角像素一致 | 0 |
+
+每次复位前校验工厂游标与官方状态行，复位后核对游标增量。资产及状态行 SHA256 均与阶段 A 一致。书本和目标后格位姿、目标半尺寸、末端及关节反馈、夹爪和 8D 状态在绝对容差 1e-7 下比对，最大误差均为 0。两个视角的 RGB 像素哈希均匹配阶段 A，另存 PNG 文件哈希。
+
+旧入口保留 201→0、202→1、203→2。显式 index 和 RNG Seed 独立传递给 Worker。现阶段显式选择只允许用于复位入口。正式运行参数、模型、控制、Processor 和资源保护保持原样。
+
+index 15 实跑原窗口底部裁切了部分哈希。已将完整证据区移至相机上方，index 34 实跑验证了新位置；index 15 用真实存档记录复核完整显示，未再次复位。
+
+两个 Worker 均退出并回收。未下载或加载 X-VLA 权重，0 次前向、0 个正式回合。17 项回归通过，包含 6 项 B1 专项，两个校验命令退出码均为 0。290 个 Task020 历史文件 SHA256 保持一致。修改源码和 source.diff 留在本地工作区。
+
+[阶段 B1 指标](../results/task021/b1/metrics/summary.json) · [验收记录](../results/task021/acceptance.json) · [index 15 实跑](../evidence/task021/b1/index_15_result.png) · [index 15 显示复核](../evidence/task021/b1/index_15_display_check.png) · [index 34 实跑](../evidence/task021/b1/index_34_result.png) · [回归日志](../results/task021/b1/logs/regression.log)
+
+## 阶段 A · 已验收的盘点与候选
+
+**阶段 A 已接受，候选为 index 15 和 34。** 阶段 A 盘点时，旧 Workbench 只能选择 index 0、1、2。本轮实际执行官方复位及其内置的 10 步稳定过程。X-VLA 加载、推理及正式回合均为 0。
 
 ## 官方来源与映射
 
@@ -50,7 +73,7 @@ GUI 的 Seed 下拉和 Worker 的 SEEDS 均限定 201、202、203。Worker 以 S
 | 15 | 201 → 202 | 0.000 | 0.000 | 5.156 | 0.000 |
 | 34 | 201 → 202 | 0.000 | 0.000 | 5.156 | 0.000 |
 
-## 阶段 B 前置条件
+## 阶段 A 记录的工程前置条件
 
 待用户审核候选。若继续，最小工程变更是让 GUI 与 Worker 显式选择并校验原有官方索引，在首次前向前记录实际 index、初始状态行与资产哈希和双视角。模型、Processor、动作语义、控制和资源保护应继续沿用。本轮未修改 Workbench 或资源门禁。
 

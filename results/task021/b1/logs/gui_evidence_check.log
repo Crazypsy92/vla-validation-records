@@ -1,0 +1,5 @@
+15 max abs difference 0.0 both images pixel-exact, worker reaped
+34 max abs difference 0.0 both images pixel-exact, worker reaped
+Index 15 metadata display regression: actual four full hashes above both views
+
+exit=0

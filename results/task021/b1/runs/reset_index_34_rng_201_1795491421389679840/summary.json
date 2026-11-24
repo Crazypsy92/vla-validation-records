@@ -1,0 +1,55 @@
+{
+  "seed": 201,
+  "mode": "reset_only",
+  "inferences": 0,
+  "steps": 0,
+  "official_success": null,
+  "status": "RESET_ONLY_COMPLETE",
+  "task_id": 5,
+  "suite": "libero_10",
+  "object": "black_book_1",
+  "target": "desk_caddy_1_back_contain_region",
+  "run_id": "reset_index_34_rng_201_1795491421389679840",
+  "model_loaded": false,
+  "terminal_reason": "reset_only",
+  "initial_state_index": 34,
+  "initial_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+  "final_images": {
+    "workspace": "0000_workspace.png",
+    "wrist": "0000_wrist.png"
+  },
+  "official_initial_state_index": 34,
+  "reset_rng_seed": 201,
+  "official_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+  "initial_state_asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+  "initial_state_asset": "libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.pruned_init",
+  "initial_state_cursor_after": 84,
+  "reset_stride": 50,
+  "target_site_position_m": [
+    -0.43907864164983956,
+    -0.14464876530096335,
+    0.97258
+  ],
+  "target_site_quaternion_wxyz": [
+    0.0,
+    1.0,
+    -6.123233995736766e-17,
+    0.0
+  ],
+  "target_site_half_size_m": [
+    0.02775,
+    0.06216,
+    0.06046
+  ],
+  "image_file_sha256": {
+    "workspace": "8e430f56f86252f2e44c4b47de34b339bbaa0c7c6a425e999e761f57c0ac02b9",
+    "wrist": "974ecf57dc8917b7f7d83c687a52f45409e6e1a2209f30b321a2bb2641ace57c"
+  },
+  "rgb_array_sha256": {
+    "workspace": "6b537241e483c67a1fa3415cb64285a7b2b4b3481661e262c7aac8ec408895f0",
+    "wrist": "c6da7ef840abfbde68a68ab2fbcbad67be098ab55f7641e270ce83e6ea031076"
+  },
+  "instruction": "pick up the book and place it in the back compartment of the caddy",
+  "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+  "reset_settling_steps": 10
+}

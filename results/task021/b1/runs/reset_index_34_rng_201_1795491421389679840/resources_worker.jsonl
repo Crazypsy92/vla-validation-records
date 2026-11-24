@@ -1,0 +1,3 @@
+{"time": 1795491427.780517, "phase": "startup", "pid": 8391, "rss_mib": 678, "pss_mib": 634, "total_mib": 7798, "available_mib": 6099, "swap_total_mib": 2048, "swap_free_mib": 2048}
+{"time": 1795491434.0115678, "phase": "after_reset_only", "pid": 8391, "rss_mib": 2423, "pss_mib": 2374, "total_mib": 7798, "available_mib": 4284, "swap_total_mib": 2048, "swap_free_mib": 2048}
+{"time": 1795491434.209006, "phase": "after_video_and_environment_close", "pid": 8391, "rss_mib": 1882, "pss_mib": 1832, "total_mib": 7798, "available_mib": 4800, "swap_total_mib": 2048, "swap_free_mib": 2048}
