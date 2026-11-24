@@ -1,0 +1,9 @@
+{
+  "mode": "reset_only",
+  "official_initial_state_index": 34,
+  "resolved_initial_state_index": 34,
+  "reset_rng_seed": 201,
+  "legacy_seed": 201,
+  "source": "Workbench GUI",
+  "gui_pid": 8319
+}

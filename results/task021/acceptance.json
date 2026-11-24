@@ -1,9 +1,8 @@
 {
   "task": "Task021",
-  "phase": "A",
-  "status": "PHASE_A_REVIEW",
-  "phase_b_status": "BLOCKED",
-  "phase_b_blocker": "Current GUI and Worker accept only 201/202/203; candidate index selection is unavailable.",
+  "phase": "B1",
+  "status": "PHASE_B1_REVIEW",
+  "phase_b_status": "FORMAL_ROLLOUT_NOT_RUN",
   "candidate_indices": [
     15,
     34
@@ -78,5 +77,96 @@
         "acceptance.json"
       ]
     }
-  ]
+  ],
+  "phase_a_review": {
+    "status": "ACCEPTED_PHASE_A",
+    "issue_comment": "7120850309"
+  },
+  "phase_a_blocker": "Current GUI and Worker accept only 201/202/203; candidate index selection is unavailable.",
+  "b1": {
+    "status": "REVIEW",
+    "runs": [
+      {
+        "run_id": "reset_index_15_rng_201_1795491280237605745",
+        "official_initial_state_index": 15,
+        "reset_rng_seed": 201,
+        "official_state_sha256": "18789855054f53dc0771f9a9bc1a69aee708e48eb4c59626dd484595587f5f04",
+        "asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+        "rgb_array_sha256": {
+          "workspace": "e69d7eccf3ea8f8ce03288ffa9e0557d997ca2fc1e28e61489e932f6e8c92c8e",
+          "wrist": "0806774497e88bba2a28b2ed7a0d3ea62a75e861236b41c5f5eca285ecfe9eca"
+        },
+        "png_sha256": {
+          "workspace": "9955aaee80ab955478bb2bd7e2305ca1752b6f3001b2fcbca3866142e36fc253",
+          "wrist": "b43af561e393673f601671b2b51057a4e9fb57e587949da0d89f5a537b01c735"
+        },
+        "absolute_max_differences": {
+          "book_position": 0.0,
+          "book_quaternion": 0.0,
+          "target_position": 0.0,
+          "target_quaternion": 0.0,
+          "target_half_size": 0.0,
+          "robot_eef_position": 0.0,
+          "robot_eef_quaternion": 0.0,
+          "robot_arm_qpos": 0.0,
+          "gripper_qpos": 0.0,
+          "state_8d": 0.0
+        },
+        "pixel_exact": true,
+        "worker_exit_code": 0,
+        "worker_pid": 8102,
+        "worker_reaped": true,
+        "gui_pid": 7989,
+        "inferences": 0,
+        "policy_steps": 0
+      },
+      {
+        "run_id": "reset_index_34_rng_201_1795491421389679840",
+        "official_initial_state_index": 34,
+        "reset_rng_seed": 201,
+        "official_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+        "asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+        "rgb_array_sha256": {
+          "workspace": "6b537241e483c67a1fa3415cb64285a7b2b4b3481661e262c7aac8ec408895f0",
+          "wrist": "c6da7ef840abfbde68a68ab2fbcbad67be098ab55f7641e270ce83e6ea031076"
+        },
+        "png_sha256": {
+          "workspace": "8e430f56f86252f2e44c4b47de34b339bbaa0c7c6a425e999e761f57c0ac02b9",
+          "wrist": "974ecf57dc8917b7f7d83c687a52f45409e6e1a2209f30b321a2bb2641ace57c"
+        },
+        "absolute_max_differences": {
+          "book_position": 0.0,
+          "book_quaternion": 0.0,
+          "target_position": 0.0,
+          "target_quaternion": 0.0,
+          "target_half_size": 0.0,
+          "robot_eef_position": 0.0,
+          "robot_eef_quaternion": 0.0,
+          "robot_arm_qpos": 0.0,
+          "gripper_qpos": 0.0,
+          "state_8d": 0.0
+        },
+        "pixel_exact": true,
+        "worker_exit_code": 0,
+        "worker_pid": 8391,
+        "worker_reaped": true,
+        "gui_pid": 8319,
+        "inferences": 0,
+        "policy_steps": 0
+      }
+    ],
+    "regression_tests": 17,
+    "regression_exit_code": 0,
+    "evidence_check_exit_code": 0,
+    "historical_sha256_verified": 290,
+    "model_loaded": false,
+    "formal_runs": 0,
+    "source_hashes": {
+      "workbench/book_reset.py": "2bd6da80b253c55b736c6080fb070624ea0b6b958467597835e7543fc95e14b9",
+      "workbench/workers/book_pilot.py": "bb5d16ceb241a6566f4c643c2695ca71c97b6c91d005b543a50a0202db97bc3e",
+      "workbench/ui/book_pilot_panel.py": "bd8a9b2d4c3636fee9d8e7976ef983813045caca2479097b55725d265d0c5311",
+      "workbench/tests/test_task021_reset.py": "67e462ea777c3cb4b01afa062faed8de1b81e5f9e71a3a30f897ab6c83cbaf7a"
+    },
+    "local_source_diff_sha256": "e0b6719c827026c857beccccacb1d66c775d5f32a56809fd8c7f090ab909d722"
+  }
 }
