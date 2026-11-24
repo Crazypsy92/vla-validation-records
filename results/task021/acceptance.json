@@ -1,7 +1,7 @@
 {
   "task": "Task021",
   "phase": "B2b",
-  "status": "REVIEW",
+  "status": "ACCEPTED_PARTIAL",
   "phase_b_status": "INDEX_34_MODEL_TASK_FAILED",
   "candidate_indices": [
     15,
@@ -100,16 +100,16 @@
           "wrist": "b43af561e393673f601671b2b51057a4e9fb57e587949da0d89f5a537b01c735"
         },
         "absolute_max_differences": {
-          "book_position": 0.0,
-          "book_quaternion": 0.0,
-          "target_position": 0.0,
-          "target_quaternion": 0.0,
-          "target_half_size": 0.0,
-          "robot_eef_position": 0.0,
-          "robot_eef_quaternion": 0.0,
-          "robot_arm_qpos": 0.0,
-          "gripper_qpos": 0.0,
-          "state_8d": 0.0
+          "book_position": 0,
+          "book_quaternion": 0,
+          "target_position": 0,
+          "target_quaternion": 0,
+          "target_half_size": 0,
+          "robot_eef_position": 0,
+          "robot_eef_quaternion": 0,
+          "robot_arm_qpos": 0,
+          "gripper_qpos": 0,
+          "state_8d": 0
         },
         "pixel_exact": true,
         "worker_exit_code": 0,
@@ -134,16 +134,16 @@
           "wrist": "974ecf57dc8917b7f7d83c687a52f45409e6e1a2209f30b321a2bb2641ace57c"
         },
         "absolute_max_differences": {
-          "book_position": 0.0,
-          "book_quaternion": 0.0,
-          "target_position": 0.0,
-          "target_quaternion": 0.0,
-          "target_half_size": 0.0,
-          "robot_eef_position": 0.0,
-          "robot_eef_quaternion": 0.0,
-          "robot_arm_qpos": 0.0,
-          "gripper_qpos": 0.0,
-          "state_8d": 0.0
+          "book_position": 0,
+          "book_quaternion": 0,
+          "target_position": 0,
+          "target_quaternion": 0,
+          "target_half_size": 0,
+          "robot_eef_position": 0,
+          "robot_eef_quaternion": 0,
+          "robot_arm_qpos": 0,
+          "gripper_qpos": 0,
+          "state_8d": 0
         },
         "pixel_exact": true,
         "worker_exit_code": 0,
@@ -208,6 +208,7 @@
     "verification_exit_code": 0,
     "historical_files_verified": 290,
     "local_source_diff_sha256": "eab400e1fc232337a07fc27d829069778cecd52d072ac0f940f0a5f2776b465d",
-    "executed_source_diff_sha256": "eab400e1fc232337a07fc27d829069778cecd52d072ac0f940f0a5f2776b465d"
+    "executed_source_diff_sha256": "eab400e1fc232337a07fc27d829069778cecd52d072ac0f940f0a5f2776b465d",
+    "review": "ACCEPTED_PARTIAL"
   }
 }
