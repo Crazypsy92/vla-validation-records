@@ -1,0 +1,221 @@
+{
+  "status": "PHASE_A_REVIEW_PHASE_B_BLOCKED",
+  "count": 50,
+  "excluded_indices": [
+    0,
+    1,
+    2
+  ],
+  "candidates": [
+    {
+      "index": 15,
+      "reset_seed": 201,
+      "workbench_seed": null,
+      "role": "maximin_xy",
+      "comparison": {
+        "0": {
+          "book_xyz_delta_m": [
+            -0.014617805311946092,
+            -0.03301175630694128,
+            0.0
+          ],
+          "book_xy_m": 0.036103411010690346,
+          "book_heading_deg": 40.10054463119377,
+          "book_geodesic_deg": 40.10054463119377,
+          "caddy_xyz_m": 0.0,
+          "target_xyz_m": 0.0,
+          "target_geodesic_deg": 0.0,
+          "robot_eef_xyz_m": 0.02155057372782339,
+          "robot_state_8d_l2_raw_units": 0.022146340298468,
+          "mug_xyz_m": 0.026915201982147953
+        },
+        "1": {
+          "book_xyz_delta_m": [
+            -0.03894406294702951,
+            -0.012514349816296955,
+            0.0
+          ],
+          "book_xy_m": 0.04090536627567156,
+          "book_heading_deg": 37.18547953182761,
+          "book_geodesic_deg": 37.18547953182761,
+          "caddy_xyz_m": 0.005156249002097968,
+          "target_xyz_m": 0.005156249002097968,
+          "target_geodesic_deg": 0.0,
+          "robot_eef_xyz_m": 0.025090517287395944,
+          "robot_state_8d_l2_raw_units": 0.02580363578853934,
+          "mug_xyz_m": 0.0230898534930297
+        }
+      },
+      "official_success": null,
+      "formal_status": "NOT_RUN",
+      "model_inferences": 0,
+      "policy_environment_steps": 0,
+      "resource_metrics": null
+    },
+    {
+      "index": 34,
+      "reset_seed": 201,
+      "workbench_seed": null,
+      "role": "maximin_geodesic",
+      "comparison": {
+        "0": {
+          "book_xyz_delta_m": [
+            0.012332945823006869,
+            -0.03386672767809529,
+            0.0
+          ],
+          "book_xy_m": 0.03604243049928082,
+          "book_heading_deg": 40.165380375807615,
+          "book_geodesic_deg": 40.1653803758076,
+          "caddy_xyz_m": 0.0,
+          "target_xyz_m": 0.0,
+          "target_geodesic_deg": 0.0,
+          "robot_eef_xyz_m": 0.025944987190490276,
+          "robot_state_8d_l2_raw_units": 0.026166487388088428,
+          "mug_xyz_m": 0.012975958158289103
+        },
+        "1": {
+          "book_xyz_delta_m": [
+            -0.011993311812076551,
+            -0.013369321187450961,
+            0.0
+          ],
+          "book_xy_m": 0.01796046428227623,
+          "book_heading_deg": 37.25031527644143,
+          "book_geodesic_deg": 37.25031527644143,
+          "caddy_xyz_m": 0.005156249002097968,
+          "target_xyz_m": 0.005156249002097968,
+          "target_geodesic_deg": 0.0,
+          "robot_eef_xyz_m": 0.013970319401516535,
+          "robot_state_8d_l2_raw_units": 0.014541112641584409,
+          "mug_xyz_m": 0.046725082924273985
+        }
+      },
+      "official_success": null,
+      "formal_status": "NOT_RUN",
+      "model_inferences": 0,
+      "policy_environment_steps": 0,
+      "resource_metrics": null
+    }
+  ],
+  "unique_raw_state_hashes": 50,
+  "baseline": {
+    "0": {
+      "official_success": true,
+      "steps": 169,
+      "saved_state_and_book_match": true
+    },
+    "1": {
+      "official_success": true,
+      "steps": 183,
+      "saved_state_and_book_match": true
+    },
+    "2": {
+      "official_success": null,
+      "status": "RESOURCE_PRESSURE",
+      "steps": 191,
+      "saved_state_hash_match": true
+    }
+  },
+  "fresh_factory_checks": [
+    {
+      "index": 0,
+      "factory_index": 0,
+      "reset_seed": 201,
+      "raw_state_match": true,
+      "poses_and_robot_match_atol": 1e-07,
+      "camera_pixels_identical": true
+    },
+    {
+      "index": 1,
+      "factory_index": 1,
+      "reset_seed": 202,
+      "raw_state_match": true,
+      "poses_and_robot_match_atol": 1e-07,
+      "camera_pixels_identical": true
+    },
+    {
+      "index": 2,
+      "factory_index": 2,
+      "reset_seed": 203,
+      "raw_state_match": true,
+      "poses_and_robot_match_atol": 1e-07,
+      "camera_pixels_identical": true
+    },
+    {
+      "index": 15,
+      "factory_index": 15,
+      "reset_seed": 201,
+      "raw_state_match": true,
+      "poses_and_robot_match_atol": 1e-07,
+      "camera_pixels_identical": true
+    },
+    {
+      "index": 34,
+      "factory_index": 34,
+      "reset_seed": 201,
+      "raw_state_match": true,
+      "poses_and_robot_match_atol": 1e-07,
+      "camera_pixels_identical": true
+    }
+  ],
+  "seed_controls": [
+    {
+      "index": 1,
+      "baseline_seed": 202,
+      "alternate_seed": 201,
+      "same_official_state_hash": true,
+      "book_xyz_delta_m": 0.0,
+      "book_rotation_delta_deg": 0.0,
+      "goal_xyz_delta_m": 0.005156249002097968,
+      "eef_xyz_delta_m": 0.0,
+      "camera_pixels_identical": false
+    },
+    {
+      "index": 15,
+      "baseline_seed": 201,
+      "alternate_seed": 202,
+      "same_official_state_hash": true,
+      "book_xyz_delta_m": 0.0,
+      "book_rotation_delta_deg": 0.0,
+      "goal_xyz_delta_m": 0.005156249002097968,
+      "eef_xyz_delta_m": 0.0,
+      "camera_pixels_identical": false
+    },
+    {
+      "index": 34,
+      "baseline_seed": 201,
+      "alternate_seed": 202,
+      "same_official_state_hash": true,
+      "book_xyz_delta_m": 0.0,
+      "book_rotation_delta_deg": 0.0,
+      "goal_xyz_delta_m": 0.005156249002097968,
+      "eef_xyz_delta_m": 0.0,
+      "camera_pixels_identical": false
+    }
+  ],
+  "target_comparison_threshold_m": 0.005156250002097969,
+  "target_comparable_count": 47,
+  "other_considered": [
+    {
+      "index": 3,
+      "max_target_xyz_m": 0.005156249002097968,
+      "min_book_xy_m": 0.030350595592399995,
+      "min_book_geodesic_deg": 19.123845252251844
+    },
+    {
+      "index": 4,
+      "max_target_xyz_m": 0.005156249002097968,
+      "min_book_xy_m": 0.013300477617353567,
+      "min_book_geodesic_deg": 4.459201380521567
+    }
+  ],
+  "policy_inferences": 0,
+  "policy_environment_steps": 0,
+  "distinct_reset_poses": {
+    "book_pose": 50,
+    "robot_state_8d": 50,
+    "target_site_pose": 3,
+    "camera_pair": 50
+  }
+}
