@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 019 完整技术链条（含 Task 019-R1 回放数据可信度返修），以及 Task020-R1 Phase 2、Phase 3、Phase 4 及 Task020 结题说明
+- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 当前任务导航
 - **白名单发布文件总数**：209 个
-- **总归档体积**：13223.50 KB
+- **总归档体积**：13224.32 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -22,8 +22,8 @@
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **General** | `README.md` | 13821 | `790ef5ff1f05634a...` | Config | Task020 验收索引 |
-| **General** | `TASKS.md` | 4702 | `690137ac4b788fe4...` | Config | Task020 验收索引 |
+| **General** | `README.md` | 14331 | `df6b723d1b869aa1...` | Config | Task021 任务导航 |
+| **General** | `TASKS.md` | 5029 | `adeca13c14a6eb35...` | Config | Task021 任务状态索引 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
