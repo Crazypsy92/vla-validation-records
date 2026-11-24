@@ -7,8 +7,8 @@
     15,
     34
   ],
-  "model_loaded": false,
-  "formal_runs": 0,
+  "model_loaded": true,
+  "formal_runs": 1,
   "historical_sha256_verified": 290,
   "checks": [
     {
