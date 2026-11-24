@@ -12,6 +12,7 @@
 | Task018 | **夹爪抓放审计与 VLA Workbench 三层监控回放** | [#2](https://github.com/Crazypsy92/vla-validation-records/issues/2) | **ACCEPTED_WITH_FOLLOWUP / 已关闭** | 20项报告归档；截图暴露的画面因果性与模式语义转 Task019 |
 | Task019-R1（Task019返修） | **回放数据可信度与桌面显示修复** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | R1-01～R1-08 通过；内部回放通过。外部播放器未验证，模型前向按范围未重跑；进入 Task020 |
 | Task020-R1 | **Workbench 书本抓放官方任务验证** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 2 个官方成功、1 个资源中断未完成，物理释放未验证。 [结题报告](docs/task020_goal_met_with_limitations.md) · [Phase 4 阻断报告](docs/task020_r1_phase4_seed203_results.md) |
+| Task021 | **LIBERO Task 5 初始状态泛化验证** | [#5](https://github.com/Crazypsy92/vla-validation-records/issues/5) | **OPEN / 待执行** | 先盘点官方未使用初始状态，最多两个新状态顺序运行；不改模型和控制配置。 |
 
 ## 历史归档
 
@@ -33,6 +34,6 @@
 4. 上传 commit/PR 及原始证据，评论 STATUS: REVIEW；无法完成时评论 STATUS: BLOCKED。
 5. 由 ChatGPT 与用户审核后标记 STATUS: ACCEPTED，再关闭 Issue、发布下一个任务。
 
-**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；Issue #2 已 ACCEPTED_WITH_FOLLOWUP 并关闭；Issue #3（Task019-R1）已按 ACCEPTED_WITH_LIMITATIONS 关闭；**Issue #4（Task020）已按 ACCEPTED_WITH_LIMITATIONS 验收并关闭。** Task021 尚未发布，不自动开展。
+**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；Issue #2 已 ACCEPTED_WITH_FOLLOWUP 并关闭；Issue #3（Task019-R1）已按 ACCEPTED_WITH_LIMITATIONS 关闭；**Issue #4（Task020）已按 ACCEPTED_WITH_LIMITATIONS 验收并关闭。Issue #5（Task021）为当前唯一开放任务。** 只执行 Task021；完成并验收后再规划下一项。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**
