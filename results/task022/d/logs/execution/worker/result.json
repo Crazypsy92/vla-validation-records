@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "loads_started": 1,
+  "loads_completed": 1,
+  "environments": 1,
+  "resets": 1,
+  "steps": 300,
+  "inference_calls": 10,
+  "completed_inferences": 10,
+  "retries": 0,
+  "count_in_official_success_rate": false,
+  "model_load_seconds": 110.54157960999873,
+  "reset_verified": true,
+  "reset_fingerprint": {
+    "instruction": "pick up the book and place it in the back compartment of the caddy",
+    "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+    "official_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+    "initial_state_asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+    "rgb_array_sha256": {
+      "workspace": "6b537241e483c67a1fa3415cb64285a7b2b4b3481661e262c7aac8ec408895f0",
+      "wrist": "c6da7ef840abfbde68a68ab2fbcbad67be098ab55f7641e270ce83e6ea031076"
+    }
+  },
+  "reset_builtin_settling_steps": 10,
+  "reason": "diagnostic_step_300_limit",
+  "observed_official_predicate": false,
+  "environment_closed": true
+}

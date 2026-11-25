@@ -1,0 +1,12 @@
+{
+  "pid": 209536,
+  "rss_mib": 22,
+  "pss_mib": 18,
+  "total_mib": 7798,
+  "available_mib": 6373,
+  "swap_total_mib": 2048,
+  "swap_free_mib": 191,
+  "cpu_percent_system": 1.7,
+  "pressure_memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=103668419\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=103456231",
+  "oom_kill_count": 0
+}

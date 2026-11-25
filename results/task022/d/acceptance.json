@@ -1,0 +1,45 @@
+{
+  "task": "Task022-D",
+  "status": "COMPLETE",
+  "review_status": "REVIEW",
+  "run_id": "dynamic_index34_rng201_1795578972038190503",
+  "conclusion": "ROOT_CAUSE_UNDETERMINED",
+  "checks": {
+    "D-A": "PASS",
+    "D-B": "PASS",
+    "D-C": "PASS",
+    "D-D": "PASS_WITH_DOCUMENTED_UNAVAILABLE",
+    "D-E": "PASS",
+    "D-F": "PASS"
+  },
+  "hypotheses": {
+    "B1": {
+      "status": "NOT_SUPPORTED",
+      "title": "策略目标 X 修正",
+      "summary": "84/91 步的目标位姿在固定当步抓持变换的几何投影中可使书本中心进入官方边界。",
+      "description": "Step 210–300 的动态 site 姿态每步读取，整个窗口中其位姿不变。按安装版本 `SiteObject.in_box` 计算，91/91 步实测书本 body 原点仅越过世界 X 上界 1.36–7.54 mm，重算谓词与官方状态一致。将 `book_in_eef` 转到 OSC grip-site 基后，按 `T_world_goal · T_grip_book` 投影，89/91 步给出负 X 修正，84/91 步的三轴点谓词均满足。例外为 Step 211、241–242、271–274，集中在动作块更新后。Step 240 的实际、投影 `book-in-site` 分别为 `[30.79, −4.45, −53.90]` 和 `[12.78, −18.85, −21.68]` mm。Step 300 的实际 X 仍超界 7.54 mm，投影在 X 上界内 12.75 mm。观测不支持“策略持续给出错误或不足的 X 修正”解释整个晚段。投影假定目标完全达到且抓持刚性，不衡量碰撞可行性，也无法单独排除策略的碰撞规划问题。字段见 `target_local_m`、`implied_book_at_goal_local_m` 和 `translation_only_still_above_upper_steps`。"
+    },
+    "B2": {
+      "status": "INCONCLUSIVE",
+      "title": "跟踪差与控制限值",
+      "summary": "中位平移跟踪误差 25.75 mm。3775 次控制器调用中 0 个关节轴发生扭矩剪裁。",
+      "description": "Step 150–300 的 `goal_feedback_error_m` 中位 25.75 mm、最大 55.46 mm（Step 180），换算到同一 grip-site 坐标基后的角度误差中位 1.14°、最大 3.14°。晚段 Step 270 的误差为 39.73 mm、1.98°。`torques.before_limit` 与 `after_limit` 在全部 3775 次记录中相同，执行器边界采样的 `actuator_ctrl` 和 `actuator_force` 一致。最近关节位置极限距离仍有 0.114 rad，没有观察到触及关节位置范围。实际跟踪差与指令未转化为书本负 X 位移同时出现，但数据不支持解释为扭矩剪裁或刚性关节止挡。`joint_constraint_force` 包含复合约束贡献，存在非零值。当前回合无法分离接触载荷、顺应/动态跟踪以及其他控制因素。"
+    },
+    "B3": {
+      "status": "SUPPORTED",
+      "title": "抓持相对位姿发生变化",
+      "summary": "持续双侧接触和闭合命令下，相对 Step 210 的书本位姿变化达 28.16 mm、12.36°。",
+      "description": "Step 150–300 的 151/151 步均为闭合命令且双侧指垫接触。`book_in_eef` 经固定基转换后，相对 Step 210 的最大平移变化和最大转角都在 Step 274，分别为 28.16 mm、12.36°。Step 272 相邻步平移变化最大，为 3.55 mm。持续双侧接触不能证明书本在夹爪中刚性固定。证据支持相对运动，尚不能把全部变化分解为纯滑移、受力转动、滚动或指垫顺应，也不足以建立独立根因。"
+    },
+    "B4": {
+      "status": "SUPPORTED",
+      "title": "书本与隔板持续实际接触",
+      "summary": "书本 geom 92 与隔板 geom 135 从 Step 171 到 300 连续 130 个控制边界接触。",
+      "description": "`black_book_1_g1` 与 `desk_caddy_1_g2` 的原生 `contacts` 记录覆盖 Step 171–300，共 131 个接触点样本，130 个连续边界采样。按 Robosuite 的 geom 命名与资产 XML 顺序，`g2` 对应离线审计中的隔板。Step 171 最大法向力 115.97 N，signed distance −0.0586 mm，世界法向约 `[0, 0.00569, −0.99998]`。Step 210–300 的法向力范围为 14.68–57.97 N，末步为 55.56 N。窗口中未发现夹爪 geom 与盒体直接接触的边界样本。该接触法向的世界 X 分量始终近零，因此法向力本身不能证明存在直接的 X 硬阻挡。整步冲量与切向载荷没有经验证的数据，无法分离接触、摩擦及抓持变形对 X 残差的贡献。"
+    }
+  },
+  "window_steps": 151,
+  "attempts": 1,
+  "retries": 0,
+  "count_in_official_success_rate": false
+}
