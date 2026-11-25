@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL），以及 Task022-A 离线审计
-- **白名单发布文件总数**：342 个
-- **总归档体积**：23485.56 KB
+- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL），以及 Task022-A 离线审计和 Task022-B 单次诊断
+- **白名单发布文件总数**：365 个
+- **总归档体积**：23736.96 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 342 项）
+## 二、白名单发布文件清单（共 365 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **Task021 navigation** | `README.md` | 14607 | `e439429f2049528b...` | Config | Task022-A 离线审计 |
-| **Task021 status index** | `TASKS.md` | 5532 | `43722864bba89728...` | Config | Task022-A 离线审计 |
+| **Task022-B** | `README.md` | 14852 | `a0539f5b82e2f53f...` | Report | Task022-B 单次诊断 |
+| **Task022-B** | `TASKS.md` | 5344 | `c19b034b289ad288...` | Report | Task022-B 单次诊断 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -381,3 +381,26 @@
 - JSON 清单为 UTF-8 标准文本，可由标准 JSON 解析器直接读取。
 - SHA256 基于清单所列文件的实际 UTF-8/二进制字节计算。
 - 清单不包含模型权重、完整仿真视频或第三方数据集。
+| **Task022-B** | `docs/task022_index34_diagnostic.md` | 5022 | `e7a65ebd2efc2bad...` | Report | Task022-B 单次诊断 |
+| **Task022-B** | `evidence/task022/b/0000_workspace.png` | 65633 | `8e430f56f86252f2...` | Evidence | Task022-B 单次诊断 |
+| **Task022-B** | `evidence/task022/b/0000_wrist.png` | 47626 | `974ecf57dc8917b7...` | Evidence | Task022-B 单次诊断 |
+| **Task022-B** | `evidence/task022/b/resource_pressure.png` | 81426 | `6fa8a3a219f53041...` | Evidence | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/acceptance.json` | 1320 | `bee5e803def29672...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/diagnostic_runner.py` | 15152 | `f7fddb160b4bf86c...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/config.json` | 9307 | `2fb7f30bf3892e88...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/configuration.json` | 976 | `9f63d96cd65cfc2d...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/diagnostic.jsonl` | 518 | `d48f35d2b580f53e...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/events.jsonl` | 3385 | `908f05207d3b0e19...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/exit.json` | 123 | `e582695ecb3b51ba...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/formal_gate_supervisor.jsonl` | 256 | `ac0df2f0276a314a...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/formal_gate_worker.jsonl` | 259 | `ba245ac660ae141b...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/launch.json` | 490 | `bc86c2aab7de2caf...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/policy_postprocessor.json` | 575 | `d1d73a18f14aca0e...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/policy_preprocessor.json` | 1635 | `442ac4352dce2547...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/preflight.json` | 2866 | `76056243a77a55a8...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/reproduction.jsonl` | 123 | `21a3c7ea07ed2eea...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/resources_supervisor.jsonl` | 15201 | `9787654e165c186e...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/resources_worker.jsonl` | 988 | `8877a59bf363f3f3...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/summary.json` | 638 | `4c68c8194db39e98...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/logs/worker.log` | 748 | `bef7239f7d7f7a4a...` | Data | Task022-B 单次诊断 |
+| **Task022-B** | `results/task022/b/metrics/summary.json` | 3108 | `7ce75bbbbbf65ab1...` | Data | Task022-B 单次诊断 |

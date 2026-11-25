@@ -1,0 +1,21 @@
+{
+  "seed": 201,
+  "mode": "task022_b",
+  "inferences": 0,
+  "steps": 0,
+  "official_success": null,
+  "status": "RESOURCE_PRESSURE",
+  "task_id": 5,
+  "suite": "libero_10",
+  "object": "black_book_1",
+  "target": "desk_caddy_1_back_contain_region",
+  "official_initial_state_index": 34,
+  "reset_rng_seed": 201,
+  "model_loaded": true,
+  "run_id": "diagnostic_index_34_rng_201_1795571278349401651",
+  "reset_reference_verified": true,
+  "initial_state_asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+  "preflight": "PASS",
+  "source": "Workbench Worker CLI",
+  "terminal_reason": "resource_pressure"
+}

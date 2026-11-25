@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".venv_xvla/bin/python",
+    "-u",
+    "scripts/task022_index34_diagnostic.py",
+    "--task021-b2b",
+    "--official-initial-state-index",
+    "34",
+    "--reset-rng-seed",
+    "201",
+    "--seed",
+    "201",
+    "--directory",
+    "./results/task022/b/runs/diagnostic_index_34_rng_201_1795571278349401651"
+  ],
+  "cwd": ".",
+  "run_id": "diagnostic_index_34_rng_201_1795571278349401651",
+  "utc_start": "2026-11-25T01:47:58.352512+00:00",
+  "authorized_attempts": 1
+}

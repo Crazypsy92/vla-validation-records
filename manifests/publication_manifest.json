@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-25",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 342,
-  "total_size_kb": 23485.56,
+  "total_files": 365,
+  "total_size_kb": 23736.96,
   "files": [
     {
       "path": ".gitignore",
@@ -13,17 +13,17 @@
     },
     {
       "path": "README.md",
-      "size": 14607,
-      "sha256": "e439429f2049528bc379c6e8046301dfd2f19354ff1823ed6e83a8e65c3a81e7",
-      "category": "Config",
-      "task": "Task021 navigation"
+      "size": 14852,
+      "sha256": "a0539f5b82e2f53ff168d203d7ffdec30bd76c8f7ccc8ae7816ac05e55627626",
+      "category": "Report",
+      "task": "Task022-B"
     },
     {
       "path": "TASKS.md",
-      "size": 5532,
-      "sha256": "43722864bba8972883bc76453e7f9a0f46380b8fd23efb4f8f69c00865bef5d0",
-      "category": "Config",
-      "task": "Task021 status index"
+      "size": 5344,
+      "sha256": "c19b034b289ad288b8c2a008b5d7037b22e87334d788ea28677a1e0daf57f07f",
+      "category": "Report",
+      "task": "Task022-B"
     },
     {
       "path": "docs/VLA_Project_Work_Roadmap.md",
@@ -2397,6 +2397,167 @@
       "category": "Evidence",
       "size": 7738,
       "sha256": "0ce09d76f5381ab085b41924d3aa29e3d126ee81f931e7c188f50083b7794f42"
+    },
+    {
+      "path": "docs/task022_index34_diagnostic.md",
+      "size": 5022,
+      "sha256": "e7a65ebd2efc2bad21e4a0cf23830db7f11629c57910bcc5fd450c8b7d761776",
+      "category": "Report",
+      "task": "Task022-B"
+    },
+    {
+      "path": "evidence/task022/b/0000_workspace.png",
+      "size": 65633,
+      "sha256": "8e430f56f86252f2e44c4b47de34b339bbaa0c7c6a425e999e761f57c0ac02b9",
+      "category": "Evidence",
+      "task": "Task022-B"
+    },
+    {
+      "path": "evidence/task022/b/0000_wrist.png",
+      "size": 47626,
+      "sha256": "974ecf57dc8917b7f7d83c687a52f45409e6e1a2209f30b321a2bb2641ace57c",
+      "category": "Evidence",
+      "task": "Task022-B"
+    },
+    {
+      "path": "evidence/task022/b/resource_pressure.png",
+      "size": 81426,
+      "sha256": "6fa8a3a219f53041dde74f59ec8579758c4576ce2f4790463de0bbfc3d0ce535",
+      "category": "Evidence",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/acceptance.json",
+      "size": 1320,
+      "sha256": "bee5e803def2967234322b5f8980f6a846720e4a80be7546b3e2d30ab78ac504",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/diagnostic_runner.py",
+      "size": 15152,
+      "sha256": "f7fddb160b4bf86cf547797f478925bf26ab4a1c58758397131bcb221fe5bb1a",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/config.json",
+      "size": 9307,
+      "sha256": "2fb7f30bf3892e882997e77af2defdbc29d3c29981c3c4a563820a0178fe0816",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/configuration.json",
+      "size": 976,
+      "sha256": "9f63d96cd65cfc2d297efbe0d6fd6897bcc9a00dc3b0cf0658d8c895224980e7",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/diagnostic.jsonl",
+      "size": 518,
+      "sha256": "d48f35d2b580f53e7da0150a6b7a1a5295444c82788ffc2c9cf5f509f3ac5b5d",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/events.jsonl",
+      "size": 3385,
+      "sha256": "908f05207d3b0e1951bbd71694184dbbebcbf021568ab97b40bf496dd333268d",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/exit.json",
+      "size": 123,
+      "sha256": "e582695ecb3b51ba587ef8aa06d2ca0d8caa430325f9d3cc82630e70bc19ccaa",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/formal_gate_supervisor.jsonl",
+      "size": 256,
+      "sha256": "ac0df2f0276a314ae0fc2e1d9b98fc21dc603663c62b41cc8353cc8f0434b126",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/formal_gate_worker.jsonl",
+      "size": 259,
+      "sha256": "ba245ac660ae141bb2171812472f0db441984204d9b5a7bcb7bdfb560b0780ee",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/launch.json",
+      "size": 490,
+      "sha256": "bc86c2aab7de2cafda2a6222b2eddd0df49eb51c31f7a0ad5b5743c612bae644",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/policy_postprocessor.json",
+      "size": 575,
+      "sha256": "d1d73a18f14aca0e9db7cdbb3eb536adadf4960947347cb1645c9a246ea0acb4",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/policy_preprocessor.json",
+      "size": 1635,
+      "sha256": "442ac4352dce2547f7fec60a89034f14bff5240bd8d52395e14eaef5a3d6c2a6",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/preflight.json",
+      "size": 2866,
+      "sha256": "76056243a77a55a8eb34582760a6fd8f08d8206b64408de79419a60c1b71f5b1",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/reproduction.jsonl",
+      "size": 123,
+      "sha256": "21a3c7ea07ed2eeac75c715bdb8f2979187fb7cd1e8b544855d60b7737fb5a85",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/resources_supervisor.jsonl",
+      "size": 15201,
+      "sha256": "9787654e165c186ed29a29a986b9796f354a14fcb93a1803c5d4661b42509715",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/resources_worker.jsonl",
+      "size": 988,
+      "sha256": "8877a59bf363f3f3224c33c70a6432b513c043b83feacaddb4f32af2fa5bb34a",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/summary.json",
+      "size": 638,
+      "sha256": "4c68c8194db39e98967011076b9fb6fba7d873fe7e4afb3da10a24002cb9a289",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/logs/worker.log",
+      "size": 748,
+      "sha256": "bef7239f7d7f7a4a478aa975df0baea80abd39f47de20a9e91fd3fd7ebecf4d7",
+      "category": "Data",
+      "task": "Task022-B"
+    },
+    {
+      "path": "results/task022/b/metrics/summary.json",
+      "size": 3108,
+      "sha256": "7ce75bbbbbf65ab1f249c5817f90c0a97253465dea96f5a9017e85e083f12b8a",
+      "category": "Data",
+      "task": "Task022-B"
     }
   ]
 }
