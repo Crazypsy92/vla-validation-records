@@ -1,8 +1,8 @@
 {
-  "archive_date": "2026-11-24",
+  "archive_date": "2026-11-25",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 332,
-  "total_size_kb": 21023.2,
+  "total_files": 342,
+  "total_size_kb": 23485.56,
   "files": [
     {
       "path": ".gitignore",
@@ -13,15 +13,15 @@
     },
     {
       "path": "README.md",
-      "size": 14614,
-      "sha256": "75bfd33f71b10d4ba3ae3a013ceda192f39f1c0fdba8c903029d865bf199dfd8",
+      "size": 14607,
+      "sha256": "e439429f2049528bc379c6e8046301dfd2f19354ff1823ed6e83a8e65c3a81e7",
       "category": "Config",
       "task": "Task021 navigation"
     },
     {
       "path": "TASKS.md",
-      "size": 5551,
-      "sha256": "450a58b680e09e22516977c3493c65ea71407426e85e0daf399139ab0a3cb980",
+      "size": 5532,
+      "sha256": "43722864bba8972883bc76453e7f9a0f46380b8fd23efb4f8f69c00865bef5d0",
       "category": "Config",
       "task": "Task021 status index"
     },
@@ -2327,6 +2327,76 @@
       "category": "Evidence",
       "size": 907,
       "sha256": "dd139a78d8d7d45020fd0365edfab82a239d777777b9427a32be34b0765c24ab"
+    },
+    {
+      "path": "docs/task022_index34_failure_forensics.md",
+      "task": "Task 022",
+      "category": "Report",
+      "size": 9371,
+      "sha256": "d6db904b4f7993e79717581b5f9699a7956d69e0091f7409deeab4c0e5622193"
+    },
+    {
+      "path": "results/task022/a/acceptance.json",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 1523,
+      "sha256": "d1655154c194ab5956d15d2920e52e35a5eb1808c2b19b62ff19bbcc7a34e2da"
+    },
+    {
+      "path": "results/task022/a/audit.py",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 19789,
+      "sha256": "a9b378220ec2247159da1d8e2c9f6642bce703e3b1736de4810e58bbb4b79e82"
+    },
+    {
+      "path": "results/task022/a/metrics/index_15_trajectory.json",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 403354,
+      "sha256": "05bcfe32319937b9fa5b970af6c07146ea8b7c6f8f3d4dee13edc27a2a352d43"
+    },
+    {
+      "path": "results/task022/a/metrics/index_34_trajectory.json",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 1073358,
+      "sha256": "a1404cf172664f412a2470aa3c7282b6f934d0742be79d0afbc5c554fffcda82"
+    },
+    {
+      "path": "results/task022/a/metrics/summary.json",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 123357,
+      "sha256": "0262103e853ee78873b5b049b274db0f5cddcab67f2a1e226ad0c92267937293"
+    },
+    {
+      "path": "evidence/task022/a/index_15_video_keyframes.jpg",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 160864,
+      "sha256": "91e51c054badcfd5918169775ce0ccb9b6b26e2665abc4cbd516ab437f78feb1"
+    },
+    {
+      "path": "evidence/task022/a/index_34_video_keyframes.jpg",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 275147,
+      "sha256": "fb85e954530d9f147b9e3a5f8f61733c3f10055cd163a255fcbf3e170cc85ba9"
+    },
+    {
+      "path": "evidence/task022/a/trajectory_comparison.png",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 446976,
+      "sha256": "65be4463cbd4f5523252791534f7466b7a51fbe8a83460319ecd5d4bdd6f690f"
+    },
+    {
+      "path": "results/task022/a/logs/audit.log",
+      "task": "Task 022",
+      "category": "Evidence",
+      "size": 7738,
+      "sha256": "0ce09d76f5381ab085b41924d3aa29e3d126ee81f931e7c188f50083b7794f42"
     }
   ]
 }

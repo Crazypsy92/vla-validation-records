@@ -13,7 +13,7 @@
 | Task019-R1（Task019返修） | **回放数据可信度与桌面显示修复** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | R1-01～R1-08 通过；内部回放通过。外部播放器未验证，模型前向按范围未重跑；进入 Task020 |
 | Task020-R1 | **Workbench 书本抓放官方任务验证** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 2 个官方成功、1 个资源中断未完成，物理释放未验证。 [结题报告](docs/task020_goal_met_with_limitations.md) · [Phase 4 阻断报告](docs/task020_r1_phase4_seed203_results.md) |
 | Task021 | **LIBERO Task 5 初始状态泛化验证** | [#5](https://github.com/Crazypsy92/vla-validation-records/issues/5) | **ACCEPTED_PARTIAL / 已关闭** | 两个官方新初态：index 15 成功（201 步、7 前向），index 34 失败（520 步、18 前向）；工程验收通过，模型任务成功 1/2。 [结题报告](docs/task021_initial_state_generalization.md) |
-| Task022-A | **index34 末端放置失败离线根因审计** | [#10](https://github.com/Crazypsy92/vla-validation-records/issues/10) | **OPEN / 待执行** | Stage A：只读历史轨迹、命令与反馈、目标几何及接触；0 模型前向、0 正式回合。Stage A 验收后再议后续。 |
+| Task022-A | **index34 末端放置失败离线根因审计** | [#10](https://github.com/Crazypsy92/vla-validation-records/issues/10) | **Stage A 待审核** | [离线报告](docs/task022_index34_failure_forensics.md)，唯一根因未确定，未运行模型或启动 Stage B。 |
 
 ## 历史归档
 

@@ -2,13 +2,13 @@
 
 ## 一、归档发布总览
 
-- **归档时间**：2026-11-24
+- **归档时间**：2026-11-25
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL）
-- **白名单发布文件总数**：332 个
-- **总归档体积**：21023.20 KB
+- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL），以及 Task022-A 离线审计
+- **白名单发布文件总数**：342 个
+- **总归档体积**：23485.56 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 332 项）
+## 二、白名单发布文件清单（共 342 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **Task021 navigation** | `README.md` | 14614 | `75bfd33f71b10d4b...` | Config | Task021 阶段 B2b |
-| **Task021 status index** | `TASKS.md` | 5551 | `450a58b680e09e22...` | Config | Task021 阶段 B2b |
+| **Task021 navigation** | `README.md` | 14607 | `e439429f2049528b...` | Config | Task022-A 离线审计 |
+| **Task021 status index** | `TASKS.md` | 5532 | `43722864bba89728...` | Config | Task022-A 离线审计 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -362,6 +362,17 @@
 | **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/resources_worker.jsonl` | 26995 | `eddd91dde24576dd...` | Evidence | Task021 阶段 B2b |
 | **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/summary.json` | 1504 | `4294a46a4822e3c1...` | Evidence | Task021 阶段 B2b |
 | **Task 021** | `results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532/worker_exit_code.txt` | 2 | `9a271f2a916b0b6e...` | Evidence | Task021 阶段 B2b |
+
+| **Task 022** | `docs/task022_index34_failure_forensics.md` | 9371 | `d6db904b4f7993e7...` | Report | Task022-A 离线审计 |
+| **Task 022** | `evidence/task022/a/index_15_video_keyframes.jpg` | 160864 | `91e51c054badcfd5...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `evidence/task022/a/index_34_video_keyframes.jpg` | 275147 | `fb85e954530d9f14...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `evidence/task022/a/trajectory_comparison.png` | 446976 | `65be4463cbd4f552...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `results/task022/a/acceptance.json` | 1523 | `d1655154c194ab59...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `results/task022/a/audit.py` | 19789 | `a9b378220ec22471...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `results/task022/a/logs/audit.log` | 7738 | `0ce09d76f5381ab0...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `results/task022/a/metrics/index_15_trajectory.json` | 403354 | `05bcfe32319937b9...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `results/task022/a/metrics/index_34_trajectory.json` | 1073358 | `a1404cf172664f41...` | Evidence | Task022-A 离线审计 |
+| **Task 022** | `results/task022/a/metrics/summary.json` | 123357 | `0262103e853ee788...` | Evidence | Task022-A 离线审计 |
 
 ---
 

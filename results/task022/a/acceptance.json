@@ -1,0 +1,45 @@
+{
+  "task": "Task022-A",
+  "status": "REVIEW",
+  "root_cause": "ROOT_CAUSE_UNDETERMINED",
+  "model_loads": 0,
+  "new_inferences": 0,
+  "new_formal_runs": 0,
+  "historical_sources_modified": false,
+  "source_run_ids": {
+    "15": "b2a_index_15_rng_201_1795493022081788638",
+    "34": "b2b_index_34_rng_201_1795501086954054532"
+  },
+  "audit_exit_code": 0,
+  "audit_command": "MPLBACKEND=Agg .venv_xvla/bin/python results/task022/a/audit.py",
+  "checks": [
+    {
+      "id": "A1",
+      "status": "PASS",
+      "evidence": "Both exact configurations, source hashes, continuous actions and 7/18 inputs verified; 201/520 step events, 0 invalid action rows.",
+      "paths": [
+        "metrics/summary.json",
+        "logs/audit.log"
+      ]
+    },
+    {
+      "id": "A2",
+      "status": "PASS",
+      "evidence": "723 states transformed and compared; 723 video frames decoded, annotated keyframes reviewed; site and contact geometry reconstructed with explicit limits.",
+      "paths": [
+        "metrics/index_15_trajectory.json",
+        "metrics/index_34_trajectory.json",
+        "../../../evidence/task022/a/trajectory_comparison.png"
+      ]
+    },
+    {
+      "id": "A3",
+      "status": "PASS",
+      "evidence": "Four alternatives assessed; unique physical root cause remains undetermined due to missing dynamic site, contact and controller telemetry. Minimal follow-up only proposed.",
+      "paths": [
+        "metrics/summary.json",
+        "../../../docs/task022_index34_failure_forensics.md"
+      ]
+    }
+  ]
+}
