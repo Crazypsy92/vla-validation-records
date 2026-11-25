@@ -1,0 +1,24 @@
+{
+  "status": "BLOCKED_RESOURCE",
+  "worker_started": false,
+  "exit_code": null,
+  "reason": "supervisor_start_gate",
+  "before": {
+    "pid": 161415,
+    "rss_mib": 20,
+    "pss_mib": 17,
+    "total_mib": 7798,
+    "available_mib": 6381,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 348
+  },
+  "after": {
+    "pid": 161415,
+    "rss_mib": 20,
+    "pss_mib": 17,
+    "total_mib": 7798,
+    "available_mib": 6381,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 348
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "configuration_sha256": "9f63d96cd65cfc2d297efbe0d6fd6897bcc9a00dc3b0cf0658d8c895224980e7",
+  "hashes": {
+    "model.safetensors": {
+      "sha256": "2a0e29448111df56b9485cb1f964db799205794c49baeda48ef960589ce649ab",
+      "bytes": 3519073692
+    },
+    "config.json": {
+      "sha256": "2fb7f30bf3892e882997e77af2defdbc29d3c29981c3c4a563820a0178fe0816",
+      "bytes": 9307
+    },
+    "policy_preprocessor.json": {
+      "sha256": "442ac4352dce2547f7fec60a89034f14bff5240bd8d52395e14eaef5a3d6c2a6",
+      "bytes": 1635
+    },
+    "policy_postprocessor.json": {
+      "sha256": "d1d73a18f14aca0e9db7cdbb3eb536adadf4960947347cb1645c9a246ea0acb4",
+      "bytes": 575
+    }
+  },
+  "revision": "8e6aeef01f634f5d3b5be4340328f19cc2c25a65",
+  "checked_history_files": 82,
+  "versions": {
+    "lerobot": "0.7.0",
+    "hf-libero": "0.1.5",
+    "robosuite": "1.4.0",
+    "mujoco": "3.8.1",
+    "torch": "2.15.0+cpu"
+  },
+  "bddl_sha256": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f",
+  "fingerprint": {
+    "instruction": "pick up the book and place it in the back compartment of the caddy",
+    "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+    "official_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+    "initial_state_asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+    "rgb_array_sha256": {
+      "workspace": "6b537241e483c67a1fa3415cb64285a7b2b4b3481661e262c7aac8ec408895f0",
+      "wrist": "c6da7ef840abfbde68a68ab2fbcbad67be098ab55f7641e270ce83e6ea031076"
+    }
+  },
+  "source_entry_sha256": "485b4e909ac04b574798d55025ae2ba18377b4235fd2126349d786e562ea7cef",
+  "project_path": "vla-learning",
+  "archive_path": "vla-validation-task022-c",
+  "history_path": "results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532"
+}

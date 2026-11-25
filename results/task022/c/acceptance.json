@@ -1,0 +1,17 @@
+{
+  "task": "Task022-C",
+  "review_status": "REVIEW",
+  "status": "BLOCKED_RESOURCE",
+  "checks": {
+    "C-A": "PASS",
+    "C-B": "PASS",
+    "C-C": "PASS",
+    "C-D": "BLOCKED_RESOURCE",
+    "C-E": "BLOCKED_RESOURCE",
+    "C-F": "PASS",
+    "C-G": "PASS"
+  },
+  "c3_worker_started": false,
+  "c3_blocker": "prelaunch_swap_floor",
+  "run_id": "preflight_index34_1795574666075878409"
+}

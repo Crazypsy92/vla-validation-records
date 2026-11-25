@@ -1,0 +1,2 @@
+{"time": 1795574696.9767115, "phase": "supervisor_before_child", "level": "PASS", "reason": "boundary_checked", "samples": [{"pid": 161415, "rss_mib": 22, "pss_mib": 13, "total_mib": 7798, "available_mib": 6171, "swap_total_mib": 2048, "swap_free_mib": 356}]}
+{"time": 1795574741.6590672, "phase": "reset_only_before_environment", "level": "PASS", "reason": "boundary_checked", "samples": [{"pid": 161443, "rss_mib": 677, "pss_mib": 670, "total_mib": 7798, "available_mib": 5898, "swap_total_mib": 2048, "swap_free_mib": 356}]}

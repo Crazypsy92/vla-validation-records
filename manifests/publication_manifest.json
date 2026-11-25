@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-25",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 365,
-  "total_size_kb": 23736.96,
+  "total_files": 397,
+  "total_size_kb": 23946.76,
   "files": [
     {
       "path": ".gitignore",
@@ -13,17 +13,17 @@
     },
     {
       "path": "README.md",
-      "size": 14852,
-      "sha256": "a0539f5b82e2f53ff168d203d7ffdec30bd76c8f7ccc8ae7816ac05e55627626",
+      "size": 14942,
+      "sha256": "d3ca58bd18eb9c81a52d17649b31ebebd83967a4c348b0589d409d1362ddb3e0",
       "category": "Report",
-      "task": "Task022-B"
+      "task": "Task022-C"
     },
     {
       "path": "TASKS.md",
-      "size": 5344,
-      "sha256": "c19b034b289ad288b8c2a008b5d7037b22e87334d788ea28677a1e0daf57f07f",
+      "size": 5662,
+      "sha256": "f84afa678acd0b1e4f8e3326ba83f4f93a11e9dcca7a74325c23b3ad0a8ed146",
       "category": "Report",
-      "task": "Task022-B"
+      "task": "Task022-C"
     },
     {
       "path": "docs/VLA_Project_Work_Roadmap.md",
@@ -2400,10 +2400,10 @@
     },
     {
       "path": "docs/task022_index34_diagnostic.md",
-      "size": 5022,
-      "sha256": "e7a65ebd2efc2bad21e4a0cf23830db7f11629c57910bcc5fd450c8b7d761776",
+      "size": 5200,
+      "sha256": "02140a88d3c8681d22d0d1ac3aab0080a85e73af2df722ec223e3fc44220fb01",
       "category": "Report",
-      "task": "Task022-B"
+      "task": "Task022-C"
     },
     {
       "path": "evidence/task022/b/0000_workspace.png",
@@ -2430,13 +2430,6 @@
       "path": "results/task022/b/acceptance.json",
       "size": 1320,
       "sha256": "bee5e803def2967234322b5f8980f6a846720e4a80be7546b3e2d30ab78ac504",
-      "category": "Data",
-      "task": "Task022-B"
-    },
-    {
-      "path": "results/task022/b/diagnostic_runner.py",
-      "size": 15152,
-      "sha256": "f7fddb160b4bf86cf547797f478925bf26ab4a1c58758397131bcb221fe5bb1a",
       "category": "Data",
       "task": "Task022-B"
     },
@@ -2558,6 +2551,237 @@
       "sha256": "7ce75bbbbbf65ab1f249c5817f90c0a97253465dea96f5a9017e85e083f12b8a",
       "category": "Data",
       "task": "Task022-B"
+    },
+    {
+      "path": "docs/task022_index34_resource_preflight.md",
+      "size": 3938,
+      "sha256": "73dcc3b5e99ab15c4af0cf600f21fe575b1876216a82e6b5cdde976c6b5160e4",
+      "category": "Report",
+      "task": "Task022-C"
+    },
+    {
+      "path": "scripts/task022_index34_diagnostic.py",
+      "size": 13296,
+      "sha256": "485b4e909ac04b574798d55025ae2ba18377b4235fd2126349d786e562ea7cef",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "evidence/task022/c/0000_workspace.png",
+      "size": 65633,
+      "sha256": "8e430f56f86252f2e44c4b47de34b339bbaa0c7c6a425e999e761f57c0ac02b9",
+      "category": "Evidence",
+      "task": "Task022-C"
+    },
+    {
+      "path": "evidence/task022/c/0000_wrist.png",
+      "size": 47626,
+      "sha256": "974ecf57dc8917b7f7d83c687a52f45409e6e1a2209f30b321a2bb2641ace57c",
+      "category": "Evidence",
+      "task": "Task022-C"
+    },
+    {
+      "path": "evidence/task022/c/reset_resource_curve.png",
+      "size": 66618,
+      "sha256": "af127e50c7c1e2248f8c23ed5ccf5050eda266eb63adcb7c351b240fdce8886e",
+      "category": "Evidence",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/acceptance.json",
+      "size": 385,
+      "sha256": "7f67be70a65f11d9c31dd54bb852a5e95bea854c84dcceabf90cc274be54823a",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/baseline.json",
+      "size": 1894,
+      "sha256": "91e27e2bc2d4980aeaf0e45ee2bc7f585a199e895b1daad1b08fe96ad2d3e1cb",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/combined/exit.json",
+      "size": 477,
+      "sha256": "3f6ea8028b70650cedb597c1d6998c43e2d09e706f2e15eed5506af37e942b77",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/combined/formal_gate_preflight.jsonl",
+      "size": 259,
+      "sha256": "9288d53d5a083185cbb94b1e2eb91d077a62ac9edc7fae3195133400f52bedbd",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/combined/gates.jsonl",
+      "size": 231,
+      "sha256": "d36ad86a6c14ddc42089bfd17afbe81c1a3edfa6bbd5b32681ecf7187d1980a9",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/combined/resources_supervisor.jsonl",
+      "size": 193,
+      "sha256": "c9fd1bf0af774d42a8d19a2ff8c9e23d5e1e106094e26e0fd84716c262b94288",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/launch.json",
+      "size": 370,
+      "sha256": "9ce7900a58198d371a1cfc1ab566f0edafb5caae7039402792f5e0e75898e08e",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/exit.json",
+      "size": 747,
+      "sha256": "d7998a06f7d8fe9658fafe49c6f2a17f97378c3a29b7674c5c5e1246508eec4c",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/formal_gate_preflight.jsonl",
+      "size": 528,
+      "sha256": "65c7342598a25a8edd72b6003ec0619832443654aa9552f66be06ea0e83a6087",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/gates.jsonl",
+      "size": 456,
+      "sha256": "12d9f451385f3de7ee97e439b8ba785a5d3f92bfae2926c36c638ea207ac7b60",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/resources_child.jsonl",
+      "size": 1206,
+      "sha256": "2d486859ab0a986600608c49ea377964bf944f50ce6330d0cf5a6f8c93554d5f",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/resources_supervisor.jsonl",
+      "size": 13248,
+      "sha256": "b9dcd4d3c71f07718d1abb968625958d088f41f6f78c102f4e15993a1112e22a",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/resources_worker.jsonl",
+      "size": 397,
+      "sha256": "6cadec054efb31d4963fb894a2dfd2811471f4bce1f182d6d49eae2365ff6800",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/result.json",
+      "size": 896,
+      "sha256": "5acd1cd6a810b2576ad8cca112212d32505f1fcd9b8d6ae059dfa4a779c2f733",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/reset_only/worker.log",
+      "size": 599,
+      "sha256": "41b960236d25f04449b8dda4a5d136ffd6eb3464433f0423306b07b02a5d5967",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle/summary.json",
+      "size": 139,
+      "sha256": "d29e5e86a14384a18bb845ef4ce2935e1030100e401bdc774782d85adf716069",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/lifecycle_exit.json",
+      "size": 21,
+      "sha256": "81868a6e94ffc0178bf833deb1c9013d9fab4ee95ddb876a5e8ec4f1d26376d2",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_archive_root/baseline.json",
+      "size": 1894,
+      "sha256": "91e27e2bc2d4980aeaf0e45ee2bc7f585a199e895b1daad1b08fe96ad2d3e1cb",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_archive_root/launch.json",
+      "size": 382,
+      "sha256": "d991ea2df1da90e0ec123d97bad615e78e113ac36c69f3db88a9ed677cdfc4ac",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_archive_root/summary.json",
+      "size": 102,
+      "sha256": "1060a8d4badaa498b7b635d0de8a12c4f181e9d12711530f78b6e53370746b5f",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_checks.json",
+      "size": 1095,
+      "sha256": "3ead81b3465b7ffb9b487e526b746d3ef4d547536566e99292093acd619b00c5",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_other_cwd/baseline.json",
+      "size": 1894,
+      "sha256": "91e27e2bc2d4980aeaf0e45ee2bc7f585a199e895b1daad1b08fe96ad2d3e1cb",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_other_cwd/launch.json",
+      "size": 371,
+      "sha256": "832544be6f78ee40157c48e88f8c9c6c4b164dd0b546949cb84c90b86c0bf886",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_other_cwd/summary.json",
+      "size": 102,
+      "sha256": "1060a8d4badaa498b7b635d0de8a12c4f181e9d12711530f78b6e53370746b5f",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_project_root/baseline.json",
+      "size": 1894,
+      "sha256": "91e27e2bc2d4980aeaf0e45ee2bc7f585a199e895b1daad1b08fe96ad2d3e1cb",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_project_root/launch.json",
+      "size": 384,
+      "sha256": "92d7bbbb69cd4a7d0d1c02c17d536e8ea6fd8010eb04aaa74ca8553789a94596",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/logs/static_project_root/summary.json",
+      "size": 102,
+      "sha256": "1060a8d4badaa498b7b635d0de8a12c4f181e9d12711530f78b6e53370746b5f",
+      "category": "Data",
+      "task": "Task022-C"
+    },
+    {
+      "path": "results/task022/c/metrics/summary.json",
+      "size": 2026,
+      "sha256": "7fcaca6cff1b7a2e312ca6852c91c9e3f677a0689c7a7dd28c7bbe4ea6c0d900",
+      "category": "Data",
+      "task": "Task022-C"
     }
   ]
 }

@@ -19,7 +19,7 @@ Task021 的 index34 原失败回合和 index15 对照记录由 Task022-A 清单�
 .venv_xvla/bin/python -u scripts/task022_index34_diagnostic.py --task021-b2b --official-initial-state-index 34 --reset-rng-seed 201 --seed 201 --directory ./results/task022/b/runs/diagnostic_index_34_rng_201_1795571278349401651
 ```
 
-[诊断入口](../results/task022/b/diagnostic_runner.py) · [真实启动命令](../results/task022/b/logs/launch.json) · [退出记录](../results/task022/b/logs/exit.json) · [基线指纹](../results/task022/b/logs/preflight.json) · [原任务离线审计](task022_index34_failure_forensics.md)
+[Task022-B 历史诊断脚本](https://github.com/Crazypsy92/vla-validation-records/blob/e437162a365f99bbd849b596f4ef80f711cebf0e/results/task022/b/diagnostic_runner.py) · [当前规范入口](../scripts/task022_index34_diagnostic.py) · [真实启动命令](../results/task022/b/logs/launch.json) · [退出记录](../results/task022/b/logs/exit.json) · [基线指纹](../results/task022/b/logs/preflight.json) · [原任务离线审计](task022_index34_failure_forensics.md)
 
 ## 实际停止点与轨迹对照
 

@@ -14,7 +14,7 @@
 
 ---
 
-> **Task019-R1 验收结论（2026-11-23）**：回放数据源、状态字段、JSON/manifest、WSLg 桌面显示、指标定义及视频哈希已完成复核，按 `ACCEPTED_WITH_LIMITATIONS` 关闭；内部 Workbench 回放通过，外部播放器未验证，且本轮按范围未重跑模型/仿真。返修报告见 [task019-review 分支](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md)。Task020 已验收并关闭。当前唯一待执行任务为 [Task021 / Issue #5](https://github.com/Crazypsy92/vla-validation-records/issues/5)，验证同一书本任务在新的官方初始状态下的泛化能力。
+> **Task019-R1 验收结论（2026-11-23）**：回放数据源、状态字段、JSON/manifest、WSLg 桌面显示、指标定义及视频哈希已完成复核，按 `ACCEPTED_WITH_LIMITATIONS` 关闭；内部 Workbench 回放通过，外部播放器未验证，且本轮按范围未重跑模型/仿真。返修报告见 [task019-review 分支](https://github.com/Crazypsy92/vla-validation-records/blob/task019-review/docs/task019_r1_repair.md)。Task020 已验收并关闭。Task021 已按 ACCEPTED_PARTIAL 验收并关闭。
 
 ## ⚠️ 重要声明与验证边界 (Important Disclaimers)
 
@@ -107,7 +107,8 @@ flowchart LR
 2. **Task020（已验收，有限边界）** 已验证 Workbench 书本抓放达到 LIBERO 官方成功。Seed 203 的资源中断仍保留在验收记录中。
 3. **Task021（已验收，PARTIAL）**：新初态 index15 官方成功、index34 到 520 步上限失败（1/2）；不等于跨物体或跨任务泛化。
 4. **Task022-A（ACCEPTED_WITH_LIMITATIONS）**：已离线核对 index 34 的末端对准、抓持与官方判定。 [审计报告](docs/task022_index34_failure_forensics.md) · [Issue #10](https://github.com/Crazypsy92/vla-validation-records/issues/10)。
-5. **Task022-B（BLOCKED_RESOURCE，待审核）** [诊断报告](docs/task022_index34_diagnostic.md) · [验收记录](results/task022/b/acceptance.json) · [Issue #12](https://github.com/Crazypsy92/vla-validation-records/issues/12)。
+5. **Task022-B（REVIEW / BLOCKED_RESOURCE）** [诊断报告](docs/task022_index34_diagnostic.md) · [验收记录](results/task022/b/acceptance.json) · [Issue #12](https://github.com/Crazypsy92/vla-validation-records/issues/12)。
+6. **Task022-C（REVIEW / BLOCKED_RESOURCE）** 为本轮唯一获授权的任务。 [资源预检报告](docs/task022_index34_resource_preflight.md) · [Issue #14](https://github.com/Crazypsy92/vla-validation-records/issues/14)。
 5. **真实机器人与边缘部署（后续）**：待机器人、相机和控制机型号明确后，再评估 ROS 2 对接、必要的数据适配、微调及 CPU/GPU/NPU 优化；当前不提前承诺实机效果。
 
 ---

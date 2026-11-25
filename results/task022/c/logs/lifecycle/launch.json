@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<workbench>/.venv_xvla/bin/python",
+    "<archive>/scripts/task022_index34_diagnostic.py",
+    "--project-root",
+    "<workbench>",
+    "--output",
+    "<workbench>/results/task022/c/runs/preflight_index34_1795574666075878409/lifecycle",
+    "--lifecycle-preflight"
+  ],
+  "cwd": "<workbench>",
+  "run_id": "lifecycle",
+  "preflight_only": false
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<workbench>/.venv_xvla/bin/python",
+    "<archive>/scripts/task022_index34_diagnostic.py",
+    "--project-root",
+    "<workbench>",
+    "--output",
+    "<workbench>/results/task022/c/runs/preflight_index34_1795574666075878409/static_other_cwd",
+    "--preflight-only"
+  ],
+  "cwd": "/tmp",
+  "run_id": "static_other_cwd",
+  "preflight_only": true
+}
