@@ -1,8 +1,8 @@
 {
   "archive_date": "2026-11-25",
   "repository": "Crazypsy92/vla-validation-records",
-  "total_files": 397,
-  "total_size_kb": 23946.76,
+  "total_files": 424,
+  "total_size_kb": 24420.01,
   "files": [
     {
       "path": ".gitignore",
@@ -13,17 +13,17 @@
     },
     {
       "path": "README.md",
-      "size": 14942,
-      "sha256": "d3ca58bd18eb9c81a52d17649b31ebebd83967a4c348b0589d409d1362ddb3e0",
+      "size": 15086,
+      "sha256": "2ea032ba5407ed40d291985403568a85516c48ff91e5f6f3575738362079cc14",
       "category": "Report",
-      "task": "Task022-C"
+      "task": "Task022-C1"
     },
     {
       "path": "TASKS.md",
-      "size": 5662,
-      "sha256": "f84afa678acd0b1e4f8e3326ba83f4f93a11e9dcca7a74325c23b3ad0a8ed146",
+      "size": 5873,
+      "sha256": "f678eb1f6f21f0f74116733190bcf55f5e210ce3110069c7d0825c08f6ffd607",
       "category": "Report",
-      "task": "Task022-C"
+      "task": "Task022-C1"
     },
     {
       "path": "docs/VLA_Project_Work_Roadmap.md",
@@ -2554,17 +2554,17 @@
     },
     {
       "path": "docs/task022_index34_resource_preflight.md",
-      "size": 3938,
-      "sha256": "73dcc3b5e99ab15c4af0cf600f21fe575b1876216a82e6b5cdde976c6b5160e4",
+      "size": 4089,
+      "sha256": "fb1ebd16af505b9a40b5168a75797b5f0afd720cbae8c62bfa5ff29879ca96d8",
       "category": "Report",
-      "task": "Task022-C"
+      "task": "Task022-C1"
     },
     {
       "path": "scripts/task022_index34_diagnostic.py",
-      "size": 13296,
-      "sha256": "485b4e909ac04b574798d55025ae2ba18377b4235fd2126349d786e562ea7cef",
+      "size": 18911,
+      "sha256": "49c9eb1368ba400c42df7e3b7d55a1cda813b2c7284b2404c6dcb06e9123307b",
       "category": "Data",
-      "task": "Task022-C"
+      "task": "Task022-C1"
     },
     {
       "path": "evidence/task022/c/0000_workspace.png",
@@ -2589,10 +2589,10 @@
     },
     {
       "path": "results/task022/c/acceptance.json",
-      "size": 385,
-      "sha256": "7f67be70a65f11d9c31dd54bb852a5e95bea854c84dcceabf90cc274be54823a",
+      "size": 689,
+      "sha256": "03e7ca185d64da76c4f9b5ba82dd86cdf46cbc624a01c8b1b53b096e9e4746c2",
       "category": "Data",
-      "task": "Task022-C"
+      "task": "Task022-C1"
     },
     {
       "path": "results/task022/c/logs/lifecycle/baseline.json",
@@ -2782,6 +2782,195 @@
       "sha256": "7fcaca6cff1b7a2e312ca6852c91c9e3f677a0689c7a7dd28c7bbe4ea6c0d900",
       "category": "Data",
       "task": "Task022-C"
+    },
+    {
+      "path": "docs/task022_index34_resource_resume.md",
+      "size": 3906,
+      "sha256": "6c93e2074feb41da9fb81a6cd89f38efe1fcc9c8bf7d0a2a86beeb1e94405b84",
+      "category": "Report",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "evidence/task022/c1/0000_workspace.png",
+      "size": 65633,
+      "sha256": "8e430f56f86252f2e44c4b47de34b339bbaa0c7c6a425e999e761f57c0ac02b9",
+      "category": "Evidence",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "evidence/task022/c1/0000_wrist.png",
+      "size": 47626,
+      "sha256": "974ecf57dc8917b7f7d83c687a52f45409e6e1a2209f30b321a2bb2641ace57c",
+      "category": "Evidence",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "evidence/task022/c1/c3_resource_curve.png",
+      "size": 123924,
+      "sha256": "16286a82fe64f5bf6ba84db46114b8fe566e76d65c8ffdbd891bb58e0ecb160a",
+      "category": "Evidence",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/acceptance.json",
+      "size": 311,
+      "sha256": "2329fb407b931254b85c5c8a689619ec6f666ca1751b1e97b795e4fd781d0d28",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/baseline_commands.jsonl",
+      "size": 529,
+      "sha256": "5390240aea20cc9123be1a0c2a7a467c003255fbf8e4ca7b36ef8a79edac481f",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/free.txt",
+      "size": 207,
+      "sha256": "c370e37855e7c953e72e2da7b0586e8ea94c7d4d3ab1f8307a744931c109c81c",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/gate_fixture/gates.jsonl",
+      "size": 808,
+      "sha256": "c2873761d8925a77a3d1262c428705665c0230fd1e015490d5e31400f9446611",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/gate_test.log",
+      "size": 55,
+      "sha256": "f3ea31b4da5ddd010a99a0c86cbef38c620b0cb8ac6382f617c432537e7542d7",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/baseline.json",
+      "size": 1895,
+      "sha256": "2ec1ace56e11d656227e8213cf869f3fa5272a5889337bb796b0a7c7dc8407d0",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/combined_resume/exit.json",
+      "size": 835,
+      "sha256": "cfb9fb76676cddf740cd352ad8351a32fa1098941d0a0bcbd190ae0daf261d7a",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/combined_resume/gates.jsonl",
+      "size": 1338,
+      "sha256": "b0cdfd818d1f3d1a31c12fdd1ce1215dc1f4507f563de4b84135524646e53272",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/combined_resume/progress.json",
+      "size": 259,
+      "sha256": "d48471a2f3652436c3e0a7b91f4455294e21fa2384b0b72f62920887b20416f3",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/combined_resume/resources_child.jsonl",
+      "size": 1815,
+      "sha256": "ba93ec6830b8e50d5a8bc6d73f89215b691ed45a947399aeed3b1a98ec8765c7",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/combined_resume/resources_supervisor.jsonl",
+      "size": 222256,
+      "sha256": "3c0b7545e0d77f1c2e6204da74a5f45c2943daa3d8f235d256063482b7efe5db",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/combined_resume/result.json",
+      "size": 944,
+      "sha256": "72a7f4c8f32e3c570ff475607ab13e498f21fcd38747d3d4b7a33dd3bc06122c",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/combined_resume/worker.log",
+      "size": 768,
+      "sha256": "4cca1097c4f16973a67fabe08abc2c58a32fe648b3a90d127c280b907233e3f1",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/launch.json",
+      "size": 367,
+      "sha256": "4a84c85edcefd30a49938763483b5045a57fbd739296d511e3d3548d89539f15",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle/summary.json",
+      "size": 129,
+      "sha256": "a46ebcc4c89304c730c4f6be68400e25e6031abe3c5a99506cf0f0e144faa1cc",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/lifecycle_exit.json",
+      "size": 17,
+      "sha256": "e89df0eae5ec7db81135aed16463968955c578bcc4f2ec43172eff351f080c17",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/meminfo.txt",
+      "size": 1475,
+      "sha256": "9ca9ec1ebff350e8329034c283fb1489b8736bd4f1d13732d2858a4a3ee75720",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/memory_psi.txt",
+      "size": 108,
+      "sha256": "6a5bc9dfd601fdb72f0c845527ff955b0d8333d3dfb4fc6003a34f42c193b545",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/oom_kill_count.txt",
+      "size": 11,
+      "sha256": "a3cb289fc1bf1f9d42e5e3195150128d433c77af6b1f8393cadf111e170ecd6b",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/swapon.txt",
+      "size": 68,
+      "sha256": "e040cd716ad8ff59d05671181686b1139159704319542745265e2f59282c7f7b",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/swaps.txt",
+      "size": 110,
+      "sha256": "18fc8dc432d9ccdfec3ebcdebf69f6ec4bb7ad8176bcf7bd07b4d1b3d2595da6",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/logs/vmstat.txt",
+      "size": 428,
+      "sha256": "b7346dfff542ab3eb71a9b9b32f01059360c9c14f48ae776d83e77347b1ebc87",
+      "category": "Data",
+      "task": "Task022-C1"
+    },
+    {
+      "path": "results/task022/c1/metrics/summary.json",
+      "size": 2366,
+      "sha256": "31b7f056ab66a54e26e270e695581d7bc871396a00456c8771c422dc5d76d2e8",
+      "category": "Data",
+      "task": "Task022-C1"
     }
   ]
 }

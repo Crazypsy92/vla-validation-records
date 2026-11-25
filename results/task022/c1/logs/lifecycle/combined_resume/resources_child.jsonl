@@ -1,0 +1,9 @@
+{"time": 1795576749.6995935, "phase": "child_imports_ready", "pid": 199100, "rss_mib": 22, "pss_mib": 15, "total_mib": 7798, "available_mib": 6466, "swap_total_mib": 2048, "swap_free_mib": 353}
+{"time": 1795576853.6365132, "phase": "model_load_start_no_environment", "pid": 199100, "rss_mib": 541, "pss_mib": 534, "total_mib": 7798, "available_mib": 5987, "swap_total_mib": 2048, "swap_free_mib": 353}
+{"time": 1795577173.3176167, "phase": "model_load_end_no_environment", "pid": 199100, "rss_mib": 3826, "pss_mib": 3824, "total_mib": 7798, "available_mib": 2655, "swap_total_mib": 2048, "swap_free_mib": 316}
+{"time": 1795577210.6879637, "phase": "before_environment_creation", "pid": 199100, "rss_mib": 3919, "pss_mib": 3917, "total_mib": 7798, "available_mib": 2663, "swap_total_mib": 2048, "swap_free_mib": 315}
+{"time": 1795577210.8408926, "phase": "after_environment_wrapper_creation", "pid": 199100, "rss_mib": 3921, "pss_mib": 3918, "total_mib": 7798, "available_mib": 2663, "swap_total_mib": 2048, "swap_free_mib": 315}
+{"time": 1795577246.52589, "phase": "after_official_reset", "pid": 199100, "rss_mib": 5597, "pss_mib": 5595, "total_mib": 7798, "available_mib": 1169, "swap_total_mib": 2048, "swap_free_mib": 0}
+{"time": 1795577247.5035672, "phase": "after_environment_close", "pid": 199100, "rss_mib": 5058, "pss_mib": 5056, "total_mib": 7798, "available_mib": 1708, "swap_total_mib": 2048, "swap_free_mib": 0}
+{"time": 1795577247.9931686, "phase": "after_model_unload", "pid": 199100, "rss_mib": 2906, "pss_mib": 2904, "total_mib": 7798, "available_mib": 3854, "swap_total_mib": 2048, "swap_free_mib": 16}
+{"time": 1795577248.4243114, "phase": "before_child_exit", "pid": 199100, "rss_mib": 2904, "pss_mib": 2902, "total_mib": 7798, "available_mib": 3858, "swap_total_mib": 2048, "swap_free_mib": 16}

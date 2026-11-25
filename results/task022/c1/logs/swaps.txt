@@ -1,0 +1,2 @@
+Filename				Type		Size		Used		Priority
+/dev/sdc                                partition	2097152		1735252		-2

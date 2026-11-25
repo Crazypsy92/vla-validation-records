@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL），以及 Task022-A 离线审计和 Task022-B 单次诊断及 Task022-C 资源预检
-- **白名单发布文件总数**：397 个
-- **总归档体积**：23946.76 KB
+- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL），以及 Task022-A 离线审计和 Task022-B 单次诊断及 Task022-C 资源预检及 Task022-C1 续跑
+- **白名单发布文件总数**：424 个
+- **总归档体积**：24420.01 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 397 项）
+## 二、白名单发布文件清单（共 424 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **Task022-C** | `README.md` | 14942 | `d3ca58bd18eb9c81...` | Report | Task022-C 资源预检 |
-| **Task022-C** | `TASKS.md` | 5662 | `f84afa678acd0b1e...` | Report | Task022-C 资源预检 |
+| **Task022-C1** | `README.md` | 15086 | `2ea032ba5407ed40...` | Report | Task022-C1 C3 续跑 |
+| **Task022-C1** | `TASKS.md` | 5873 | `f678eb1f6f21f0f7...` | Report | Task022-C1 C3 续跑 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -403,12 +403,12 @@
 | **Task022-B** | `results/task022/b/logs/summary.json` | 638 | `4c68c8194db39e98...` | Data | Task022-B 单次诊断 |
 | **Task022-B** | `results/task022/b/logs/worker.log` | 748 | `bef7239f7d7f7a4a...` | Data | Task022-B 单次诊断 |
 | **Task022-B** | `results/task022/b/metrics/summary.json` | 3108 | `7ce75bbbbbf65ab1...` | Data | Task022-B 单次诊断 |
-| **Task022-C** | `docs/task022_index34_resource_preflight.md` | 3938 | `73dcc3b5e99ab15c...` | Report | Task022-C 资源预检 |
-| **Task022-C** | `scripts/task022_index34_diagnostic.py` | 13296 | `485b4e909ac04b57...` | Data | Task022-C 资源预检 |
+| **Task022-C1** | `docs/task022_index34_resource_preflight.md` | 4089 | `fb1ebd16af505b9a...` | Report | Task022-C1 C3 续跑 |
+| **Task022-C1** | `scripts/task022_index34_diagnostic.py` | 18911 | `49c9eb1368ba400c...` | Data | Task022-C1 C3 续跑 |
 | **Task022-C** | `evidence/task022/c/0000_workspace.png` | 65633 | `8e430f56f86252f2...` | Evidence | Task022-C 资源预检 |
 | **Task022-C** | `evidence/task022/c/0000_wrist.png` | 47626 | `974ecf57dc8917b7...` | Evidence | Task022-C 资源预检 |
 | **Task022-C** | `evidence/task022/c/reset_resource_curve.png` | 66618 | `af127e50c7c1e224...` | Evidence | Task022-C 资源预检 |
-| **Task022-C** | `results/task022/c/acceptance.json` | 385 | `7f67be70a65f11d9...` | Data | Task022-C 资源预检 |
+| **Task022-C1** | `results/task022/c/acceptance.json` | 689 | `03e7ca185d64da76...` | Data | Task022-C1 C3 续跑 |
 | **Task022-C** | `results/task022/c/logs/lifecycle/baseline.json` | 1894 | `91e27e2bc2d4980a...` | Data | Task022-C 资源预检 |
 | **Task022-C** | `results/task022/c/logs/lifecycle/combined/exit.json` | 477 | `3f6ea8028b70650c...` | Data | Task022-C 资源预检 |
 | **Task022-C** | `results/task022/c/logs/lifecycle/combined/formal_gate_preflight.jsonl` | 259 | `9288d53d5a083185...` | Data | Task022-C 资源预检 |
@@ -436,3 +436,30 @@
 | **Task022-C** | `results/task022/c/logs/static_project_root/launch.json` | 384 | `92d7bbbb69cd4a7d...` | Data | Task022-C 资源预检 |
 | **Task022-C** | `results/task022/c/logs/static_project_root/summary.json` | 102 | `1060a8d4badaa498...` | Data | Task022-C 资源预检 |
 | **Task022-C** | `results/task022/c/metrics/summary.json` | 2026 | `7fcaca6cff1b7a2e...` | Data | Task022-C 资源预检 |
+| **Task022-C1** | `docs/task022_index34_resource_resume.md` | 3906 | `6c93e2074feb41da...` | Report | Task022-C1 C3 续跑 |
+| **Task022-C1** | `evidence/task022/c1/0000_workspace.png` | 65633 | `8e430f56f86252f2...` | Evidence | Task022-C1 C3 续跑 |
+| **Task022-C1** | `evidence/task022/c1/0000_wrist.png` | 47626 | `974ecf57dc8917b7...` | Evidence | Task022-C1 C3 续跑 |
+| **Task022-C1** | `evidence/task022/c1/c3_resource_curve.png` | 123924 | `16286a82fe64f5bf...` | Evidence | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/acceptance.json` | 311 | `2329fb407b931254...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/baseline_commands.jsonl` | 529 | `5390240aea20cc91...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/free.txt` | 207 | `c370e37855e7c953...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/gate_fixture/gates.jsonl` | 808 | `c2873761d8925a77...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/gate_test.log` | 55 | `f3ea31b4da5ddd01...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/baseline.json` | 1895 | `2ec1ace56e11d656...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/combined_resume/exit.json` | 835 | `cfb9fb76676cddf7...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/combined_resume/gates.jsonl` | 1338 | `b0cdfd818d1f3d1a...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/combined_resume/progress.json` | 259 | `d48471a2f3652436...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/combined_resume/resources_child.jsonl` | 1815 | `ba93ec6830b8e50d...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/combined_resume/resources_supervisor.jsonl` | 222256 | `3c0b7545e0d77f1c...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/combined_resume/result.json` | 944 | `72a7f4c8f32e3c57...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/combined_resume/worker.log` | 768 | `4cca1097c4f16973...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/launch.json` | 367 | `4a84c85edcefd30a...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle/summary.json` | 129 | `a46ebcc4c89304c7...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/lifecycle_exit.json` | 17 | `e89df0eae5ec7db8...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/meminfo.txt` | 1475 | `9ca9ec1ebff350e8...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/memory_psi.txt` | 108 | `6a5bc9dfd601fdb7...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/oom_kill_count.txt` | 11 | `a3cb289fc1bf1f9d...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/swapon.txt` | 68 | `e040cd716ad8ff59...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/swaps.txt` | 110 | `18fc8dc432d9ccdf...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/logs/vmstat.txt` | 428 | `b7346dfff542ab3e...` | Data | Task022-C1 C3 续跑 |
+| **Task022-C1** | `results/task022/c1/metrics/summary.json` | 2366 | `31b7f056ab66a54e...` | Data | Task022-C1 C3 续跑 |

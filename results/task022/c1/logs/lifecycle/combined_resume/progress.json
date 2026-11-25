@@ -1,0 +1,12 @@
+{
+  "status": "INCONCLUSIVE",
+  "phase": "combined_resume",
+  "loads_started": 1,
+  "models_loaded": 1,
+  "environment_creations": 1,
+  "resets": 1,
+  "reset_started": 1,
+  "forward_calls": 0,
+  "control_steps": 0,
+  "model_load_seconds": 314.3060077630071
+}

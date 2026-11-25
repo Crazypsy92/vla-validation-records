@@ -1,0 +1,7 @@
+{"command": ["cat", "/proc/meminfo"], "exit_code": 0, "file": "meminfo.txt"}
+{"command": ["free", "-h"], "exit_code": 0, "file": "free.txt"}
+{"command": ["swapon", "--show"], "exit_code": 0, "file": "swapon.txt"}
+{"command": ["cat", "/proc/swaps"], "exit_code": 0, "file": "swaps.txt"}
+{"command": ["vmstat", "1", "3"], "exit_code": 0, "file": "vmstat.txt"}
+{"command": ["cat", "/proc/pressure/memory"], "exit_code": 0, "file": "memory_psi.txt"}
+{"command": ["cat", "/proc/vmstat"], "exit_code": 0, "file": "oom_kill_count.txt"}

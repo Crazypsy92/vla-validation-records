@@ -1,0 +1,15 @@
+{
+  "task": "Task022-C1",
+  "status": "PASS",
+  "review_status": "REVIEW",
+  "run_id": "c3_resume_index34_1795576677535882893",
+  "checks": {
+    "D-A": "PASS",
+    "D-B": "PASS",
+    "D-C": "PASS",
+    "D-D": "PASS",
+    "D-E": "PASS",
+    "D-F": "PASS"
+  },
+  "previous_c3": "BLOCKED_RESOURCE_BEFORE_START"
+}

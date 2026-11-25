@@ -1,0 +1,80 @@
+{
+  "task": "Task022-C1",
+  "run_id": "c3_resume_index34_1795576677535882893",
+  "status": "PASS",
+  "exit_code": 0,
+  "oom_counter_change": 0,
+  "pressure_event": null,
+  "load_duration_s": 314.3060077630071,
+  "worker_started": true,
+  "loads_started": 1,
+  "models_loaded": 1,
+  "resets": 1,
+  "forward_calls": 0,
+  "control_steps": 0,
+  "retries": 0,
+  "resource_stats": {
+    "peak_rss_mib": 6255,
+    "peak_pss_mib": 6256,
+    "min_available_mib": 1145,
+    "min_swap_free_mib": 0,
+    "peak_process_cpu_percent": 606.0
+  },
+  "load_window_stats": {
+    "peak_rss_mib": 6255,
+    "peak_pss_mib": 6256,
+    "min_available_mib": 2609,
+    "min_swap_free_mib": 316,
+    "peak_process_cpu_percent": 606.0
+  },
+  "gate_start": {
+    "phase": "supervisor_before_child",
+    "allowed": true,
+    "min_ram_mib": 1024,
+    "swap_policy": "telemetry_only",
+    "pressure_marker": false,
+    "pid": 199099,
+    "rss_mib": 23,
+    "pss_mib": 19,
+    "total_mib": 7798,
+    "available_mib": 6478,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 353
+  },
+  "gate_environment": {
+    "phase": "after_model_before_environment",
+    "allowed": true,
+    "min_ram_mib": 512,
+    "swap_policy": "telemetry_only",
+    "pressure_marker": false,
+    "pid": 199100,
+    "rss_mib": 3918,
+    "pss_mib": 3916,
+    "total_mib": 7798,
+    "available_mib": 2662,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 315
+  },
+  "after_exit": {
+    "pid": 199099,
+    "rss_mib": 4,
+    "pss_mib": 3,
+    "total_mib": 7798,
+    "available_mib": 6649,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 112
+  },
+  "fingerprint": {
+    "instruction": "pick up the book and place it in the back compartment of the caddy",
+    "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+    "official_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+    "initial_state_asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+    "rgb_array_sha256": {
+      "workspace": "6b537241e483c67a1fa3415cb64285a7b2b4b3481661e262c7aac8ec408895f0",
+      "wrist": "c6da7ef840abfbde68a68ab2fbcbad67be098ab55f7641e270ce83e6ea031076"
+    }
+  },
+  "configuration_sha256": "9f63d96cd65cfc2d297efbe0d6fd6897bcc9a00dc3b0cf0658d8c895224980e7",
+  "independently_verified_historical_files": 152,
+  "launcher_exit_code": 0
+}

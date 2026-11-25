@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<workbench>/.venv_xvla/bin/python",
+    "<archive>/scripts/task022_index34_diagnostic.py",
+    "--project-root",
+    "<workbench>",
+    "--output",
+    "<workbench>/results/task022/c1/runs/c3_resume_index34_1795576677535882893/lifecycle",
+    "--resume-combined"
+  ],
+  "cwd": "<workbench>",
+  "run_id": "lifecycle",
+  "preflight_only": false
+}
