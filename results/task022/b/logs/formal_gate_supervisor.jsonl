@@ -1,0 +1,1 @@
+{"time": 1795571278.3578267, "phase": "before_worker_start", "level": "PASS", "reason": "boundary_checked", "samples": [{"pid": 138886, "rss_mib": 14, "pss_mib": 7, "total_mib": 7798, "available_mib": 4786, "swap_total_mib": 2048, "swap_free_mib": 2015}]}

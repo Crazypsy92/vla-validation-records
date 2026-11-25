@@ -13,7 +13,8 @@
 | Task019-R1（Task019返修） | **回放数据可信度与桌面显示修复** | [#3](https://github.com/Crazypsy92/vla-validation-records/issues/3) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | R1-01～R1-08 通过；内部回放通过。外部播放器未验证，模型前向按范围未重跑；进入 Task020 |
 | Task020-R1 | **Workbench 书本抓放官方任务验证** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 2 个官方成功、1 个资源中断未完成，物理释放未验证。 [结题报告](docs/task020_goal_met_with_limitations.md) · [Phase 4 阻断报告](docs/task020_r1_phase4_seed203_results.md) |
 | Task021 | **LIBERO Task 5 初始状态泛化验证** | [#5](https://github.com/Crazypsy92/vla-validation-records/issues/5) | **ACCEPTED_PARTIAL / 已关闭** | 两个官方新初态：index 15 成功（201 步、7 前向），index 34 失败（520 步、18 前向）；工程验收通过，模型任务成功 1/2。 [结题报告](docs/task021_initial_state_generalization.md) |
-| Task022-A | **index34 末端放置失败离线根因审计** | [#10](https://github.com/Crazypsy92/vla-validation-records/issues/10) | **Stage A 待审核** | [离线报告](docs/task022_index34_failure_forensics.md)，唯一根因未确定，未运行模型或启动 Stage B。 |
+| Task022-A | **index34 末端放置失败离线根因审计** | [#10](https://github.com/Crazypsy92/vla-validation-records/issues/10) | **ACCEPTED_WITH_LIMITATIONS** | [离线报告](docs/task022_index34_failure_forensics.md) |
+| Task022-B | **index34 单次诊断回放** | [#12](https://github.com/Crazypsy92/vla-validation-records/issues/12) | **REVIEW · BLOCKED_RESOURCE** | [诊断报告](docs/task022_index34_diagnostic.md) |
 
 ## 历史归档
 
@@ -35,6 +36,6 @@
 4. 上传 commit/PR 及原始证据，评论 STATUS: REVIEW；无法完成时评论 STATUS: BLOCKED。
 5. 由 ChatGPT 与用户审核后标记 STATUS: ACCEPTED，再关闭 Issue、发布下一个任务。
 
-**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Issue #1 已独立审查并以有限边界关闭；Issue #2 已 ACCEPTED_WITH_FOLLOWUP 并关闭；Issue #3（Task019-R1）已按 ACCEPTED_WITH_LIMITATIONS 关闭；**Issue #4（Task020）已按 ACCEPTED_WITH_LIMITATIONS 验收并关闭。Issue #5（Task021）已按 ACCEPTED_PARTIAL 验收并关闭。** **Issue #10（Task022-A）已发布，为当前唯一开放任务。** 仅允许离线 Stage A，禁止模型推理、正式仿真及 Task023。
+**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Task022-A 已按 ACCEPTED_WITH_LIMITATIONS 验收。Task022-B 仅授权一次诊断，提交后等待复核。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**

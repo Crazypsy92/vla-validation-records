@@ -1,0 +1,5 @@
+{"time": 1795571304.9223073, "phase": "startup", "pid": 138887, "rss_mib": 677, "pss_mib": 644, "total_mib": 7798, "available_mib": 4360, "swap_total_mib": 2048, "swap_free_mib": 2015}
+{"time": 1795571330.0454364, "phase": "before_environment_reset", "pid": 138887, "rss_mib": 678, "pss_mib": 645, "total_mib": 7798, "available_mib": 4422, "swap_total_mib": 2048, "swap_free_mib": 2015}
+{"time": 1795571419.0951362, "phase": "after_model_load", "pid": 138887, "rss_mib": 5481, "pss_mib": 5479, "total_mib": 7798, "available_mib": 1209, "swap_total_mib": 2048, "swap_free_mib": 0}
+{"time": 1795571428.3144717, "phase": "after_model_unload", "pid": 138887, "rss_mib": 3080, "pss_mib": 3078, "total_mib": 7798, "available_mib": 3415, "swap_total_mib": 2048, "swap_free_mib": 183}
+{"time": 1795571428.376358, "phase": "after_video_and_environment_close", "pid": 138887, "rss_mib": 3080, "pss_mib": 3078, "total_mib": 7798, "available_mib": 3408, "swap_total_mib": 2048, "swap_free_mib": 184}

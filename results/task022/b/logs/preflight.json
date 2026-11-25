@@ -1,0 +1,29 @@
+{
+  "historical_config_sha256": "9f63d96cd65cfc2d297efbe0d6fd6897bcc9a00dc3b0cf0658d8c895224980e7",
+  "history_files_verified": 82,
+  "installed_sources_verified": {
+    ".venv_xvla/lib/python3.12/site-packages/libero/libero/assets/turbosquid_objects/black_book/black_book.xml": "dd50260bf3fe93abd3d4694403082b4025409ab0ee1590d8a73bd00c8a804b83",
+    ".venv_xvla/lib/python3.12/site-packages/libero/libero/assets/turbosquid_objects/desk_caddy/desk_caddy.xml": "267de04e2191517700fced70d9f434958ba88d5e8d449e9def43aeaedd82dd85",
+    ".venv_xvla/lib/python3.12/site-packages/libero/libero/envs/objects/turbosquid_objects.py": "73969e5066511090226ec6373c7234cc38d134ed1fae56bc13e9af1f66aa3f10",
+    ".venv_xvla/lib/python3.12/site-packages/libero/libero/envs/objects/site_object.py": "e295fed5683f234f2ab0abc72ec914df02b688ebc7eb8455be5e7cabc9e06016",
+    ".venv_xvla/lib/python3.12/site-packages/libero/libero/envs/object_states/base_object_states.py": "ca6f53123336b6487bdb4feb02534ddb3a0627a4b847fe89da4460520ef01366",
+    ".venv_xvla/lib/python3.12/site-packages/libero/libero/envs/predicates/base_predicates.py": "319137e95330dbb22a266a8dceb8110f18413c2bf17461550222228c4bc310a1",
+    "workbench/backends/xvla_backend.py": "3bb8e3d6fe6a7fab8e466b67ed3180aee9f9bfddf79dadb7a8774364a7cd563f",
+    "scripts/task018_gripper_verification.py": "437db10c547d059e867934c52f8d420ed3efda36051f1f6b8ac635531838019c",
+    "workbench/workers/book_pilot.py": "5f9fd6c6a39fd75b1db8d7d9768059765ec99193c91e6ab476c38dae8fb7adad",
+    ".venv_xvla/lib/python3.12/site-packages/lerobot/sim/integrations/libero.py": "419f788e9be11b8757f3ad0885b470c282942ec269eb1592cbae3cf9e2b29f0f",
+    ".venv_xvla/lib/python3.12/site-packages/robosuite/controllers/osc.py": "cfa62a0e719bc53ef0c701efa66f7b3e2272d4fca2150ec73c05bb145eba85cb",
+    ".venv_xvla/lib/python3.12/site-packages/libero/libero/bddl_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f"
+  },
+  "original_guard_sha256": "d63d81da1c7f0004a6e13ee994ec93ba9aa90b43b1a50f3a38f71be1e7d10657",
+  "initial_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+  "asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+  "bddl_sha256": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f",
+  "prompt": "pick up the book and place it in the back compartment of the caddy",
+  "rgb_array_sha256": {
+    "workspace": "6b537241e483c67a1fa3415cb64285a7b2b4b3481661e262c7aac8ec408895f0",
+    "wrist": "c6da7ef840abfbde68a68ab2fbcbad67be098ab55f7641e270ce83e6ea031076"
+  },
+  "stage_a_summary_sha256": "0262103e853ee78873b5b049b274db0f5cddcab67f2a1e226ad0c92267937293",
+  "instrument_sha256": "f7fddb160b4bf86cf547797f478925bf26ab4a1c58758397131bcb221fe5bb1a"
+}

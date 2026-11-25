@@ -1,0 +1,51 @@
+{
+  "task": "Task022-B",
+  "review_status": "REVIEW",
+  "status": "BLOCKED_RESOURCE",
+  "run_id": "diagnostic_index_34_rng_201_1795571278349401651",
+  "checks": {
+    "B-A": {
+      "status": "PASS",
+      "evidence": "logs/preflight.json"
+    },
+    "B-B": {
+      "status": "BLOCKED_RESOURCE",
+      "observed_window_steps": 0,
+      "expected_window_steps": 151
+    },
+    "B-C": {
+      "status": "UNAVAILABLE",
+      "reason": "Only reset reached; zero control steps"
+    },
+    "B-D": {
+      "status": "INCONCLUSIVE",
+      "reason": "No eligible diagnostic trajectory"
+    },
+    "B-E": {
+      "status": "PASS",
+      "worker_attempts": 1,
+      "retries": 0,
+      "original_data_modified": false
+    }
+  },
+  "diagnostic_questions": {
+    "B1": {
+      "status": "INCONCLUSIVE",
+      "missing": "Step 150–300 policy actions, OSC goals and live target-local errors"
+    },
+    "B2": {
+      "status": "INCONCLUSIVE",
+      "missing": "Pre/post limit controls, joint state and tracking after any action"
+    },
+    "B3": {
+      "status": "INCONCLUSIVE",
+      "missing": "Book-in-EEF trajectory during grasp"
+    },
+    "B4": {
+      "status": "INCONCLUSIVE",
+      "missing": "Real geom-pair contacts and forces during alignment"
+    }
+  },
+  "official_success": null,
+  "include_in_success_rate": false
+}
