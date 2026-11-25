@@ -17,6 +17,7 @@
 | Task022-B | **index34 单次诊断回放** | [#12](https://github.com/Crazypsy92/vla-validation-records/issues/12) | **REVIEW / BLOCKED_RESOURCE** | [诊断报告](docs/task022_index34_diagnostic.md) |
 | Task022-C | **模型优先加载与环境生命周期预检** | [#14](https://github.com/Crazypsy92/vla-validation-records/issues/14) | **REVIEW / BLOCKED_RESOURCE** | [资源预检报告](docs/task022_index34_resource_preflight.md) |
 | Task022-C1 | **Swap 资源排查与 C3 续跑** | [#16](https://github.com/Crazypsy92/vla-validation-records/issues/16) | **REVIEW / PASS** | [续跑报告](docs/task022_index34_resource_resume.md) |
+| Task022-D | **index34 最终对准单次动态诊断** | [#18](https://github.com/Crazypsy92/vla-validation-records/issues/18) | **REVIEW / COMPLETE** | [动态诊断报告](docs/task022_index34_dynamic_diagnostic.md) |
 
 ## 历史归档
 
@@ -38,6 +39,6 @@
 4. 上传 commit/PR 及原始证据，评论 STATUS: REVIEW；无法完成时评论 STATUS: BLOCKED。
 5. 由 ChatGPT 与用户审核后标记 STATUS: ACCEPTED，再关闭 Issue、发布下一个任务。
 
-**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Task022-A 已按 ACCEPTED_WITH_LIMITATIONS 验收。Task022-B 保持 REVIEW / BLOCKED_RESOURCE。Task022-C 的首次 C3 启动前被拦截。Task022-C1 续跑已提交复核。Task022-D 尚未授权。
+**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Task022-A 已按 ACCEPTED_WITH_LIMITATIONS 验收。Task022-B 保持 REVIEW / BLOCKED_RESOURCE。Task022-C 的首次 C3 启动前被拦截。Task022-C1 续跑已提交复核。Task022-D 单次动态诊断已提交复核。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**

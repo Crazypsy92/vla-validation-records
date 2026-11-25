@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "worker_started": true,
+  "exit_code": 0,
+  "pressure_marker": false,
+  "oom_kill_before": 0,
+  "oom_kill_after": 0,
+  "global_oom_counter_increment": 0,
+  "before": {
+    "pid": 209536,
+    "rss_mib": 23,
+    "pss_mib": 19,
+    "total_mib": 7798,
+    "available_mib": 6498,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 191
+  },
+  "after": {
+    "pid": 209536,
+    "rss_mib": 5,
+    "pss_mib": 3,
+    "total_mib": 7798,
+    "available_mib": 6560,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 36
+  }
+}

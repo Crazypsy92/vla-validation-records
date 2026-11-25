@@ -6,9 +6,9 @@
 - **原工程命名空间**：`ai-learning/vla-learning`
 - **发布工程命名空间**：`ai-learning/vla-validation-records`
 - **GitHub 归档仓库**：`Crazypsy92/vla-validation-records`
-- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL），以及 Task022-A 离线审计和 Task022-B 单次诊断及 Task022-C 资源预检及 Task022-C1 续跑
-- **白名单发布文件总数**：424 个
-- **总归档体积**：24420.01 KB
+- **归档范围**：Task 010 ～ Task 020 已验收成果，以及 Task021 阶段 A、B1、B2a 与 B2b（ACCEPTED_PARTIAL），以及 Task022-A 离线审计和 Task022-B 单次诊断及 Task022-C 资源预检及 Task022-C1 续跑及 Task022-D 单次动态诊断
+- **白名单发布文件总数**：485 个
+- **总归档体积**：27978.52 KB
 - **脱敏合规性审查**：
   - [x] 无任何绝对路径（`~/projects/...` / Windows 本地盘符）遗留；
   - [x] 无任何个人访问令牌（PAT）、API Key、密码及未公开凭据；
@@ -17,13 +17,13 @@
 
 ---
 
-## 二、白名单发布文件清单（共 424 项）
+## 二、白名单发布文件清单（共 485 项）
 
 | 任务 | 归档相对路径 | 大小 (Bytes) | SHA256 校验和 | 类别 | 发布说明 |
 |:---:|---|:---:|:---:|:---:|---|
 | **General** | `.gitignore` | 357 | `2c4084d6d8b90c9c...` | Config | 发布归档文件 |
-| **Task022-C1** | `README.md` | 15086 | `2ea032ba5407ed40...` | Report | Task022-C1 C3 续跑 |
-| **Task022-C1** | `TASKS.md` | 5873 | `f678eb1f6f21f0f7...` | Report | Task022-C1 C3 续跑 |
+| **Task022-D** | `README.md` | 15272 | `bb7dd01d92290925...` | Report | Task022-D 单次动态诊断 |
+| **Task022-D** | `TASKS.md` | 6116 | `4affcb7635c7804f...` | Report | Task022-D 单次动态诊断 |
 | **Docs** | `docs/VLA_Project_Work_Roadmap.md` | 66491 | `89f5e4820bfc2f38...` | Report | 发布归档文件 |
 | **Docs** | `docs/remote_task_relay.md` | 4515 | `36ca245be0f78903...` | Report | 发布归档文件 |
 | **Docs** | `docs/task010_smolvla_baseline.md` | 14431 | `f3c810fe6908ec68...` | Report | 发布归档文件 |
@@ -463,3 +463,64 @@
 | **Task022-C1** | `results/task022/c1/logs/swaps.txt` | 110 | `18fc8dc432d9ccdf...` | Data | Task022-C1 C3 续跑 |
 | **Task022-C1** | `results/task022/c1/logs/vmstat.txt` | 428 | `b7346dfff542ab3e...` | Data | Task022-C1 C3 续跑 |
 | **Task022-C1** | `results/task022/c1/metrics/summary.json` | 2366 | `31b7f056ab66a54e...` | Data | Task022-C1 C3 续跑 |
+| **Task022-D** | `docs/task022_index34_dynamic_diagnostic.md` | 9187 | `c0a0b42be42982b9...` | Report | Task022-D 单次动态诊断 |
+| **Task022-D** | `scripts/task022_index34_dynamic.py` | 12672 | `ae5583b878f167ff...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `scripts/task022_index34_telemetry.py` | 10200 | `064d5a13cd907543...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `scripts/task022_index34_dynamic_analysis.py` | 18843 | `564c414500ffdd72...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0000_workspace.png` | 65633 | `8e430f56f86252f2...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0000_wrist.png` | 47626 | `974ecf57dc8917b7...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0030_workspace.png` | 62899 | `5e510f75e65c0dc7...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0030_wrist.png` | 52937 | `a0839aac05c478bf...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0060_workspace.png` | 64573 | `a7fc2bf541d76c19...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0060_wrist.png` | 47924 | `dcb3138f97551bed...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0090_workspace.png` | 65376 | `5c2eebfaeb91e66c...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0090_wrist.png` | 55126 | `621a40e02a4d14d1...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0120_workspace.png` | 65683 | `00ea335a1df1308f...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0120_wrist.png` | 58582 | `b20a267a80ddc88e...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0150_workspace.png` | 64779 | `199d962703e12422...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0150_wrist.png` | 50774 | `02c521fe518a3d46...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0159_workspace.png` | 64452 | `4ae4ad1378c09ba7...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0159_wrist.png` | 47909 | `50c6df4bc933c7df...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0180_workspace.png` | 64920 | `3f26a32b3ee86446...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0180_wrist.png` | 41840 | `f4a663394dd1055e...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0201_workspace.png` | 65102 | `17b775bc6e739d06...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0201_wrist.png` | 42459 | `76f2de7f9e3529b7...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0210_workspace.png` | 65187 | `c0f3a91542f9d654...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0210_wrist.png` | 43146 | `d1fce23f04f43bcd...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0240_workspace.png` | 65062 | `bd745afa661ace50...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0240_wrist.png` | 45357 | `724a0502740eb215...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0270_workspace.png` | 65101 | `8c6709836c607da5...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0270_wrist.png` | 46480 | `8eb3ffc6536b8fb9...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0300_workspace.png` | 65040 | `605b8916e63c3024...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/0300_wrist.png` | 46336 | `2e3b005f3817c2f6...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/alignment_tracking_contacts.png` | 147036 | `16ba118cd4419a2d...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `evidence/task022/d/resource_lifecycle.png` | 72767 | `e3e7d14b07b5cf59...` | Evidence | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/acceptance.json` | 4362 | `faad7e04cf92380f...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/baseline.json` | 1894 | `152eccb3dc66d367...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/exit.json` | 533 | `16e77721d7afb935...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/implementation.json` | 494 | `3579719041998af7...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/launch.json` | 704 | `3ccc602858fd9923...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/startup_resources.json` | 337 | `922a362d85e3a5a6...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_000.json` | 29892 | `42b7dbcbabe03f7f...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_001.json` | 29816 | `780e801e9e807c9d...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_002.json` | 29696 | `eb34fcf3ec41f9f9...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_003.json` | 29595 | `6e46d32d2735d03b...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_004.json` | 29587 | `3aff89e3c758387d...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_005.json` | 29658 | `aad40ea05a0bff83...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_006.json` | 29682 | `63fda18490817ed3...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_007.json` | 29636 | `84097bf22e3896a0...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_008.json` | 29509 | `f282b3c9f5d77720...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunk_009.json` | 29495 | `bcbe61779f796db2...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/chunks.jsonl` | 4669 | `d2ea571883173c2f...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/diagnostic.jsonl.gz` | 1101715 | `87e60b62ab7a767d...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/gates.jsonl` | 1076 | `45461bff7086622c...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/progress.json` | 1073 | `6d47a91d5dc939d3...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/reproduction.jsonl` | 37805 | `eea1ef6cbf8b88dc...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/reset.json` | 3547 | `57680b55ac6accba...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/resources_child.jsonl` | 7051 | `3e96d0ddd2492793...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/resources_supervisor.jsonl.gz` | 31759 | `9aa3cd227724543e...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/result.json` | 1073 | `6d47a91d5dc939d3...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/execution/worker/worker.log` | 768 | `4cca1097c4f16973...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/launcher_exit.json` | 17 | `e89df0eae5ec7db8...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/logs/telemetry_test.log` | 67 | `7002d44283ca30f9...` | Data | Task022-D 单次动态诊断 |
+| **Task022-D** | `results/task022/d/metrics/summary.json` | 406963 | `0c6f3fa8613bda83...` | Data | Task022-D 单次动态诊断 |

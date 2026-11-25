@@ -1,0 +1,24 @@
+{
+  "run_id": "execution",
+  "command": [
+    "<workbench>/.venv_xvla/bin/python",
+    "<archive>/scripts/task022_index34_dynamic.py",
+    "--project-root",
+    "<workbench>",
+    "--output",
+    "<workbench>/results/task022/d/runs/dynamic_index34_rng201_1795578972038190503/execution"
+  ],
+  "worker_command": [
+    "<workbench>/.venv_xvla/bin/python",
+    "<archive>/scripts/task022_index34_dynamic.py",
+    "--project-root",
+    "<workbench>",
+    "--output",
+    "<workbench>/results/task022/d/runs/dynamic_index34_rng201_1795578972038190503/execution",
+    "--child"
+  ],
+  "cwd": "<workbench>",
+  "dependency_sha": "52c3e820482663502f0f95e92a3b1ae1a009cf89",
+  "attempt_limit": 1,
+  "limit": 300
+}
