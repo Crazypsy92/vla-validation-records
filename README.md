@@ -106,7 +106,7 @@ flowchart LR
 1. **Task019 / R1（已完成，有限边界）**：完成真实视频连续回放、当前步状态可信度与归档数据修复；外部播放器验证保留为非阻断项；
 2. **Task020（已验收，有限边界）** 已验证 Workbench 书本抓放达到 LIBERO 官方成功。Seed 203 的资源中断仍保留在验收记录中。
 3. **Task021（已验收，PARTIAL）**：新初态 index15 官方成功、index34 到 520 步上限失败（1/2）；不等于跨物体或跨任务泛化。
-4. **Task022-A（当前唯一开放任务）**：仅离线分析 index34 的失败阶段与目标对准、命令反馈及接触证据；[Issue #10](https://github.com/Crazypsy92/vla-validation-records/issues/10)。不得自动加载模型或重跑实验。
+4. **Task022-A（Stage A 待审核）**：已离线核对 index 34 的末端对准、抓持与官方判定。 [审计报告](docs/task022_index34_failure_forensics.md) · [Issue #10](https://github.com/Crazypsy92/vla-validation-records/issues/10)。
 5. **真实机器人与边缘部署（后续）**：待机器人、相机和控制机型号明确后，再评估 ROS 2 对接、必要的数据适配、微调及 CPU/GPU/NPU 优化；当前不提前承诺实机效果。
 
 ---
