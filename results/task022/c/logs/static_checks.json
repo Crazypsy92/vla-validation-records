@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "<workbench>/.venv_xvla/bin/python",
+      "<archive>/scripts/task022_index34_diagnostic.py",
+      "--project-root",
+      "<workbench>",
+      "--output",
+      "<workbench>/results/task022/c/runs/preflight_index34_1795574666075878409/static_project_root",
+      "--preflight-only"
+    ],
+    "cwd": "<workbench>",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "<workbench>/.venv_xvla/bin/python",
+      "<archive>/scripts/task022_index34_diagnostic.py",
+      "--project-root",
+      "<workbench>",
+      "--output",
+      "<workbench>/results/task022/c/runs/preflight_index34_1795574666075878409/static_other_cwd",
+      "--preflight-only"
+    ],
+    "cwd": "/tmp",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "<workbench>/.venv_xvla/bin/python",
+      "<archive>/scripts/task022_index34_diagnostic.py",
+      "--project-root",
+      "<workbench>",
+      "--output",
+      "<workbench>/results/task022/c/runs/preflight_index34_1795574666075878409/static_archive_root",
+      "--preflight-only"
+    ],
+    "cwd": "<archive>",
+    "exit_code": 0
+  }
+]

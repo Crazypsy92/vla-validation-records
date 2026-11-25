@@ -14,7 +14,8 @@
 | Task020-R1 | **Workbench 书本抓放官方任务验证** | [#4](https://github.com/Crazypsy92/vla-validation-records/issues/4) | **ACCEPTED_WITH_LIMITATIONS / 已关闭** | 2 个官方成功、1 个资源中断未完成，物理释放未验证。 [结题报告](docs/task020_goal_met_with_limitations.md) · [Phase 4 阻断报告](docs/task020_r1_phase4_seed203_results.md) |
 | Task021 | **LIBERO Task 5 初始状态泛化验证** | [#5](https://github.com/Crazypsy92/vla-validation-records/issues/5) | **ACCEPTED_PARTIAL / 已关闭** | 两个官方新初态：index 15 成功（201 步、7 前向），index 34 失败（520 步、18 前向）；工程验收通过，模型任务成功 1/2。 [结题报告](docs/task021_initial_state_generalization.md) |
 | Task022-A | **index34 末端放置失败离线根因审计** | [#10](https://github.com/Crazypsy92/vla-validation-records/issues/10) | **ACCEPTED_WITH_LIMITATIONS** | [离线报告](docs/task022_index34_failure_forensics.md) |
-| Task022-B | **index34 单次诊断回放** | [#12](https://github.com/Crazypsy92/vla-validation-records/issues/12) | **REVIEW · BLOCKED_RESOURCE** | [诊断报告](docs/task022_index34_diagnostic.md) |
+| Task022-B | **index34 单次诊断回放** | [#12](https://github.com/Crazypsy92/vla-validation-records/issues/12) | **REVIEW / BLOCKED_RESOURCE** | [诊断报告](docs/task022_index34_diagnostic.md) |
+| Task022-C | **模型优先加载与环境生命周期预检** | [#14](https://github.com/Crazypsy92/vla-validation-records/issues/14) | **REVIEW / BLOCKED_RESOURCE** | [资源预检报告](docs/task022_index34_resource_preflight.md) |
 
 ## 历史归档
 
@@ -36,6 +37,6 @@
 4. 上传 commit/PR 及原始证据，评论 STATUS: REVIEW；无法完成时评论 STATUS: BLOCKED。
 5. 由 ChatGPT 与用户审核后标记 STATUS: ACCEPTED，再关闭 Issue、发布下一个任务。
 
-**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Task022-A 已按 ACCEPTED_WITH_LIMITATIONS 验收。Task022-B 仅授权一次诊断，提交后等待复核。
+**只领取标题含 [TASK] 且前置依赖已完成的 Issue。** Task022-A 已按 ACCEPTED_WITH_LIMITATIONS 验收。Task022-B 保持 REVIEW / BLOCKED_RESOURCE。Task022-C 是本轮唯一获授权的任务，提交后等待复核。Task022-D 尚未授权。
 
 **不要因为 Issue 状态被标为完成，就自动重跑模型或立即展开下一阶段。**

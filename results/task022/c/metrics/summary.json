@@ -1,0 +1,73 @@
+{
+  "run_id": "preflight_index34_1795574666075878409",
+  "status": "BLOCKED_RESOURCE",
+  "c2": "PASS",
+  "c3": "BLOCKED_RESOURCE",
+  "config_sha256": "9f63d96cd65cfc2d297efbe0d6fd6897bcc9a00dc3b0cf0658d8c895224980e7",
+  "revision": "8e6aeef01f634f5d3b5be4340328f19cc2c25a65",
+  "fingerprint": {
+    "instruction": "pick up the book and place it in the back compartment of the caddy",
+    "bddl": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+    "official_state_sha256": "8eb7e4b31ba84c940aad7fb50aff0ccb4a26f36495c2ca6986c77e890934ef84",
+    "initial_state_asset_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+    "rgb_array_sha256": {
+      "workspace": "6b537241e483c67a1fa3415cb64285a7b2b4b3481661e262c7aac8ec408895f0",
+      "wrist": "c6da7ef840abfbde68a68ab2fbcbad67be098ab55f7641e270ce83e6ea031076"
+    }
+  },
+  "process_exit_codes": {
+    "static": [
+      0,
+      0,
+      0
+    ],
+    "lifecycle": 0,
+    "c2": 0,
+    "c3": null
+  },
+  "counts": {
+    "resets": 1,
+    "model_loads": 0,
+    "forward_calls": 0,
+    "control_steps": 0,
+    "retries": 0
+  },
+  "builtin_reset_settling_steps": 10,
+  "c2_samples": {
+    "before": {
+      "pid": 161415,
+      "rss_mib": 22,
+      "pss_mib": 13,
+      "total_mib": 7798,
+      "available_mib": 6172,
+      "swap_total_mib": 2048,
+      "swap_free_mib": 356
+    },
+    "after": {
+      "pid": 161415,
+      "rss_mib": 20,
+      "pss_mib": 17,
+      "total_mib": 7798,
+      "available_mib": 6381,
+      "swap_total_mib": 2048,
+      "swap_free_mib": 348
+    },
+    "sampled_peak_rss_mib": 2359,
+    "sampled_peak_pss_mib": 2354,
+    "min_available_mib": 4267,
+    "min_swap_free_mib": 348
+  },
+  "c3_prelaunch_gate": {
+    "phase": "supervisor_before_child",
+    "allowed": false,
+    "min_ram_mib": 3072,
+    "min_swap_mib": 1024,
+    "pid": 161415,
+    "rss_mib": 20,
+    "pss_mib": 17,
+    "total_mib": 7798,
+    "available_mib": 6381,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 348
+  }
+}

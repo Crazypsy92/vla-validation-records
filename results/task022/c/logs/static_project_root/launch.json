@@ -1,0 +1,14 @@
+{
+  "command": [
+    "<workbench>/.venv_xvla/bin/python",
+    "<archive>/scripts/task022_index34_diagnostic.py",
+    "--project-root",
+    "<workbench>",
+    "--output",
+    "<workbench>/results/task022/c/runs/preflight_index34_1795574666075878409/static_project_root",
+    "--preflight-only"
+  ],
+  "cwd": "<workbench>",
+  "run_id": "static_project_root",
+  "preflight_only": true
+}

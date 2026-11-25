@@ -1,0 +1,2 @@
+{"time": 1795574741.8092892, "phase": "before_official_reset", "pid": 161443, "rss_mib": 680, "pss_mib": 673, "total_mib": 7798, "available_mib": 5895, "swap_total_mib": 2048, "swap_free_mib": 356}
+{"time": 1795574763.4807088, "phase": "after_official_reset", "pid": 161443, "rss_mib": 2359, "pss_mib": 2354, "total_mib": 7798, "available_mib": 4277, "swap_total_mib": 2048, "swap_free_mib": 348}

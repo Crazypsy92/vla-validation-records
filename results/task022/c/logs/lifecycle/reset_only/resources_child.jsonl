@@ -1,0 +1,6 @@
+{"time": 1795574741.6478992, "phase": "child_imports_ready", "pid": 161443, "rss_mib": 677, "pss_mib": 670, "total_mib": 7798, "available_mib": 5898, "swap_total_mib": 2048, "swap_free_mib": 356}
+{"time": 1795574741.7283885, "phase": "before_environment_creation", "pid": 161443, "rss_mib": 678, "pss_mib": 671, "total_mib": 7798, "available_mib": 5897, "swap_total_mib": 2048, "swap_free_mib": 356}
+{"time": 1795574741.7939897, "phase": "after_environment_wrapper_creation", "pid": 161443, "rss_mib": 680, "pss_mib": 673, "total_mib": 7798, "available_mib": 5895, "swap_total_mib": 2048, "swap_free_mib": 356}
+{"time": 1795574763.4598064, "phase": "after_official_reset", "pid": 161443, "rss_mib": 2359, "pss_mib": 2354, "total_mib": 7798, "available_mib": 4277, "swap_total_mib": 2048, "swap_free_mib": 348}
+{"time": 1795574763.886281, "phase": "after_environment_close", "pid": 161443, "rss_mib": 1819, "pss_mib": 1814, "total_mib": 7798, "available_mib": 4816, "swap_total_mib": 2048, "swap_free_mib": 348}
+{"time": 1795574764.118016, "phase": "before_child_exit", "pid": 161443, "rss_mib": 1819, "pss_mib": 1813, "total_mib": 7798, "available_mib": 4819, "swap_total_mib": 2048, "swap_free_mib": 348}
