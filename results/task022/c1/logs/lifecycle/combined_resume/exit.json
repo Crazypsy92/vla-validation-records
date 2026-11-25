@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "worker_started": true,
+  "exit_code": 0,
+  "pressure_marker": false,
+  "command": [
+    "<workbench>/.venv_xvla/bin/python",
+    "<archive>/scripts/task022_index34_diagnostic.py",
+    "--project-root",
+    "<workbench>",
+    "--output",
+    "<workbench>/results/task022/c1/runs/c3_resume_index34_1795576677535882893/lifecycle",
+    "--child",
+    "combined_resume"
+  ],
+  "before": {
+    "pid": 199099,
+    "rss_mib": 23,
+    "pss_mib": 19,
+    "total_mib": 7798,
+    "available_mib": 6478,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 353
+  },
+  "after": {
+    "pid": 199099,
+    "rss_mib": 4,
+    "pss_mib": 3,
+    "total_mib": 7798,
+    "available_mib": 6649,
+    "swap_total_mib": 2048,
+    "swap_free_mib": 112
+  },
+  "oom_kill_before": 0,
+  "oom_kill_after": 0,
+  "global_oom_counter_increment": 0
+}

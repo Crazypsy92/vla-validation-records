@@ -13,5 +13,17 @@
   },
   "c3_worker_started": false,
   "c3_blocker": "prelaunch_swap_floor",
-  "run_id": "preflight_index34_1795574666075878409"
+  "run_id": "preflight_index34_1795574666075878409",
+  "continuation": {
+    "issue": 16,
+    "status": "PASS",
+    "review_status": "REVIEW",
+    "run_id": "c3_resume_index34_1795576677535882893",
+    "acceptance": "../c1/acceptance.json",
+    "first_attempt_preserved": true
+  },
+  "checks_after_continuation": {
+    "C-D": "PASS",
+    "C-E": "PASS"
+  }
 }

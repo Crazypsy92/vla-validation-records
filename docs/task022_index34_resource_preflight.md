@@ -1,5 +1,7 @@
 # Task022-C index34 资源生命周期预检
 
+> Issue #16 续跑结果为 `PASS`，见 [续跑报告](task022_index34_resource_resume.md)。以下保留第一次 C3 启动门禁的原始判读。
+
 **结果为 `BLOCKED_RESOURCE`。** C1 静态预检和 C2 独立 Reset 通过。C3 启动门禁拒绝，因为 Swap 仅剩 **348 MiB**，低于 **1024 MiB**。同次采样的 WSL 可用内存为 **6381 MiB**，达到 3072 MiB 的 RAM 门槛。C3 子进程未启动。
 
 本轮共执行 1 次官方 Reset、0 次模型加载、0 次模型前向、0 个评测控制步和 0 次重试。官方 Reset 内置的 10 个稳定步骤保留，入口未调用外层 `env.step`。Task022-B 的实验记录保持 `REVIEW / BLOCKED_RESOURCE`，Task022-D 尚未授权。

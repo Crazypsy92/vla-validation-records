@@ -16,6 +16,11 @@ REVISION = "8e6aeef01f634f5d3b5be4340328f19cc2c25a65"
 HISTORY = "results/task021/b2b/runs/b2b_index_34_rng_201_1795501086954054532"
 B_RUN = "diagnostic_index_34_rng_201_1795571278349401651"
 INDEX, RNG = 34, 201
+RESUME = "combined_resume"
+START_RAM_MIB = 1024
+ENV_RAM_MIB = 512
+CRITICAL_RAM_MIB = 256
+CRITICAL_SAMPLES = 3
 
 
 def read(path):
@@ -126,10 +131,67 @@ def gate(resources, target, phase, ram=0, swap=0):
     return allowed
 
 
+def resume_gate(resources, target, phase, minimum_ram_mib=0):
+    metrics = resources.sample()
+    stopped = (target/"resource_pressure.request").exists()
+    allowed = not stopped and metrics["available_mib"] >= minimum_ram_mib
+    with (target/"gates.jsonl").open("a", encoding="utf-8") as out:
+        print(json.dumps(dict(phase=phase, allowed=allowed, min_ram_mib=minimum_ram_mib,
+                              swap_policy="telemetry_only", pressure_marker=stopped, **metrics)), file=out)
+    return allowed
+
+
+def oom_kill_count():
+    for line in Path("/proc/vmstat").read_text().splitlines():
+        key, value = line.split()
+        if key == "oom_kill":
+            return int(value)
+    return None
+
+
+def monitor_resume(resources, target, proc, initial_oom):
+    import psutil
+    try:
+        worker = psutil.Process(proc.pid)
+    except psutil.NoSuchProcess:
+        return
+    psutil.cpu_percent()
+    worker.cpu_percent()
+    low_samples = 0
+    while proc.poll() is None:
+        measured_at = time.monotonic()
+        metrics = resources.sample(proc.pid)
+        try:
+            cpu = worker.cpu_percent()
+        except psutil.NoSuchProcess:
+            cpu = None
+        current_oom = oom_kill_count()
+        if metrics["available_mib"] < CRITICAL_RAM_MIB:
+            low_samples += 1
+        else:
+            low_samples = 0
+        oom_seen = initial_oom is not None and current_oom is not None and current_oom > initial_oom
+        resources.log_sample(target, "supervisor", "child_active",
+            dict(**metrics, cpu_percent_process=cpu, cpu_percent_system=psutil.cpu_percent(),
+                 pressure_memory=Path("/proc/pressure/memory").read_text().strip()
+                    if Path("/proc/pressure/memory").is_file() else None,
+                 oom_kill_count=current_oom, consecutive_critical_ram_samples=low_samples))
+        if low_samples >= CRITICAL_SAMPLES or oom_seen:
+            marker = target/"resource_pressure.request"
+            if not marker.exists():
+                write(target/"pressure_event.json", dict(reason="oom_counter_increase" if oom_seen else
+                      "sustained_ram_below_256_mib", sample=metrics, oom_kill_count=current_oom,
+                      consecutive_critical_ram_samples=low_samples))
+                marker.touch()
+        time.sleep(max(0.0, 1.0 - (time.monotonic() - measured_at)))
+
+
 def child(root, target, phase):
     import random
     resources = imports(root)
-    from workbench.workers import book_pilot as worker
+    resume = phase == RESUME
+    if not resume:
+        from workbench.workers import book_pilot as worker
     baseline = read(target.parent/"baseline.json")["fingerprint"]
     result = dict(status="INCONCLUSIVE", phase=phase, loads_started=0, models_loaded=0,
                   environment_creations=0, resets=0, reset_started=0, forward_calls=0, control_steps=0)
@@ -140,7 +202,28 @@ def child(root, target, phase):
 
     try:
         sample("child_imports_ready")
-        if phase == "combined":
+        if resume:
+            from workbench.backends.xvla_backend import XVLABackend
+            if not resume_gate(resources, target, "before_model_load", START_RAM_MIB):
+                result["status"] = "BLOCKED_RESOURCE"
+                return
+            model = XVLABackend()
+            result["loads_started"] += 1
+            sample("model_load_start_no_environment")
+            write(target/"progress.json", result)
+            load_start = time.monotonic()
+            model_info = model.load("lerobot/xvla-libero", "cpu")
+            result["model_load_seconds"] = time.monotonic() - load_start
+            result["models_loaded"] += 1
+            sample("model_load_end_no_environment")
+            write(target/"progress.json", result)
+            if (model_info["action_chunk_size"], model_info["n_action_steps"]) != (30, 30):
+                raise ValueError("Loaded policy queue differs")
+            from workbench.workers import book_pilot as worker
+            if not resume_gate(resources, target, "after_model_before_environment", ENV_RAM_MIB):
+                result["status"] = "BLOCKED_RESOURCE"
+                return
+        elif phase == "combined":
             if not gate(resources, target, "before_model_load", 3072, 1024):
                 result["status"] = "BLOCKED_RESOURCE"
                 return
@@ -163,16 +246,28 @@ def child(root, target, phase):
         worker.torch.manual_seed(RNG)
         sample("before_environment_creation")
         result["environment_creations"] += 1
+        if resume:
+            write(target/"progress.json", result)
         env = worker.book_environment(INDEX, worker.OFFICIAL_STATE_COUNT)
         sample("after_environment_wrapper_creation")
-        if resources.checkpoint(target, "before_official_reset"):
+        # The wrapper is lazy. The official Reset creates the native MuJoCo
+        # environment, so apply the RAM floor again at that boundary.
+        allowed = (resume_gate(resources, target, "before_official_reset", ENV_RAM_MIB)
+                   if resume else not resources.checkpoint(target, "before_official_reset"))
+        if not allowed:
             result["status"] = "BLOCKED_RESOURCE"
             return
         result["reset_started"] += 1
+        if resume:
+            write(target/"progress.json", result)
         obs = worker.reset_book_environment(env, INDEX, RNG)
         result["resets"] += 1
         sample("after_official_reset")
-        if resources.checkpoint(target, "after_official_reset"):
+        if resume:
+            write(target/"progress.json", result)
+        allowed = (resume_gate(resources, target, "after_official_reset")
+                   if resume else not resources.checkpoint(target, "after_official_reset"))
+        if not allowed:
             result["status"] = "BLOCKED_RESOURCE"
             return
         _, state, fields = worker.reset_evidence(env, INDEX, RNG, target, obs)
@@ -183,6 +278,10 @@ def child(root, target, phase):
             raise ValueError("Historical Reset fingerprints differ")
         if phase == "combined" and actual != read(target.parent/"reset_only/result.json")["fingerprint"]:
             raise ValueError("C2 and C3 fingerprints differ")
+        if resume:
+            c2 = read(ARCHIVE/"results/task022/c/logs/lifecycle/reset_only/result.json")
+            if c2["status"] != "PASS" or actual != c2["fingerprint"]:
+                raise ValueError("Archived C2 and resumed C3 fingerprints differ")
         result.update(status="PASS", fingerprint=actual, reset_builtin_settling_steps=env.num_steps_wait)
     except Exception as error:
         result["error"] = f"{type(error).__name__}: {error}"
@@ -213,17 +312,23 @@ def supervise(root, output, phase):
     before = resources.sample()
     resources.log_sample(target, "supervisor", "before_child_start", before)
     ram, swap = (3072, 1024) if phase == "combined" else (0, 0)
-    if not gate(resources, target, "supervisor_before_child", ram, swap):
+    resume = phase == RESUME
+    allowed = (resume_gate(resources, target, "supervisor_before_child", START_RAM_MIB)
+               if resume else gate(resources, target, "supervisor_before_child", ram, swap))
+    if not allowed:
         result = dict(status="BLOCKED_RESOURCE", worker_started=False, exit_code=None,
                       reason="supervisor_start_gate", before=before, after=resources.sample())
         write(target/"exit.json", result)
         return result["status"]
     command = [sys.executable, str(Path(__file__).resolve()), "--project-root", str(root),
                "--output", str(output), "--child", phase]
+    initial_oom = oom_kill_count()
     with (target/"worker.log").open("x") as log:
         proc = subprocess.Popen(command, stdout=log, stderr=subprocess.STDOUT)
         try:
-            while proc.poll() is None:
+            if resume:
+                monitor_resume(resources, target, proc, initial_oom)
+            while not resume and proc.poll() is None:
                 metrics = resources.sample(proc.pid)
                 resources.log_sample(target, "supervisor", "child_active", metrics)
                 if resources.under_pressure(metrics) or metrics["swap_free_mib"] < 128:
@@ -237,10 +342,15 @@ def supervise(root, output, phase):
     resources.log_sample(target, "supervisor", "after_child_exit", finish)
     stopped = (target/"resource_pressure.request").exists()
     observed = read(target/"result.json") if (target/"result.json").is_file() else {}
-    status = ("BLOCKED_RESOURCE" if stopped else
+    final_oom = oom_kill_count()
+    global_oom_increment = (final_oom - initial_oom
+                            if initial_oom is not None and final_oom is not None else None)
+    status = ("BLOCKED_RESOURCE" if stopped or (resume and global_oom_increment and proc.returncode != 0) else
               observed.get("status", "INCONCLUSIVE") if proc.returncode == 0 else "INCONCLUSIVE")
     write(target/"exit.json", dict(status=status, worker_started=True, exit_code=proc.returncode,
-                                  pressure_marker=stopped, command=command, before=before, after=finish))
+                                  pressure_marker=stopped, command=command, before=before, after=finish,
+                                  oom_kill_before=initial_oom, oom_kill_after=final_oom,
+                                  global_oom_counter_increment=global_oom_increment))
     return status
 
 
@@ -251,7 +361,8 @@ def main():
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--preflight-only", action="store_true")
     mode.add_argument("--lifecycle-preflight", action="store_true")
-    mode.add_argument("--child", choices=("reset_only","combined"), help=argparse.SUPPRESS)
+    mode.add_argument("--resume-combined", action="store_true")
+    mode.add_argument("--child", choices=("reset_only","combined",RESUME), help=argparse.SUPPRESS)
     args = parser.parse_args()
     root, output = args.project_root.resolve(strict=True), args.output.resolve()
     if args.child:
@@ -267,6 +378,11 @@ def main():
         raise
     if args.preflight_only:
         write(output/"summary.json", dict(status="PASS", model_loads=0, resets=0, forward_calls=0, control_steps=0))
+        return
+    if args.resume_combined:
+        c3 = supervise(root, output, RESUME)
+        write(output/"summary.json", dict(status=c3, c3=c3, c2="REUSED_ARCHIVED_C2",
+                                          forward_calls=0, control_steps=0, retries=0))
         return
     c2 = supervise(root, output, "reset_only")
     c3 = supervise(root, output, "combined") if c2 == "PASS" else "NOT_RUN"

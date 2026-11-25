@@ -1,0 +1,5 @@
+{"phase": "fixture", "allowed": true, "min_ram_mib": 1024, "swap_policy": "telemetry_only", "pressure_marker": false, "available_mib": 1024, "swap_free_mib": 0}
+{"phase": "fixture", "allowed": false, "min_ram_mib": 1024, "swap_policy": "telemetry_only", "pressure_marker": false, "available_mib": 1023, "swap_free_mib": 2048}
+{"phase": "fixture", "allowed": true, "min_ram_mib": 512, "swap_policy": "telemetry_only", "pressure_marker": false, "available_mib": 512, "swap_free_mib": 0}
+{"phase": "fixture", "allowed": false, "min_ram_mib": 512, "swap_policy": "telemetry_only", "pressure_marker": false, "available_mib": 511, "swap_free_mib": 2048}
+{"phase": "fixture", "allowed": false, "min_ram_mib": 512, "swap_policy": "telemetry_only", "pressure_marker": true, "available_mib": 9000, "swap_free_mib": 0}
